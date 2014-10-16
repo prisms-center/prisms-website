@@ -1,0 +1,270 @@
+
+/* Index page navigation bar CSS
+-------------------------------------------------- */
+.nav_wrap{
+  background-color: #2c5c84;
+  -moz-box-shadow:    0px 0px 1px 2px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0px 0px 1px 2px rgba(0,0,0,.3);
+  box-shadow:         0px 0px 1px 2px rgba(0,0,0,.3);
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  color: #fff;
+  background-color: #4e89bd; 
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-nav {
+  float: right;
+  margin: 0;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+}
+.navbar-default{
+  border: none;
+}
+
+/*--------------General------------*/
+a{
+  color: #4e89bd;
+}
+a:hover, a:focus{
+  color: #031d80;
+}
+
+.main_container{
+  width: 100%;
+  padding-top: 30px;
+}
+/*Home Page
+---------------------------------------*/
+/*---------------Main Picture----------*/
+.main_pic{
+  height:200px;
+  background: url('img/main_pic.png');
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*--------------Main Area--------------*/
+.main_area{
+  background-color: #fff;
+  margin-top: -7em;
+  margin-bottom: 1em;
+  -moz-box-shadow:    4px 4px 4px 2px rgba(0,0,0,.1);
+  -webkit-box-shadow: 4px 4px 4px 2px rgba(0,0,0,.1);
+  box-shadow:         4px 4px 4px 2px rgba(0,0,0,.1);
+}
+
+.main-top, .main_middle, .main_bottom{
+  height: 300px;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.main_middle{
+  border-top: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc; 
+}
+/*--------------Circles---------------*/
+#circles{
+  position:relative;
+  padding-top:100;
+  padding-left: 4%;
+  width: 300px;
+  height: 300px;
+}
+.circle_mc, .circle_code, .circle_sci{
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%; 
+  border-radius: 50%;
+  width: 42%;
+  height: 42%;
+  color: #fff;
+}
+.circle_text{
+  margin-top: 40%;
+  display: table;
+  width: 100%;
+}
+
+.circle_text h4{
+  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 500;
+}
+
+.circle_mc{
+  background-color: #9b9a67;
+  margin-top: 12%;
+  margin-left: 40%;
+}
+.circle_code{
+    background-color: #cfc091;
+    margin-top: 43%;
+    margin-left: 22%;
+}
+.circle_sci{
+    background-color: #a79d95;
+    margin-top: 43%;
+    margin-left: 59%;
+}
+.transparent{
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=70);
+
+  /* Netscape */
+  -moz-opacity: 0.7;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.7;
+
+  /* Good browsers */
+  opacity: 0.7;
+}
+
+
+/* circle description
+------------------------------------ */
+
+#circles_description{
+  padding-top: 2em;
+  padding-left: 10em;
+  padding-right: 6em;
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+}
+/* Overview
+----------------------------------- */
+
+.main_link{
+  color:#4e89bd ;
+}
+
+.main_link > a:hover{
+  color:red ;
+}
+
+h2{
+  color:#4e89bd ;
+}
+
+.overview>p{
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+
+/*About Page
+---------------------------------------*/
+.about_pic img{
+    margin: 0 auto;
+    padding-top:100px;
+}
+
+
+/*--------------Tabs-------------*/
+.nav{
+  border: none;
+
+}
+.tab_nav{
+  background-color: rgba(78,137,189,.3);
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+  color: #031d80;
+  border: none;
+  border-radius: 0;
+
+}
+.nav-tabs>li>a:hover{
+  background-color: rgba(255,255,255,.4);
+  border-radius: 0;
+}
+.nav-tabs>li>a{
+  border: none;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 160px;
+  background-color: #eff0f1;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+  background-color: #2c5c84;
+}
+
+.footer_left,.footer_right {
+  padding-top: 1.5em;
+}
+
+
+address{
+  margin-bottom: 10px;
+  color:#fff;
+  font-weight: 300;
+}
+.footer_img{
+  display: inline-block;
+  width: 36px;
+  margin-top: 25px;
+  margin-left:40px;
+  margin-right:40px;
+}
+.footer_img img{
+  width:45px;
+}
+
+.footer_bottom p{
+  text-align: center;
+  padding-top:0;
+  padding-bottom:0;
+  color:#fff;
+  font-size: 13px;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 28px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}

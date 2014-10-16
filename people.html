@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>About</h1>
+      </div>
+      <!-- Tab -->
+      <div class="tab_wrap">
+        <ul class="nav nav-tabs tab_nav" role="tablist">
+          <li class="tab_items active"><a href="#overview" role="tab" data-toggle="tab">Overview</a></li>
+          <li class="tab_items"><a href="#fund" role="tab" data-toggle="tab">Funding</a></li>
+          <li class="tab_items"><a href="#research" role="tab" data-toggle="tab">Research</a></li>
+          <li class="tab_items"><a href="#collab" role="tab" data-toggle="tab">Collaborators</a></li>
+          <li class="tab_items"><a href="#contact" role="tab" data-toggle="tab">Contact</a></li>
+        </ul>
+
+        <div class="tab_content tab-content">
+          <div class="tab_pane tab-pane active" id="overview">...</div>
+          <div class="tab_pane tab-pane" id="fund">...</div>
+          <div class="tab_pane tab-pane" id="research">...</div>
+          <div class="tab_pane tab-pane" id="collab">...</div>
+          <div class="tab_pane tab-pane" id="contact">...</div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="container">
+        <div id="circles">
+            <div id="circle_mc" class="circle_mc transparent">
+                <div class="circle_text">
+                  <h4>Materials Commons</h4>
+                </div>
+            </div>
+            <div id="circle_code" class="circle_code transparent">
+                <div class="circle_text">
+                  <h4 style="padding-top: 4px;">Code</h4>
+                </div>
+            </div>
+            <div id="circle_sci" class="circle_sci transparent">
+                <div class="circle_text">
+                  <h4 style="padding-top: 4px;">Science</h4>
+                </div>
+            </div>        
+        </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
