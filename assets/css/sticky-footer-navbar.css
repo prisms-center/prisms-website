@@ -46,7 +46,7 @@ a:hover, a:focus{
 /*---------------Main Picture----------*/
 .main_pic{
   height:200px;
-  background: url('img/main_pic.png');
+  background: url('../img/main_pic.png');
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;
@@ -181,7 +181,12 @@ h2{
     padding-top:100px;
 }
 
-
+/*--------------ScrollSpy---------*/
+.scrollArea {
+  height: 250px;
+  position: relative;
+  overflow: auto;
+}
 /*--------------Tabs-------------*/
 .nav{
   border: none;
