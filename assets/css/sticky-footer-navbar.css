@@ -178,10 +178,11 @@ h2{
 ---------------------------------------*/
 .about_pic img{
     width: 100%;
-    padding-top:100px;
+    padding-top:50px;
 }
 
 /*--------------ScrollSpy---------*/
+
 .scrollArea {
   height: 250px;
   position: relative;
@@ -208,9 +209,7 @@ h2{
 .nav-tabs>li>a{
   border: none;
 }
-.tab_pane{
-  background-color: #fff;
-}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
