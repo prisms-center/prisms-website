@@ -31,7 +31,7 @@
 
 /*--------------General------------*/
 a{
-  color: #4e89bd;
+  color: #2c5c84;
 }
 a:hover, a:focus{
   color: #031d80;
@@ -178,15 +178,16 @@ h2{
 ---------------------------------------*/
 .about_pic img{
     width: 100%;
-    padding-top:50px;
 }
 
 /*--------------ScrollSpy---------*/
 
 .scrollArea {
-  height: 250px;
+  height: 412px;
   position: relative;
   overflow: auto;
+  padding: 0 15px;
+  background-color: #fff;
 }
 /*--------------Tabs-------------*/
 .nav{
@@ -194,12 +195,22 @@ h2{
 
 }
 .tab_nav{
-  background-color: rgba(78,137,189,.3);
+  background-color: #c5d5df;
+  height: 45px;
 }
+.tab-fixed{
+  position: fixed;
+  top:50;
+  z-index: 999;
+  display: block;
+  width: 940px; 
+}
+
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-  color: #031d80;
+  color: #4e89bd;
   border: none;
   border-radius: 0;
+  font-weight: 500;
 
 }
 .nav-tabs>li>a:hover{
@@ -208,8 +219,27 @@ h2{
 }
 .nav-tabs>li>a{
   border: none;
+  height: 45px;
+  padding-top: 13px;
+  color: #2c5c84;
 }
 
+/*People Page
+-------------------------------------------------- */
+
+.dropshadow{
+  -moz-box-shadow:    4px 4px 4px 2px rgba(0,0,0,.1);
+  -webkit-box-shadow: 4px 4px 4px 2px rgba(0,0,0,.1);
+  box-shadow:         4px 4px 4px 2px rgba(0,0,0,.1);
+}
+.scrollArea-people{
+  height: 600px;
+  position: relative;
+  overflow: auto;
+  padding: 0 15px;
+  background-color: #fff;
+  padding-top: 50px;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
