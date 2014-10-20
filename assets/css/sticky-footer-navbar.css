@@ -272,9 +272,12 @@ h2{
   height: 600px;
   position: relative;
   overflow: auto;
-  padding: 0 15px;
+  padding: 10px 15px;
   background-color: #fff;
   margin-bottom: 30px;
+}
+.people-description{
+  padding-right: 50px;
 }
 
 /* Sticky footer styles

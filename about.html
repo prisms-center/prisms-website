@@ -61,7 +61,7 @@
 
 
     <!-- Begin page content -->
-    <div class="container">
+    <div id="aboutPic" class="container">
       <!--About Page Picture-->
       <div class="about_pic">
           <img src="assets/img/about_main_pic.png">
@@ -170,7 +170,7 @@
     $(document).ready(function(){
       $('#fixedNav').affix({
       offset: {
-        top: $('.about_pic>img').height()
+        top: $('#aboutPic').height()
       }
     }); 
       $('#fixedNav').css('width', $('.container').width());
