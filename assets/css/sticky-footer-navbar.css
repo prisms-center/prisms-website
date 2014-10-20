@@ -203,6 +203,7 @@ h2{
   overflow: auto;
   padding: 0 15px;
   background-color: #fff;
+  padding:20px 80px;
 }
 /*--------------Tabs-------------*/
 .nav{
@@ -211,7 +212,7 @@ h2{
 }
 .tab_nav{
   background-color: #c5d5df;
-  height: 45px;
+  height: 50px;
 }
 .tab-wrap{
   display: block;
@@ -223,22 +224,40 @@ h2{
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-  color: #4e89bd;
+  color: #2c5c84;
   border: none;
   border-radius: 0;
+  font-size: 16px;
   font-weight: 500;
   width:150px;
-
+  text-align: center;
 }
+
 .nav-tabs>li>a:hover{
   background-color: rgba(255,255,255,.4);
   border-radius: 0;
+  width:150px;
+  text-align: center;
 }
 .nav-tabs>li>a{
   border: none;
-  height: 45px;
+  height: 50px;
   padding-top: 13px;
   color: #2c5c84;
+  font-size: 16px;
+  font-weight: 500;
+  width:150px;
+  text-align: center;
+}
+
+.tab-content-title{
+  color:#2c5c84;
+}
+
+.tab-content-details{
+  color:#4d4d4d;
+  font-size:16px;
+  line-height: 25px;
 }
 
 /*People Page
