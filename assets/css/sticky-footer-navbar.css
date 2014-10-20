@@ -191,8 +191,12 @@ h2{
 
 /*About Page
 ---------------------------------------*/
-.about_pic img{
-    width: 100%;
+.about_pic{
+  height:200px;
+  background: url('../img/about_main_pic.png');
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /*--------------ScrollSpy---------*/
@@ -261,6 +265,10 @@ h2{
   line-height: 25px;
 }
 
+
+/*About Page
+-------------------------------------------------- */
+
 /*People Page
 -------------------------------------------------- */
 
@@ -303,6 +311,30 @@ h2{
 }
 
 
+/*Publication Page
+-------------------------------------------------- */
+
+.publication-list{
+  padding-left:20px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+div p.publication-list:nth-of-type(odd){
+  border-left: 5px solid #2c5c84;
+}
+
+div p.publication-list:nth-of-type(even){
+  border-left: 5px solid #999999;
+}
+
+.publication-title{
+  font-weight: bold;
+}
+
+.publication-detail{
+  font-style: oblique;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
