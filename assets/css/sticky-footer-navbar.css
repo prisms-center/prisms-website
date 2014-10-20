@@ -1,3 +1,18 @@
+/* Remove this if you want to try $('body').scrollspy(); */
+#content {
+    margin-top:100px;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.page {
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+    background: #f7f7f7;
+    margin: 20px 0;
+    padding: 200px;
+    height: 500px;
+}
 
 /* Index page navigation bar CSS
 -------------------------------------------------- */
@@ -212,6 +227,7 @@ h2{
   border: none;
   border-radius: 0;
   font-weight: 500;
+  width:150px;
 
 }
 .nav-tabs>li>a:hover{
