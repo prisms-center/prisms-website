@@ -256,7 +256,7 @@ h2{
 
 .tab-content-title{
   color:#2c5c84;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 .tab-content-details{
@@ -281,18 +281,25 @@ h2{
   height: 600px;
   position: relative;
   overflow: auto;
-  padding: 10px 15px;
+  padding: 10px 45px;
   background-color: #fff;
   margin-bottom: 30px;
+}
+.people-container{
+  padding: 30px 45px;
+}
+.people-title{
+  color:#2c5c84;
+  padding-bottom: 7px;
 }
 .portrait{
   width: 13em;
   height: 13em;
   border-radius: 50%;
 }
-
 .vertical-center{
   display: table-cell;
+  vertical-align: middle;
 }
 .people-pic{
   padding-left: 25px;
@@ -300,8 +307,8 @@ h2{
 }
 
 .people-description{
-  padding-right: 100px;
-  padding-left: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .people-description>p{
