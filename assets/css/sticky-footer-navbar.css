@@ -189,16 +189,6 @@ h2{
 }
 
 
-/*About Page
----------------------------------------*/
-.about_pic{
-  height:200px;
-  background: url('../img/about_main_pic.png');
-  background-size: 100%;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 /*--------------ScrollSpy---------*/
 
 .scrollArea {
@@ -260,14 +250,19 @@ h2{
 }
 
 .tab-content-details{
-  color:#4d4d4d;
-  font-size:16px;
-  line-height: 25px;
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 
 /*About Page
--------------------------------------------------- */
+---------------------------------------*/
+.about_pic img{
+  width: 100%;
+}
+
 
 /*People Page
 -------------------------------------------------- */
