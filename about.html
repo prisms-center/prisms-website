@@ -170,12 +170,14 @@
     $(document).ready(function(){
       $('#fixedNav').affix({
       offset: {
-        top: $('#aboutPic').height()
+        top: $('#aboutPic').height(),
+        bottom: 100
       }
-    }); 
+    });
+      
       $('#fixedNav').css('width', $('.container').width());
       $(window).resize(function(){
-       $('#fixedNav').css('width', $('.container').width());
+        $('#fixedNav').css('width', $('.container').width());
      });
 
     });
