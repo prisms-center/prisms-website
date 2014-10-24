@@ -33,7 +33,7 @@
 
   <body>
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top nav_wrap" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top nav_wrap" role="navigation" >
       <div class="container">
         <div class="navbar-header ">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,15 +44,15 @@
           </button>
           <a class="navbar-brand" href="#"><img src ="assets/img/prisms-logo.png"></a>
         </div>
-        <div class="collapse navbar-collapse ">
+        <div class="collapse navbar-collapse " ng-controller="NavController">
           <ul id="prisms-tabs" class="nav navbar-nav">
-            <li class="active"><a href="#">HOME</a></li>
-            <li><a href="#/prisms/about">ABOUT</a></li>
-            <li><a href="#/prisms/news">NEWS</a></li>
-            <li><a href="#/prisms/materialscommons">MATERIALS COMMONS</a></li>
-            <li><a href="#/prisms/people">PEOPLE</a></li>
-            <li><a href="#/prisms/publications">PUBLICATIONS</a></li>
-            <li><a href="#/prisms/links">LINKS</a></li>
+            <li ng-class="{active: isActive('/prisms')}"><a href="#/prisms">HOME</a></li>
+            <li ng-class="{active: isActive('/prisms/about')}"><a href="#/prisms/about">ABOUT</a></li>
+            <li ng-class="{active: isActive('/prisms/news')}"><a href="#/prisms/news">NEWS</a></li>
+            <li ng-class="{active: isActive('/prisms/materialscommons')}"><a href="#/prisms/materialscommons">MATERIALS COMMONS</a></li>
+            <li ng-class="{active: isActive('/prisms/people')}"><a href="#/prisms/people">PEOPLE</a></li>
+            <li ng-class="{active: isActive('/prisms/publications')}"><a href="#/prisms/publications">PUBLICATIONS</a></li>
+            <li ng-class="{active: isActive('/prisms/links')}"><a href="#/prisms/links">LINKS</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

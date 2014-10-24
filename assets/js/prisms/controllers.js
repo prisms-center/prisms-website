@@ -27,3 +27,9 @@ function PublicationsController($scope) {
 function LinksController($scope) {
 
 }
+
+function NavController($scope, $location) { 
+    $scope.isActive = function (viewLocation) {         
+        return viewLocation === $location.path();
+    }
+};
