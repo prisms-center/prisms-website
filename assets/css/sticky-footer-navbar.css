@@ -490,3 +490,5 @@ body > .container {
 code {
   font-size: 80%;
 }
+@media (min-width:1200px){.container{width:1070px}}
+
