@@ -93,7 +93,9 @@
                       .removeClass('cover');
           $(this).css('opacity', 1)
                  .addClass('cover');
-
+          $('#circles_description').css('padding-top', '1em')
+                                   .css('padding-bottom', '1em');
+          
           if($(this).attr('id') == 'circle_sci'){
             $('#circle_description_sci').siblings().hide();
             $('#circle_description_sci').fadeIn("slow");
