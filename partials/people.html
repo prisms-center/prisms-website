@@ -108,3 +108,31 @@
   </div><!--End of dropshadow-->
 </div>
   <!--End of Tab-->
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $('#fixedNav').affix({
+          offset: {
+            top: 0
+          }
+        });
+      
+      $('#fixedNav').css('width', $('.container').width());
+      
+      $(window).resize(function(){
+         $('#fixedNav').css('width', $('.container').width());
+       });
+       
+       $('.people-container').each(function(){
+          var maxheight = 0;
+          if($(this).height() > maxheight){
+            maxheight = $(this).height();
+          }
+          $('.people-container').height(maxheight);
+          $('.people-pic').height(maxheight);
+          $('.people-description').height(maxheight);
+
+          });
+     });
+     
+    
+    </script>

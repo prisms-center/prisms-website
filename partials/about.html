@@ -22,7 +22,7 @@
               </ul>
             </div>
           </div>
-        <div class="scrollArea" data-spy="scroll" data-target="#/prisms/about/#scrollNav" data-offset="45">
+        <div class="scrollArea" data-spy="scroll" data-target="#/prisms/about/#scrollNav" data-offset="50">
           <h3 class="tab-content-title" id="overview">About PRISMS</h3>
             <p class="tab-content-details">
               Our Center is formally known as the DOE Software Innovation Center for Integrated Multi-Scale Modeling of Structural Metals. We call it PRISMS for short which stands for PRedictive Integrated Structural Materials Science. Our ambitious goal is for our PRISMS tools to be the extensible scientific core of the Integrated Computational Materials Engineering.<br>
@@ -65,3 +65,19 @@
         </div>
   </div>
   <!--End of Tab-->
+   <script type="text/javascript">
+    $(document).ready(function(){
+      $('#fixedNav').affix({
+      offset: {
+        top: $('#aboutPic').height(),
+        bottom: 250
+      }
+    });
+      
+      $('#fixedNav').css('width', $('.container').width());
+      $(window).resize(function(){
+        $('#fixedNav').css('width', $('.container').width());
+     });
+
+    }); 
+    </script>

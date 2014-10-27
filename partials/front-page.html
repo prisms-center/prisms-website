@@ -14,21 +14,20 @@
       <div class="main_area">
         <!-- circle flowchart-->
           <div class="main_top row">
-
               <div id="circles" class="col-xs-4">
-                  <div id="circle_mc" class="circle_mc transparent">
+                  <div id="circle_mc" class="circle circle_mc transparent">
                       <div class="circle_text">
-                        <h4>Materials Commons</h4>
+                        <h4>The Materials Commons</h4>
                       </div>
                   </div>
-                  <div id="circle_code" class="circle_code transparent">
+                  <div id="circle_code" class="circle circle_code transparent">
                       <div class="circle_text">
-                        <h4 style="padding-top: 4px;">Code</h4>
+                        <h4 style="padding-top: 4px;">PRISMS Computational Tools</h4>
                       </div>
                   </div>
-                  <div id="circle_sci" class="circle_sci transparent">
+                  <div id="circle_sci" class="circle circle_sci transparent">
                       <div class="circle_text">
-                        <h4 style="padding-top: 4px;">Science</h4>
+                        <h4 style="padding-top: 4px;">Leading Edge Science<br>in Metals</h4>
                       </div>
                   </div> 
                 </div>
@@ -36,11 +35,44 @@
               <div id="circles_description" class="col-xs-8">
                 <div id="circle_description_integ">
                   <h2>Integration</h2>
-                  <p>Combining the efforts of computational and experimental researchers, the goal of this Center is development of an integrated suite of validated computational tools thazt are designed to accelerate the development of new structural metals.
+                  <p>Combining the efforts of computational and experimental researchers, the goal of this Center is development of an integrated suite of validated computational tools that are designed to accelerate the development of new structural metals.
                   </p>
                 </div>
+                <div id="circle_description_sci" style="display:none">
+                  <h2>Leading Edge Science in Metals</h2>
+                  <p>Combining the efforts of computational and experimental researchers, the goal of this Center is development of an integrated suite of validated computational tools that are designed to accelerate the development of new structural metals.
+                  </p>
+                  <ul>
+                    <li>Linking Experiments &amp; Simulations</li>
+                    <li>Advanced Quantitative Experiments</li>
+                    <li>Use Cases<br>- Microstructural Evolution<br>- Mechanical Behavior</li>
+                  </ul>
+                </div>
+                <div id="circle_description_code" style="display:none">
+                  <h2>PRISMS Computational Tools</h2>
+                  <p>Combining the efforts of computational and experimental researchers, the goal of this Center is development of an integrated suite of validated computational tools that are designed to accelerate the development of new structural metals.
+                  </p>
+                  <ul>
+                    <li>Open Source</li>
+                    <li>Integrated Hierarchical Multi-Scale</li>
+                    <li>Computationally Efficient</li>
+                    <li>Extensible</li>
+                  </ul>
+                </div>
+                <div id="circle_description_mc" style="display:none">
+                  <h2>The Materials Commons</h2>
+                  <p>Combining the efforts of computational and experimental researchers, the goal of this Center is development of an integrated suite of validated computational tools that are designed to accelerate the development of new structural metals.
+                  </p>
+                  <ul>
+                    <li>Collaboration</li>
+                    <li>Experimental &amp; Simulation Information</li>
+                    <li>Seamless, Continuous</li>
+                    <li>Workflow</li>
+                    <li>Provenance Tracking</li>
+                  </ul>
+                </div>
               </div>
-            </div>
+          </div><!--End of Main Top-->
 
           <div class="main_middle row">
                <!-- Overview -->
@@ -51,6 +83,30 @@
                   </p>
                   <a href="about.html" class="main_link">More >></a>
               </div><!--End of Overview-->
-          </div>
+          </div><!--End of Main Middle-->
       </div>
     </div>
+    <script type="text/JavaScript">
+      $(document).ready(function(){
+        $('.circle').click(function(){
+          $(this).siblings().css('opacity', 0.7)
+                      .removeClass('cover');
+          $(this).css('opacity', 1)
+                 .addClass('cover');
+
+          if($(this).attr('id') == 'circle_sci'){
+            $('#circle_description_sci').siblings().hide();
+            $('#circle_description_sci').fadeIn("slow");
+          }
+          else if($(this).attr('id') == 'circle_mc'){
+            $('#circle_description_mc').siblings().hide();
+            $('#circle_description_mc').fadeIn("slow");
+          }
+          else if($(this).attr('id') == 'circle_code'){
+            $('#circle_description_code').siblings().hide();
+            $('#circle_description_code').fadeIn("slow");
+          }
+       
+        });
+      });
+    </script>
