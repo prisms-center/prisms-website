@@ -268,7 +268,7 @@ a:hover, a:focus{
 }
 
 h2{
-  color:#4e89bd ;
+  color:#4e89bd;
   font-size: 24px;
 }
 
@@ -296,18 +296,29 @@ h2{
 
 }
 .tab_nav{
-  background-color: #c5d5df;
   height: 50px;
 }
-.tab-wrap{
+.content-menu{
   display: block;
+  background-color: #fcfcfc;
+  -moz-box-shadow:    2px 2px 2px 1px rgba(0,0,0,.1);
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,.1);
+  box-shadow:         2px 2px 2px 1px rgba(0,0,0,.1);
+  color: #2c5c84;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
-#fixedNav.affix{
-  position: fixed;
-  top: 50px;
-  z-index: 10;
+.tab-item{
+  font-size: 18px;
+  padding: 0 2.5em;
 }
-
+.tab-item.active{
+  font-weight: 500;
+}
+.tab-item>a:hover{
+  text-decoration: none;
+  color: #4e89bd;
+}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
   color: #2c5c84;
   border: none;
@@ -356,16 +367,14 @@ h2{
 -------------------------------------------------- */
 
 .dropshadow{
+  background-color: #fff;
   -moz-box-shadow:    3px 3px 3px 2px rgba(0,0,0,.1);
   -webkit-box-shadow: 3px 3px 3px 2px rgba(0,0,0,.1);
   box-shadow:         3px 3px 3px 2px rgba(0,0,0,.1);
 }
-.scrollArea-people{
-  height: 550px;
+.people-area{
   position: relative;
-  overflow: auto;
   padding: 10px 45px;
-  background-color: #fff;
   margin-bottom: 30px;
 }
 .people-container{
