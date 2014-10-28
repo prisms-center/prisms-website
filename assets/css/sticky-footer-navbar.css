@@ -1,89 +1,3 @@
-f/* Sidebar test*/
-
-        <!-- CSS code from Bootply.com editor -->
-        
-        <style type="text/css">
-            /*
-A Bootstrap 3.1 affix sidebar template
-from http://bootply.com
-
-This CSS code should follow the 'bootstrap.css'
-in your HTML file.
-
-license: MIT
-author: bootply.com
-*/
-
-body {
- padding-top:50px;
-}
-
-#masthead { 
- min-height:250px;
-}
-
-#masthead h1 {
- font-size: 30px;
- line-height: 1;
- padding-top:20px;
-}
-
-#masthead .well {
- margin-top:8%;
-}
-
-@media screen and (min-width: 768px) {
-  #masthead h1 {
-    font-size: 50px;
-  }
-}
-
-.navbar-bright {
- background-color:#111155;
- color:#fff;
-}
-
-.affix-top,.affix{
- position: static;
-}
-
-@media (min-width: 979px) {
-  #sidebar.affix-top {
-    position: static;
-    margin-top:30px;
-    width:228px;
-  }
-  
-  #sidebar.affix {
-    position: fixed;
-    top:70px;
-    width:228px;
-  }
-}
-
-#sidebar li.active {
-  border:0 #eee solid;
-  border-right-width:5px;
-}
-
-
-
-/* Remove this if you want to try $('body').scrollspy(); */
-#content {
-    margin-top:100px;
-    height: 600px;
-    overflow-y: scroll;
-}
-
-.page {
-    border: 1px solid #ddd;
-    border-width: 1px 0;
-    background: #f7f7f7;
-    margin: 20px 0;
-    padding: 200px;
-    height: 500px;
-}
-
 /* Index page navigation bar CSS
 -------------------------------------------------- */
 .nav_wrap{
@@ -339,7 +253,7 @@ h2{
 ---------------------------------------*/
 .about-area{
   position: relative;
-  padding: 30px 120px;
+  padding: 50px 120px 10px;
   margin-bottom: 30px;
 }
 
