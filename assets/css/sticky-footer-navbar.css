@@ -1,4 +1,4 @@
-/* Sidebar test*/
+f/* Sidebar test*/
 
         <!-- CSS code from Bootply.com editor -->
         
@@ -283,10 +283,9 @@ h2{
 /*--------------ScrollSpy---------*/
 
 .scrollArea {
-  height: 600px;
+
   position: relative;
   overflow: auto;
-  padding: 0 15px;
   background-color: #fff;
   padding:20px 80px;
 }
@@ -358,8 +357,27 @@ h2{
 
 /*About Page
 ---------------------------------------*/
-.about_pic img{
-  width: 100%;
+.about_main_pic{
+  height:200px;
+  background: url('../img/about_main_pic.png');
+  background-size: 100%;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+.content_menu{
+  display:inline-block;
+  width:130px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.scrollArea-about{
+
+  position: relative;
+  overflow: auto;
+  padding: 10px 45px;
+  background-color: #fff;
+  margin-bottom: 30px;
 }
 
 
