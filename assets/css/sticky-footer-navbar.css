@@ -328,14 +328,32 @@ h2{
 }
 
 
+.tab-content-subtitle{
+  color: #4d4d4d;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
 /*About Page
 ---------------------------------------*/
 .about-area{
   position: relative;
-  padding: 10px 45px;
+  padding: 30px 120px;
   margin-bottom: 30px;
 }
 
+.about_list{
+  color: #4d4d4d;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+
+.about_link{
+  color:#4e89bd ;
+}
 
 /*People Page
 -------------------------------------------------- */
