@@ -29,7 +29,8 @@
                       <div class="circle_text">
                         <h4 style="padding-top: 4px;">Leading Edge Science<br>in Metals</h4>
                       </div>
-                  </div> 
+                  </div>
+                   <span id='indicator'><p style="position: absolute; bottom: 0; right: 0; font-size: 11px; color: #777;">*<em>Click circles to see details</em></p></span>  
                 </div>
                   <!-- circle description-->
               <div id="circles_description" class="col-xs-8">
@@ -89,6 +90,7 @@
     <script type="text/JavaScript">
       $(document).ready(function(){
         $('.circle').click(function(){
+          $('#indicator').hide();
           $(this).siblings().css('opacity', 0.7)
                       .removeClass('cover');
           $(this).css('opacity', 1)
