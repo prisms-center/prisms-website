@@ -294,11 +294,11 @@ h2{
   border: none;
 
 }
-.tab_nav{
-  height: 50px;
-}
 .content-menu{
   display: block;
+  position: fixed;
+  top: 51px;
+  z-index: 10;
   background-color: #fcfcfc;
   -moz-box-shadow:    2px 2px 2px 1px rgba(0,0,0,.1);
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,.1);
@@ -306,6 +306,7 @@ h2{
   color: #2c5c84;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
+  transition: top 0.2s ease-in-out;
 }
 .tab-item{
   font-size: 18px;
@@ -318,34 +319,6 @@ h2{
   text-decoration: none;
   color: #4e89bd;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-  color: #2c5c84;
-  border: none;
-  border-radius: 0;
-  font-size: 16px;
-  font-weight: 500;
-  width:150px;
-  text-align: center;
-}
-
-.nav-tabs>li>a:hover{
-  background-color: rgba(255,255,255,.4);
-  border-radius: 0;
-  width:150px;
-  text-align: center;
-}
-.nav-tabs>li>a{
-  border: none;
-  height: 50px;
-  padding-top: 13px;
-  color: #2c5c84;
-  font-size: 16px;
-  font-weight: 500;
-  width:150px;
-  text-align: center;
-}
-
-
 
 .tab-content-details{
   color: #4d4d4d;
@@ -375,7 +348,7 @@ h2{
 }
 .people-area{
   position: relative;
-  padding: 10px 45px;
+  padding: 50px 45px 10px;
   margin-bottom: 30px;
 }
 .people-container{
@@ -409,6 +382,15 @@ h2{
   color: #4d4d4d;
   font-size: 14px;
   line-height: 23px;
+}
+/*----Hide/Show Nav When Scroll Down/Up----*/
+
+.nav-up{
+  top: -15px;
+}
+.nav-down{
+  top: 50px;
+  z-index: 10;
 }
 
 
