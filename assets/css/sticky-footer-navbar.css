@@ -364,44 +364,51 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 160px;
+  margin-bottom: 150px;
   background-color: #eff0f1;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 160px;
+  height: 150px;
   background-color: #2c5c84;
 }
 
 .footer_left,.footer_right {
-  padding-top: 1.5em;
+  margin-top: 1.2em;
 }
 
-
+.footer_left, .footer_mid{
+  display: table;
+  height: 120px;
+}
+.table-cell{
+  display: table-cell;
+  vertical-align: middle;
+}
 address{
+  padding-left: 24px;
   margin-bottom: 10px;
   color:#fff;
+  line-height: 21px;
   font-weight: 300;
 }
 .footer_img{
   display: inline-block;
-  width: 36px;
-  margin-top: 25px;
-  margin-left:40px;
-  margin-right:40px;
+  margin-right: 40px;
 }
 .footer_img img{
-  width:45px;
+  height: 40px;
 }
-
-.footer_bottom p{
-  text-align: center;
-  padding-top:0;
-  padding-bottom:0;
-  color:#fff;
+.footer_mid{
+  margin-top: 1.5em;
+  padding-right: 20px;
+}
+.footer_mid p{
+  color: #f7f7f7;
   font-size: 13px;
+  font-weight: 300;
 }
 /* Custom page CSS
 -------------------------------------------------- */
