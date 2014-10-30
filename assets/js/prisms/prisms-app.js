@@ -8,8 +8,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         when('/prisms/about', {templateUrl:'partials/about.html', controller:AboutController}).
         when('/prisms/people', {templateUrl:'partials/people.html', controller:PeopleController}).
         when('/prisms/publications', {templateUrl:'partials/publications.html', controller:PublicationsController}).
-        when('/prisms/resources', {templateUrl:'partials/resources.html', controller:ResourcesController}).
-
         otherwise({redirectTo:'/prisms'});
 }]);
 

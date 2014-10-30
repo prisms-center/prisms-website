@@ -24,7 +24,7 @@ function PublicationsController($scope) {
 
 }
 
-function ResourcesController($scope) {
+function LinksController($scope) {
 
 }
 

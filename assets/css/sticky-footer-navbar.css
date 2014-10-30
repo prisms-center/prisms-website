@@ -242,7 +242,12 @@ h2{
 }
 
 
-
+.tab-content-subtitle{
+  color: #4d4d4d;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
 
 /*About Page
 ---------------------------------------*/
@@ -265,15 +270,10 @@ h2{
 }
 
 .anchor{
-  padding-top: 110px; 
+  padding-top: 120px; 
   margin-top: -100px;
 }
 
-
-.tab-content-subtitle{
-  color:#2c5c84;
-  font-weight: bold;
-}
 /*People Page
 -------------------------------------------------- */
 
@@ -333,11 +333,7 @@ h2{
 
 /*Publication Page
 -------------------------------------------------- */
-.publications-area{
-  position: relative;
-  padding: 25px 120px 10px;
-  margin-bottom: 30px;
-}
+
 .publication-list{
   padding-left:20px;
   font-size: 16px;
@@ -358,65 +354,6 @@ div p.publication-list:nth-of-type(even){
 
 .publication-detail{
   font-style: oblique;
-}
-
-
-
-/*Resources Page
--------------------------------------------------- */
-
-.resources-area{
-  position: relative;
-  padding: 25px 120px 10px;
-  margin-bottom: 30px;
-}
-
-  form {
-    margin-bottom: 20px;
-  }
-
-  fieldset {
-    margin-bottom: 20px; }
-
-  input[type="text"], input[type="email"], textarea, select{
-    border: 1px solid #ccc;
-    padding: 6px 4px;
-    font-size: 1em;
-    color: #444;
-    margin: 0;
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    background: #fff;
-    height:2.5em;
-    line-height: 2.5em; 
-    letter-spacing: .1em;}
-  
-  select {
-    padding: 0px;
-    width: 220px; 
-  }
-
-  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
-    border: 1px solid #aaa;
-    color: #444;
-    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
-    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
-    box-shadow:  0 0 3px rgba(0,0,0,.2); }
-  textarea {
-    min-height: 150px; }
-
-  input[type="checkbox"] {
-    display: inline; }
-
-  .sent {
-    padding: 10px;
-    background-color: #00A89B;
-    width: auto;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: MontSerrat;
 }
 
 /* Sticky footer styles
