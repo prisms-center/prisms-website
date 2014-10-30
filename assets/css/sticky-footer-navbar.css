@@ -242,12 +242,7 @@ h2{
 }
 
 
-.tab-content-subtitle{
-  color: #4d4d4d;
-  font-size: 15px;
-  line-height: 28px;
-  font-weight: 300;
-}
+
 
 /*About Page
 ---------------------------------------*/
@@ -270,10 +265,15 @@ h2{
 }
 
 .anchor{
-  padding-top: 120px; 
+  padding-top: 110px; 
   margin-top: -100px;
 }
 
+
+.tab-content-subtitle{
+  color:#2c5c84;
+  font-weight: bold;
+}
 /*People Page
 -------------------------------------------------- */
 
@@ -333,7 +333,11 @@ h2{
 
 /*Publication Page
 -------------------------------------------------- */
-
+.publications-area{
+  position: relative;
+  padding: 25px 120px 10px;
+  margin-bottom: 30px;
+}
 .publication-list{
   padding-left:20px;
   font-size: 16px;
@@ -355,6 +359,18 @@ div p.publication-list:nth-of-type(even){
 .publication-detail{
   font-style: oblique;
 }
+
+
+
+/*Links Page
+-------------------------------------------------- */
+
+.links-area{
+  position: relative;
+  padding: 25px 120px 10px;
+  margin-bottom: 30px;
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
