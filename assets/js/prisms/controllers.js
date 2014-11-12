@@ -11,6 +11,9 @@ function AboutController($scope) {
 function NewsController($scope) {
 
 }
+function ScienceController($scope) {
+
+}
 
 function MaterialsCommonsController($scope) {
 

@@ -5,7 +5,7 @@
     <div class="container" style="margin-top: 50px; padding: 0 15px;">
       <div class="dropshadow"> 
           <div id='navmenu' class="content-menu">
-              <span class="active tab-item" style="border-right: 1px solid #ccc;"><a href="#/prisms/people/#facultystaff">Faculty &amp; Staff</a></span>
+              <span class="tab-item" style="border-right: 1px solid #ccc;"><a href="#/prisms/people/#facultystaff">Faculty &amp; Staff</a></span>
               <span class="tab-item"><a href="#/prisms/people/#student">Student</a></span>
           </div>
    
@@ -306,7 +306,7 @@
                     <p>
                     <p>Research: <a class="main_link" href="http://www.si.umich.edu/people/margaret-hedstrom" target="_blank">http://www.si.umich.edu/people/margaret-hedstrom</a></p>
                     <p>
-                      My research focuses on the reuse of information and the cyberinfrastructure necessary to enable easy exchange of data across disciplines and over time. I am the PI and Project Director for the Open Data IGERT (NSF 0903629) that engages PhD students and faculty at Michigan from Information Science, Computer Science, Materials Science, Chemical Engineering and Bioinformatics in a sustained investigation into the technologies, tools, standards, practices and cultural change necessary to share and reuse scientific data. 
+                      My research focuses on the reuse of information and the cyberinfrastructure necessary to enable easy exchange of data across disciplines and over time. I am the PI and Project Director for the Open Data IGERT (NSF 0903629) that engages PhD students and faculty at Michigan from Information Science, Computer Science, Materials Science, Chemical Engineering and Bioinformatics in a sustained investigation into the technologies, tools, standards, practices and cultural change. 
                     </p>
                   </div>
                 </div>
@@ -400,12 +400,12 @@
        //people pic and description height    
        $('.people-container').each(function(){
           var maxheight = 0;
-          if($(this).height() > maxheight){
-            maxheight = $(this).height();
+          if($(this).outerHeight() > maxheight){
+            maxheight = $(this).outerHeight();
           }
-          $('.people-container').height(maxheight);
-          $('.people-pic').height(maxheight);
-          $('.people-description').height(maxheight);
+          $('.people-container').outerHeight(maxheight);
+          $('.people-pic').outerHeight(maxheight);
+          $('.people-description').outerHeight(maxheight);
           });
      });
      
