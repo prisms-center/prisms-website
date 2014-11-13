@@ -63,11 +63,16 @@
     <!-- Begin Content -->
     <div ng-view></div>
     <!--End of Content -->
+    <!--Button Trigger Email-->
     <div class="footerButtonWrap">
       <div class="findOutMoreButton">
-        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+        <button type="button" class="btn btn-default btn-lg" data-toggle="popover" title="Find out More" data-placement="left">
           <span class="glyphicon glyphicon-envelope"></span>
         </button>
+        <div id="popoverContent" style="display: none">
+          <div style="border-bottom:1px solid #ccc;"><a href="mailto:prisms@umich.edu?subject=Find out more about PRISMS"><button class="btn btn-default" style="border:none; width:100%; color:#777; height: 40px; text-align: left; padding-left: 18px;"><span class="glyphicon glyphicon-pencil"></span> About PRISMS</button></a></div>
+          <div><a href="mailto:prisms@umich.edu?subject=Find out more about Materials Commons"><button class="btn btn-default" style="border:none; width:100%; color:#777; height: 40px; text-align: left; padding-left: 18px;"><span class="glyphicon glyphicon-pencil"></span> About Materials Commons</button></a></div>
+        </div>
       </div>
     </div>
 
@@ -114,5 +119,25 @@
     <script src="assets/js/prisms/prisms-app.js"></script>
     <script src="assets/js/prisms/controllers.js"></script>
     <script src="assets/js/prisms/util.js"></script>
+    <script type="text/JavaScript">
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({
+        container: 'body',
+        html:true,
+        content: function() {
+          return $('#popoverContent').html();
+        }
+    });
+      $('body').on('click', function (e) {
+        $('[data-toggle="popover"]').each(function () {
+            //the 'is' for buttons that trigger popups
+            //the 'has' for icons within a button that triggers a popup
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                $(this).popover('hide');
+            }
+        });
+});
+    });
+    </script>
   </body>
 </html>
