@@ -334,8 +334,11 @@ h2{
 /*Publication Page
 -------------------------------------------------- */
 .publications-area{
+  /*position: relative;*/
+  /*padding: 25px 120px 10px;*/
+  /*margin-bottom: 30px;*/
   position: relative;
-  padding: 25px 120px 10px;
+  padding: 50px 45px 10px;
   margin-bottom: 30px;
 }
 .publication-list{
@@ -370,6 +373,16 @@ div p.publication-list:nth-of-type(even){
   padding: 25px 120px 10px;
   margin-bottom: 30px;
 }
+
+/*Contact Page
+-------------------------------------------------- */
+
+.contact-area{
+  position: relative;
+  padding: 25px 120px 10px;
+  margin-bottom: 30px;
+}
+
 
 
 /* Sticky footer styles

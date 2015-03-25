@@ -27,7 +27,7 @@ function PublicationsController($scope) {
 
 }
 
-function LinksController($scope) {
+function ContactsController($scope) {
 
 }
 
