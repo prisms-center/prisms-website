@@ -8,22 +8,23 @@
 </div>
 
 <div class="container">
+    {{date}}
     <!--Main Area-->
     <div class="main_area">
         <!-- circle flowchart-->
         <div class="main_top row">
             <div id="circles" class="col-xs-4">
-                <div id="circle_mc" class="circle circle_mc transparent">
+                <div ng-click="viewCircle('mc')" class="circle circle_mc transparent">
                     <div class="circle_text">
                         <h4>The Materials Commons</h4>
                     </div>
                 </div>
-                <div id="circle_code" class="circle circle_code transparent">
+                <div ng-click="viewCircle('ct')" class="circle circle_code transparent">
                     <div class="circle_text">
                         <h4 style="padding-top: 4px;">PRISMS Computational Tools</h4>
                     </div>
                 </div>
-                <div id="circle_sci" class="circle circle_sci transparent">
+                <div ng-click="viewCircle('les')" class="circle circle_sci transparent">
                     <div class="circle_text">
                         <h4 style="padding-top: 4px;">Leading Edge Science<br>in Metals</h4>
                     </div>
@@ -33,7 +34,7 @@
             </div>
             <!-- circle description-->
             <div id="circles_description" class="col-xs-8">
-                <div id="circle_description_integ">
+                <div ng-hide="info">
                     <h2>Integration</h2>
 
                     <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
@@ -41,7 +42,7 @@
                         accelerate the development of new structural metals.
                     </p>
                 </div>
-                <div id="circle_description_sci" style="display:none">
+                <div ng-show="info == 'les'">
                     <h2>Leading Edge Science in Metals</h2>
 
                     <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
@@ -53,9 +54,9 @@
                         <li>Advanced Quantitative Experiments</li>
                         <li>Use Cases<br>- Microstructural Evolution<br>- Mechanical Behavior</li>
                     </ul>
-                    <a href="#/prisms/about/#integration" class="main_link">MORE >></a>
+                    <a ui-sref="prisms.about" class="main_link">MORE >></a>
                 </div>
-                <div id="circle_description_code" style="display:none">
+                <div ng-show="info == 'ct'">
                     <h2>PRISMS Computational Tools</h2>
 
                     <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
@@ -68,9 +69,9 @@
                         <li>Computationally Efficient</li>
                         <li>Extensible</li>
                     </ul>
-                    <a href="#/prisms/about/#integration" class="main_link">MORE >></a>
+                    <a ui-sref="prisms.people" class="main_link">MORE >></a>
                 </div>
-                <div id="circle_description_mc" style="display:none">
+                <div ng-show="info == 'mc'">
                     <h2>The Materials Commons</h2>
 
                     <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
@@ -84,7 +85,7 @@
                         <li>Workflow</li>
                         <li>Provenance Tracking</li>
                     </ul>
-                    <a href="#/prisms/about/#integration"  class="main_link">MORE >></a>
+                    <a ui-sref="prisms.contact" class="main_link">MORE >></a>
                 </div>
             </div>
         </div>

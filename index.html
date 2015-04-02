@@ -44,17 +44,17 @@
           </button>
           <a class="navbar-brand" href="#"><img src ="assets/img/prisms-logo.png"></a>
         </div>
-        <div class="collapse navbar-collapse " ng-controller="NavController">
+        <div class="collapse navbar-collapse" ng-controller="NavController">
           <ul id="prisms-tabs" class="nav navbar-nav">
-            <li ng-class="{active: isActive('/prisms')}"><a href="#">HOME</a></li>
-            <li ng-class="{active: isActive('/prisms/about')}"><a href="#/prisms/about">ABOUT</a></li>
-            <!--<li ng-class="{active: isActive('/prisms/news')}"><a href="#/prisms/news">NEWS</a></li>-->
-            <li ng-show="false" ng-class="{active: isActive('/prisms/science')}"><a href="#/prisms/science">SCIENCE</a>
-            <li ng-show="false" ng-class="{active: isActive('/prisms/materialscommons')}"><a href="#/prisms/materialscommons">MATERIALS COMMONS</a></li>
-            <li ng-class="{active: isActive('/prisms/people')}"><a href="#/prisms/people">PEOPLE</a></li>
-            <li ng-class="{active: isActive('/prisms/publications')}"><a href="#/prisms/publications">PUBLICATIONS</a></li>
-            <!--<li ng-class="{active: isActive('/prisms/links')}"><a href="#/prisms/links">LINKS</a></li>-->
-            <li ng-class="{active: isActive('/prisms/contact')}"><a href="#/prisms/contact">CONTACT</a></li>
+            <li ng-class="{active: isActive('/prisms')}">
+              <a ui-sref="prisms">HOME</a></li>
+            <li ng-class="{active: isActive('/prisms/about')}">
+              <a ui-sref="about">ABOUT</a></li>
+            <li ng-class="{active: isActive('/prisms/people')}">
+              <a ui-sref="people">PEOPLE</a></li>
+            <li ng-class="{active: isActive('/prisms/publications')}">
+              <a ui-sref="publications">PUBLICATIONS</a></li>
+            <li ng-class="{active: isActive('/prisms/contact')}"><a ui-sref="prisms.contact">CONTACT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -62,7 +62,9 @@
 
 
     <!-- Begin Content -->
-    <div ng-view></div>
+    <div class="row">
+      <div ui-view></div>
+    </div>
     <!--End of Content -->
     <!--Button Trigger Email-->
     <div class="footerButtonWrap">
@@ -117,8 +119,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-ui-router.min.0.2.11.js"></script>
     <script src="assets/js/prisms/prisms-app.js"></script>
-    <script src="assets/js/prisms/controllers.js"></script>
+    <!--<script src="assets/js/prisms/controllers.js"></script>-->
     <script src="assets/js/prisms/util.js"></script>
     <script type="text/JavaScript">
     $(document).ready(function(){
