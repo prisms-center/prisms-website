@@ -224,15 +224,22 @@ h2{
 }
 .tab-item{
   font-size: 18px;
-  padding: 0 2.5em;
+  padding: 0 2.0em;
 }
-.tab-item.active{
-  font-weight: 500;
+.tab-item > a.active{
+  font-weight: 300;
+  color: #7dbdc0;
 }
 .tab-item>a:hover{
   text-decoration: none;
-  color: #4e89bd;
+  color: #031552;
 }
+
+.tab-item > a:focus{
+  outline: none;
+  text-decoration: none;
+}
+
 
 .tab-content-details{
   color: #4d4d4d;
@@ -329,7 +336,6 @@ h2{
   top: 50px;
   z-index: 10;
 }
-
 
 /*Publication Page
 -------------------------------------------------- */

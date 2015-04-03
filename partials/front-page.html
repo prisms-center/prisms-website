@@ -8,7 +8,6 @@
 </div>
 
 <div class="container">
-    {{date}}
     <!--Main Area-->
     <div class="main_area">
         <!-- circle flowchart-->
@@ -54,7 +53,7 @@
                         <li>Advanced Quantitative Experiments</li>
                         <li>Use Cases<br>- Microstructural Evolution<br>- Mechanical Behavior</li>
                     </ul>
-                    <a ui-sref="prisms.about" class="main_link">MORE >></a>
+                    <a ui-sref="about.science" class="main_link">MORE >></a>
                 </div>
                 <div ng-show="info == 'ct'">
                     <h2>PRISMS Computational Tools</h2>
@@ -69,7 +68,7 @@
                         <li>Computationally Efficient</li>
                         <li>Extensible</li>
                     </ul>
-                    <a ui-sref="prisms.people" class="main_link">MORE >></a>
+                    <a ui-sref="about.ctools" class="main_link">MORE >></a>
                 </div>
                 <div ng-show="info == 'mc'">
                     <h2>The Materials Commons</h2>
@@ -85,7 +84,7 @@
                         <li>Workflow</li>
                         <li>Provenance Tracking</li>
                     </ul>
-                    <a ui-sref="prisms.contact" class="main_link">MORE >></a>
+                    <a ui-sref="about.mcommons" class="main_link">MORE >></a>
                 </div>
             </div>
         </div>
@@ -102,7 +101,7 @@
                     Structural Materials Science. Our ambitious goal is for our PRISMS tools to be the extensible
                     scientific core of the Integrated Computational Materials Engineering.
                 </p>
-                <!--<a href="#/prisms/about" class="main_link">MORE >></a>-->
+                <a ui-sref="about.overview" class="main_link">MORE >></a>
             </div>
             <!--End of Overview-->
         </div>
