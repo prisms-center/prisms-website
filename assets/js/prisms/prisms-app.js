@@ -85,15 +85,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     })
 
     .controller("AboutController", function ($scope, $location, $state) {
-        console.log('about controller');
-        if ($location.path() === '/about') {
+        //if ($location.path() === '/about') {
             $state.go('about.science');
-        }
+        //}
         $scope.isActive = function (tab) {
             return tab === $location.path();
         };
     })
     .controller("PeopleController", function ($scope, $state, $location, $http) {
+
+        $state.go('people.faculty');
         $http.get('assets/img/people/faculty.json').success(function (response) {
             $scope.faculty = response;
             return response
@@ -106,11 +107,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             $scope.students = response;
             return response
         });
-        $state.go('people.faculty');
         $scope.isActive = function (tab) {
             return tab === $location.path();
         };
     })
+
     .controller("PublicationsController", function ($scope, $state, $location) {
         $state.go('publications.publications1');
         $scope.isActive = function (tab) {
