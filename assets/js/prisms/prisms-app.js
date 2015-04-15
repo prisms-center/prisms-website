@@ -29,10 +29,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             url: '/contact',
             templateUrl: 'partials/contact.html'
         })
-        .state('about.overview', {
-            url: '/overview',
-            templateUrl: 'partials/overview.html'
-        })
         .state('about.ctools', {
             url: '/computationaltools',
             templateUrl: 'partials/computational_tools.html'
@@ -44,10 +40,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         .state('about.science', {
             url: '/science',
             templateUrl: 'partials/science.html'
-        })
-        .state('about.collaborators', {
-            url: '/collaborators',
-            templateUrl: 'partials/collaborators.html'
         })
         .state('people.faculty', {
             url: '/faculty',
@@ -94,7 +86,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
     .controller("AboutController", function ($scope, $location, $state) {
         if($location.path() === '/about') {
-            $state.go('about.overview');
+            $state.go('about.science');
         }
         $scope.isActive = function (tab) {
             return tab === $location.path();
@@ -124,4 +116,3 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         return tab === $location.path();
     };
 });
-
