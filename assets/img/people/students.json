@@ -1,0 +1,93 @@
+[
+  {
+    "title": "",
+    "first_name": "Ellen",
+    "last_name": "Sitzmann",
+    "email": "esitzmann@gmail.com",
+    "research": "",
+    "advisor": "Emanuelle Marquis",
+    "image": "assets/img/people/Ellen_Sitzmann.png",
+    "blurb":"My thesis work focuses on quantifying the effects of alloying elements, aging time, and temperature on the precipitation mechanisms and kinetics in Mg-Rare Earth alloys, using techniques such as transmission electron microscopy and atom probe tomography. Within the collaborative framework of PRIMS, my research will further our understanding of precipitation processes and contribute to a complete thermodynamic and kinetic description of Mg alloys."
+  },
+  {
+    "title": "",
+    "first_name": "Jacob",
+    "last_name": "Adams",
+    "email": "jfadams@umich.edu",
+    "research": "",
+    "advisor": "John Allison & Wayne Jones",
+    "image": "assets/img/people/jfadams.jpg",
+    "blurb":"I am studying the very high cycle fatigue behavior and crack propagation mechanisms in magnesium. In the PRISMS program, this work serves to identify critical mechanisms and phenomena necessary for the development of computational models dealing with fatigue crack growth, as well as validating results from computational models as they are developed. "
+  },
+  {
+    "title": "",
+    "first_name": "Phani",
+    "last_name": "Motamarri",
+    "email": "phanim@umich.edu",
+    "research": "",
+    "advisor": "Vikram Gavini",
+    "blurb": " As a part of PRISMS program, I am involved in the development of an open source code for real-space Kohn-Sham DFT calculations within the computational framework of PRISMS. I intend to use the computational tool developed to study the dislocation properties of Magnesium and its binary alloys using real space Kohn-Sham DFT. ",
+    "image": "assets/img/people/Phani_Motamarri.jpg"
+  },
+  {
+    "title": "",
+    "first_name": "Sambit",
+    "last_name": "Das",
+    "email": "dsambit@umich.edu",
+    "research": "",
+    "advisor": "Vikram Gavini",
+    "image": "assets/img/people/SambitDas.jpg",
+    "blurb":" I am developing a computational framework for explicit large scale electronic structure calculations of crystalline materials using a real space implementation of the Orbital Free Density Functional Theory. My aim is to study the energetics and mobility of edge and screw dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al alloys."
+  },
+  {
+    "title": "",
+    "first_name": "Sriram",
+    "last_name": "Ganesan",
+    "email": "sriramg@umich.edu",
+    "research": "",
+    "advisor": "Veera Sundararaghavan",
+    "image": "assets/img/people/Sriram.jpg",
+    "blurb":"I am involved in integrating Crystal Plasticity Finite Element Method (CPFEM) into the PRISMS framework. Crystal plasticity methods are used to simulate the response of aggregates of crystals to an applied stress. My current research is focused on developing improved constitutive models which can connect the physics of dislocations with the hardening rates used in CPFEM calculations. "
+  },
+  {
+    "title": "Dr.",
+    "first_name": "Jiashi",
+    "last_name": "Miao",
+    "email": "miaojias@umich.edu",
+    "research": "",
+    "advisor": "John Allison",
+    "image": "assets/img/people/Jiashi.jpg",
+    "blurb":"My research focuses on characterization of grain boundary precipitation and grain boundary precipitate-free zone in magnesium alloys. These quantitative characterization results will be used for computational modeling and simulation. "
+  },
+  {
+    "title": "",
+    "first_name": "Chia-Hui",
+    "last_name": "Hsieh",
+    "email": "chiahuih@umich.edu",
+    "research": "",
+    "advisor": "",
+    "image": "assets/img/people/chia.jpg",
+    "blurb":"Chia-Hui is a UX/UI designer who is experienced in designing useful, pleasant and engaging user interfaces. She's passionate about understanding users' needs and using design to solve problems and create better user experience. "
+  },
+  {
+    "title": "",
+    "first_name": "Huaying",
+    "last_name": "Song",
+    "email": "huaying@umich.edu",
+    "research": "",
+    "advisor": "",
+    "image": "assets/img/people/iris.jpg",
+    "blurb":"Huaying is a UX/UI designer. Her passion lies in creating appealing visuals and smooth user experiences across all touchpoints. She is working on the user experience and web interface design for the PRISMS website and the Materials Commons platform. "
+  },
+  {
+    "title": "",
+    "first_name": "Greg",
+    "last_name": "Teichert",
+    "email": "gregteichert@gmail.edu",
+    "research": "",
+    "advisor": "Krishna Garikipati",
+    "image": "assets/img/people/greg.jpg",
+    "blurb":"My work involves modeling continuum elastoplasticity using the finite element method. One standout feature of this project is the integration with crystal plasticity models. This allows the user to extract information from a micro scale crystal plasticity model (such as the hardening curve) and apply it in on the macro scale using continuum plasticity."
+  }
+
+]

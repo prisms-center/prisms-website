@@ -1,0 +1,32 @@
+[
+  {
+    "title": "  -  Senior Developer",
+    "first_name": "Glenn",
+    "last_name": "Tarcea",
+    "email": "gtarcea@umich.edu",
+    "research": "",
+    "advisor": "",
+    "blurb":"Glenn has been involved with computers since 1988 when he discovered Turbo Pascal. He has worked on projects ranging from student account systems to distributed storage and backup systems. In 2009 Glenn completed his MBA at the University of Michigan's Ross School of Business. ",
+    "image": "assets/img/people/glenn_tarcea.jpg"
+  },
+  {
+    "title": "  -  Developer",
+    "first_name": "Sravya",
+    "last_name": "Tamma",
+    "email": "tammasr@umich.edu",
+    "research": "",
+    "advisor": "",
+    "blurb":"Sravya received Masters Degree in Bioinformatics. She had experience in developing novel tools to track the work flow, experimental stages and results. Currently her work is focussed on design and development of web-based work flow management software for Materials Commons.",
+    "image": "assets/img/people/sravya_tamma.jpg"
+  },
+  {
+    "title": "  - Administrative Assistant",
+    "first_name": "Ellen",
+    "last_name": "Kampf",
+    "email": "ekampf@umich.edu",
+    "research": "",
+    "advisor": "",
+    "blurb": "",
+    "image": "assets/img/people/ellen_kampf.png"
+  }
+]
