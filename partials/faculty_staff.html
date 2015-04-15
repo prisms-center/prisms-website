@@ -1,18 +1,15 @@
 <div class="people-area">
     <h2 id="facultystaff" style="padding-top: 120px; margin-top: -70px;">Faculty and Staff</h2>
-    <!--Start of one person-->
     <div class="people-container row">
-        <!--People Portrait-->
         <div class="people-pic col-xs-3">
             <div class="vertical-center"><img class="portrait" src="assets/img/people/John_Allison.jpg"
                                               alt="John_Allison">
             </div>
         </div>
-
-        <!--People Description-->
+        <!--Director-->
         <div class="people-description col-xs-9">
             <div class="vertical-center">
-                <h4 class="people-title">Dr. John Allison - Center Director</h4>
+                <h4 class="people-title">Professor:  John Allison - Center Director</h4>
 
                 <p>Email: <a class="main_link" href="mailto:johnea@umich.edu">johnea@umich.edu</a></p>
 
@@ -30,454 +27,52 @@
             </div>
         </div>
     </div>
-    <!--End of one person-->
 
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/krishna2.jpg"
-                                              alt="Krishna Garikipati">
+    <div ng-repeat="person in faculty | orderBy: 'last_name'">
+        <div class="people-container row">
+            <div class="people-pic col-xs-3">
+                <div class="vertical-center"><img class="portrait" src="{{person.image}}"
+                                                  alt="{{person.first_name}} {{person.last_name}}">
+                </div>
             </div>
-        </div>
+            <!--People Description-->
+            <div class="people-description col-xs-9">
+                <div class="vertical-center">
+                    <h4 class="people-title">{{person.title }}  {{person.first_name}} {{person.last_name}}</h4>
 
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Krishna Garikipati</h4>
+                    <p>Email: <a class="main_link" href="mailto:{{person.email}}">{{person.email}}</a></p>
+                    <p>Research: <a class="main_link" href="http://www-personal.umich.edu/~krishna/"
+                                    target="_blank">{{person.research}}</a></p>
 
-                <p>Email: <a class="main_link" href="mailto:krishna@umich.edu">krishna@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://www-personal.umich.edu/~krishna/"
-                                target="_blank">http://www-personal.umich.edu/~krishna/</a></p>
-
-                <p>
-                    Broadly, my research interests are in developing mathematical and computational models of
-                    physical systems. With relevance to the PRISMS Center this consists of continuum scale
-                    models of coupled mechano-chemical phenomena in materials physics.
-                </p>
+                    <p>
+                      {{person.blurb}}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <!--End of one person-->
 
-    <!--Student-->
-    <!--<h3 id="student" class="tab-content-title">Student</h3>-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/vikramg.jpg"
-                                              alt="Vikram Gavini">
+    <div ng-repeat="person in staff | orderBy: 'last_name'">
+        <div class="people-container row">
+            <div class="people-pic col-xs-3">
+                <div class="vertical-center"><img class="portrait" src="{{person.image}}"
+                                                  alt="{{person.first_name}} {{person.last_name}}">
+                </div>
             </div>
-        </div>
+            <!--People Description-->
+            <div class="people-description col-xs-9">
+                <div class="vertical-center">
+                    <h4 class="people-title">{{person.first_name}} {{person.last_name}} {{person.title }} </h4>
 
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Vikram Gavini</h4>
+                    <p>Email: <a class="main_link" href="mailto:{{person.email}}">{{person.email}}</a></p>
+                    <p>Research: <a class="main_link" href="http://www-personal.umich.edu/~krishna/"
+                                    target="_blank">{{person.research}}</a></p>
 
-                <p>Email: <a class="main_link" href="mailto:vikramg@umich.edu">vikramg@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://www-personal.umich.edu/~vikramg/index.html"
-                                target="_blank">http://www-personal.umich.edu/~vikramg/index.html</a></p>
-
-                <p>
-                    Developing computational and mathematical tools for electronic structure calculations at
-                    macroscopic scales, multi-scale modeling, analysis of approximation theories, electronic
-                    structure studies on defects in solids.
-                </p>
+                    <p>
+                        {{person.blurb}}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <!--End of one person-->
-
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Katsuyo_Thornton.jpg"
-                                              alt="Katsuyo_Thornton">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Katsuyo Thornton</h4>
-
-                <p>Email: <a class="main_link" href="mailto:kthorn@umich.edu">kthorn@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://www.mse.engin.umich.edu/people/faculty/thornton"
-                                target="_blank">http://www.mse.engin.umich.edu/people/faculty/thornton</a></p>
-
-                <p>
-                    My research focuses on computational and theoretical investigations of the evolution of
-                    microstructures and nanostructures during processing and operation. These investigations
-                    facilitate the understanding of the underlying physics of materials to aid us in designing
-                    advanced materials with desirable properties and in developing manufacturing processes that
-                    are the most cost-effective.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Anton_Van der Ven.jpg"
-                                              alt="Anton_Van der Ven">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Anton Van der Ven</h4>
-
-                <p>Email: <a class="main_link" href="mailto:avdv@umich.edu">avdv@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://www.mse.engin.umich.edu/people/faculty/vanderven"
-                                target="_blank">http://www.mse.engin.umich.edu/people/faculty/vanderven</a></p>
-
-                <p>
-                    I am interested in understanding and predicting equilibrium and non-equilibrium materials
-                    properties from first-principles. I combine electronic structure methods (density functional
-                    theory) with techniques from statistical mechanics to calculate thermodynamic and kinetic
-                    properties of new materials.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/veera2.jpg"
-                                              alt="Veera Sundararaghavan">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Veera Sundararaghavan</h4>
-
-                <p>Email: <a class="main_link" href="mailto:veeras@umich.edu">veeras@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://www-personal.umich.edu/~veeras/" target="_blank">http://www-personal.umich.edu/~veeras/</a>
-                </p>
-
-                <p>
-                    Prof. Sundararaghavan develops multi-scale computational methods for polycrystalline alloys,
-                    fiber reinforced composites, metallic foams and ultra-high temperature ceramics to model the
-                    effect of microstructure on the overall deformation, fatigue, failure, thermal transport and
-                    oxidation response.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/rudraa.jpg"
-                                              alt="Shiva Rudraraju">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Shiva Rudraraju</h4>
-
-                <p>Email: <a class="main_link" href="mailto:rudraa@umich.edu">rudraa@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://www-personal.umich.edu/~rudraa/" target="_blank">http://www-personal.umich.edu/~rudraa/</a>
-                </p>
-
-                <p>
-                    My current research involves analytical and computational modeling of coupled multiscale*
-                    phenomena in material physics and biology, spanning mechanics, transport, thermodynamics and
-                    phase transitions. Specifically, I am investigating chemo-mechanical coupling of phase
-                    transformations involved in battery materials.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/brian.jpg"
-                                              alt="Brian Puchala">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Brian Puchala</h4>
-
-                <p>Email: <a class="main_link" href="mailto:bpuchala@umich.edu">bpuchala@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="" target="_blank"></a></p>
-
-                <p>
-                    My research is focused on computational materials modeling of the thermodynamics and
-                    kinetics of solid-state atomistic processes through the development of new automated
-                    computational tools. In particular, I am developing Monte Carlo methods which I use for
-                    fundamental studies of phase transitions and precipitate formation in metal alloys.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/LarryAagesen.jpg"
-                                              alt="Larry Aagesen">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Larry Aagesen</h4>
-
-                <p>Email: <a class="main_link" href="mailto:laagesen@umich.edu">laagesen@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="" target="_blank"></a></p>
-
-                <p>
-                    My research interests are in the use of theoretical and computational techniques to study
-                    the evolution of microstructures and nanostructures during phase transformations,
-                    coarsening, and crystal growth, and how evolution by these processes affects material
-                    properties. Within the PRISMS Center, I am applying the phase-field method to investigate
-                    the formation of precipitates in magnesium alloys, and how interfacial energy, elastic
-                    misfit energy, and growth kinetics interact to affect microstructure.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/J. Wayne_Jones.jpg"
-                                              alt="Wayne Jones">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Wayne Jones</h4>
-
-                <p>Email: <a class="main_link" href="mailto:jonesjwa@umich.edu">jonesjwa@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://www.mse.engin.umich.edu/people/faculty/jones"
-                                target="_blank">http://www.mse.engin.umich.edu/people/faculty/jones</a></p>
-
-                <p>
-                    My research area if focused on the mechanical behavior of structural metal alloys and
-                    specifically on fatigue and creep. For the past three years my group has been involved in
-                    using ultrasonic fatigue to examine the very high cycle fatigue behavior of magnesium,
-                    aluminum, titanium alloys and nickel-base superalloys.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Emmanuelle_Marquis.jpg"
-                                              alt="Emmanuelle Marquis">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Emmanuelle Marquis</h4>
-
-                <p>Email: <a class="main_link" href="mailto:emarq@umich.edu">emarq@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="https://sites.google.com/a/umich.edu/marquisgroup/"
-                                target="_blank">https://sites.google.com/a/umich.edu/marquisgroup/</a></p>
-
-                <p>
-                    Research focuses on understanding and quantifying the mechanisms controlling microstructural
-                    evolution in alloy systems (including light alloys), interfacial properties, oxidation
-                    behavior and irradiation effects in materials. To complement her experimental work, she
-                    forges close ties to groups in computational and theoretical materials science.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Samantha_Daly.jpg"
-                                              alt="Samantha Daly">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Samantha Daly</h4>
-
-                <p>Email: <a class="main_link" href="mailto:samdaly@umich.edu">samdaly@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://dalylabs.engin.umich.edu" target="_blank">http://dalylabs.engin.umich.edu</a>
-                </p>
-
-                <p>
-                    Research lies at the intersection of experimental mechanics and materials science, with an
-                    emphasis on using novel methods of experimentation coupled closely with theoretical and
-                    computational modeling. Group research focuses on the measurements of microstructural
-                    features of materials and the effect of microstructure on meso and macroscopic properties.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Jag-web.jpg"
-                                              alt="H.V. Jagadish">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. H.V. Jagadish</h4>
-
-                <p>Email: <a class="main_link" href="mailto:jag@umich.edu">jag@umich.edu</a></p>
-                <p>Research: <a class="main_link" href="http://web.eecs.umich.edu/~jag/" target="_blank">http://web.eecs.umich.edu/~jag/</a>
-                </p>
-
-                <p>
-                    My current research is centered around how to make database systems more usable,
-                    particularly when the data involved comes from multiple heterogeneous sources, and has
-                    undergone many manipulations. A related concern is how to design effective, usable database
-                    systems.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait"
-                                              src="assets/img/people/hedstrom_margaret_pp_1.jpg"
-                                              alt="Margaret Hedstrom">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Dr. Margaret Hedstrom</h4>
-
-                <p>Email: <a class="main_link" href="mailto:hedstrom@umich.edu">hedstrom@umich.edu</a></p>
-
-                <p>Research: <a class="main_link" href="http://www.si.umich.edu/people/margaret-hedstrom"
-                                target="_blank">http://www.si.umich.edu/people/margaret-hedstrom</a></p>
-
-                <p>
-                    My research focuses on the reuse of information and the cyberinfrastructure necessary to
-                    enable easy exchange of data across disciplines and over time. I am the PI and Project
-                    Director for the Open Data IGERT (NSF 0903629) that engages PhD students and faculty at
-                    Michigan from Information Science, Computer Science, Materials Science, Chemical Engineering
-                    and Bioinformatics in a sustained investigation into the technologies, tools, standards,
-                    practices and cultural change.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/glenn_tarcea.jpg"
-                                              alt="Glenn Tarcea">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">V. Glenn Tarcea - Senior Developer</h4>
-
-                <p>Email: <a class="main_link" href="mailto: gtarcea@umich.edu">gtarcea@umich.edu</a></p>
-
-                <p>Research: <a class="main_link" href="" target="_blank"></a></p>
-
-                <p>
-                    Glenn has been involved with computers since 1988 when he discovered Turbo Pascal. He has
-                    worked on projects ranging from student account systems to distributed storage and backup
-                    systems. In 2009 Glenn completed his MBA at the University of Michigan's Ross School of
-                    Business.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/sravya_tamma.jpg"
-                                              alt="Sravya Tamma">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Sravya Tamma</h4>
-
-                <p>Email: <a class="main_link" href="mailto: tammasr@umich.edu">tammasr@umich.edu</a></p>
-
-                <p>Research: <a class="main_link" href="" target="_blank"></a></p>
-
-                <p>
-                    I received my graduation in Bioinformatics from University of Texas El Paso in 2010. And
-                    then worked as a Bioinformatician for 3 years where i was involved in developing novel tools
-                    to track the work flow, experimental stages and results. Currently my work is focussed on
-                    design and development of web-based work flow management software for Materials Commons
-                    domain.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/ellen_kampf.png"
-                                              alt="Ellen Kampf">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Ellen Kampf - Administrative Assistant</h4>
-
-                <p>Email: <a class="main_link" href="mailto: ekampf@umich.edu">ekampf@umich.edu</a></p>
-
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
 </div>

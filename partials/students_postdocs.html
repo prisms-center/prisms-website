@@ -1,259 +1,29 @@
 <div class="people-area">
     <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="overview">Students &amp;
         Post-Docs</h2>
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Ellen_Sitzmann.png"
-                                              alt="Ellen Sitzmann">
+    <div ng-repeat="student in students | orderBy: 'last_name'">
+        <div class="people-container row">
+            <!--People Portrait-->
+            <div class="people-pic col-xs-3">
+                <div class="vertical-center"><img class="portrait" src="{{student.image}}"
+                                                  alt="{{student.first_name}} {{student.last_name}}">
+                </div>
             </div>
-        </div>
 
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Ellen Sitzmann</h4>
+            <!--People Description-->
+            <div class="people-description col-xs-9">
+                <div class="vertical-center">
+                    <h4 class="people-title">{{student.title}}{{student.first_name}} {{student.last_name}}</h4>
 
-                <p>Email: <a class="main_link" href="mailto: esitzmann@gmail.com">esitzmann@gmail.com</a></p>
+                    <p>Email: <a class="main_link" href="mailto: {{student.email}}">{{student.email}}</a></p>
+                     <p>Advisor: {{student.advisor}}</p>
+                    <p>Research: <a class="main_link" href=""></a></p>
 
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>
-                    My thesis work focuses on quantifying the effects of alloying elements, aging time, and
-                    temperature on the precipitation mechanisms and kinetics in Mg-Rare Earth alloys, using
-                    techniques such as transmission electron microscopy and atom probe tomography. Within the
-                    collaborative framework of PRIMS, my research will further our understanding of
-                    precipitation processes and contribute to a complete thermodynamic and kinetic description
-                    of Mg alloys.
-                </p>
+                    <p>
+                        {{student.blurb}}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <!--End of one person-->
-
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/jfadams.jpg"
-                                              alt="Jake Adams">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Jacob Adams</h4>
-
-                <p>Email: <a class="main_link" href="mailto: jfadams@umich.edu">jfadams@umich.edu</a></p>
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>
-                    I am studying the very high cycle fatigue behavior and crack propagation mechanisms in
-                    magnesium. In the PRISMS program, this work serves to identify critical mechanisms and
-                    phenomena necessary for the development of computational models dealing with fatigue crack
-                    growth, as well as validating results from computational models as they are developed.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Phani_Motamarri.jpg"
-                                              alt="Phani Motamarri">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Phani Motamarri</h4>
-
-                <p>Email: <a class="main_link" href="mailto: phanim@umich.edu">phanim@umich.edu</a></p>
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>
-                    As a part of PRISMS program, I am involved in the development of an open source code for
-                    real-space Kohn-Sham DFT calculations within the computational framework of PRISMS. I intend
-                    to use the computational tool developed to study the dislocation properties of Magnesium and
-                    its binary alloys using real space Kohn-Sham DFT.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/SambitDas.jpg"
-                                              alt="Sambit Das">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Sambit Das</h4>
-
-                <p>Email: <a class="main_link" href="mailto: dsambit@umich.edu">dsambit@umich.edu</a></p>
-
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>
-                    I am developing a computational framework for explicit large scale electronic structure
-                    calculations of crystalline materials using a real space implementation of the Orbital Free
-                    Density Functional Theory. My aim is to study the energetics and mobility of edge and screw
-                    dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al
-                    alloys.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Sriram.jpg" alt="Sriram">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Sriram Ganesan</h4>
-
-                <p>Email: <a class="main_link" href="mailto: sriramg@umich.edu">sriramg@umich.edu</a></p>
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>
-                    I am involved in integrating Crystal Plasticity Finite Element Method (CPFEM) into the
-                    PRISMS framework. Crystal plasticity methods are used to simulate the response of aggregates
-                    of crystals to an applied stress. My current research is focused on developing improved
-                    constitutive models which can connect the physics of dislocations with the hardening rates
-                    used in CPFEM calculations.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/Jiashi.jpg" alt="Jiashi">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Jiashi Miao</h4>
-
-                <p>Email: <a class="main_link" href="mailto: miaojias@umich.edu">miaojias@umich.edu</a></p>
-
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>
-                    My research focuses on characterization of grain boundary precipitation and grain boundary
-                    precipitate-free zone in magnesium alloys. These quantitative characterization results will
-                    be used for computational modeling and simulation.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/chia.jpg" alt="Chia">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Chia-Hui Hsieh</h4>
-
-                <p>Email: <a class="main_link" href="mailto: chiahuih@umich.edu">chiahuih@umich.edu</a></p>
-
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>Chia-Hui is a UX/UI designer who is experienced in designing useful, pleasant and engaging user
-                    interfaces. She's passionate about understanding users' needs and using design to solve problems and
-                    create better user experience. </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/iris.jpg" alt="Iris">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Huaying Song</h4>
-
-                <p>Email: <a class="main_link" href="mailto: huaying@umich.edu">huaying@umich.edu</a></p>
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>
-                    Huaying is a UX/UI designer. Her passion lies in creating appealing visuals and smooth user
-                    experiences across all touchpoints. She is working on the user experience and web interface design
-                    for the PRISMS website and the Materials Commons platform.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
-    <!--Start of one person-->
-    <div class="people-container row">
-        <!--People Portrait-->
-        <div class="people-pic col-xs-3">
-            <div class="vertical-center"><img class="portrait" src="assets/img/people/greg.jpg" alt="Iris">
-            </div>
-        </div>
-
-        <!--People Description-->
-        <div class="people-description col-xs-9">
-            <div class="vertical-center">
-                <h4 class="people-title">Greg Teichert</h4>
-
-                <p>Email: <a class="main_link" href="mailto: gregteichert@gmail.edu">gregteichert@gmail.edu</a></p>
-
-                <p>Advisor: <a class="main_link">Krishna Garikipati</a></p>
-
-                <p>Research: <a class="main_link" href=""></a></p>
-
-                <p>My work involves modeling continuum elastoplasticity using the
-                    finite element method. One standout feature of this project is the integration with crystal
-                    plasticity models. This allows the user to extract information from a micro scale crystal plasticity
-                    model (such as the hardening curve) and apply it in on the macro scale using continuum
-                    plasticity.</p>
-            </div>
-        </div>
-    </div>
-    <!--End of one person-->
 </div>

@@ -92,7 +92,19 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             return tab === $location.path();
         };
     })
-    .controller("PeopleController", function ($scope, $state, $location) {
+    .controller("PeopleController", function ($scope, $state, $location, $http) {
+       $http.get('assets/img/people/faculty.json').success(function(response){
+           $scope.faculty = response;
+            return response
+        });
+        $http.get('assets/img/people/staff.json').success(function(response){
+            $scope.staff = response;
+            return response
+        });
+        $http.get('assets/img/people/students.json').success(function(response){
+            $scope.students = response;
+            return response
+        });
         $state.go('people.faculty');
         $scope.isActive = function (tab) {
             return tab === $location.path();
