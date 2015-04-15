@@ -1,6 +1,6 @@
 [
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Krishna",
     "last_name": "Garikipati",
     "email": "krishna@umich.edu",
@@ -10,7 +10,7 @@
     "image": "assets/img/people/krishna2.jpg"
   },
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Vikram",
     "last_name": "Gavini",
     "email": "vikramg@umich.edu",
@@ -20,7 +20,7 @@
     "image": "assets/img/people/vikramg.jpg"
   },
   {
-    "title": "Professor: :",
+    "title": "Professor :",
     "first_name": "Katsuyo",
     "last_name": "Thornton",
     "email": "kthorn@umich.edu",
@@ -30,7 +30,7 @@
     "image": "assets/img/people/Katsuyo_Thornton.jpg"
   },
   {
-    "title": "Professor:",
+    "title": "Professor",
     "first_name": "Anton",
     "last_name": "Van der Ven",
     "email": "avdv@umich.edu",
@@ -40,7 +40,7 @@
      "blurb": " I am interested in understanding and predicting equilibrium and non-equilibrium materials properties from first-principles. I combine electronic structure methods (density functional theory) with techniques from statistical mechanics to calculate thermodynamic and kinetic properties of new materials"
   },
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Veera",
     "last_name": "Sundararaghavan",
     "email": "veeras@umich.edu",
@@ -80,7 +80,7 @@
     "blurb": "My research interests are in the use of theoretical and computational techniques to study the evolution of microstructures and nanostructures during phase transformations, coarsening, and crystal growth, and how evolution by these processes affects material properties. Within the PRISMS Center, I am applying the phase-field method to investigate the formation of precipitates in magnesium alloys, and how interfacial energy, elastic misfit energy, and growth kinetics interact to affect microstructure."
   },
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Wayne",
     "last_name": "Jones",
     "email": "jonesjwa@umich.edu",
@@ -90,7 +90,7 @@
     "blurb":"My research area if focused on the mechanical behavior of structural metal alloys and specifically on fatigue and creep. For the past three years my group has been involved in using ultrasonic fatigue to examine the very high cycle fatigue behavior of magnesium, aluminum, titanium alloys and nickel-base superalloys."
   },
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Emmanuelle",
     "last_name": "Marquis",
     "email": "emarq@umich.edu",
@@ -100,7 +100,7 @@
     "blurb" : "Research focuses on understanding and quantifying the mechanisms controlling microstructural evolution in alloy systems (including light alloys), interfacial properties, oxidation behavior and irradiation effects in materials. To complement her experimental work, she forges close ties to groups in computational and theoretical materials science."
   },
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Samantha",
     "last_name": "Daly",
     "email": "samdaly@umich.edu",
@@ -110,9 +110,9 @@
     "blurb": "Research lies at the intersection of experimental mechanics and materials science, with an emphasis on using novel methods of experimentation coupled closely with theoretical and computational modeling. Group research focuses on the measurements of microstructural features of materials and the effect of microstructure on meso and macroscopic properties."
   },
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Jagadish",
-    "last_name": "H.V",
+    "last_name": "H.V.",
     "email": "jag@umich.edu",
     "research": "http://web.eecs.umich.edu/~jag/",
     "advisor": "",
@@ -121,7 +121,7 @@
   },
 
   {
-    "title": "Professor: ",
+    "title": "Professor ",
     "first_name": "Margaret",
     "last_name": "Hedstrom",
     "email": "hedstrom@umich.edu",
