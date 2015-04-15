@@ -85,7 +85,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     })
 
     .controller("AboutController", function ($scope, $location, $state) {
-        if($location.path() === '/about') {
+        console.log('about controller');
+        if ($location.path() === '/about') {
             $state.go('about.science');
         }
         $scope.isActive = function (tab) {
@@ -93,15 +94,15 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         };
     })
     .controller("PeopleController", function ($scope, $state, $location, $http) {
-       $http.get('assets/img/people/faculty.json').success(function(response){
-           $scope.faculty = response;
+        $http.get('assets/img/people/faculty.json').success(function (response) {
+            $scope.faculty = response;
             return response
         });
-        $http.get('assets/img/people/staff.json').success(function(response){
+        $http.get('assets/img/people/staff.json').success(function (response) {
             $scope.staff = response;
             return response
         });
-        $http.get('assets/img/people/students.json').success(function(response){
+        $http.get('assets/img/people/students.json').success(function (response) {
             $scope.students = response;
             return response
         });
@@ -110,9 +111,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             return tab === $location.path();
         };
     })
-.controller("PublicationsController", function ($scope, $state, $location) {
-    $state.go('publications.publications1');
-    $scope.isActive = function (tab) {
-        return tab === $location.path();
-    };
-});
+    .controller("PublicationsController", function ($scope, $state, $location) {
+        $state.go('publications.publications1');
+        $scope.isActive = function (tab) {
+            return tab === $location.path();
+        };
+    });
