@@ -5,8 +5,9 @@
         <div class="people-container row">
             <!--People Portrait-->
             <div class="people-pic col-xs-3">
-                <div class="vertical-center"><img class="portrait" src="{{student.image}}"
-                                                  alt="{{student.first_name}} {{student.last_name}}">
+                <div class="vertical-center">
+                    <img class="portrait" ng-src="{{student.image}}"
+                         alt="{{student.first_name}} {{student.last_name}}">
                 </div>
             </div>
 
@@ -16,7 +17,7 @@
                     <h4 class="people-title">{{student.title}}{{student.first_name}} {{student.last_name}}</h4>
 
                     <p>Email: <a class="main_link" href="mailto: {{student.email}}">{{student.email}}</a></p>
-                     <p ng-if="student.advisor">Advisor: {{student.advisor}}</p>
+                    <p ng-if="student.advisor">Advisor: {{student.advisor}}</p>
                     <p ng-if="student.research">Research: <a class="main_link" href=""></a></p>
 
                     <p>

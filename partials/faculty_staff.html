@@ -31,8 +31,9 @@
     <div ng-repeat="person in faculty | orderBy: 'last_name'">
         <div class="people-container row">
             <div class="people-pic col-xs-3">
-                <div class="vertical-center"><img class="portrait" src="{{person.image}}"
-                                                  alt="{{person.first_name}} {{person.last_name}}">
+                <div class="vertical-center">
+                    <img class="portrait" ng-src="{{person.image}}"
+                         alt="{{person.first_name}} {{person.last_name}}">
                 </div>
             </div>
             <!--People Description-->
@@ -42,10 +43,10 @@
 
                     <p>Email: <a class="main_link" href="mailto:{{person.email}}">{{person.email}}</a></p>
                     <p ng-if="person.research">Research: <a  class="main_link" href="http://www-personal.umich.edu/~krishna/"
-                                    target="_blank">{{person.research}}</a></p>
+                                                             target="_blank">{{person.research}}</a></p>
 
                     <p>
-                      {{person.blurb}}
+                        {{person.blurb}}
                     </p>
                 </div>
             </div>
@@ -55,8 +56,10 @@
     <div ng-repeat="person in staff | orderBy: 'last_name'">
         <div class="people-container row">
             <div class="people-pic col-xs-3">
-                <div class="vertical-center"><img class="portrait" src="{{person.image}}"
-                                                  alt="{{person.first_name}} {{person.last_name}}">
+                <div class="vertical-center">
+                    {{person.image}}
+                    <img class="portrait" ng-src="{{person.image}}"
+                         alt="{{person.first_name}} {{person.last_name}}">
                 </div>
             </div>
             <!--People Description-->
@@ -66,7 +69,7 @@
 
                     <p>Email: <a class="main_link" href="mailto:{{person.email}}">{{person.email}}</a></p>
                     <p ng-if="person.research">Research: <a class="main_link" href="http://www-personal.umich.edu/~krishna/"
-                                    target="_blank">{{person.research}}</a></p>
+                                                            target="_blank">{{person.research}}</a></p>
 
                     <p>
                         {{person.blurb}}
