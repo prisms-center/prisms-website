@@ -1,15 +1,19 @@
 /* Index page navigation bar CSS
 -------------------------------------------------- */
-.nav_wrap{
+.nav_wrap {
   background-color: #2c5c84;
   -moz-box-shadow:    0px 0px 1px 2px rgba(0,0,0,.3);
   -webkit-box-shadow: 0px 0px 1px 2px rgba(0,0,0,.3);
   box-shadow:         0px 0px 1px 2px rgba(0,0,0,.3);
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
-                                                                                      color: #fff;
-                                                                                      background-color: #4e89bd;
-                                                                                    }
+.navbar-default
+.navbar-nav>.active>a,
+.navbar-default
+ .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: #4e89bd;
+}
 
 .navbar-default .navbar-nav>li>a {
   color: #fff;
@@ -24,26 +28,29 @@
   background: rgba(255,255,255,.1);
   color: #fff;
 }
-.navbar-default{
+
+.navbar-default {
   border: none;
 }
 
 /*--------------General------------*/
-a{
+a {
   color: #2c5c84;
 }
-a:hover, a:focus{
-           color: #031d80;
-         }
 
-.main_container{
+a:hover,
+a:focus {
+  color: #031d80;
+}
+
+.main_container {
   width: 100%;
   padding-top: 30px;
 }
 /*Home Page
 ---------------------------------------*/
 /*---------------Main Picture----------*/
-.main_pic{
+.main_pic {
   height:200px;
   background: url('../img/main_pic.png');
   background-size: 100%;
@@ -51,16 +58,21 @@ a:hover, a:focus{
   background-attachment: fixed;
 }
 /*--------------Main Area--------------*/
-.main_area{
+.main_area {
   background-color: #fff;
-  margin-top: -7em;
+  margin-top: -11em;
   margin-bottom: 1em;
   -moz-box-shadow:    4px 4px 4px 2px rgba(0,0,0,.1);
   -webkit-box-shadow: 4px 4px 4px 2px rgba(0,0,0,.1);
   box-shadow:         4px 4px 4px 2px rgba(0,0,0,.1);
 }
 
-.main-top, .main_middle, .main_bottom{
+.container.subpage {
+  margin-top: 50px;
+  padding: 0 15px;
+}
+
+.main-top, .main_middle, .main_bottom {
   height: 100%;
   width: 80%;
   position: relative;
@@ -68,19 +80,19 @@ a:hover, a:focus{
   padding-top: 1em;
 }
 
-.main_middle{
+.main_middle {
   border-top: 1px solid #ccc;
   /*border-bottom: 1px solid #ccc; */
 }
 /*--------------Circles---------------*/
-#circles{
+#circles {
   position:relative;
   padding-top:100;
   padding-left: 4%;
   width: 300px;
   height: 300px;
 }
-.circle_mc, .circle_code, .circle_sci{
+.circle_mc, .circle_code, .circle_sci {
   z-index: 10;
   position: absolute;
   -moz-border-radius: 50%;
@@ -94,21 +106,23 @@ a:hover, a:focus{
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
-.circle_mc:hover, .circle_code:hover, .circle_sci:hover{
-                                        opacity: 1;
-                                        z-index: 11;
-                                        cursor: pointer;
-                                      }
-.circle_text{
+.circle_mc:hover,
+.circle_code:hover,
+.circle_sci:hover {
+  opacity: 1;
+  z-index: 11;
+  cursor: pointer;
+}
+.circle_text {
   margin-top: 30%;
   display: table;
   width: 100%;
 }
-.circle_mc>.circle_text{
+.circle_mc>.circle_text {
   margin-top: 40%;
 }
 
-.circle_text h4{
+.circle_text h4 {
   display: inline-block;
   display: table-cell;
   vertical-align: middle;
@@ -119,23 +133,23 @@ a:hover, a:focus{
   font-weight: 300;
 }
 
-.circle_mc{
+.circle_mc {
   background-color: #cfc091;
   margin-top: 44%;
   margin-left: 62%;
 }
-.circle_code{
+.circle_code {
   background-color: #9b9a67;
   margin-top: 44%;
   margin-left: 23%;
 }
-.circle_sci{
+.circle_sci {
   background-color: #a79d95;
   margin-top: 11%;
   margin-left: 42%;
 
 }
-.transparent{
+.transparent {
   /* IE 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 
@@ -156,7 +170,7 @@ a:hover, a:focus{
 /* circle description
 ------------------------------------ */
 
-#circles_description{
+#circles_description {
   padding-top: 2.5em;
   padding-left: 10em;
   padding-right: 6em;
@@ -167,26 +181,26 @@ a:hover, a:focus{
   position: relative;
 }
 
-.cover{
+.cover {
   z-index: 12;
 }
 /* Overview
 ----------------------------------- */
 
-.main_link{
+.main_link {
   color:#4e89bd;
 }
 
-.main_link > a:hover{
+.main_link > a:hover {
   color:red ;
 }
 
-h2{
+h2 {
   color:#4e89bd;
   font-size: 24px;
 }
 
-.overview>p{
+.overview>p {
   color: #4d4d4d;
   font-size: 16px;
   line-height: 28px;
@@ -204,14 +218,14 @@ h2{
   padding:20px 80px;
 }
 /*--------------Tabs-------------*/
-.nav{
+.nav {
   border: none;
 }
 
 .content-menu {
   display: block;
   position: fixed;
-  top: 51px;
+  top: 50px;
   z-index: 10;
   background-color: #fcfcfc;
   -moz-box-shadow:    2px 2px 2px 1px rgba(0,0,0,.1);
@@ -223,26 +237,26 @@ h2{
   transition: top 0.2s ease-in-out;
 }
 
-.tab-item{
+.tab-item {
   font-size: 18px;
   padding: 0 2.0em;
 }
-.tab-item > a.active{
+.tab-item > a.active {
   font-weight: 300;
   color: #7dbdc0;
 }
-.tab-item>a:hover{
+.tab-item>a:hover {
   text-decoration: none;
   color: #031552;
 }
 
-.tab-item > a:focus{
+.tab-item > a:focus {
   outline: none;
   text-decoration: none;
 }
 
 
-.tab-content-details{
+.tab-content-details {
   color: #4d4d4d;
   font-size: 15px;
   line-height: 28px;
@@ -254,13 +268,13 @@ h2{
 
 /*About Page
 ---------------------------------------*/
-.about-area{
+.about-area {
   position: relative;
   padding: 50px 120px 10px;
   margin-bottom: 30px;
 }
 
-.about_list{
+.about_list {
   color: #4d4d4d;
   font-size: 15px;
   line-height: 28px;
@@ -268,79 +282,79 @@ h2{
 }
 
 
-.about_link{
+.about_link {
   color:#4e89bd ;
 }
 
-.anchor{
+.anchor {
   padding-top: 110px;
   margin-top: -100px;
 }
 
 
-.tab-content-subtitle{
+.tab-content-subtitle {
   color:#2c5c84;
   font-weight: bold;
 }
 /*People Page
 -------------------------------------------------- */
 
-.dropshadow{
+.dropshadow {
   background-color: #fff;
   -moz-box-shadow:    3px 3px 3px 2px rgba(0,0,0,.1);
   -webkit-box-shadow: 3px 3px 3px 2px rgba(0,0,0,.1);
   box-shadow:         3px 3px 3px 2px rgba(0,0,0,.1);
 }
-.people-area{
+.people-area {
   position: relative;
   padding: 50px 45px 10px;
   margin-bottom: 30px;
 }
-.people-container{
+.people-container {
   padding: 1.2em 1.8em;
   margin: 1em 0;
 }
-.people-title{
+.people-title {
   color:#2c5c84;
   padding-bottom: 7px;
 }
-.portrait{
+.portrait {
   width: 12em;
   height: 12em;
   border-radius: 50%;
 }
-.vertical-center{
+.vertical-center {
   display: table-cell;
   vertical-align: middle;
 }
-.people-pic{
+.people-pic {
   padding-left: 1em;
   display: table;
 }
 
-.people-description{
+.people-description {
   display: table;
   padding-right: .5em;
 }
 
-.people-description>p{
+.people-description>p {
   color: #4d4d4d;
   font-size: 14px;
   line-height: 23px;
 }
 /*----Hide/Show Nav When Scroll Down/Up----*/
 
-.nav-up{
+.nav-up {
   top: -15px;
 }
-.nav-down{
+.nav-down {
   top: 50px;
   z-index: 10;
 }
 
 /*Publication Page
 -------------------------------------------------- */
-.publications-area{
+.publications-area {
   /*position: relative;*/
   /*padding: 25px 120px 10px;*/
   /*margin-bottom: 30px;*/
@@ -348,25 +362,25 @@ h2{
   padding: 50px 45px 10px;
   margin-bottom: 30px;
 }
-.publication-list{
+.publication-list {
   padding-left:20px;
   font-size: 16px;
   line-height: 30px;
 }
 
-div p.publication-list:nth-of-type(odd){
+div p.publication-list:nth-of-type(odd) {
   border-left: 5px solid #2c5c84;
 }
 
-div p.publication-list:nth-of-type(even){
+div p.publication-list:nth-of-type(even) {
   border-left: 5px solid #999;
 }
 
-.publication-title{
+.publication-title {
   font-weight: bold;
 }
 
-.publication-detail{
+.publication-detail {
   font-style: oblique;
 }
 
@@ -375,7 +389,7 @@ div p.publication-list:nth-of-type(even){
 /*Links Page
 -------------------------------------------------- */
 
-.links-area{
+.links-area {
   position: relative;
   padding: 25px 120px 10px;
   margin-bottom: 30px;
@@ -384,7 +398,7 @@ div p.publication-list:nth-of-type(even){
 /*Contact Page
 -------------------------------------------------- */
 
-.contact-area{
+.contact-area {
   position: relative;
   padding: 25px 120px 10px;
   margin-bottom: 30px;
@@ -415,44 +429,44 @@ body {
   margin-top: 1.2em;
 }
 
-.footer_left, .footer_mid{
+.footer_left, .footer_mid {
   display: table;
   height: 120px;
 }
-.table-cell{
+.table-cell {
   display: table-cell;
   vertical-align: middle;
 }
-address{
+address {
   padding-left: 24px;
   margin-bottom: 10px;
   color:#fff;
   line-height: 21px;
   font-weight: 300;
 }
-.footer_img{
+.footer_img {
   display: inline-block;
   margin-right: 40px;
 }
-.footer_img img{
+.footer_img img {
   height: 40px;
 }
-.footer_mid{
+.footer_mid {
   margin-top: 1.5em;
   padding-right: 20px;
 }
-.footer_mid p{
+.footer_mid p {
   color: #f7f7f7;
   font-size: 14px;
   font-weight: 300;
 }
-.footerButtonWrap{
+.footerButtonWrap {
   position: fixed;
   bottom: 40px;
   right: 30px;
   z-index: 999;
 }
-.findOutMoreButton>.btn{
+.findOutMoreButton>.btn {
   border-radius: 50%;
   border: none;
   width: 42px;
@@ -463,19 +477,19 @@ address{
   -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,.1);
   box-shadow:         1px 1px 2px 1px rgba(0,0,0,.1);
 }
-.findOutMoreButton>.btn:focus{
+.findOutMoreButton>.btn:focus {
   outline: none;
 }
-.glyphicon{
+.glyphicon {
   color: #999;
 }
-.popover{
+.popover {
   position: fixed;
 }
-.popover-inner{
+.popover-inner {
   width: auto;
 }
-.popover-title{
+.popover-title {
   font-weight: 500;
   color: #333;
 }
@@ -498,4 +512,4 @@ body > .container {
 code {
   font-size: 80%;
 }
-@media (min-width:1200px){.container{width:1070px}}
+@media (min-width:1200px) {.container{width:1070px}}
