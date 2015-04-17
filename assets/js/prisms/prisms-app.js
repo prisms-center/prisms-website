@@ -348,6 +348,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "Krishna Garikipati",
                 "image": "assets/img/people/greg.jpg",
                 "blurb":"My work involves modeling continuum elastoplasticity using the finite element method. One standout feature of this project is the integration with crystal plasticity models. This allows the user to extract information from a micro scale crystal plasticity model (such as the hardening curve) and apply it in on the macro scale using continuum plasticity."
+            },
+            {
+                "title": "",
+                "first_name": "Anirudh Raju",
+                "last_name": "Natarajan ",
+                "email": "ranirudh@umich.edu@umich.edu",
+                "research": "",
+                "advisor": "Anton Van der Ven",
+                "image": "assets/img/people/Anirudh.jpg",
+                "blurb": "My research involves understanding precipitation and kinetics in Magnesium alloys using a combination of first-principles methods and techniques from statistical mechanics. I am also involved in the development of computational tools that will help provide a link between the atomistic and continuum scale."
             }
 
         ];
