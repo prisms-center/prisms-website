@@ -352,12 +352,32 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             {
                 "title": "",
                 "first_name": "Anirudh Raju",
-                "last_name": "Natarajan ",
-                "email": "ranirudh@umich.edu@umich.edu",
+                "last_name": "Natarajan",
+                "email": "ranirudh@umich.edu",
                 "research": "",
                 "advisor": "Anton Van der Ven",
                 "image": "assets/img/people/Anirudh.jpg",
                 "blurb": "My research involves understanding precipitation and kinetics in Magnesium alloys using a combination of first-principles methods and techniques from statistical mechanics. I am also involved in the development of computational tools that will help provide a link between the atomistic and continuum scale."
+            },
+            {
+                "title": "",
+                "first_name": "Jason",
+                "last_name": "Luce ",
+                "email": "jpluce@umich.edu",
+                "research": "",
+                "advisor": "Katsuyo Thornton",
+                "image": "assets/img/people/jason_luce.jpg",
+                "blurb": "My research within the PRISMS program focuses on the computational modeling of grain boundary energy and grain boundary dynamics in magnesium alloys. Specifically, I plan to apply the phase field crystal (PFC) model to calculate grain boundary energy as a function of grain misorientation for 2D hexagonal and 3D HCP structures. However, many aspects of the PFC model are still in development, and a large part of my research is centered on using the results of atomistic simulations (e.g., molecular dynamics) to parameterize the PFC model so that it describes physical systems more accurately. "
+            },
+            {
+                "title": "",
+                "first_name": "Christian",
+                "last_name": "Heinrich",
+                "email": "cheinric@umich.edu",
+                "research": "",
+                "advisor": "Veera Sundararaghavan",
+                "image": "assets/img/people/christian.jpg",
+                "blurb": "My research is focused on understanding how magnesium fails in the low cycle fatigue regime using a micromechanical approach. Specifically I investigate the creation and evolution of persistent slip bands using dislocation dynamics. The slip bands serve as a point of strain localization and subsequent failure. Tracking the irreversible evolution of dislocations, their accumulation within the slip band and their energetic state will help to predict when fatigue cracks emerge. The evolution of stress, strain and energy will serve as input to crystal elasticity and plasticity models used to investigate the fatigue behavior further on a longer time and length scales such as for polycrystals."
             }
 
         ];
