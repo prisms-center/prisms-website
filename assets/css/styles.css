@@ -352,12 +352,9 @@ h2 {
   z-index: 10;
 }
 
-/*Publication Page
+/* Publication Page
 -------------------------------------------------- */
 .publications-area {
-  /*position: relative;*/
-  /*padding: 25px 120px 10px;*/
-  /*margin-bottom: 30px;*/
   position: relative;
   padding: 50px 45px 10px;
   margin-bottom: 30px;
@@ -384,6 +381,13 @@ div p.publication-list:nth-of-type(even) {
   font-style: oblique;
 }
 
+/* Software Pages
+------------------------------------------ */
+.software-area {
+  position: relative;
+  padding: 50px 45px 10px;
+  margin-bottom: 30px;
+}
 
 
 /*Links Page

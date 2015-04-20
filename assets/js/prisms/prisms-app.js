@@ -15,6 +15,22 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             templateUrl: 'partials/about.html',
             controller: 'AboutController'
         })
+        .state('collaboration', {
+            url: '/collaboration',
+            templateUrl: 'partials/collaboration.html'
+        })
+        .state('software', {
+            url: '/software',
+            templateUrl: 'partials/software.html'
+        })
+        .state('software.computational', {
+            url:'/computational',
+            templateUrl: 'partials/software_computational.html'
+        })
+        .state('software.mcommons', {
+            url: '/mcommons',
+            templateUrl: 'partials/software_mcommons.html'
+        })
         .state('people', {
             url: '/people',
             templateUrl: 'partials/people.html',
