@@ -25,24 +25,32 @@
                 </div>
                 <div ng-click="viewCircle('les')" class="circle circle_sci transparent">
                     <div class="circle_text">
-                        <h4 style="padding-top: 4px;">Leading Edge Science<br>in Metals</h4>
+                        <h4 style="padding-top: 4px;">Integrated Science</h4>
                     </div>
                 </div>
-                <span id='indicator'><p style="position: absolute; bottom: 0; right: 0; font-size: 11px; color: #777;">*<em>Click
-                    circles to see details</em></p></span>
+                <span id='indicator'>
+                    <p style="position: absolute; bottom: 0; right: 0; font-size: 11px; color: #777;">
+                        *<em> Click circle to see details</em>
+                    </p>
+                </span>
             </div>
             <!-- circle description-->
             <div id="circles_description" class="col-xs-8">
                 <div ng-hide="info">
-                    <h2>Integration</h2>
-
-                    <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
-                        development of an integrated suite of validated computational tools that are designed to
-                        accelerate the development of new structural metals.
-                    </p>
+                    <h2>Three areas of focus</h2>
+                        <p>
+                            The PRISMS Center is built around 3 focus areas. These
+                            drive everything we do. All 3 areas are integrated together
+                            to make sure each is supporting the others.
+                        </p>
+                        <ul>
+                            <li>Integrated Science combines experimental and computational approaches.</li>
+                            <li>Computational Tools is an open source framework of integrated, multi-scale tools</li>
+                            <li>Materials Commons provides collaboration and storage</li>
+                        </ul>
                 </div>
                 <div ng-show="info == 'les'">
-                    <h2>Leading Edge Science in Metals</h2>
+                    <h2>Integrated Science</h2>
 
                     <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
                         development of an integrated suite of validated computational tools that are designed to
@@ -58,9 +66,11 @@
                 <div ng-show="info == 'ct'">
                     <h2>PRISMS Computational Tools</h2>
 
-                    <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
-                        development of an integrated suite of validated computational tools that are designed to
-                        accelerate the development of new structural metals.
+                    <p>
+                        The PRISMS Computational Tools suite is an integrated set of codes for
+                        writing large scale models that pass data across the different length scales.
+                        The tools are based on standards such as DEAL.II and ParaDIS while adding
+                        new models.
                     </p>
                     <ul>
                         <li>Open Source</li>
@@ -73,9 +83,10 @@
                 <div ng-show="info == 'mc'">
                     <h2>The Materials Commons</h2>
 
-                    <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
-                        development of an integrated suite of validated computational tools that are designed to
-                        accelerate the development of new structural metals.
+                    <p>
+                        Materials Commons is a data repository and collaboration platform. It allows researchers
+                        to collaborate, tracks the history of your data (provenance tracking) and provides a
+                        powerful model for viewing your data.
                     </p>
                     <ul>
                         <li>Collaboration</li>
@@ -181,8 +192,8 @@
                         and the faculty and departments involved. The funding comes from the <a class="main_link"
                                                                                                 href="http://www.whitehouse.gov/mgi"
                                                                                                 target="_blank">Materials
-                            Genome
-                            Initiative</a>, President Obama’s plan to double the speed with which American scientists
+                        Genome
+                        Initiative</a>, President Obama’s plan to double the speed with which American scientists
                         and
                         engineers discover, develop, and manufacture new materials.
                     </p>
@@ -196,29 +207,29 @@
     </div>
 </div>
 <script type="text/JavaScript">
-    $(document).ready(function () {
-        $('.circle').click(function () {
-            $('#indicator').hide();
-            $(this).siblings().css('opacity', 0.7)
+ $(document).ready(function () {
+     $('.circle').click(function () {
+         //$('#indicator').hide();
+         $(this).siblings().css('opacity', 0.7)
                     .removeClass('cover');
-            $(this).css('opacity', 1)
+         $(this).css('opacity', 1)
                     .addClass('cover');
-            $('#circles_description').css('padding-top', '1em')
+         $('#circles_description').css('padding-top', '1em')
                     .css('padding-bottom', '1em');
 
-            if ($(this).attr('id') == 'circle_sci') {
-                $('#circle_description_sci').siblings().hide();
-                $('#circle_description_sci').fadeIn("slow");
-            }
-            else if ($(this).attr('id') == 'circle_mc') {
-                $('#circle_description_mc').siblings().hide();
-                $('#circle_description_mc').fadeIn("slow");
-            }
-            else if ($(this).attr('id') == 'circle_code') {
-                $('#circle_description_code').siblings().hide();
-                $('#circle_description_code').fadeIn("slow");
-            }
+         if ($(this).attr('id') == 'circle_sci') {
+             $('#circle_description_sci').siblings().hide();
+             $('#circle_description_sci').fadeIn("slow");
+         }
+         else if ($(this).attr('id') == 'circle_mc') {
+             $('#circle_description_mc').siblings().hide();
+             $('#circle_description_mc').fadeIn("slow");
+         }
+         else if ($(this).attr('id') == 'circle_code') {
+             $('#circle_description_code').siblings().hide();
+             $('#circle_description_code').fadeIn("slow");
+         }
 
-        });
-    });
+     });
+ });
 </script>
