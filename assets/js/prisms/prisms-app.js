@@ -12,8 +12,19 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         })
         .state('about', {
             url: '/about',
-            templateUrl: 'partials/about.html',
-            controller: 'AboutController'
+            templateUrl: 'partials/about.html'
+        })
+        .state('about.ctools', {
+            url: '/computationaltools',
+            templateUrl: 'partials/computational_tools.html'
+        })
+        .state('about.mcommons', {
+            url: '/materialscommons',
+            templateUrl: 'partials/materialscommons.html'
+        })
+        .state('about.science', {
+            url: '/science',
+            templateUrl: 'partials/science.html'
         })
         .state('collaboration', {
             url: '/collaboration',
@@ -36,34 +47,21 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             templateUrl: 'partials/people.html',
             controller: 'PeopleController'
         })
-        .state('publications', {
-            url: '/publications',
-            templateUrl: 'partials/publications.html',
-            controller: 'PublicationsController'
-        })
-        .state('contact', {
-            url: '/contact',
-            templateUrl: 'partials/contact.html'
-        })
-        .state('about.ctools', {
-            url: '/computationaltools',
-            templateUrl: 'partials/computational_tools.html'
-        })
-        .state('about.mcommons', {
-            url: '/materialscommons',
-            templateUrl: 'partials/materialscommons.html'
-        })
-        .state('about.science', {
-            url: '/science',
-            templateUrl: 'partials/science.html'
-        })
         .state('people.faculty', {
             url: '/faculty',
             templateUrl: 'partials/faculty_staff.html'
         })
+        .state('people.eab', {
+            url: '/eab',
+            templateUrl: 'partials/eab.html'
+        })
         .state('people.students', {
             url: '/students',
             templateUrl: 'partials/students_postdocs.html'
+        })
+        .state('publications', {
+            url: '/publications',
+            templateUrl: 'partials/publications.html'
         })
         .state('publications.publications1', {
             url: '/publications1',
@@ -72,26 +70,14 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         .state('publications.presentations', {
             url: '/presentations',
             templateUrl: 'partials/presentations.html'
+        })
+        .state('contact', {
+            url: '/contact',
+            templateUrl: 'partials/contact.html'
         });
+
     $urlRouterProvider.otherwise('/prisms');
 }])
-
-    .controller("NavController", function ($scope, $location, $state) {
-        $scope.isActive = function (viewLocation) {
-            if ($location.path().contains('about') && viewLocation.contains('about')) {
-                return true;
-            } else if ($location.path().contains('people') && viewLocation.contains('people')) {
-                return true;
-            } else if ($location.path().contains('publications') && viewLocation.contains('publications')) {
-                return true;
-            }
-            return viewLocation === $location.path();
-        };
-
-        $scope.goTo = function (tab) {
-            $state.go(tab);
-        };
-    })
 
     .controller("FrontPageController", function ($scope) {
         $scope.date = new Date();
@@ -100,11 +86,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         };
     })
 
-    .controller("AboutController", function ($scope, $location, $state) {
-        $scope.isActive = function (tab) {
-            return tab === $location.path();
-        };
-    })
     .controller("PeopleController", function ($scope, $state, $location, $http) {
         $scope.faculty = [
             {
@@ -375,16 +356,52 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/Anirudh.jpg",
                 "blurb": "My research involves understanding precipitation and kinetics in Magnesium alloys using a combination of first-principles methods and techniques from statistical mechanics. I am also involved in the development of computational tools that will help provide a link between the atomistic and continuum scale."
             }
-
         ];
 
-        $scope.isActive = function (tab) {
-            return tab === $location.path();
-        };
-    })
+        $scope.eab = [
+            {
+                lastname: "Arsenli",
+                display:  "Dr. Tom Arsenlis, Lawrence Livermore National Laboratory"
+            },
 
-    .controller("PublicationsController", function ($scope, $state, $location) {
-        $scope.isActive = function (tab) {
-            return tab === $location.path();
-        };
+            {
+                lastname: "Foster",
+                display: "Professor Ian Foster, University of Chicago & Argonne National Laboratory"
+            },
+
+            {
+                lastname: "Gumbsch",
+                display: "Professor Peter Gumbsch, Karlsruhe Inst of Tech/Franhaufer Institute"
+            },
+
+            {
+                lastname: "Holm",
+                display: "Professor Elizabeth Holm, Carnegie-Mellon University"
+            },
+
+            {
+                lastname: "Salinger",
+                display: "Dr. Andrew Salinger, Sandia National Laboratories – Albuquerque, NM"
+            },
+
+            {
+                lastname: "Li",
+                display: "Dr. Mei Li, Ford Motor Co."
+            },
+
+            {
+                lastname: "Tome",
+                display: "Dr. Carlos Tome’, Los Alamos National Laboratory"
+            },
+
+            {
+                lastname: "Wells",
+                display: "Professor Garth Wells, Cambridge University"
+            },
+
+            {
+                lastname: "Zimmerman",
+                display: "Dr. Jonathan Zimmerman, Sandia National Laboratories – Livermore, CA"
+            },
+        ];
     });
