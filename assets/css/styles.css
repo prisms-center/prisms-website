@@ -255,6 +255,10 @@ h2 {
   color: #031552;
 }
 
+.tab-item-sep {
+  border-right: 1px solid #ccc;
+}
+
 .tab-item > a:focus {
   outline: none;
   text-decoration: none;

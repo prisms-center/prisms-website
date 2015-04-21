@@ -5,81 +5,85 @@ var app = angular.module('prisms', ['ui.router']);
 app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
-        .state('prisms', {
-            url: '/prisms',
-            templateUrl: 'partials/front-page.html',
-            controller: 'FrontPageController'
+        .state('home', {
+            url: '/home',
+            templateUrl: 'partials/home/home.html',
+            controller: 'HomeController'
         })
-        .state('about', {
-            url: '/about',
-            templateUrl: 'partials/about.html'
-        })
-        .state('about.ctools', {
-            url: '/computationaltools',
-            templateUrl: 'partials/computational_tools.html'
-        })
-        .state('about.mcommons', {
-            url: '/materialscommons',
-            templateUrl: 'partials/materialscommons.html'
-        })
-        .state('about.science', {
+        .state('science', {
             url: '/science',
-            templateUrl: 'partials/science.html'
+            tempalteUrl: 'partials/science/science.html'
         })
-        .state('collaboration', {
-            url: '/collaboration',
-            templateUrl: 'partials/collaboration.html'
+        .state('ctools', {
+            url: '/ctools',
+            templateUrl: 'partials/ctools/ctools.html'
         })
-        .state('software', {
+        .state('ctools.overview', {
+            url: '/overview',
+            templateUrl: 'partials/ctools/overview.html'
+        })
+        .state('ctools.software', {
             url: '/software',
-            templateUrl: 'partials/software.html'
+            templateUrl: 'partials/ctools/software.html'
         })
-        .state('software.computational', {
-            url:'/computational',
-            templateUrl: 'partials/software_computational.html'
+        .state('ctools.collaborate', {
+            url: '/collaborate',
+            templateUrl: 'partials/ctools/collaborate.html'
         })
-        .state('software.mcommons', {
+        .state('mcommons', {
             url: '/mcommons',
-            templateUrl: 'partials/software_mcommons.html'
+            templateUrl: 'partials/mcommons/mcommons.html'
+        })
+        .state('mcommons.overview', {
+            url: '/overview',
+            templateUrl: 'partials/mcommons/overview.html'
+        })
+        .state('mcommons.software', {
+            url: '/software',
+            templateUrl: 'partials/mcommons/software.html'
+        })
+        .state('mcommons.collaborate', {
+            url: '/collaborate',
+            templateUrl: 'partials/mcommons/collaborate.html'
         })
         .state('people', {
             url: '/people',
-            templateUrl: 'partials/people.html',
+            templateUrl: 'partials/people/people.html',
             controller: 'PeopleController'
         })
         .state('people.faculty', {
             url: '/faculty',
-            templateUrl: 'partials/faculty_staff.html'
+            templateUrl: 'partials/people/faculty_staff.html'
         })
         .state('people.eab', {
             url: '/eab',
-            templateUrl: 'partials/eab.html'
+            templateUrl: 'partials/people/eab.html'
         })
         .state('people.students', {
             url: '/students',
-            templateUrl: 'partials/students_postdocs.html'
+            templateUrl: 'partials/people/students_postdocs.html'
         })
         .state('publications', {
             url: '/publications',
-            templateUrl: 'partials/publications.html'
+            templateUrl: 'partials/publications/publications.html'
         })
-        .state('publications.publications1', {
-            url: '/publications1',
-            templateUrl: 'partials/publications1.html'
+        .state('publications.papers', {
+            url: '/papers',
+            templateUrl: 'partials/publications/papers.html'
         })
         .state('publications.presentations', {
             url: '/presentations',
-            templateUrl: 'partials/presentations.html'
+            templateUrl: 'partials/publications/presentations.html'
         })
         .state('contact', {
             url: '/contact',
-            templateUrl: 'partials/contact.html'
+            templateUrl: 'partials/contact/contact.html'
         });
 
-    $urlRouterProvider.otherwise('/prisms');
+    $urlRouterProvider.otherwise('/home');
 }])
 
-    .controller("FrontPageController", function ($scope) {
+    .controller("HomeController", function ($scope) {
         $scope.date = new Date();
         $scope.viewCircle = function (what) {
             $scope.info = what;
@@ -88,9 +92,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             $scope.info = "";
         });
     })
-    .controller("NavController", function($scope, $rootScope) {
-        $scope.resetHome = function() {
-            $rootScope.$broadcast('home.reset');
+    .controller("NavController", function($scope, $state) {
+        $scope.isActive = function(state) {
+            return $state.includes(state);
         };
     })
 
