@@ -72,6 +72,11 @@ a:focus {
   padding: 0 15px;
 }
 
+.tab-subpage-heading {
+  padding-top: 120px;
+  margin-top: -70px;
+}
+
 .main-top, .main_middle, .main_bottom {
   height: 100%;
   width: 80%;
