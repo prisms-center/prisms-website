@@ -84,6 +84,14 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         $scope.viewCircle = function (what) {
             $scope.info = what;
         };
+        $scope.$on('home.reset', function() {
+            $scope.info = "";
+        });
+    })
+    .controller("NavController", function($scope, $rootScope) {
+        $scope.resetHome = function() {
+            $rootScope.$broadcast('home.reset');
+        };
     })
 
     .controller("PeopleController", function ($scope, $state, $location, $http) {
