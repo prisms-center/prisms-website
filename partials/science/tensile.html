@@ -1,0 +1,51 @@
+<div class="about-area">
+    <h2 style="padding-top: 120px; margin-top: -70px;"
+        class="tab-content-title" id="overview">Tensile Behavior
+    </h2>
+    <p class="tab-content-details">
+        The Tensile Behavior Use Case group is investigating and developing predictive capabilities for a wide range of complex phenomena including
+        dislocation-precipitate and dislocation-dislocation interactions in this hcp system, prediction of alloying effects on solid solution
+        strengthening and twin formation, prediction and measurements of strain distributions and the propensity for cracking at grain and twin
+        boundaries. An important aspect of the PRISMS Center is the integration of detailed microstructural simulations with property models and
+        it is in this use case that this is being accompliplished.
+    </p>
+    <img src="assets/img/usecases/Tensile_Behavior_2.png" width="100%"></img>
+    <h4>Integration Approach</h4>
+    <p class="tab-content-details">
+        The figure above provides a schematic of the PRISMS Tensile Behavior integration protocol.
+        As indicated in Figure 8, outputs from statistical mechanics calculations are used
+        as inputs to ParaDis and VMM.  In turn, the ParaDis calculations will be used as
+        inputs to the PRISMS-CPFE and PRISMS-Plasticity Codes.  Key experimental
+        measurements have also been identified for inputs to CPFE and VMM. The following
+        are some of the key variables that will be captured and passed.
+    </p>
+    <h5>Inputs to Dislocation Dynamics (ParaDis) Simulation</h5>
+    <ul class="tab-content-details">
+        <li>Peierls Barrier: To include solute hardening, the Peierls barrier as a function of solute concentration will be calculated using the gamma-surface approach in CASM. Long term it is anticipated that this may be accomplished using RS-DFT.</li>
+        <li>Dislocation core energy:  Core energies for edge and screw type dislocations are being calculated using real space RS-DFT.</li>
+        <li>Dislocation glide mobility: Published values determined from molecular dynamics calculations will be used.</li>
+        <li>Precipitate microstructures: For microstructures with precipitates, the microstructure will be obtained from phase field simulations and spatial distribution of the microstructure will be passed to DD.</li>
+    </ul>
+    <h5>Inputs to PRISMS-CPFE</h5>
+    <ul class="tab-content-details">
+        <li>Hardening coefficients: The crystal plasticity hardening laws are parameterized from large-scale DD calculations that characterize forest hardening and precipitation hardening.</li>
+        <li>Hardening coefficients for twinning in Mg: These coefficients will be determined by fitting models to macroscopic and microscale SEM-DIC experimental results. A computational model for twinning using gradient elasticity is also under development to serve this purpose.</li>
+        <li>Inputs from PRISMS-PF for grain sizes.</li>
+    </ul>
+    <h5>Inputs to PRISMS-Plasticity</h5>
+    <p class="tab-content-details">
+        Yield function, yield stress and hardening laws will be obtained by homogenizing the Crystal Plasticity computations over multiple grain orientations at a continuum point.
+    </p>
+    <h5>Inputs to PRISMS-VMM</h5>
+    <p class="tab-content-details">
+        Traction separation laws will be estimated using CASM. Issues of mode-mixity, crack initiation criterion and crack propagation criterion are still open challenges, and thus we propose to use any such values/criterion in conjunction with experimental observations.
+    </p>
+    <h5>Computational Tools</h5>
+    <ul class="tab-content-details">
+        <li>PRISMS KS-DFT: Real Space Kohn-Sham Density Functional theory code</li>
+        <li>PRISMS PF: Phase field methods code</li>
+        <li>PRISMS Plasticity: Continuum Plasticity and Crystal Plasticity code</li>
+        <li>PRISMS MC: Mechano-Chemical phase transformations code</li>
+    </ul>
+
+</div>

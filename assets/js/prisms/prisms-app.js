@@ -12,7 +12,31 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         })
         .state('science', {
             url: '/science',
-            tempalteUrl: 'partials/science/science.html'
+            templateUrl: 'partials/science/science.html'
+        })
+        .state('science.overview', {
+            url: '/overview',
+            templateUrl: 'partials/science/overview.html'
+        })
+        .state('science.precipitate', {
+            url: '/precipitate',
+            templateUrl: 'partials/science/precipitate.html'
+        })
+        .state('science.recrystallization', {
+            url: '/recrystallization',
+            templateUrl: 'partials/science/recrystallization.html'
+        })
+        .state('science.tensile', {
+            url: '/tensile',
+            templateUrl: 'partials/science/tensile.html'
+        })
+        .state('science.fatigue', {
+            url: '/fatigue',
+            templateUrl: 'partials/science/fatigue.html'
+        })
+        .state('science.collaborate', {
+            url: '',
+            templateUrl: 'partials/science/collaborate.html'
         })
         .state('ctools', {
             url: '/ctools',

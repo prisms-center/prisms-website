@@ -44,14 +44,14 @@
                         <li ui-sref-active="active">
                             <a ui-sref="home" ui-sref-opts="{reload: true}">HOME</a>
                         </li>
-                        <li ui-sref-active="active">
-                            <a ui-sref="science">INTEGRATED SCIENCE</a>
+                        <li ng-class="{active: isActive('science')}">
+                            <a ui-sref="science.overview">SCIENCE</a>
                         </li>
                         <li ng-class="{active: isActive('ctools')}">
-                            <a ui-sref="ctools.overview">COMPUTATIONAL TOOLS</a>
+                            <a ui-sref="ctools.overview">TOOLS</a>
                         </li>
                         <li ng-class="{active: isActive('mcommons')}">
-                            <a ui-sref="mcommons.overview">MATERIALS COMMONS</a>
+                            <a ui-sref="mcommons.overview">REPOSITORY</a>
                         </li>
                         <li ng-class="{active: isActive('people')}">
                             <a ui-sref="people.faculty">PEOPLE</a>
@@ -59,7 +59,7 @@
                         <li ng-class="{active: isActive('publications')}">
                             <a ui-sref="publications.papers">PUBLICATIONS</a>
                         </li>
-                        <li ng-if="false" ui-sref-active="active">
+                        <li ng-if="true" ui-sref-active="active">
                             <a ui-sref="contact">CONTACT</a>
                         </li>
                     </ul>
