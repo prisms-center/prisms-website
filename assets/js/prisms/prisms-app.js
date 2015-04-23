@@ -383,6 +383,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "Veera Sundararaghavan",
                 "image": "assets/img/people/christian.jpg",
                 "blurb": "My research is focused on understanding how magnesium fails in the low cycle fatigue regime using a micromechanical approach. Specifically I investigate the creation and evolution of persistent slip bands using dislocation dynamics. The slip bands serve as a point of strain localization and subsequent failure. Tracking the irreversible evolution of dislocations, their accumulation within the slip band and their energetic state will help to predict when fatigue cracks emerge. The evolution of stress, strain and energy will serve as input to crystal elasticity and plasticity models used to investigate the fatigue behavior further on a longer time and length scales such as for polycrystals."
+            },
+            {
+                "title": "",
+                "first_name": "Aeriel D.",
+                "last_name": "Murphy",
+                "email": "aerielm@umich.edu",
+                "research": "",
+                "advisor": "John Allison",
+                "image": "assets/img/people/Aeriel.jpg",
+                "blurb": "I work on studying recrystallization and grain growth kinetics of Mg and Mg alloys. My work also focuses on understanding low-cycle fatigue behavior of these alloys as it relates to microstructure and alloying additions."
             }
         ];
 
