@@ -3,7 +3,6 @@
 var app = angular.module('prisms', ['ui.router']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-
     $stateProvider
         .state('home', {
             url: '/home',
@@ -84,8 +83,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             controller: 'PeopleController'
         })
         .state('people.faculty', {
-            url: '/faculty',
-            templateUrl: 'partials/people/faculty_staff.html'
+            url: '/faculty/:who',
+            templateUrl: 'partials/people/faculty_staff.html',
+            controller: 'FacultyController'
         })
         .state('people.eab', {
             url: '/eab',
@@ -130,7 +130,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         };
     })
 
-    .controller("PeopleController", function ($scope, $state, $location, $http) {
+    .controller("PeopleController", function ($scope) {
         $scope.faculty = [
             {
                 "title": "Professor ",
@@ -478,4 +478,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 display: "Dr. Jonathan Zimmerman, Sandia National Laboratories – Livermore, CA"
             },
         ];
+    })
+    .controller('FacultyController', function($scope, $location, $anchorScroll, $stateParams) {
+        console.log("$stateParams %O", $stateParams);
+        if ($stateParams.who !== '') {
+            console.log('going to anchor: ', $stateParams.who);
+            $location.hash($stateParams.who);
+            $anchorScroll();
+        }
     });
