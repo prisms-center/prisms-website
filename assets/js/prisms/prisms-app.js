@@ -169,7 +169,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "first_name": "Veera",
                 "last_name": "Sundararaghavan",
                 "email": "veeras@umich.edu",
-                "research": "http://www-personal.umich.edu/~veeras/",
+                "research": "http://umich.edu/~veeras/",
                 "advisor": "",
                 "image": "assets/img/people/veera2.jpg" ,
                 "blurb":"Prof. Sundararaghavan develops multi-scale computational methods for polycrystalline alloys, fiber reinforced composites, metallic foams and ultra-high temperature ceramics to model the effect of microstructure on the overall deformation, fatigue, failure, thermal transport and oxidation response."
