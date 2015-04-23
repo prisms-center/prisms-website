@@ -44,7 +44,7 @@
                     <h4 class="people-title">{{person.title }}  {{person.first_name}} {{person.last_name}}</h4>
 
                     <p>Email: <a class="main_link" href="mailto:{{person.email}}">{{person.email}}</a></p>
-                    <p ng-if="person.research">Research: <a  class="main_link" href="http://www-personal.umich.edu/~krishna/"
+                    <p ng-if="person.research">Research: <a  class="main_link" href="{{person.research}}"
                                                              target="_blank">{{person.research}}</a></p>
 
                     <p>
