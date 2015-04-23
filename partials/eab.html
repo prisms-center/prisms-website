@@ -1,0 +1,16 @@
+<div class="people-area">
+    <h2 id="eab" class="tab-subpage-heading">
+        External Advisor Board
+    </h2>
+    <p>
+        The PRISMS Center is lucky to have a strong advisory board. Each of
+        our board members are experts in their field. Their input and guidance
+        has helped to shape our center. Our advisory board is composed of the
+        following members.
+    </p>
+    <ul>
+        <li ng-repeat="member in eab | orderBy:'lastname'">
+            {{member.display}}
+        </li>
+    </ul>
+</div>

@@ -72,6 +72,11 @@ a:focus {
   padding: 0 15px;
 }
 
+.tab-subpage-heading {
+  padding-top: 120px;
+  margin-top: -70px;
+}
+
 .main-top, .main_middle, .main_bottom {
   height: 100%;
   width: 80%;
@@ -127,10 +132,10 @@ a:focus {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 15px;
   font-family: Helvetica;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .circle_mc {
@@ -352,12 +357,9 @@ h2 {
   z-index: 10;
 }
 
-/*Publication Page
+/* Publication Page
 -------------------------------------------------- */
 .publications-area {
-  /*position: relative;*/
-  /*padding: 25px 120px 10px;*/
-  /*margin-bottom: 30px;*/
   position: relative;
   padding: 50px 45px 10px;
   margin-bottom: 30px;
@@ -384,6 +386,13 @@ div p.publication-list:nth-of-type(even) {
   font-style: oblique;
 }
 
+/* Software Pages
+------------------------------------------ */
+.software-area {
+  position: relative;
+  padding: 50px 45px 10px;
+  margin-bottom: 30px;
+}
 
 
 /*Links Page
@@ -421,7 +430,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 100px;
   background-color: #2c5c84;
 }
 
@@ -431,7 +440,7 @@ body {
 
 .footer_left, .footer_mid {
   display: table;
-  height: 120px;
+  height: 70px;
 }
 .table-cell {
   display: table-cell;
@@ -439,7 +448,7 @@ body {
 }
 address {
   padding-left: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color:#fff;
   line-height: 21px;
   font-weight: 300;

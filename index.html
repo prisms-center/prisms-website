@@ -10,6 +10,7 @@
 
         <title>PRISMS Home</title>
 
+        <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- Bootstrap core CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,7 +26,7 @@
 
     <body>
         <!-- Fixed navbar -->
-        <div class="navbar navbar-default navbar-fixed-top nav_wrap" role="navigation" >
+        <div class="navbar navbar-default navbar-fixed-top nav_wrap" role="navigation" ng-controller="NavController">
             <div class="container">
                 <div class="navbar-header ">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,30 +35,41 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src ="assets/img/prisms-logo.png"></a>
+                    <a class="navbar-brand" href="#"><img src="assets/img/prisms-logo.png"></a>
                 </div>
-                <div class="collapse navbar-collapse" ng-controller="NavController">
+                <div class="collapse navbar-collapse pull-right">
                     <ul id="prisms-tabs" class="nav navbar-nav">
-                        <li ng-class="{active: isActive('/prisms')}">
-                            <a ui-sref="prisms">HOME</a></li>
-                        <li ng-class="{active: isActive('/about')}">
-                            <a ui-sref="about.science">ABOUT</a></li>
-                        <li ng-class="{active: isActive('/people')}">
-                            <a ui-sref="people.faculty">PEOPLE</a></li>
-                        <li ng-class="{active: isActive('/publications')}">
-                            <a ui-sref="publications.publications1">PUBLICATIONS</a></li>
-                        <li ng-class="{'active': isActive('/contact')}"><a ui-sref="contact">CONTACT</a></li>
+                        <li ui-sref-active="active">
+                            <a ng-click="resetHome()" ui-sref="prisms">HOME</a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="about.science">ABOUT</a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="collaboration">COLLABORATION</a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="software.computational">SOFTWARE</a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="people.faculty">PEOPLE</a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="publications.publications1">PUBLICATIONS</a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="contact">CONTACT</a>
+                        </li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </div> <!--End of navbar -->
 
-
         <!-- Begin Content -->
         <div ui-view></div>
         <!--End of Content -->
         <!--Button Trigger Email-->
-        <div class="footerButtonWrap">
+        <div ng-if="false" class="footerButtonWrap">
             <div class="findOutMoreButton">
                 <button type="button" class="btn btn-default btn-lg" data-toggle="popover" title="Find out More" data-placement="left">
                     <span class="glyphicon glyphicon-envelope"></span>

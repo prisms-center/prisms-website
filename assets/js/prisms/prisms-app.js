@@ -12,22 +12,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         })
         .state('about', {
             url: '/about',
-            templateUrl: 'partials/about.html',
-            controller: 'AboutController'
-        })
-        .state('people', {
-            url: '/people',
-            templateUrl: 'partials/people.html',
-            controller: 'PeopleController'
-        })
-        .state('publications', {
-            url: '/publications',
-            templateUrl: 'partials/publications.html',
-            controller: 'PublicationsController'
-        })
-        .state('contact', {
-            url: '/contact',
-            templateUrl: 'partials/contact.html'
+            templateUrl: 'partials/about.html'
         })
         .state('about.ctools', {
             url: '/computationaltools',
@@ -41,13 +26,42 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             url: '/science',
             templateUrl: 'partials/science.html'
         })
+        .state('collaboration', {
+            url: '/collaboration',
+            templateUrl: 'partials/collaboration.html'
+        })
+        .state('software', {
+            url: '/software',
+            templateUrl: 'partials/software.html'
+        })
+        .state('software.computational', {
+            url:'/computational',
+            templateUrl: 'partials/software_computational.html'
+        })
+        .state('software.mcommons', {
+            url: '/mcommons',
+            templateUrl: 'partials/software_mcommons.html'
+        })
+        .state('people', {
+            url: '/people',
+            templateUrl: 'partials/people.html',
+            controller: 'PeopleController'
+        })
         .state('people.faculty', {
             url: '/faculty',
             templateUrl: 'partials/faculty_staff.html'
         })
+        .state('people.eab', {
+            url: '/eab',
+            templateUrl: 'partials/eab.html'
+        })
         .state('people.students', {
             url: '/students',
             templateUrl: 'partials/students_postdocs.html'
+        })
+        .state('publications', {
+            url: '/publications',
+            templateUrl: 'partials/publications.html'
         })
         .state('publications.publications1', {
             url: '/publications1',
@@ -56,39 +70,30 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         .state('publications.presentations', {
             url: '/presentations',
             templateUrl: 'partials/presentations.html'
+        })
+        .state('contact', {
+            url: '/contact',
+            templateUrl: 'partials/contact.html'
         });
+
     $urlRouterProvider.otherwise('/prisms');
 }])
-
-    .controller("NavController", function ($scope, $location, $state) {
-        $scope.isActive = function (viewLocation) {
-            if ($location.path().contains('about') && viewLocation.contains('about')) {
-                return true;
-            } else if ($location.path().contains('people') && viewLocation.contains('people')) {
-                return true;
-            } else if ($location.path().contains('publications') && viewLocation.contains('publications')) {
-                return true;
-            }
-            return viewLocation === $location.path();
-        };
-
-        $scope.goTo = function (tab) {
-            $state.go(tab);
-        };
-    })
 
     .controller("FrontPageController", function ($scope) {
         $scope.date = new Date();
         $scope.viewCircle = function (what) {
             $scope.info = what;
         };
+        $scope.$on('home.reset', function() {
+            $scope.info = "";
+        });
     })
-
-    .controller("AboutController", function ($scope, $location, $state) {
-        $scope.isActive = function (tab) {
-            return tab === $location.path();
+    .controller("NavController", function($scope, $rootScope) {
+        $scope.resetHome = function() {
+            $rootScope.$broadcast('home.reset');
         };
     })
+
     .controller("PeopleController", function ($scope, $state, $location, $http) {
         $scope.faculty = [
             {
@@ -379,16 +384,52 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/christian.jpg",
                 "blurb": "My research is focused on understanding how magnesium fails in the low cycle fatigue regime using a micromechanical approach. Specifically I investigate the creation and evolution of persistent slip bands using dislocation dynamics. The slip bands serve as a point of strain localization and subsequent failure. Tracking the irreversible evolution of dislocations, their accumulation within the slip band and their energetic state will help to predict when fatigue cracks emerge. The evolution of stress, strain and energy will serve as input to crystal elasticity and plasticity models used to investigate the fatigue behavior further on a longer time and length scales such as for polycrystals."
             }
-
         ];
 
-        $scope.isActive = function (tab) {
-            return tab === $location.path();
-        };
-    })
+        $scope.eab = [
+            {
+                lastname: "Arsenli",
+                display:  "Dr. Tom Arsenlis, Lawrence Livermore National Laboratory"
+            },
 
-    .controller("PublicationsController", function ($scope, $state, $location) {
-        $scope.isActive = function (tab) {
-            return tab === $location.path();
-        };
+            {
+                lastname: "Foster",
+                display: "Professor Ian Foster, University of Chicago & Argonne National Laboratory"
+            },
+
+            {
+                lastname: "Gumbsch",
+                display: "Professor Peter Gumbsch, Karlsruhe Inst of Tech/Franhaufer Institute"
+            },
+
+            {
+                lastname: "Holm",
+                display: "Professor Elizabeth Holm, Carnegie-Mellon University"
+            },
+
+            {
+                lastname: "Salinger",
+                display: "Dr. Andrew Salinger, Sandia National Laboratories – Albuquerque, NM"
+            },
+
+            {
+                lastname: "Li",
+                display: "Dr. Mei Li, Ford Motor Co."
+            },
+
+            {
+                lastname: "Tome",
+                display: "Dr. Carlos Tome’, Los Alamos National Laboratory"
+            },
+
+            {
+                lastname: "Wells",
+                display: "Professor Garth Wells, Cambridge University"
+            },
+
+            {
+                lastname: "Zimmerman",
+                display: "Dr. Jonathan Zimmerman, Sandia National Laboratories – Livermore, CA"
+            },
+        ];
     });

@@ -1,0 +1,100 @@
+<div class="software-area">
+    <h2 style="padding-top: 120px; margin-top: -70px;">
+        PRISMS Integrated Computational Codes
+    </h2>
+    <br>
+    <p class="tab-content-details">
+        The PRISMS Integration Computational Codes make developing large scale models easier. Our
+        tools take care of scaling and passing data across the different length scales. Best of all
+        our suite of codes will soon be open sourced. You will be able to take these leading edge
+        tools, peak under the hood to see how we do things, and integrate them into your modeling
+        research.
+    </p>
+    <br>
+    <p class="tab-content-details">
+        At the PRISMS-Center we care about the research community. If you are interested in collaborating
+        and participating in codes development head on over to our <a ui-sref="contact">contact</a> page
+        and drop us a line. Building a community and solving hard modeling problems is important to us.
+    </p>
+        <br>
+    <p class="tab-content-details">
+        Below you can see a list of the integrated codes we will be releasing into the community. Each of
+        these can stand alone. They are also designed to be used together. We have an extensive integration
+        framework you can use to customize and integrate these tools into your environment.
+    </p>
+    <br>
+    <h4>PRISMS CASM: Statistical Mechanics Code</h4>
+    A. Van der Ven
+    <p class="tab-content-details">
+        CASM, a Clusters Approach to Statistical Mechanics, is the PRISMS
+        statistical mechanics software. We have released an initial private
+        version, v0.1.0-beta, for internal use and beta testing by some
+        trusted collaborators. This release provides functionality for symmetry
+        identification, specification of composition axes, enumeration of
+        symmetrically unique supercells and configurations, automatic VASP job
+        submission and results collection, use of automatically determined or
+        custom reference states for formation energy calculation, and convex
+        hull identification.
+    </p>
+    <br>
+    <h4>PRISMS Plasticity/PRISMS-CPF E: Coninuum and crystal plasticity code</h4>
+    K. Garikipati, V. Sundararaghavan
+    <p class="tab-content-details">
+        The PRISMS-Plasticity code is a parallel numerical framework for
+        implementing continuum and crystal plasticity models important to
+        the multiscale materials modeling effort of PRISMS
+    </p>
+    <br>
+    <h4>PRISMS VMM: Variational Multi-Scale Model</h4>
+    K. Garikipati, V. Sundararaghavan
+    <p class="tab-content-details">
+        The ability to carry out computations of crack and shear band evolution
+        is being developed using variational multiscale methods to represent
+        two-dimensional discontinuous displacements.
+    </p>
+    <br>
+    <h4>PRISMS RS-DFT: Real Space Density Functional Theory Code</h4>
+    V. Gavini
+    <p class="tab-content-details">
+        To enable an accurate electronic structure study of the energetics of
+        defects in crystalline materials we are developing real-space methods
+        that are capable of handling simulation domains containing tens of
+        thousands of atoms (in order to accurately capture both the
+        electronic-structure of the core and the long-ranged elastic fields).
+    </p>
+    <br>
+    <h4>PRISMS PFC: Phase Field Crystal</h4>
+    K. Thornton
+    <p class="tab-content-details">
+        The Phase Field Crystal (PFC) model is a simulation approach that can
+        model crystalline materials with atomistic resolution but at a diffusive
+        timescale
+    </p>
+    <br>
+    <h4>PRISMS MC: Mechano-chemical phase transformations</h4>
+    K. Garikipati, A. Van der Ven
+    <p class="tab-content-details">
+        As another advanced code, we have developed a modeling approach for
+        phase transformations that are driven by free energies that are
+        non-convex in composition space by using a coupled formulation of
+        finite strain mechanics and diffuse interface theories (Cahn-Hilliard
+        and Allen-Cahn). This code is being developed using the deal.ii finite
+        element libraries.
+    </p>
+    <br>
+    <h4>PRISMS IntegrationTools: IntegrationTools and IntegrationToolsWriter</h4>
+    B. Puchala
+    <p class="tab-content-details">
+        Integration of PRISMS Codes and external codes is an important aspect
+        of the PRISMS Integrated Framework. To accomplish this the
+        IntegrationTools package was developed and includes the IntegrationTools
+        header file library that defines and implements an API for easily
+        passing arbitrary functions and fields, referred to as ‘PFunctions’
+        and ‘PFields’, between different software programs. A
+        separate software package, IntegrationToolsWriter was also developed
+        and includes programs that generate and compile the C++ code for
+        PFunctions from symbolic mathematical expressions. We are using this
+        within PRISMS to facilitate passing parameters between codes that operate
+        at different scales in our integrated multi-scale model.
+    </p>
+</div>
