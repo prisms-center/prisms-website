@@ -38,34 +38,39 @@
             <div id="circles_description" class="col-xs-8">
                 <div ng-hide="info">
                     <h2>Integrated, Focused, Open</h2>
-                        <p>
-                            The PRISMS Center is built around 3 focus areas. These
-                            drive everything we do. All 3 areas are integrated together
-                            to make sure each is supporting the others.
-                        </p>
-                        <ul>
-                            <li>Integrated Science combines experimental and computational approaches.</li>
-                            <li>Computational Tools is an open source framework of integrated, multi-scale tools</li>
-                            <li>Materials Commons provides collaboration and storage</li>
-                        </ul>
+                    <p>
+                        At the PRISMS Center integration drives everything we do. Our science
+                        is integrated with our computational codes. Our Materials Commons
+                        repository allows groups to collaborate and share data. And our
+                        experimentalists help drive our computational codes. Our 3 focus
+                        areas work together to support each other.
+                    </p>
+                    <ul>
+                        <li>Integrated Science combines experimental and computational approaches.</li>
+                        <li>Computational Tools is an open source framework of integrated, multi-scale tools.</li>
+                        <li>Materials Commons provides collaboration and storage.</li>
+                    </ul>
                 </div>
                 <div ng-show="info == 'les'">
-                    <h2>Integrated Science</h2>
-
-                    <p>Combining the efforts of computational and experimental researchers, the goal of this Center is
-                        development of an integrated suite of validated computational tools that are designed to
-                        accelerate the development of new structural metals.
+                    <h2>Integrated, Collaborative Science</h2>
+                    <p>
+                        Developing computational codes that help to model the real world is hard. Our
+                        approach teams experimental researchers with computationalists to produce models
+                        and codes that address real world problems. Our teams of researchers are broken
+                        in to groups around different use cases. The use cases drive the experiments
+                        and models. They help us to link experiments with the simulations, validate the
+                        models, and improve the codes. You can find out more about the science and our
+                        integrated approach to these use cases under <a ui-sref="science.overview">SCIENCE</a>.
                     </p>
                     <ul>
                         <li>Linking Experiments &amp; Simulations</li>
                         <li>Advanced Quantitative Experiments</li>
                         <li>Use Cases<br>- Microstructural Evolution<br>- Mechanical Behavior</li>
                     </ul>
-                    <a ui-sref="about.science" class="main_link">MORE >></a>
+                    <a ui-sref="science.overview" class="main_link">MORE >></a>
                 </div>
                 <div ng-show="info == 'ct'">
                     <h2>PRISMS Computational Tools</h2>
-
                     <p>
                         The PRISMS Computational Tools suite is an integrated set of codes for
                         writing large scale models that pass data across the different length scales.
@@ -78,7 +83,7 @@
                         <li>Computationally Efficient</li>
                         <li>Extensible</li>
                     </ul>
-                    <a ui-sref="about.ctools" class="main_link">MORE >></a>
+                    <a ui-sref="ctools.overview" class="main_link">MORE >></a>
                 </div>
                 <div ng-show="info == 'mc'">
                     <h2>The Materials Commons</h2>
@@ -95,7 +100,7 @@
                         <li>Workflow</li>
                         <li>Provenance Tracking</li>
                     </ul>
-                    <a ui-sref="about.mcommons" class="main_link">MORE >></a>
+                    <a ui-sref="mcommons.overview" class="main_link">MORE >></a>
                 </div>
             </div>
         </div>
