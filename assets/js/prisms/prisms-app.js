@@ -157,7 +157,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/vikramg.jpg"
             },
             {
-                "title": "Professor :",
+                "title": "Professor ",
                 "first_name": "Katsuyo",
                 "last_name": "Thornton",
                 "email": "kthorn@umich.edu",
@@ -174,7 +174,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "http://www.mse.engin.umich.edu/people/faculty/vanderven",
                 "advisor": "",
                 "image": "assets/img/people/Anton_Van der Ven.jpg" ,
-                "blurb": " I am interested in understanding and predicting equilibrium and non-equilibrium materials properties from first-principles. I combine electronic structure methods (density functional theory) with techniques from statistical mechanics to calculate thermodynamic and kinetic properties of new materials"
+                "blurb": " I am interested in understanding and predicting equilibrium and non-equilibrium materials properties from first-principles. I combine electronic structure methods (density functional theory) with techniques from statistical mechanics to calculate thermodynamic and kinetic properties of new materials."
             },
             {
                 "title": "Professor ",
@@ -194,7 +194,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "http://www-personal.umich.edu/~rudraa/",
                 "advisor": "",
                 "image": "assets/img/people/rudraa.jpg" ,
-                "blurb": "My current research involves analytical and computational modeling of coupled multiscale* phenomena in material physics and biology, spanning mechanics, transport, thermodynamics and phase transitions. Specifically, I am investigating chemo-mechanical coupling of phase transformations involved in battery materials."
+                "blurb": "My current research involves analytical and computational modeling of coupled multiscale phenomena in material physics and biology, spanning mechanics, transport, thermodynamics and phase transitions. Specifically, I am investigating chemo-mechanical coupling of phase transformations involved in battery materials."
             },
             {
                 "title": "Dr.",
@@ -224,7 +224,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "http://www.mse.engin.umich.edu/people/faculty/jones",
                 "advisor": "",
                 "image": "assets/img/people/J. Wayne_Jones.jpg" ,
-                "blurb":"My research area if focused on the mechanical behavior of structural metal alloys and specifically on fatigue and creep. For the past three years my group has been involved in using ultrasonic fatigue to examine the very high cycle fatigue behavior of magnesium, aluminum, titanium alloys and nickel-base superalloys."
+                "blurb":"My research area is focused on the mechanical behavior of structural metal alloys and specifically on fatigue and creep. For the past three years my group has been involved in using ultrasonic fatigue to examine the very high cycle fatigue behavior of magnesium, aluminum, and titanium alloys and nickel-base superalloys."
             },
             {
                 "title": "Professor ",
@@ -234,7 +234,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "https://sites.google.com/a/umich.edu/marquisgroup/",
                 "advisor": "",
                 "image": "assets/img/people/Emmanuelle_Marquis.jpg" ,
-                "blurb" : "Research focuses on understanding and quantifying the mechanisms controlling microstructural evolution in alloy systems (including light alloys), interfacial properties, oxidation behavior and irradiation effects in materials. To complement her experimental work, she forges close ties to groups in computational and theoretical materials science."
+                "blurb" : "My research focuses on understanding and quantifying the mechanisms controlling microstructural evolution in alloy systems (including light alloys), interfacial properties, oxidation behavior and irradiation effects in materials. To complement my experimental work, my lab forges close ties to groups in computational and theoretical materials science."
             },
             {
                 "title": "Professor ",
@@ -244,7 +244,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "http://dalylabs.engin.umich.edu",
                 "advisor": "",
                 "image": "assets/img/people/Samantha_Daly.jpg" ,
-                "blurb": "Research lies at the intersection of experimental mechanics and materials science, with an emphasis on using novel methods of experimentation coupled closely with theoretical and computational modeling. Group research focuses on the measurements of microstructural features of materials and the effect of microstructure on meso and macroscopic properties."
+                "blurb": "My research lies at the intersection of experimental mechanics and materials science, with an emphasis on using novel methods of experimentation coupled closely with theoretical and computational modeling. My group's research focuses on the measurements of microstructural features of materials and the effect of microstructure on meso and macroscopic properties."
             },
             {
                 "title": "Professor ",
@@ -288,7 +288,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "email": "tammasr@umich.edu",
                 "research": "",
                 "advisor": "",
-                "blurb":"Sravya received Masters Degree in Bioinformatics. She had experience in developing novel tools to track the work flow, experimental stages and results. Currently her work is focussed on design and development of web-based work flow management software for Materials Commons.",
+                "blurb":"Sravya received her Masters Degree in Bioinformatics. Her experience includes developing novel tools to track work flow, experimental stages and results. Currently her work is focused on design and development of web-based work flow management software for Materials Commons.",
                 "image": "assets/img/people/sravya_tamma.jpg"
             },
             {
@@ -312,7 +312,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "",
                 "advisor": "Emanuelle Marquis",
                 "image": "assets/img/people/Ellen_Sitzmann.png",
-                "blurb":"My thesis work focuses on quantifying the effects of alloying elements, aging time, and temperature on the precipitation mechanisms and kinetics in Mg-Rare Earth alloys, using techniques such as transmission electron microscopy and atom probe tomography. Within the collaborative framework of PRIMS, my research will further our understanding of precipitation processes and contribute to a complete thermodynamic and kinetic description of Mg alloys."
+                "blurb":"My thesis work focuses on quantifying the effects of alloying elements, aging time, and temperature on the precipitation mechanisms and kinetics in Mg-Rare Earth alloys, using techniques such as transmission electron microscopy and atom probe tomography. Within the collaborative framework of PRISMS, my research will further our understanding of precipitation processes and contribute to a complete thermodynamic and kinetic description of Mg alloys."
             },
             {
                 "title": "",
@@ -331,7 +331,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "email": "phanim@umich.edu",
                 "research": "",
                 "advisor": "Vikram Gavini",
-                "blurb": " As a part of PRISMS program, I am involved in the development of an open source code for real-space Kohn-Sham DFT calculations within the computational framework of PRISMS. I intend to use the computational tool developed to study the dislocation properties of Magnesium and its binary alloys using real space Kohn-Sham DFT. ",
+                "blurb": "I am involved in the development of an open source code for real-space Kohn-Sham DFT calculations within the computational framework of PRISMS. I intend to use the computational tool developed to study the dislocation properties of Magnesium and its binary alloys using real space Kohn-Sham DFT.",
                 "image": "assets/img/people/Phani_Motamarri.jpg"
             },
             {
@@ -342,7 +342,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "",
                 "advisor": "Vikram Gavini",
                 "image": "assets/img/people/SambitDas.jpg",
-                "blurb":" I am developing a computational framework for explicit large scale electronic structure calculations of crystalline materials using a real space implementation of the Orbital Free Density Functional Theory. My aim is to study the energetics and mobility of edge and screw dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al alloys."
+                "blurb":"I am developing a computational framework for explicit large scale electronic structure calculations of crystalline materials using a real space implementation of the Orbital Free Density Functional Theory. My aim is to study the energetics and mobility of edge and screw dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al alloys."
             },
             {
                 "title": "",
@@ -372,7 +372,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "",
                 "advisor": "",
                 "image": "assets/img/people/chia.jpg",
-                "blurb":"Chia-Hui is a UX/UI designer who is experienced in designing useful, pleasant and engaging user interfaces. She's passionate about understanding users' needs and using design to solve problems and create better user experience. "
+                "blurb":"Chia-Hui is a UX/UI designer who is experienced in designing useful, pleasant and engaging user interfaces. She's passionate about understanding users' needs and using design to solve problems and create better user experiences."
             },
             {
                 "title": "",
@@ -392,7 +392,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "",
                 "advisor": "Krishna Garikipati",
                 "image": "assets/img/people/greg.jpg",
-                "blurb":"My work involves modeling continuum elastoplasticity using the finite element method. One standout feature of this project is the integration with crystal plasticity models. This allows the user to extract information from a micro scale crystal plasticity model (such as the hardening curve) and apply it in on the macro scale using continuum plasticity."
+                "blurb":"My work involves modeling continuum elastoplasticity using the finite element method. One standout feature of this project is the integration with crystal plasticity models. This allows the user to extract information from a micro scale crystal plasticity model (such as the hardening curve) and apply it in the macro scale using continuum plasticity."
             },
             {
                 "title": "",
@@ -422,7 +422,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "",
                 "advisor": "Veera Sundararaghavan",
                 "image": "assets/img/people/christian.jpg",
-                "blurb": "My research is focused on understanding how magnesium fails in the low cycle fatigue regime using a micromechanical approach. Specifically I investigate the creation and evolution of persistent slip bands using dislocation dynamics. The slip bands serve as a point of strain localization and subsequent failure. Tracking the irreversible evolution of dislocations, their accumulation within the slip band and their energetic state will help to predict when fatigue cracks emerge. The evolution of stress, strain and energy will serve as input to crystal elasticity and plasticity models used to investigate the fatigue behavior further on a longer time and length scales such as for polycrystals."
+                "blurb": "My research is focused on understanding how magnesium fails in the low cycle fatigue regime using a micromechanical approach. Specifically I investigate the creation and evolution of persistent slip bands using dislocation dynamics. The slip bands serve as a point of strain localization and subsequent failure. Tracking the irreversible evolution of dislocations, their accumulation within the slip band and their energetic state will help to predict when fatigue cracks emerge. The evolution of stress, strain and energy will serve as input to crystal elasticity and plasticity models used to investigate the fatigue behavior further on longer time and length scales such as for polycrystals."
             },
             {
                 "title": "",
