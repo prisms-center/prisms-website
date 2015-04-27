@@ -2,36 +2,66 @@
     <h2 style="padding-top: 120px; margin-top: -70px;"
         class="tab-content-title" id="overview">Precipitate Evolution
     </h2>
-    <p class="tab-content-details">
-        Optimal strength in Mg alloys is achieved by a very particular precipitation sequence exhibited by a variety of Mg-rare earth (RE) alloys. It
-        involves the formation first of Guinier-Preston zones followed by the precipitation of nano-scale hcp-based phases (β’). Further aging leads
-        to the formation of bcc-based precipitates, referred to as β1, that form from and coexist with the original β’ precipitates. Fundamental
-        <img src="assets/img/usecases/Precipitate_Simulation.png" align="left"></img>
-        questions remain that need to be answered in order to enable the discovery and design of new Mg alloys with optimal strength.  For example,
-        i) how can precipitation mechanisms be described theoretically such that the evolution during aging heat treatments can be predicted; and
-        ii) what, in particular, about the rare-earth elements causes this favorable precipitation morphology and orientation and are there other
-        non-rare-earth elements that will exhibit the same behavior. Developing predictive capabilities that address these and other questions is the
-        goal of the PRISMS Precipitate Evolution Use Group. Our initial demonstration of this integrated framework is on β’ and β1 precipitate evolution
-        in a Mg-Nd alloy. This is being conducted in conjunction with the Tensile Behavior use group that will be developing an integrated capability for
-        predicting the influence of precipitates on strengthening and ductility of Mg-RE alloys.
-    </p>
-    <img src="assets/img/usecases/Precipitate_Evolution.png" width="100%"></img>
-    <br>
 
-    <h4> Integration Approach</h4>
     <p class="tab-content-details">
-        As indicated in the above figure, outputs from statistical mechanics calculations determined
-        using the PRISMS Statistical Mechanics Code (CASM) are input to the PRISMS phase
-        field code (PRISMS-PF).  Specifically, first principles calculations using VASP are
-        used to fit a cluster expansion for the hcp alloy system that will be used in
-        Monte Carlo calculations of the free energy. A series of thermodynamic and kinetic
-        models with varying levels of approximations are being parameterized in turn. Nuclei
-        will be introduced to PRISMS-PF using explicit nucleation events.
+        Nanoscale precipitates are one of the most important and potent sources of strengthening in many metal alloys.
+        Quantitative prediction of precipitate evolution is a long-standing scientific and technological problem in
+        metal alloys. Exceptionally high strength in Mg alloys can be achieved by a very particular, complex and poorly
+        understood precipitation sequence exhibited by a variety of Mg-rare earth (RE) alloys.
     </p>
-    <h4>Computational Tools</h4>
+
+    <div class="col-xs-12 tab-content-details">
+        <div class="col-xs-4">
+            <img src="assets/img/usecases/precipitate_TEM.png" width="100%">
+        </div>
+        <div class="col-xs-6" style="padding-top: 100px;">
+            Figure Caption: Transmission electron microscope image of β’ precipitates in a Mg-Nd alloy (E. Sitzmann & E.
+            Marquis, PRISMS Center).
+        </div>
+    </div>
+    <p class="tab-content-details">
+        Fundamental questions remain that need to be answered in order to enable the discovery and design of new Mg
+        alloys with optimal strength. For example, how can precipitation mechanisms be described theoretically such that
+        the evolution during aging heat treatments can be predicted; and what, in particular, about the rare-earth
+        elements causes this favorable precipitation morphology and orientation and are there other non-rare-earth
+        elements that will exhibit the same behavior.
+    </p>
+
+    <div class="col-xs-12 tab-content-details">
+        <div class="col-xs-4">
+            <img src="assets/img/usecases/Precipitate_Simulation.png" align="left">
+        </div>
+        <div class="col-xs-6" style="padding-top: 100px;">
+            Figure Caption. β’ precipitate distribution predicted for a Mg-Nd alloy using the PRISMS Phase Field code
+            (Preliminary computation by L. Aageson and S. Rudruraju PRISMS Center)
+        </div>
+    </div>
+    <p class="tab-content-details">
+        Developing predictive capabilities that address these and other questions is the goal of the PRISMS Precipitate
+        Evolution Use Group. Our initial demonstration of this integrated framework is on β’ and β1 precipitate
+        evolution in a Mg-Nd alloy. This is being conducted in conjunction with the Tensile Behavior use group and used
+        to develop an integrated capability for predicting the influence of precipitates on strengthening and ductility
+        of Mg-RE alloys.
+
+    </p>
+
+    <p>
+        <img src="assets/img/usecases/Precipitate_Evolution.png" width="100%">
+    </p>
+    <h4> Integration Approach</h4>
+
+    <p class="tab-content-details">
+        Outputs from statistical mechanics calculations determined using the PRISMS Statistical Mechanics Code (CASM)
+        are input to the PRISMS phase field code (PRISMS-PF). Specifically, first principles calculations using VASP are
+        used to fit a cluster expansion for the hcp alloy system that will be used in Monte Carlo calculations of the
+        free energy. A series of thermodynamic and kinetic models with varying levels of approximations are being
+        parameterized in turn. Nuclei will be introduced to PRISMS-PF using explicit nucleation events. Experimental
+        results from advanced transmission electron microscopy and atom probe tomography methods are used to identify
+        the crystal structure, morphology and composition of precipitates to inform and validate models.
+    </p>
+    <h4>PRISMS Computational Tools</h4>
     <ul class="tab-content-details">
         <li>PRISMS CASM: Statistical Mechanics code</li>
-        <li>PRISMS KS-DFT: Real Space Kohn-Sham Density Functional theory code</li>
         <li>PRISMS PF: Phase field methods code</li>
     </ul>
 </div>

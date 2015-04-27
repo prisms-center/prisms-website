@@ -38,21 +38,33 @@
             <div id="circles_description" class="col-xs-8">
                 <div ng-hide="info">
                     <h2>Integrated, Focused, Open</h2>
+
                     <p>
-                        At the PRISMS Center integration drives everything we do. Our science
-                        is integrated with our computational codes. Our Materials Commons
-                        repository allows groups to collaborate and share data. And our
-                        experimentalists fill in missing details. Our 3 focus
-                        areas work together to support each other.
+                        At the PRISMS Center integration drives everything we do. Our science is integrated with our
+                        computational codes and with the results from our experimentalists who identify new phenomena
+                        and fill in missing details. Our Materials Commons repository allows groups to collaborate and
+                        share data and provide it to the broader technical community. And our computational software is
+                        seamlessly integrating the latest multi-length scale scientific software into open source codes.
+                    </p>
+
+                    <p>
+                        The PRISMS Center has three primary thrusts that work together to support each other. They are:
                     </p>
                     <ul>
-                        <li>Integrated Science combines experimental and computational approaches.</li>
-                        <li>Computational Tools is an open source framework of integrated, multi-scale tools.</li>
-                        <li>Materials Commons provides collaboration and storage.</li>
+                        <li>Integrated Science – focuses experimental and computational approaches on important
+                            demonstration problems.
+                        </li>
+                        <li>Computational Tools - an integrated framework of open-source multi-scale simulation
+                            software.
+                        </li>
+                        <li>Materials Commons – a unique repository that enables collaboration, seamless capture of
+                            important findings and community building
+                        </li>
                     </ul>
                 </div>
                 <div ng-show="info == 'les'">
                     <h2>Integrated, Collaborative Science</h2>
+
                     <p>
                         Developing computational codes that help to model the real world is hard. Our
                         approach teams experimental researchers with computationalists to produce models
@@ -71,6 +83,7 @@
                 </div>
                 <div ng-show="info == 'ct'">
                     <h2>PRISMS Computational Tools</h2>
+
                     <p>
                         The PRISMS Computational Tools suite is an integrated set of codes for
                         writing large scale models that pass data across the different length scales.
@@ -122,21 +135,27 @@
                     <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="overview">About
                         PRISMS</h2>
 
-                    <p class="tab-content-details">
-                        Combining the efforts of computational and experimental researchers, the goal of this Center is
-                        development of an integrated suite of validated computational tools that are designed to
-                        accelerate the
-                        development of new structural metals.</p>
-
-                    <p class="tab-content-details">
-                        Our Center is formally known as the DOE Software Innovation Center for Integrated Multi-Scale
-                        Modeling
-                        of Structural Metals. We call it PRISMS for short which stands for PRedictive Integrated
-                        Structural
-                        Materials Science. Our ambitious goal is for our PRISMS tools to be the extensible scientific
-                        core of
-                        the Integrated Computational Materials Engineering.
-                    </p>
+                    <div class="row">
+                        <div class="col-xs-9 tab-content-details">
+                            PRISMS is short for PRedictive Integrated Structural Materials Science. Combining the
+                            efforts of
+                            experimental and computational researchers, the overarching goal of the PRISMS Center is to
+                            establish a unique scientific platform that will enable accelerated predictive materials
+                            science
+                            for structural metals. Our ambitious vision is that the PRISMS tools and protocols will
+                            become a
+                            community-developed, extensible scientific core for accelerating the development of new
+                            materials as envisioned by the Materials Genome Initiative (include link here). The
+                            Materials
+                            Genome Initiative is President Barack Obama’s plan to double the speed with which American
+                            scientists and engineers discover, develop, and manufacture new materials.
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="assets/img/center_computing_resources.jpeg" height="80%" width="80%">
+                        </div>
+                    </div>
+                    <!--<p class="tab-content-details">-->
+                    <!--</p>-->
                     <br>
 
                     <div class="anchor">
@@ -170,8 +189,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="tab-content-title anchor" id="research">Research</h2>
-                        </div>
-                        <div class="col-xs-9">
+
                             <p class="tab-content-subtitle">Center Computing Resources</p>
 
                             <p class="tab-content-details">The PRISMS Center has a dedicated 2072 core cluster for
@@ -181,30 +199,25 @@
                                 advanced open source computational models.
                             </p>
                         </div>
-                        <div class="col-xs-3">
-                            <img src="assets/img/center_computing_resources.jpeg" height="80%" width="80%">
-                        </div>
-                        <br><br><br>
                     </div>
                     <br>
 
                     <h2 class="tab-content-title anchor" id="funding">Funding</h2>
 
-                    <p class="tab-content-details"> The Center is funded by a five year $11M grant from Department of
-                        Energy
-                        Basic Energy Science. This has been coupled with $1.5M in cost-shared from UM, College of
-                        Engineering
-                        and the faculty and departments involved. The funding comes from the <a class="main_link"
-                                                                                                href="http://www.whitehouse.gov/mgi"
-                                                                                                target="_blank">Materials
-                        Genome
-                        Initiative</a>, President Obama’s plan to double the speed with which American scientists
-                        and
-                        engineers discover, develop, and manufacture new materials.
+                    <p class="tab-content-details">
+                        Our Center is formally known as the Department of Energy (DOE) Software Innovation Center for
+                        Integrated Multi-Scale Modeling of Structural Metals. The PRISMS Center is one of several such
+                        centers that DOE-Basic Energy Science (BES) supports as part of the
+                        <a class="main_link" href="http://www.whitehouse.gov/mgi" target="_blank">Materials Genome Initiative</a>
+                        to encourage and support development of open-source computational tools and repositories
+                        and facilitate large-scale community involvement. It is funded as part of the DOE-BES Predictive
+                        Theory and Modeling program with a five year $11M grant. The PRISMS Center has leveraged this
+                        with over $1.5M of University of Michigan internal cost-shared resources provided by UM Office
+                        of Research, UM College of Engineering and the five departments and eleven faculty involved in
+                        the center.
                     </p>
                     <br><br>
                 </div>
-                <!--<a ui-sref="about.overview" class="main_link">MORE >></a>-->
             </div>
             <!--End of Overview-->
         </div>
@@ -212,29 +225,29 @@
     </div>
 </div>
 <script type="text/JavaScript">
- $(document).ready(function () {
-     $('.circle').click(function () {
-         //$('#indicator').hide();
-         $(this).siblings().css('opacity', 0.7)
+    $(document).ready(function () {
+        $('.circle').click(function () {
+            //$('#indicator').hide();
+            $(this).siblings().css('opacity', 0.7)
                     .removeClass('cover');
-         $(this).css('opacity', 1)
+            $(this).css('opacity', 1)
                     .addClass('cover');
-         $('#circles_description').css('padding-top', '1em')
+            $('#circles_description').css('padding-top', '1em')
                     .css('padding-bottom', '1em');
 
-         if ($(this).attr('id') == 'circle_sci') {
-             $('#circle_description_sci').siblings().hide();
-             $('#circle_description_sci').fadeIn("slow");
-         }
-         else if ($(this).attr('id') == 'circle_mc') {
-             $('#circle_description_mc').siblings().hide();
-             $('#circle_description_mc').fadeIn("slow");
-         }
-         else if ($(this).attr('id') == 'circle_code') {
-             $('#circle_description_code').siblings().hide();
-             $('#circle_description_code').fadeIn("slow");
-         }
+            if ($(this).attr('id') == 'circle_sci') {
+                $('#circle_description_sci').siblings().hide();
+                $('#circle_description_sci').fadeIn("slow");
+            }
+            else if ($(this).attr('id') == 'circle_mc') {
+                $('#circle_description_mc').siblings().hide();
+                $('#circle_description_mc').fadeIn("slow");
+            }
+            else if ($(this).attr('id') == 'circle_code') {
+                $('#circle_description_code').siblings().hide();
+                $('#circle_description_code').fadeIn("slow");
+            }
 
-     });
- });
+        });
+    });
 </script>

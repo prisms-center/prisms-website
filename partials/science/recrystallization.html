@@ -2,40 +2,60 @@
     <h2 style="padding-top: 120px; margin-top: -70px;"
         class="tab-content-title" id="overview">Recrystallization and Grain Growth
     </h2>
+
     <p class="tab-content-details">
-                The influence of grain size, grain size distribution and grain orientations have a well-documented influence on the mechanical properties of
-        metal alloys. Thus developing and demonstrating a capability for predicting these characteristics is an important PRISMS capability.  Due to
-        resource constraints the primary activity of this use case group is planned to occur in the next two years. This use case also represents an
-        opportunity to demonstrate the capabilities of a new computational methodology: Phase Field Crystal.
+        The influence of grain size, grain size distribution and grain orientations have a well-documented influence on
+        the mechanical properties of metal alloys. Thus developing and demonstrating a capability for predicting these
+        characteristics is an important PRISMS capability. This use case also represents an opportunity to demonstrate
+        the capabilities of a new computational methodology, Phase Field Crystal for predicting grain boundary energies.
     </p>
-    <img src="assets/img/usecases/Recrystallization.png" width="100%"></img>
+
+    <div class="col-xs-12 tab-content-details">
+        <div class="col-xs-4">
+            <img src="assets/img/usecases/Recrystallization_electron_backscatter.png">
+        </div>
+        <div class="col-xs-6 col-xs-offset-2" style="padding-top: 200px;">
+            Figure Caption: Electron backscatter diffraction image showing crystal orientations of grains in a Mg-Nd-Y
+            alloy (A. Murphy and J. Allison). – NOTE: I'll get a better image for this one from Aeriel.
+        </div>
+    </div>
+    <br><br>
+    <img src="assets/img/usecases/Recrystallization_integrate.png" width="100%">
     <br>
 
     <h4>Integration Approach</h4>
+
     <p class="tab-content-details">
-        As indicated in the figure above, the scientific workflow includes CASM, Phase Field Crystal,
-        PRISMS-CPFE, PRISMS-PF and critical experiments.  The primary outputs to other use
-        cases is in the form of PRISMS-PF simulations of critical microstructural parameters
-        such as grain size and grain size distribution.
-     </p>
-     <h5>Inputs to Phase-Field Model from Simulations</h5>
-     <p class="tab-content-details">
-        Using the phase-field crystal method, grain boundary energy will be
-        calculated as a function of the orientations of two grains. This data will be used
-        to parameterize a phase-field model for grain growth that allows for anisotropic
-        grain boundary energy.
-     </p>
-     <h5>Inputs to Phase-Field Model from Experiment</h5>
-     <p class="tab-content-details">
-      To determine
-        the mobility of grain boundaries critical experiments are necessary. Undeformed
-        polycrystalline sample are annealed and the grain size as a function of time
-        measured and from the growth kinetics the mobility can be estimated.
-     </p>
-    <h4>Computational Tools</h4>
+        The scientific workflow Phase Field Crystal, PRISMS-Crystal Plasticity and PRISMS Phase Field and critical
+        experiments. The primary outputs to other use cases is in the form of PRISMS-PF simulations of critical
+        microstructural parameters such as grain size and grain size distribution.
+    </p>
+
+    <div class="row tab-content-details">
+        <div class="col-xs-4">
+            <img src="assets/img/usecases/Recrystallization_Grain_Boundary_Energies.png">
+        </div>
+
+        <div class="col-xs-6 col-xs-offset-2" style="padding-top: 120px;">
+            Figure Caption: Phase Field Crystal calculation of grain boundary energy versus orientation compared with
+            molecular dynamics simulation (J. Luce and K. Thornton, PRISMS Center; molecular dynamics simulation
+            courtesy E. Holm, Carnegie-Mellon University).
+        </div>
+    </div>
+
+    <p class="tab-content-details">
+        Using the phase-field crystal method, grain boundary energy will be calculated as a function of the orientations
+        of two grains. This data will be used to parameterize a phase-field model for grain growth that allows for
+        anisotropic grain boundary energy. To determine the mobility of grain boundaries undeformed polycrystalline
+        sample are annealed and the grain size as a function of time measured and from the growth kinetics the mobility
+        can be estimated. Recrystallization rates of deformed microstructures are also determined experimentally for
+        parameterization of phase field models for recrystallization.
+
+    </p>
+    <h4>PRISMS Computational Tools</h4>
     <ul class="tab-content-details">
-        <li>PRISMS CASM: Statistical Mechanics code</li>
-        <li>PRISMS KS-DFT: Real Space Kohn-Sham Density Functional theory code</li>
-        <li>PRISMS PF: Phase field methods code</li>
+        <li>PRISMS Phase Field </li>
+        <li>PRISMS Crystal Plasticity</li>
+        <li>Phase Field Crystal (Research Code)</li>
     </ul>
 </div>
