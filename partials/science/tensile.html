@@ -3,52 +3,43 @@
         class="tab-content-title" id="overview">Tensile Behavior
     </h2>
     <p class="tab-content-details">
-        The Tensile Behavior Use Case group is investigating and developing predictive capabilities for a wide range of complex phenomena including
-        dislocation-precipitate and dislocation-dislocation interactions in an hcp system, prediction of alloying effects on solid solution
-        strengthening and twin formation, prediction and measurements of strain distributions and the propensity for cracking at grain and twin
-        boundaries. An important aspect of the PRISMS Center is the integration of detailed microstructural simulations with property models and
-        it is in this use case that this is being accompliplished.
+        The Tensile Behavior Use Case group is investigating and developing predictive capabilities for a wide range of complex
+        phenomena including dislocation-precipitate and dislocation-dislocation interactions in an hcp system, prediction of
+        alloying effects on solid solution strengthening and twin formation, prediction and measurements of strain distributions
+        and the propensity for cracking at grain boundaries. An important aspect of the PRISMS Center is the integration of
+        detailed microstructural simulations from other use groups with property models.
     </p>
-    <video src="assets/media/dd150123b_1-85.mov" controls>
+    <video ng-if="false" src="assets/media/dd150123b_1-85.mov" controls>
     </video>
+    <img src="assets/img/usecases/Tensile_HCP_Basal.png" height="40%" width="40%"></img>
+    <p class="tab-content-details">
+        Figure: Simulation using Paradis of the interaction of dislocations on hcp basal planes with gamma precipitates in a
+        Mg-Al alloy (L. Aageeson, PRISMS Center with PRISMS Collaborator S. Aubry of Livermore National Laboratory).
+    </p>
+    <br>
+    <br>
     <img src="assets/img/usecases/Tensile_Behavior_2.png" width="100%"></img>
     <br>
     <h4>Integration Approach</h4>
     <p class="tab-content-details">
-        The figure above provides a schematic of the PRISMS Tensile Behavior integration protocol.
-        As indicated in the figure, outputs from statistical mechanics calculations are used
-        as inputs to ParaDis and VMM.  In turn, the ParaDis calculations will be used as
-        inputs to the PRISMS-CPFE and PRISMS-Plasticity Codes.  Key experimental
-        measurements have also been identified for inputs to CPFE and VMM. The following
-        are some of the key variables that will be captured and passed.
+        In the PRISMS Tensile Behavior integration protocol outputs from statistical mechanics calculations are used as
+        inputs to the dislocation dynamics code, ParaDis and to traction separation laws using in the Variational
+        Multiscale Method. In turn, the ParaDis calculations will be used as inputs to the PRISMS-Crystal Plasticity
+        and PRISMS-Plasticity Codes. Key experimental measurements come from in-situ SEM-DIC measurements of grain
+        orientations and local cracking, slip and grain rotations.
     </p>
-    <h5>Inputs to Dislocation Dynamics (ParaDis) Simulation</h5>
-    <ul class="tab-content-details">
-        <li>Peierls Barrier: To include solute hardening, the Peierls barrier as a function of solute concentration will be calculated using the gamma-surface approach in CASM. Long term it is anticipated that this may be accomplished using RS-DFT.</li>
-        <li>Dislocation core energy:  Core energies for edge and screw type dislocations are being calculated using real space RS-DFT.</li>
-        <li>Dislocation glide mobility: Published values determined from molecular dynamics calculations will be used.</li>
-        <li>Precipitate microstructures: For microstructures with precipitates, the microstructure will be obtained from phase field simulations and spatial distribution of the microstructure will be passed to DD.</li>
-    </ul>
-    <h5>Inputs to PRISMS-CPFE</h5>
-    <ul class="tab-content-details">
-        <li>Hardening coefficients: The crystal plasticity hardening laws are parameterized from large-scale DD calculations that characterize forest hardening and precipitation hardening.</li>
-        <li>Hardening coefficients for twinning in Mg: These coefficients will be determined by fitting models to macroscopic and microscale SEM-DIC experimental results. A computational model for twinning using gradient elasticity is also under development to serve this purpose.</li>
-        <li>Inputs from PRISMS-PF for grain sizes.</li>
-    </ul>
-    <h5>Inputs to PRISMS-Plasticity</h5>
+    <img src="assets/img/usecases/Tensile_SEM_DIC_Deformation.png" height="40%" width="40%"></img>
     <p class="tab-content-details">
-        Yield function, yield stress and hardening laws will be obtained by homogenizing the Crystal Plasticity computations over multiple grain orientations at a continuum point.
+        Figure: SEM-DIC image of deformation in a Mg-Nd-Y alloys (A. Githens, PRISMS Center).
     </p>
-    <h5>Inputs to PRISMS-VMM</h5>
-    <p class="tab-content-details">
-        Traction separation laws will be estimated using CASM. Issues of mode-mixity, crack initiation criterion and crack propagation criterion are still open challenges, and thus we propose to use any such values/criterion in conjunction with experimental observations.
-    </p>
+    <br>
     <h4>Computational Tools</h4>
     <ul class="tab-content-details">
-        <li>PRISMS KS-DFT: Real Space Kohn-Sham Density Functional theory code</li>
-        <li>PRISMS PF: Phase field methods code</li>
-        <li>PRISMS Plasticity: Continuum Plasticity and Crystal Plasticity code</li>
-        <li>PRISMS MC: Mechano-Chemical phase transformations code</li>
+        <li>PRISMS KS-DFT: Real Space Kohn-Sham Density Functional Theory Code</li>
+        <li>PRISMS Phase Field Code</li>
+        <li>PRISMS Crystal Plasticity Code</li>
+        <li>PRISMS Continuum Plasticity Code</li>
+        <li>Mechano-Chemical Transformations Code (Research Code)</li>
     </ul>
 
 </div>
