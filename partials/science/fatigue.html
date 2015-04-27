@@ -1,19 +1,58 @@
 <div class="about-area">
     <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="overview">Fatigue Behavior</h2>
+
     <p class="tab-content-details">
-        The Fatigue Behavior Use Case group is investigating and developing capabilities for predicting the role of alloying and microstructure
-        on the low cycle fatigue response and the growth of microstructurally small fatigue cracks in Mg alloys.
+        Predicting failure of metal alloys subjected to cyclic deformation, known as fatigue, is a very important
+        technological problem and a long-standing scientific challenge. In the Fatigue Behavior Use Case we are
+        developing capabilities for predicting the role of alloying and microstructure on the low cycle fatigue response
+        and the growth of microstructurally small fatigue cracks in Mg alloys. Fatigue is a property that is
+        particularly sensitive to extremes of microstructure and quantifying these microstructural influences in a
+        statistically significant manner is limited by conventional fatigue testing apparatus. To achieve statistically
+        robust fatigue information, UM has pioneered novel diagnostic techniques integrated with unique ultrasonic
+        fatigue (UF) instrumentation that can accelerate fatigue testing by a factor of 500-1000 times <a ui-sref="ctools.tools">(See Experimental
+        Tools)</a>. The results of these experiments are being used to parameterize our
+        crystal elasticity and plasticity models to answer questions such as how do fatigue cracks migrate across grain
+        boundaries and how do these boundaries influence the fatigue crack growth rates.
     </p>
-    <img src="assets/img/usecases/Fatigue_Behavior_2.png" width="100%"></img>
+
+    <div class="row">
+        <div class="col-xs-offset-1">
+            <img style="width: 600px; height: 250px;" src="assets/img/usecases/Fatigue_Cracks.png">
+        </div>
+    </div>
+    <div class="row tab-content-details">
+        Figure: Fatigue cracks in Mg alloys are grown from carefully oriented notches "machined" using
+        focused-ion beams in grains with specific orientations determined using electron backscatter diffraction.
+        (J. Adams, PRISMS Center).
+    </div>
+    <br>
+    <div class="row tab-content-details">
+        <div class="col-xs-4">
+            <img style="width: 350px; height: 250px;" src="assets/img/usecases/Crystal_Plasticity_Model.png">
+        </div>
+        <div class="col-xs-6 col-xs-offset-2" style="padding-top: 100px;">
+            Figure: Crystal plasticity model of fatigue crack growth using variational multi-scale cohesive
+            traction separation models. (S. Panwar, PRISMS Center)
+        </div>
+    </div>
     <br>
     <h4>Integration Approach</h4>
+
     <p class="tab-content-details">
-        The above figure provides a schematic of the PRISMS fatigue behavior scientific workflow integration protocol. As indicated in the figure, outputs from CASM calculations are used as inputs to ParaDis and PRISMS-VMM.  The ParaDis calculations will be used as inputs to the PRISMS-CPFE and PRISMS-Plasticity Codes.  Key experimental measurements have also been identified for inputs to PRISMS-CPFE and VMM. This integration protocol is very similar to that described for the Tensile Behavior use case and the integration linkages described in the tensile use case section identify the same linkages.  In addition for prediction of fatigue behavior, inputs to PRISMS-VMM will be determined by fitting fatigue crack growth "Paris Law" constants obtained from PRISMS-CPFE to critical experiments.
+        In the PRISMS integrated scientific workflow integration protocol the outputs from CASM calculations are used as
+        inputs to ParaDis and PRISMS-Crystal Elasticity/Plasticity with Variational Multi-Scale Method used for
+        incorporating traction separation laws for slip band formation and cracking. Microstructure is passed to this
+        use case using Phase Field models for precipitate evolution and grain growth. Key experimental measurements for
+        calibration and validation of these models, include local crack path orientations, fatigue crack growth rates
+        and low cycle fatigue lives.
     </p>
+    <img src="assets/img/usecases/Fatigue_Integration.png" width="100%">
+
     <h4>Computational Tools</h4>
     <ul class="tab-content-details">
-        <li>PRISMS KS-DFT: Real Space Kohn-Sham Density Functional theory code</li>
-        <li>PRISMS PF: Phase field methods code</li>
-        <li>PRISMS Plasticity: Continuum Plasticity and Crystal Plasticity code</li>
+        <li>PRISMS Phase Field</li>
+        <li>CASM (Statistical Mechanics)</li>
+        <li>PRISMS Crystal Elasticity and Plasticity code (with Variational Multi-Scale Modeling)</li>
+        <li>PRISMS Continuum Plasticity</li>
     </ul>
 </div>
