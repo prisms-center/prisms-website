@@ -113,7 +113,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         })
         .state('contact', {
             url: '/contact',
-            templateUrl: 'partials/contact/contact.html'
+            templateUrl: 'partials/contact/contact.html',
+            controller: 'ContactController',
+            controllerAs: 'contact'
         });
 
     $urlRouterProvider.otherwise('/home');
@@ -489,5 +491,62 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             console.log('going to anchor: ', $stateParams.who);
             $location.hash($stateParams.who);
             $anchorScroll();
+        }
+    })
+    .controller("ContactController", function ($window) {
+        var ctrl = this;
+        ctrl.name = "";
+        ctrl.organization = "";
+        ctrl.workshops = null;
+        ctrl.computational = null;
+        ctrl.materialscommons = null;
+        ctrl.expertise = "";
+        ctrl.collaborate = "";
+        ctrl.submit = submit;
+        ctrl.cancel = clear;
+
+        ///////////////////////
+        function submit() {
+            $window.location = "mailto:prisms-community@umich.edu?subject=PRISMS Community&body=" + escape(constructMessage());
+            clear();
+        }
+
+        function constructMessage() {
+            var msg = "I would like to learn more about PRISMS.\n\n";
+            if (ctrl.name !== "") {
+                msg += "My name is: " + ctrl.name + "\n";
+            }
+            if (ctrl.organization !== "") {
+                msg += "I work for: " + ctrl.organization + "\n";
+            }
+            if (ctrl.workshops || ctrl.computation || ctrl.materialscommons) {
+                msg += "\nI am interested in:\n";
+            }
+            if (ctrl.workshops) {
+                msg += " - PRISMS Workshops\n";
+            }
+            if (ctrl.computation) {
+                msg += " - PRISMS Computational Software\n";
+            }
+            if (ctrl.materialscommons) {
+                msg += " - Materials Commons\n";
+            }
+            if (ctrl.expertise) {
+                msg += "\nI have expertise in: \n" + ctrl.expertise + "\n";
+            }
+            if (ctrl.collaborate) {
+                msg += "\nI would like to collaborate on: \n" + ctrl.collaborate + "\n";
+            }
+            return msg;
+        }
+
+        function clear() {
+            ctrl.name = "";
+            ctrl.organization = "";
+            ctrl.workshops = null;
+            ctrl.computational = null;
+            ctrl.materialscommons = null;
+            ctrl.expertise = "";
+            ctrl.collaborate = "";
         }
     });
