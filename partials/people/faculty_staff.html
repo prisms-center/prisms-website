@@ -1,5 +1,6 @@
 <div class="people-area">
     <h2 id="facultystaff" style="padding-top: 120px; margin-top: -70px;">Faculty and Staff</h2>
+
     <div class="people-container row">
         <div class="people-pic col-xs-3">
             <div class="vertical-center"><img class="portrait" src="assets/img/people/John_Allison.jpg"
@@ -10,7 +11,7 @@
         <div class="people-description col-xs-9">
             <div class="vertical-center">
                 <a href="#johnea@umich.edu"></a>
-                <h4 class="people-title">Professor:  John Allison - Center Director</h4>
+                <h4 class="people-title">Professor: John Allison - Center Director</h4>
 
                 <p>Email: <a class="main_link" href="mailto:johnea@umich.edu">johnea@umich.edu</a></p>
 
@@ -18,12 +19,11 @@
                                 target="_blank">http://www.mse.engin.umich.edu/people/johnea</a></p>
 
                 <p>
-                    My major research interest is in understanding the inter-relationships between processing,
-                    alloying, microstructure and properties in metallic materials – and in incorporating this
-                    knowledge into computational tools for use in research, education and engineering. An
-                    important part of my research is development of Integrated Computational Materials
-                    Engineering (ICME) tools – and thus collaborations with other computational and experimental
-                    groups are an essential element of my work.
+                    My major research interest is in understanding the inter-relationships between processing, alloying,
+                    microstructure and properties in metallic materials – and, working together with others, to
+                    incorporate this knowledge into computational tools for use in research, education and engineering.
+                    Within the PRISMS Center, my research focus is on quantifying the influence of alloying and
+                    processing on microstructural evolution and mechanical behavior in magnesium alloys.
                 </p>
             </div>
         </div>
@@ -41,11 +41,12 @@
             <div class="people-description col-xs-9">
                 <div class="vertical-center">
                     <a href="#{{person.email}}"></a>
-                    <h4 class="people-title">{{person.title }}  {{person.first_name}} {{person.last_name}}</h4>
+                    <h4 class="people-title">{{person.title }} {{person.first_name}} {{person.last_name}}</h4>
 
                     <p>Email: <a class="main_link" href="mailto:{{person.email}}">{{person.email}}</a></p>
-                    <p ng-if="person.research">Research: <a  class="main_link" href="{{person.research}}"
-                                                             target="_blank">{{person.research}}</a></p>
+
+                    <p ng-if="person.research">Research: <a class="main_link" href="{{person.research}}"
+                                                            target="_blank">{{person.research}}</a></p>
 
                     <p>
                         {{person.blurb}}
@@ -69,7 +70,9 @@
                     <h4 class="people-title">{{person.first_name}} {{person.last_name}} {{person.title }} </h4>
 
                     <p>Email: <a class="main_link" href="mailto:{{person.email}}">{{person.email}}</a></p>
-                    <p ng-if="person.research">Research: <a class="main_link" href="http://www-personal.umich.edu/~krishna/"
+
+                    <p ng-if="person.research">Research: <a class="main_link"
+                                                            href="http://www-personal.umich.edu/~krishna/"
                                                             target="_blank">{{person.research}}</a></p>
 
                     <p>
