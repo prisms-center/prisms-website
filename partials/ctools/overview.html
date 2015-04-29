@@ -1,59 +1,45 @@
 <div class="about-area">
-    <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="overview"></h2>
+    <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="overview">PRISMS Multi-scale Framework</h2>
+
+    <img src="assets/img/PRISMS_Software_Overview.png" width="75%" height="75%" align="right"></img>
 
     <p class="tab-content-details">
-        To accomplish our goal of accelerated predictive capabilities, we are establishing a new framework comprised of
-        the PRISMS integrated, multi-scale open-source software and associated experiments, integration protocols and
-        our information repository, the Materials Commons. The architecture of this integrated set of tools is shown in
-        the Figure below.
+        The PRISMS Center software development is centered on an integrated suite of multiscale/multiphysics
+        computational codes developed by the various research groups affiliated with the center and are
+        facilitated by the research staff and faculty in a highly collaborative environment. The codes are
+        hosted on GitHub [https://github.com/prisms-center] and are subject to our evolving best practices
+        and software quality assurance (SQA). Code reviews are regularly conducted and a broadly two stage
+        annual release plan involving (I) internal beta release to PRISMS members and collaborators, and (II)
+        open-source public release under the GNU Lesser General Public License (LGPL) is followed. Stay tuned
+        for our first public release scheduled for Summer 2015.
     </p>
-
-    <p>
-        <a ng-click="openImg()"><img src="assets/img/prisms-flowchart.png"></a>
-    </p>
-
+    <br>
     <p class="tab-content-details">
-
-        Figure: The PRISMS Integrated Computational and Experimental tool architecture (Color Code: White: PRISMS
-        Software, Green: PRISMS Experiments, Blue: Existing External Software, Red: Research Software under evaluation
-        for PRISMS)
-
+        The PRISMS computational tools are designed to provide a general numerical framework for solutions to
+        the gamut of multiscale/multiphysics problems encountered in the nano-micro-mesa-macro analysis of
+        structural materials. However, given the vast generality and complexity of analytical/numerical/experimental
+        challenges possible across these scales, the Center primarily focusses on three scientific challenges: (I)
+        Predicting the role of alloy composition and processing on microstructure evolution (Hyper link to
+        Precipitate evolution and Recrystallization and Grain Growth use cases), (II)  Prediction of tensile
+        properties from first principles (Hyper link to Tensile properties use case), (III) Prediction of fatigue
+        behavior (Hyper link to Fatigue behavior use case). These challenges are addressed by a combination of
+        advanced numerical frameworks (hyper link to codes), experimental techniques (hyper link to tools) and
+        relevant phenomenological models.
     </p>
 
-    <p ng-if="false" class="tab-content-details">
-        The PRISMS Center has a dedicated 2072 core cluster for running our
-        models on. The cluster will be shared by our different research groups as they develop our
-        advanced open source computational models.ntegrated Computational Materials Engineering.
-    </p>
     <br>
+    <h4>PRISMS HPC Resources</h4>
+    <ul class="tab-content-details">
+        <li>
+            Dedicated compute cluster with 136 nodes (Intel Xeon X2670 - 16 2.6GHz cores, 64GB RAM), with a total of 2176 processor cores.
+        </li>
 
-    <p ng-if="false" class="tab-content-details">
-        The PRISMS Center software is developed by participating students, post-doctoral scholars, research staff and
-        faculty in a collaborative
-        environment facilitated by code repositories such as GitHub. Reviews are conducted on a daily/weekly frequency
-        depending on the stage of the
-        specific code. All code is first released internally to PRISMS members, followed by beta releases before the
-        first public release. Bug fixes
-        <a ng-click="openImg()"><img src="assets/img/prisms-flowchart.png" align="left"> </a>
-        are carried out at every stage. Software development and release procedures have been developed by the primary
-        faculty and staff involved.
-        These faculty, staff and the Center Director meet weekly to review progress and plan. The meetings are
-        facilitated by Professor Krishna Garikipati.
-    </p>
-    <br>
+        <li>
+            Nodes connected by 40Gbps InfiniBand.
+        </li>
 
-    <p ng-if="false" class="tab-content-details">
-        The PRISMS computational tools are designed to be general in nature and applicable to prediction of a wide range
-        of phenomena in structural metals,
-        however, in this program, we are targeting three major scientific challenges, namely, predicting the role of
-        alloy composition and processing on
-        microstructures and, in turn, predicting the effect of alloying and microstructure on tensile and fatigue
-        behavior. Theories for tensile and
-        fatigue property prediction are largely phenomenological and the lack of comprehensive theories for
-        strengthening, strain hardening and, in
-        particular, fatigue have limited this predictive capability.
-    </p>
-    <br>
-
-
+        <li>
+            Part of FLUX operating environment with 640TB parallel lustre storage.
+        </li>
+    </ul>
 </div>
