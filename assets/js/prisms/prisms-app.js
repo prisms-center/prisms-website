@@ -435,6 +435,20 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "John Allison",
                 "image": "assets/img/people/Aeriel.jpg",
                 "blurb": "I work on studying recrystallization and grain growth kinetics of Mg and Mg alloys. My work also focuses on understanding low-cycle fatigue behavior of these alloys as it relates to microstructure and alloying additions."
+            },
+            {
+                "title": "",
+                "first_name": "Koki",
+                "last_name": "Sagiyama",
+                "email": "sagiyama@umich.edu",
+                "research": "",
+                "advisor": "Krishna Garikipati",
+                "image": "assets/img/people/koki.jpg",
+                "blurb": "My research involves developing integration algorithms for the robust solution of stiff systems of equations that " +
+                    "result from the coupling of mechanics and chemistry in problems of evolving microstructure. Specifically, " +
+                    "these methods are unconditionally stable and second-order accurate in time, which enables the numerical " +
+                    "solution to march more rapidly with respect to time than the conventional, conditionally stable, " +
+                    "first-order accurate schemes.These methods are applied to those phenomena of twinning  in Mg that are controlled by the formation of strain-driven martensitic variants."
             }
         ];
 
