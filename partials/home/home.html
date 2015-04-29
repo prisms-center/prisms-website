@@ -36,7 +36,7 @@
             </div>
             <!-- circle description-->
             <div id="circles_description" class="col-xs-8">
-                <div ng-hide="info">
+                <div ng-hide="info !== 'default'">
                     <h2>Integrated, Focused, Open</h2>
 
                     <p>
@@ -91,8 +91,8 @@
                 </div>
             </div>
         </div>
-        <div class="main-top row tab-content-details">
-            <div ng-hide="info" style="padding-right: 96px">
+        <div ng-if="info === 'default'" class="main-top row tab-content-details">
+            <div style="padding-right: 96px">
                 <p>
                     The PRISMS Center has three primary thrusts that work together to support each other. They are:
                 </p>
@@ -115,9 +115,7 @@
             <!-- Overview -->
             <div class="overview col-xs-12">
                 <div class="">
-                    <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="overview">About
-                        PRISMS</h2>
-
+                    <h2 class="tab-content-title" id="overview">About PRISMS</h2>
                     <div class="row">
                         <div class="col-xs-9 tab-content-details">
                             PRISMS is short for PRedictive Integrated Structural Materials Science. Combining the

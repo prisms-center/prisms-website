@@ -123,11 +123,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
     .controller("HomeController", function ($scope) {
         $scope.date = new Date();
+        $scope.info = "default";
         $scope.viewCircle = function (what) {
             $scope.info = what;
         };
         $scope.$on('home.reset', function() {
-            $scope.info = "";
+            $scope.info = "default";
         });
     })
     .controller("NavController", function($scope, $state) {
