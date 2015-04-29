@@ -29,6 +29,7 @@
     </p>
     <br>
 
+    <a name="dft"></a>
     <p class="tab-content-details">
         Below you can see a list of the computational codes under development, which will
         soon be released as open source. Each of these codes can be used stand alone or
@@ -51,10 +52,11 @@
         As part of the PRISMS software suite, we are developing a finite element (FEM) based
         real-space numerical framework for modeling Kohn-Sham DFT. Our primary focus is on
         accurate electronic structure study of the energetics of defects in crystalline materials
-        using all electron calculations of non-periodic/periodic super-cells containing thousands
-        of atoms. PRISMS-DFT provides us a first principles framework for determining relevant
+        using computational domains (with non-periodic/semi-periodic/periodic geometries) containing
+        tens of thousands of atoms. PRISMS-DFT provides us a first principles framework for determining relevant
         material properties.
     </p>
+    <a name="casm"></a>
     <img src="assets/img/ctools/DFT_1.png" width="20%" height="20%"></img>
     <img src="assets/img/ctools/DFT_2.png" width="30%" height="30%"></img>
     <br>
@@ -66,26 +68,29 @@
         statistical mechanics software. We have released an initial private
         version for internal use and beta testing by
         trusted collaborators. This release provides functionality for symmetry
+        <a name="pf"></a>
         identification, specification of composition axes, enumeration of
         symmetrically unique supercells and configurations, automatic VASP job
         submission and results collection, use of automatically determined or
         custom reference states for formation energy calculation, and convex
         hull identification.
     </p>
+
     <br>
-    <h4>PRISMS-PF: Phase Field Modeling Code</h4>
+    <h4>PRISMS PF: Phase Field Modeling Code</h4>
     <a href="http://www.mse.engin.umich.edu/people/faculty/thornton" target="_blank">K. Thornton</a>
     <p class="tab-content-details">
         Phase Field Models have been central to computational modeling of complex morphological
         evolution in multiphase solids. Here at the PRISMS-Center, we are developing a massively
-        scalable Phase Field modeling framework based on the deal.ii open-source finite element
-        library (hyper link to https://www.dealii.org/) which provides extensive support for
+        scalable Phase Field modeling framework based on the deal.ii open-source <a href="https://www.dealii.org" target="_blank">finite element
+        library</a> which provides extensive support for
         various finite element constructs, peta-scale grid generation with adaptivity (p4est
         adaptive octree meshes), scalable data structures and solvers. While the framework is
         expected to serve as a generic phase field library with coupled mechanics capability,
         the initial development focuses on modeling of precipitate evolution in binary and
         ternary alloys, as well as grain growth and recrystallization.
     </p>
+    <a name="plasticity"></a>
     <p class="tab-content-details">
         Current code modules include matrix-free implementations of coupled Cahn-Hilliard,
         Allen-Cahn and Mechanics, with example demonstrations of spinodal decomposition,
@@ -98,7 +103,7 @@
     <img src="assets/img/ctools/PF_2.png" width="20%" height="20%"></img>
     <br>
     <br>
-    <h4>PRISMS-Plasticity: Continuum Platicity and Crystal Plasticity Codes</h4>
+    <h4>PRISMS Plasticity: Continuum Platicity and Crystal Plasticity Codes</h4>
     <a href="http://www-personal.umich.edu/~krishna/" target="_blank">K. Garikipati</a>,
     <a href="http://umich.edu/~veeras/" target="_blank">V. Sundararaghavan</a>
     <p class="tab-content-details">
@@ -136,6 +141,7 @@
         between codes that operate at different scales in our integrated multi-scale model.
     </p>
 
+    <a name="mechano"></a>
     <h3>Research Codes:</h3>
     <p class="tab-content-details">
         The following codes are being developed to support our in-house research activities
@@ -143,9 +149,10 @@
         They currently do not have a public release schedule.
     </p>
     <br>
-    <h4>PRISMS-MechanoChemo: Mechano-Chemical Phase Transformations Modeling Code</h4>
+    <h4>PRISMS MechanoChemo: Mechano-Chemical Phase Transformations Modeling Code</h4>
     <a href="http://www-personal.umich.edu/~krishna/" target="_blank">K. Garikipati</a>,
     <a href="http://www.mse.engin.umich.edu/people/faculty/vanderven" target="_blank">A. Van der Ven</a>
+    <a name="pfc"></a>
     <p class="tab-content-details">
         We are developing a modeling approach for phase transformations that are driven by
         free energies that are non-convex in the strain-composition space by using a coupled
@@ -157,7 +164,7 @@
     </p>
     <br>
 
-    <h4>PRISMS-PFC: Phase Field Crystal Modeling Code</h4>
+    <h4>PRISMS PFC: Phase Field Crystal Modeling Code</h4>
     <a href="http://www.mse.engin.umich.edu/people/faculty/thornton" target="_blank">K. Thornton</a>
     <p class="tab-content-details">
         The Phase Field Crystal (PFC) model is a simulation approach that can model crystalline
