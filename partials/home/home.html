@@ -47,20 +47,6 @@
                         seamlessly integrating the latest multi-length scale scientific software into open source codes.
                     </p>
 
-                    <p>
-                        The PRISMS Center has three primary thrusts that work together to support each other. They are:
-                    </p>
-                    <ul>
-                        <li>Integrated Science – focuses experimental and computational approaches on important
-                            demonstration problems.
-                        </li>
-                        <li>Computational Tools - an integrated framework of open-source multi-scale simulation
-                            software.
-                        </li>
-                        <li>Materials Commons – a unique repository that enables collaboration, seamless capture of
-                            important findings and community building
-                        </li>
-                    </ul>
                 </div>
                 <div ng-show="info == 'les'">
                     <h2>Integrated, Collaborative Science</h2>
@@ -71,32 +57,25 @@
                         and codes that address real world problems. Our teams of researchers are broken
                         in to groups around different use cases. The use cases drive the experiments
                         and models. They help us to link experiments with the simulations, validate the
-                        models, and improve the codes. You can find out more about the science and our
-                        integrated approach to these use cases under <a ui-sref="science.overview">SCIENCE</a>.
+                        models, and improve the codes.
                     </p>
-                    <ul>
-                        <li>Linking Experiments &amp; Simulations</li>
-                        <li>Advanced Quantitative Experiments</li>
-                        <li>Use Cases<br>- Microstructural Evolution<br>- Mechanical Behavior</li>
-                    </ul>
-                    <a ui-sref="science.overview" class="main_link">MORE >></a>
+                    <a ui-sref="science.overview" class="main_link">Learn More >></a>
                 </div>
                 <div ng-show="info == 'ct'">
                     <h2>PRISMS Computational Tools</h2>
 
-                    <p>
+                    <p ng-if="false">
                         The PRISMS Computational Tools suite is an integrated set of codes for
-                        writing large scale models that pass data across the different length scales.
-                        The tools are based on standards such as DEAL.II and ParaDIS while adding
-                        new models.
+                        writing large scale models that pass data across the different length scales. Our
+                        tools are open source, integrated and extensible.
+
                     </p>
-                    <ul>
-                        <li>Open Source</li>
-                        <li>Integrated Hierarchical Multi-Scale</li>
-                        <li>Computationally Efficient</li>
-                        <li>Extensible</li>
-                    </ul>
-                    <a ui-sref="ctools.overview" class="main_link">MORE >></a>
+                    <p>
+                        The PRISMS Center software development is based on an integrated suite of multiscale/multiphysics
+                        computational codes developed by the various research groups affiliated with the center and are
+                        facilitated by the research staff and faculty in a highly collaborative environment.
+                    </p>
+                    <a ui-sref="ctools.overview" class="main_link">Learn More >></a>
                 </div>
                 <div ng-show="info == 'mc'">
                     <h2>The Materials Commons</h2>
@@ -104,17 +83,30 @@
                     <p>
                         Materials Commons is a data repository and collaboration platform. It allows researchers
                         to collaborate, tracks the history of your data (provenance tracking) and provides a
-                        powerful model for viewing your data.
+                        powerful model for viewing your data. We use the Materials Commons to facilitate our
+                        research by storing our data and using it to track our research. We've put a lot of
+                        effort into making sure it integrates with other tool sets.
                     </p>
-                    <ul>
-                        <li>Collaboration</li>
-                        <li>Experimental &amp; Simulation Information</li>
-                        <li>Seamless, Continuous</li>
-                        <li>Workflow</li>
-                        <li>Provenance Tracking</li>
-                    </ul>
-                    <a ui-sref="mcommons.overview" class="main_link">MORE >></a>
+                    <a ui-sref="mcommons.overview" class="main_link">Learn More >></a>
                 </div>
+            </div>
+        </div>
+        <div class="main-top row tab-content-details">
+            <div ng-hide="info" style="padding-right: 96px">
+                <p>
+                    The PRISMS Center has three primary thrusts that work together to support each other. They are:
+                </p>
+                <ul>
+                    <li>Integrated Science – focuses experimental and computational approaches on important
+                        demonstration problems.
+                    </li>
+                    <li>Computational Tools - an integrated framework of open-source multi-scale simulation
+                        software.
+                    </li>
+                    <li>Materials Commons – a unique repository that enables collaboration, seamless capture of
+                        important findings and community building
+                    </li>
+                </ul>
             </div>
         </div>
         <!--End of Main Top-->
@@ -169,29 +161,29 @@
     </div>
 </div>
 <script type="text/JavaScript">
-    $(document).ready(function () {
-        $('.circle').click(function () {
-            //$('#indicator').hide();
-            $(this).siblings().css('opacity', 0.7)
+ $(document).ready(function () {
+     $('.circle').click(function () {
+         //$('#indicator').hide();
+         $(this).siblings().css('opacity', 0.7)
                     .removeClass('cover');
-            $(this).css('opacity', 1)
+         $(this).css('opacity', 1)
                     .addClass('cover');
-            $('#circles_description').css('padding-top', '1em')
+         $('#circles_description').css('padding-top', '1em')
                     .css('padding-bottom', '1em');
 
-            if ($(this).attr('id') == 'circle_sci') {
-                $('#circle_description_sci').siblings().hide();
-                $('#circle_description_sci').fadeIn("slow");
-            }
-            else if ($(this).attr('id') == 'circle_mc') {
-                $('#circle_description_mc').siblings().hide();
-                $('#circle_description_mc').fadeIn("slow");
-            }
-            else if ($(this).attr('id') == 'circle_code') {
-                $('#circle_description_code').siblings().hide();
-                $('#circle_description_code').fadeIn("slow");
-            }
+         if ($(this).attr('id') == 'circle_sci') {
+             $('#circle_description_sci').siblings().hide();
+             $('#circle_description_sci').fadeIn("slow");
+         }
+         else if ($(this).attr('id') == 'circle_mc') {
+             $('#circle_description_mc').siblings().hide();
+             $('#circle_description_mc').fadeIn("slow");
+         }
+         else if ($(this).attr('id') == 'circle_code') {
+             $('#circle_description_code').siblings().hide();
+             $('#circle_description_code').fadeIn("slow");
+         }
 
-        });
-    });
+     });
+ });
 </script>
