@@ -196,7 +196,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "research": "http://www-personal.umich.edu/~rudraa/",
                 "advisor": "",
                 "image": "assets/img/people/rudraa.jpg" ,
-                "blurb": "My current research involves analytical and computational modeling of coupled multiscale phenomena in material physics and biology, spanning mechanics, transport, thermodynamics and phase transitions. Specifically, I am investigating chemo-mechanical coupling of phase transformations involved in battery materials."
+                "blurb": "Shiva Rudraraju is a research faculty in Mechanical Engineering and the lead-developer of the finite element based numerical codes under development in PRISMS. His research focuses on coupled multiphysics and multiscale phenomena driven by mechanics (deformation and failure) and transport. Specific topics of research include mechano-chemically driven solid-solid phase transformations, species transport and growth of biological tumors and fracture propagation in fiber reinforced composites. His work draws heavily from continuum mechanics, fracture mechanics, thermodynamics and variational methods."
             },
             {
                 "title": "Dr.",
