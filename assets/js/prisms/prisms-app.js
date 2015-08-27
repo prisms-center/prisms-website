@@ -450,6 +450,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                     "these methods are unconditionally stable and second-order accurate in time, which enables the numerical " +
                     "solution to march more rapidly with respect to time than the conventional, conditionally stable, " +
                     "first-order accurate schemes.These methods are applied to those phenomena of twinning  in Mg that are controlled by the formation of strain-driven martensitic variants."
+            },
+            {
+                "title": "",
+                "first_name": "Shardul",
+                "last_name": "Panwar",
+                "email": "sspanwar@umich.edu",
+                "research": "",
+                "advisor": "Veera Sundararaghavan",
+                "image": "assets/img/people/ShardulPanwar.jpg",
+                "blurb": "My research involves developing computational models based on crystal plasticity for predicting micro-scale fatigue crack propagation . The major part of my research focuses on new ways to make fatigue computation less expensive, by using theoretical models and experimental data for determining cohesive law parameters to be used in micro-structural fatigue simulations."
             }
         ];
 
