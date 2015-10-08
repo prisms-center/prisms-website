@@ -211,13 +211,23 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             },
             {
                 "title": "Dr.",
-                "first_name": "Larry",
-                "last_name": "Aagesen",
-                "email": "laagesen@umich.edu",
+                "first_name": "Stephen",
+                "last_name": "DeWitt",
+                "email": "stvdwtt@umich.edu",
                 "research": "",
                 "advisor": "",
-                "image": "assets/img/people/LarryAagesen.jpg",
-                "blurb": "My research interests are in the use of theoretical and computational techniques to study the evolution of microstructures and nanostructures during phase transformations, coarsening, and crystal growth, and how evolution by these processes affects material properties. Within the PRISMS Center, I am applying the phase-field method to investigate the formation of precipitates in magnesium alloys, and how interfacial energy, elastic misfit energy, and growth kinetics interact to affect microstructure."
+                "image": "assets/img/people/steve.jpg",
+                "blurb": "My research interests are in developing continuum simulation tools for material systems with complex geometries and then applying them to link microstructural features to macroscopic material properties. As a part of PRISMS I am investigating the formation and evolution of precipitates in magnesium alloys using phase-field simulations and the motion of dislocations past arrays of precipitates using dislocation dynamics simulations."
+            },
+            {
+                "title": "Dr.",
+                "first_name": "John",
+                "last_name": "C Thomas",
+                "email": "johnct@umich.edu",
+                "research": "",
+                "advisor": "",
+                "image": "assets/img/people/thomas.jpg",
+                "blurb": "My research utilizes predictive simulation to study and optimize finite-temperature properties of crystalline materials. I develop methods that leverage first-principles datasets to build atomistic and mesoscale models describing chemical, mechanical, and lattice-dynamical phenomena. My interests span new and yet-to-be-discovered materials for structural applications, thermoelectricity, optoelectronic devices, and energy storage."
             },
             {
                 "title": "Professor ",
