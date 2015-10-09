@@ -220,16 +220,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "blurb": "My research interests are in developing continuum simulation tools for material systems with complex geometries and then applying them to link microstructural features to macroscopic material properties. As a part of PRISMS I am investigating the formation and evolution of precipitates in magnesium alloys using phase-field simulations and the motion of dislocations past arrays of precipitates using dislocation dynamics simulations."
             },
             {
-                "title": "Dr.",
-                "first_name": "John",
-                "last_name": "C Thomas",
-                "email": "johnct@umich.edu",
-                "research": "",
-                "advisor": "",
-                "image": "assets/img/people/thomas.jpg",
-                "blurb": "My research utilizes predictive simulation to study and optimize finite-temperature properties of crystalline materials. I develop methods that leverage first-principles datasets to build atomistic and mesoscale models describing chemical, mechanical, and lattice-dynamical phenomena. My interests span new and yet-to-be-discovered materials for structural applications, thermoelectricity, optoelectronic devices, and energy storage."
-            },
-            {
                 "title": "Professor ",
                 "first_name": "Wayne",
                 "last_name": "Jones",
@@ -376,6 +366,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "John Allison",
                 "image": "assets/img/people/Jiashi.jpg",
                 "blurb": "My research focuses on characterization of grain boundary precipitation and grain boundary precipitate-free zone in magnesium alloys. These quantitative characterization results will be used for computational modeling and simulation. "
+            },
+            {
+                "title": "Dr.",
+                "first_name": "John",
+                "last_name": "C Thomas",
+                "email": "johnct@umich.edu",
+                "research": "",
+                "advisor": "Anton Van der Ven",
+                "image": "assets/img/people/thomas.jpg",
+                "blurb": "My research utilizes predictive simulation to study and optimize finite-temperature properties of crystalline materials. I develop methods that leverage first-principles datasets to build atomistic and mesoscale models describing chemical, mechanical, and lattice-dynamical phenomena. My interests span new and yet-to-be-discovered materials for structural applications, thermoelectricity, optoelectronic devices, and energy storage."
             },
             {
                 "title": "",
