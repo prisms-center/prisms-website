@@ -111,11 +111,15 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             url: '/presentations',
             templateUrl: 'partials/publications/presentations.html'
         })
-        .state('contact', {
-            url: '/contact',
-            templateUrl: 'partials/contact/contact.html',
-            controller: 'ContactController',
-            controllerAs: 'contact'
+        .state('workshop', {
+            url: '/workshop',
+            templateUrl: 'partials/workshop/workshop.html'
+        })
+        .state('community', {
+            url: '/community',
+            templateUrl: 'partials/community/community.html',
+            controller: 'CommunityController',
+            controllerAs: 'community'
         });
 
     $urlRouterProvider.otherwise('/home');
@@ -528,7 +532,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             $anchorScroll();
         }
     })
-    .controller("ContactController", function ($window) {
+    .controller("CommunityController", function ($window) {
         var ctrl = this;
         ctrl.name = "";
         ctrl.organization = "";

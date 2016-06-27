@@ -8,8 +8,8 @@
             <h2>Annual PRISMS Workshop 2016</h2>
             <p>Annual PRISMS Center Workshop - August 15-19, 2016</p>
             <ul>
-                <li>August 15-17 PRISMS Software Tool Training - <a href="assets/workshop/PRISMS_2016_Workshop_Training_Schedule_PRELIMINARY.docx">Preliminary Schedule</a>.</li>
-                <li>August 18-19 PRISMS Workshop - <a href="assets/workshop/PRISMS_2016_Workshop_Agenda_PRELIMINARY.docx">Preliminary Program</a>.</li>
+                <li>August 15-17 PRISMS Software Tool Training - <a href="assets/workshop/PRISMS_2016_Workshop_Training_Schedule.docx">Preliminary Schedule</a>.</li>
+                <li>August 18-19 PRISMS Workshop - <a href="assets/workshop/PRISMS_2016_Workshop_Agenda.docx">Preliminary Program</a>.</li>
             </ul>
             <h2>Join the PRISMS Community</h2>
             <p class="tab-content-details">
@@ -26,7 +26,7 @@
                     <div class="control-group">
                         <label class="control-label" for="Name...">Name</label>
                         <div class="controls">
-                            <input id="Name..." name="Name..." placeholder="Name..." style="width:80%" type="text" ng-model="contact.name">
+                            <input id="Name..." name="Name..." placeholder="Name..." style="width:80%" type="text" ng-model="community.name">
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@
                     <div class="control-group">
                         <label class="control-label" for="textinput">Organization</label>
                         <div class="controls">
-                            <input id="textinput" name="textinput" placeholder="Organization..." style="width:80%" type="text" ng-model="contact.organization">
+                            <input id="textinput" name="textinput" placeholder="Organization..." style="width:80%" type="text" ng-model="community.organization">
                         </div>
                     </div>
 
@@ -44,17 +44,17 @@
                         <div class="controls">
                             <label class="checkbox" for="checkboxes-0">
                                 <input name="checkboxes" id="checkboxes-0" value="being informed of upcoming workshops" type="checkbox"
-                                       ng-model="contact.workshops">
+                                       ng-model="community.workshops">
                                 Upcoming Workshops
                             </label>
                             <label class="checkbox" for="checkboxes-1">
                                 <input name="checkboxes" id="checkboxes-1" value="being informed of releases of PRISMS software" type="checkbox"
-                                       ng-model="contact.computational">
+                                       ng-model="community.computational">
                                 PRISMS Computational Software
                             </label>
                             <label class="checkbox" for="checkboxes-2">
                                 <input name="checkboxes" id="checkboxes-2" value="being informed of releases of Materials Commons" type="checkbox"
-                                       ng-model="contact.materialscommons">
+                                       ng-model="community.materialscommons">
                                 Materials Commons
                             </label>
                         </div>
@@ -64,7 +64,7 @@
                     <div class="control-group">
                         <label class="control-label" for="textarea">I have the following expertise</label>
                         <div class="controls">
-                            <textarea id="textarea" name="textarea" style="width: 80%" rows="6" ng-model="contact.expertise"></textarea>
+                            <textarea id="textarea" name="textarea" style="width: 80%" rows="6" ng-model="community.expertise"></textarea>
                         </div>
                     </div>
 
@@ -72,15 +72,15 @@
                     <div class="control-group">
                         <label class="control-label" for="textarea">I would like to collaborate on:</label>
                         <div class="controls">
-                            <textarea id="textarea" name="textarea" style="width: 80%" rows="6" ng-model="contact.collaborate"></textarea>
+                            <textarea id="textarea" name="textarea" style="width: 80%" rows="6" ng-model="community.collaborate"></textarea>
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label" for="button1id"></label>
                         <div class="controls">
-                            <button id="button1id" name="button1id" class="btn btn-success" ng-click="contact.submit()">Submit</button>
-                            <button id="button2id" name="button2id" class="btn btn-danger" ng-click="contact.cancel()">Cancel</button>
+                            <button id="button1id" name="button1id" class="btn btn-success" ng-click="community.submit()">Submit</button>
+                            <button id="button2id" name="button2id" class="btn btn-danger" ng-click="community.cancel()">Cancel</button>
                         </div>
                     </div>
                 </fieldset>
