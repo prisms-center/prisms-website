@@ -377,16 +377,17 @@ dt {
   line-height: 30px;
 }
 
-div p.publication-list:nth-of-type(odd) {
+div div.publication-list:nth-of-type(odd) {
   border-left: 5px solid #2c5c84;
 }
 
-div p.publication-list:nth-of-type(even) {
+div div.publication-list:nth-of-type(even) {
   border-left: 5px solid #999;
 }
 
 .publication-title {
   font-weight: bold;
+  margin-bottom:2px;
 }
 
 .publication-detail {

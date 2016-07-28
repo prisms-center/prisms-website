@@ -2,59 +2,12 @@
     <h2 id="publications" style="padding-top: 120px; margin-top: -70px;">Publications</h2>
     <br>
 
-    <p class="publication-list">
-        <span class="publication-title">Chemistry and morphology of B' precipitates in an aged Mg-Nd-Y-Zr alloy, Philosophical</span>
-        <span> E. Sitzmann and E. A. Marquis</span>
-        <span class="publication-detail">Nd-Y-Zr alloy, Philosophical Magazine Letters, accepted 2014, in press (2015). </span>
-    </p>
-    <br>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
 
-    <p class="publication-list">
-        <span class="publication-title">Modeling crack propagation in polycrystalline microstructure using variational multi-scale method</span>
-        <span> S. Sun and V. Sundararaghavan</span>
-        <span class="publication-detail"> in International Journal of Solids and Structures, submitted (2014).</span>
-    </p>
-    <br>
-
-    <p class="publication-list">
-        <span class="publication-title">"Modeling fatigue failure using variational multiscale method</span>
-        <span> S. Panwar, V. Sundararaghavan</span>
-        <span class="publication-detail">, Computational mechanics, submitted (2014).</span>
-    </p>
-
-    <p class="publication-list">
-        <span class="publication-title">Modeling crack propagation in polycrystalline alloys using a variational multiscale cohesive method</span>
-        <span> V. Sundararaghavan, S. Sun</span>
-        <span class="publication-detail">, 2nd World Congress on Integrated Computational Materials Engineering (Edited by M. Li et. al.), Wiley, New York, p. 225-230 (2013). </span>
-    </p>
-    <br>
-
-    <p class="publication-list">
-        <span class="publication-title">Electronic structure study of an edge dislocation in aluminum and the role of macroscopic deformations on its energetics</span>
-        <span> M. Iyer, B. Radhakrishnan, V. Gavini</span>
-        <span class="publication-detail">, J. Mech. Phys. Solids 76, 260-275 (2015).</span>
-    </p>
-    <br>
-
-    <p class="publication-list">
-        <span class="publication-title">Three-dimensional iso-geometric solutions to general boundary value problems of Toupin’s gradient elasticity theory at finite strains</span>
-        <span> S. Rudraraju, A. Van der Ven,K. Garikipati</span>
-        <span class="publication-detail">, Comp. Meth. App. Mech. Engrg. (2014) </span>
-    </p>
-    <br>
-
-    <p class="publication-list">
-        <span class="publication-title">"A subquadratic-scaling subspace projection method for large-scale Kohn-Sham DFT calculations using spectral finite-element discretization</span>
-        <span> P. Motamarri, V. Gavini</span>
-        <span class="publication-detail">, Phys. Rev. B 90 115127 (2014). </span>
-    </p>
-    <br>
-
-    <p class="publication-list">
-        <span class="publication-title">Real-space formulation of orbital-free density functional theory using finite-element discretization: The case for Al, Mg, and Al-Mg intermetallics</span>
-        <span> S. Das, M. Iyer, V. Gavini</span>
-        <span class="publication-detail">, Phys. Rev. B submitted (2015) </span>
-    </p>
     <br>
     <br>
 </div>
