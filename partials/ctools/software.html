@@ -83,9 +83,9 @@
     </p>
 
     <br>
-    <h4>PRISMS DFT: Real Space Kohn-Sham Density Functional Theory Code</h4>
+    <h4>PRISMS-DFT: Real Space Kohn-Sham Density Functional Theory Code</h4>
     <a href="http://www-personal.umich.edu/~vikramg/index.html" target="_blank">V. Gavini</a>,
-    S. Rudraraju
+    <a href="http://www-personal.umich.edu/~rudraa/" target="_blank">S. Rudraraju</a>
     <p class="tab-content-details">
         Electronic structure calculations have played a significant role in the investigation of
         materials properties over the past few decades. In particular, the Kohn–Sham approach to
@@ -123,38 +123,38 @@
     </p>
 
     <br>
-    <h4>PRISMS PF: Phase Field Modeling Code</h4>
+    <h4>PRISMS-PF: Phase Field Modeling Code</h4>
     <a href="http://www.mse.engin.umich.edu/people/faculty/thornton" target="_blank">K. Thornton</a>,
-    S. Rudraraju,
-    L. Aagesen
+    <a href="http://www-personal.umich.edu/~rudraa/" target="_blank">S. Rudraraju,</a>
+    S. DeWitt
     <p class="tab-content-details">
-        Phase Field Models have been central to computational modeling of complex morphological
-        evolution in multiphase solids. Here at the PRISMS-Center, we are developing a massively
-        scalable Phase Field modeling framework based on the deal.ii open-source <a href="https://www.dealii.org" target="_blank">finite element
-        library</a> which provides extensive support for
-        various finite element constructs, peta-scale grid generation with adaptivity (p4est
-        adaptive octree meshes), scalable data structures and solvers. While the framework is
-        expected to serve as a generic phase field library with coupled mechanics capability,
-        the initial development focuses on modeling of precipitate evolution in binary and
-        ternary alloys, as well as grain growth and recrystallization.
+        Phase field models have been central to computational modeling of complex morphological
+        evolution in multiphase systems. Here at the PRISMS Center, we are developing a massively
+        scalable phase field modeling framework based on the
+        <a href="https://www.dealii.org" target="_blank">deal.ii open-source finite element library</a>, which
+        provides extensive support for various finite element constructs, peta-scale
+        grid generation with adaptivity (p4est adaptive octree meshes), scalable data structures and
+        solvers. The PRISMS-PF framework provides a flexible platform for solving a wide range of
+        partial differential equations, including, but not limited to, those typically found in
+        phase field models. At the PRISMS Center, our initial focus is on phase field modeling
+        precipitate evolution in binary and ternary alloys, as well as grain growth and recrystallization.
     </p>
-    <a name="plasticity"></a>
     <p class="tab-content-details">
-        Current code modules include matrix-free implementations of coupled Cahn-Hilliard,
-        Allen-Cahn and Mechanics, with example demonstrations of spinodal decomposition,
-        chemo-mechanical boundary value problems, and beta-prime precipitate evolution in
-        magnesium/rare-earth binary alloys. The parallel performance and scaling has been
-        demonstrated on terascale problems with billions of degrees of freedom running on
-        thousands of processors.
+        Current applications modules include matrix-free implementations of the Allen-Cahn equation,
+        Cahn-Hilliard equation, the diffusion equation, and linear elasticity, as well as coupled systems
+        with combinations of these equations. The parallel performance and scaling has been demonstrated
+        on terascale problems with billions of degrees of freedom running on thousands of processors.
+        Benchmarking versus an MPI-parallelized finite difference code has demonstrated over a 4x
+        improvement in simulation speed over standard finite difference approaches.
     </p>
     <img src="assets/img/ctools/PF_1.png" width="20%" height="20%"></img>
     <img src="assets/img/ctools/PF_2.png" width="20%" height="20%"></img>
     <br>
     <br>
-    <h4>PRISMS Plasticity: Continuum Platicity and Crystal Plasticity Codes</h4>
+    <h4>PRISMS-Plasticity: Continuum Platicity and Crystal Plasticity Codes</h4>
     <a href="http://www-personal.umich.edu/~krishna/" target="_blank">K. Garikipati</a>,
     <a href="http://umich.edu/~veeras/" target="_blank">V. Sundararaghavan</a>,
-    S. Rudraraju
+    <a href="http://www-personal.umich.edu/~rudraa/" target="_blank">S. Rudraraju</a>
     <p class="tab-content-details">
         The PRISMS-Plasticity code is a parallel numerical framework for modeling continuum
         scale elasto-plastic material behavior important to the multiscale materials modeling
@@ -176,7 +176,7 @@
     <img src="assets/img/ctools/Plasticity_3.png" width="50%" height="50%">
     <br>
     <br>
-    <h4>PRISMS-Integration Tools: IntegrationTools and IntegrationToolsWriter</h4>
+    <h4>Integration Tools: IntegrationTools and IntegrationToolsWriter</h4>
     B. Puchala
     <p class="tab-content-details">
         Integration of PRISMS Codes and external codes is an important aspect of the PRISMS
@@ -198,10 +198,10 @@
         They currently do not have a public release schedule.
     </p>
     <br>
-    <h4>PRISMS MechanoChemo: Mechano-Chemical Phase Transformations Modeling Code</h4>
+    <h4>PRISMS-MechanoChemo: Mechano-Chemical Phase Transformations Modeling Code</h4>
     <a href="http://www-personal.umich.edu/~krishna/" target="_blank">K. Garikipati</a>,
     <a href="http://www.mse.engin.umich.edu/people/faculty/vanderven" target="_blank">A. Van der Ven</a>,
-    S. Rudraraju
+    <a href="http://www-personal.umich.edu/~rudraa/" target="_blank">S. Rudraraju</a>
     <a name="pfc"></a>
     <p class="tab-content-details">
         We are developing a modeling approach for phase transformations that are driven by
@@ -214,7 +214,7 @@
     </p>
     <br>
 
-    <h4>PRISMS PFC: Phase Field Crystal Modeling Code</h4>
+    <h4>PRISMS-PFC: Phase Field Crystal Modeling Code</h4>
     <a href="http://www.mse.engin.umich.edu/people/faculty/thornton" target="_blank">K. Thornton</a>
     <p class="tab-content-details">
         The Phase Field Crystal (PFC) model is a simulation approach that can model crystalline

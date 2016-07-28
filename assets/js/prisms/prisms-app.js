@@ -288,16 +288,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "blurb": "Glenn has been involved with computers since 1988 when he discovered Turbo Pascal. He has worked on projects ranging from student account systems to distributed storage and backup systems. In 2009 Glenn completed his MBA at the University of Michigan's Ross School of Business. ",
                 "image": "assets/img/people/glenn_tarcea.jpg"
             },
-            {
-                "title": "  -  Developer",
-                "first_name": "Sravya",
-                "last_name": "Tamma",
-                "email": "tammasr@umich.edu",
-                "research": "",
-                "advisor": "",
-                "blurb": "Sravya received her Masters Degree in Bioinformatics. Her experience includes developing novel tools to track work flow, experimental stages and results. Currently her work is focused on design and development of web-based work flow management software for Materials Commons.",
-                "image": "assets/img/people/sravya_tamma.jpg"
-            },
+            //{
+            //    "title": "  -  Developer",
+            //    "first_name": "Sravya",
+            //    "last_name": "Tamma",
+            //    "email": "tammasr@umich.edu",
+            //    "research": "",
+            //    "advisor": "",
+            //    "blurb": "Sravya received her Masters Degree in Bioinformatics. Her experience includes developing novel tools to track work flow, experimental stages and results. Currently her work is focused on design and development of web-based work flow management software for Materials Commons.",
+            //    "image": "assets/img/people/sravya_tamma.jpg"
+            //},
             {
                 "title": "  - Administrative Assistant",
                 "first_name": "Ellen",
@@ -361,16 +361,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/Sriram.jpg",
                 "blurb": "I am involved in integrating Crystal Plasticity Finite Element Method (CPFEM) into the PRISMS framework. Crystal plasticity methods are used to simulate the response of aggregates of crystals to an applied stress. My current research is focused on developing improved constitutive models which can connect the physics of dislocations with the hardening rates used in CPFEM calculations. "
             },
-            {
-                "title": "Dr.",
-                "first_name": "Jiashi",
-                "last_name": "Miao",
-                "email": "miaojias@umich.edu",
-                "research": "",
-                "advisor": "John Allison",
-                "image": "assets/img/people/Jiashi.jpg",
-                "blurb": "My research focuses on characterization of grain boundary precipitation and grain boundary precipitate-free zone in magnesium alloys. These quantitative characterization results will be used for computational modeling and simulation. "
-            },
+            //{
+            //    "title": "Dr.",
+            //    "first_name": "Jiashi",
+            //    "last_name": "Miao",
+            //    "email": "miaojias@umich.edu",
+            //    "research": "",
+            //    "advisor": "John Allison",
+            //    "image": "assets/img/people/Jiashi.jpg",
+            //    "blurb": "My research focuses on characterization of grain boundary precipitation and grain boundary precipitate-free zone in magnesium alloys. These quantitative characterization results will be used for computational modeling and simulation. "
+            //},
             {
                 "title": "Dr.",
                 "first_name": "John",
@@ -381,26 +381,26 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/thomas.jpg",
                 "blurb": "My research utilizes predictive simulation to study and optimize finite-temperature properties of crystalline materials. I develop methods that leverage first-principles datasets to build atomistic and mesoscale models describing chemical, mechanical, and lattice-dynamical phenomena. My interests span new and yet-to-be-discovered materials for structural applications, thermoelectricity, optoelectronic devices, and energy storage."
             },
-            {
-                "title": "",
-                "first_name": "Chia-Hui",
-                "last_name": "Hsieh",
-                "email": "chiahuih@umich.edu",
-                "research": "",
-                "advisor": "",
-                "image": "assets/img/people/chia.jpg",
-                "blurb": "Chia-Hui is a UX/UI designer who is experienced in designing useful, pleasant and engaging user interfaces. She's passionate about understanding users' needs and using design to solve problems and create better user experiences."
-            },
-            {
-                "title": "",
-                "first_name": "Huaying",
-                "last_name": "Song",
-                "email": "huaying@umich.edu",
-                "research": "",
-                "advisor": "",
-                "image": "assets/img/people/iris.jpg",
-                "blurb": "Huaying is a UX/UI designer. Her passion lies in creating appealing visuals and smooth user experiences across all touchpoints. She is working on the user experience and web interface design for the PRISMS website and the Materials Commons platform. "
-            },
+            //{
+            //    "title": "",
+            //    "first_name": "Chia-Hui",
+            //    "last_name": "Hsieh",
+            //    "email": "chiahuih@umich.edu",
+            //    "research": "",
+            //    "advisor": "",
+            //    "image": "assets/img/people/chia.jpg",
+            //    "blurb": "Chia-Hui is a UX/UI designer who is experienced in designing useful, pleasant and engaging user interfaces. She's passionate about understanding users' needs and using design to solve problems and create better user experiences."
+            //},
+            //{
+            //    "title": "",
+            //    "first_name": "Huaying",
+            //    "last_name": "Song",
+            //    "email": "huaying@umich.edu",
+            //    "research": "",
+            //    "advisor": "",
+            //    "image": "assets/img/people/iris.jpg",
+            //    "blurb": "Huaying is a UX/UI designer. Her passion lies in creating appealing visuals and smooth user experiences across all touchpoints. She is working on the user experience and web interface design for the PRISMS website and the Materials Commons platform. "
+            //},
             {
                 "title": "",
                 "first_name": "Greg",
@@ -521,7 +521,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             {
                 lastname: "Zimmerman",
                 display: "Dr. Jonathan Zimmerman, Sandia National Laboratories – Livermore, CA"
-            },
+            }
         ];
     })
     .controller('FacultyController', function ($scope, $location, $anchorScroll, $stateParams) {
