@@ -207,6 +207,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                 "image": "assets/img/people/rudraa.jpg",
                 "blurb": "Shiva Rudraraju is a research faculty in Mechanical Engineering and the lead-developer of the finite element based numerical codes under development in PRISMS. His research focuses on coupled multiphysics and multiscale phenomena driven by mechanics (deformation and failure) and transport. Specific topics of research include mechano-chemically driven solid-solid phase transformations, species transport and growth of biological tumors and fracture propagation in fiber reinforced composites. His work draws heavily from continuum mechanics, fracture mechanics, thermodynamics and variational methods."
             },
+	    {
+                "title": "Dr.",
+                "first_name": "Phani",
+                "last_name": "Motamarri",
+                "email": "phanim@umich.edu",
+                "research": "http://www-personal.umich.edu/~phanim/resume.pdf",
+                "advisor": "",
+		"image": "assets/img/people/Phani_Motamarri.jpg"
+                "blurb": "Phani Motamarri is a research faculty in Mechanical Engineering and one of the principal developers of the DFT-FE code. His research focuses on developing mathematical techniques and high-performance computational algorithms for exa-scale density functional theory (DFT) calculations using finite-elements and apply these techniques for ab-initio modeling of defect properties in structural and functional materials. His research is strongly multidisciplinary, drawing ideas from applied mathematics, data science, quantum-mechanics, solid-mechanics, materials science and scientific computing. As a part of PRISMS, dislocation properties of Magnesium and its binary alloys will be studied using real space Kohn-Sham DFT framework (DFT-FE)."
+            },
             {
                 "title": "Dr.",
                 "first_name": "Brian",
@@ -337,23 +347,13 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             },
             {
                 "title": "",
-                "first_name": "Phani",
-                "last_name": "Motamarri",
-                "email": "phanim@umich.edu",
-                "research": "",
-                "advisor": "Vikram Gavini",
-                "blurb": "I am involved in the development of an open source code for real-space Kohn-Sham DFT calculations within the computational framework of PRISMS. I intend to use the computational tool developed to study the dislocation properties of Magnesium and its binary alloys using real space Kohn-Sham DFT.",
-                "image": "assets/img/people/Phani_Motamarri.jpg"
-            },
-            {
-                "title": "",
                 "first_name": "Sambit",
                 "last_name": "Das",
                 "email": "dsambit@umich.edu",
                 "research": "",
                 "advisor": "Vikram Gavini",
                 "image": "assets/img/people/SambitDas.jpg",
-                "blurb": "I am developing a computational framework for explicit large scale electronic structure calculations of crystalline materials using a real space implementation of the Orbital Free Density Functional Theory. My aim is to study the energetics and mobility of edge and screw dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al alloys."
+                "blurb": "I am developing a computational framework for explicit large scale electronic structure calculations of crystalline materials using a real space implementation of the Orbital Free Density Functional Theory. My aim is to study the energetics and mobility of edge and screw dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al alloys. I am also the lead-developer of DFT-FE code for conducting large-scale Kohn-Sham DFT calculations."
             },
             {
                 "title": "",
