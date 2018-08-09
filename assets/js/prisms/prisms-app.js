@@ -214,7 +214,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                 "email": "phanim@umich.edu",
                 "research": "http://www-personal.umich.edu/~phanim/resume.pdf",
                 "advisor": "",
-		"image": "assets/img/people/Phani_Motamarri.jpg"
+		        "image": "assets/img/people/Phani_Motamarri.jpg",
                 "blurb": "Phani Motamarri is a research faculty in Mechanical Engineering and one of the principal developers of the DFT-FE code. His research focuses on developing mathematical techniques and high-performance computational algorithms for exa-scale density functional theory (DFT) calculations using finite-elements and apply these techniques for ab-initio modeling of defect properties in structural and functional materials. His research is strongly multidisciplinary, drawing ideas from applied mathematics, data science, quantum-mechanics, solid-mechanics, materials science and scientific computing. As a part of PRISMS, dislocation properties of Magnesium and its binary alloys will be studied using real space Kohn-Sham DFT framework (DFT-FE)."
             },
             {
