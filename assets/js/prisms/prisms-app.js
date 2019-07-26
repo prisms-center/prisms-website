@@ -2,150 +2,150 @@
 
 var app = angular.module('prisms', ['ui.router']);
 
-app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-        $stateProvider
-            .state('home', {
-                url: '/home',
-                templateUrl: 'partials/home/home.html',
-                controller: 'HomeController'
-            })
-            .state('science', {
-                url: '/science',
-                templateUrl: 'partials/science/science.html'
-            })
-            .state('science.overview', {
-                url: '/overview',
-                templateUrl: 'partials/science/overview.html'
-            })
-            .state('science.precipitate', {
-                url: '/precipitate',
-                templateUrl: 'partials/science/precipitate.html'
-            })
-            .state('science.recrystallization', {
-                url: '/recrystallization',
-                templateUrl: 'partials/science/recrystallization.html'
-            })
-            .state('science.tensile', {
-                url: '/tensile',
-                templateUrl: 'partials/science/tensile.html'
-            })
-            .state('science.fatigue', {
-                url: '/fatigue',
-                templateUrl: 'partials/science/fatigue.html'
-            })
-            .state('science.collaborate', {
-                url: '/collaborate',
-                templateUrl: 'partials/science/collaborate.html'
-            })
-            .state('ctools', {
-                url: '/ctools',
-                templateUrl: 'partials/ctools/ctools.html'
-            })
-            .state('ctools.overview', {
-                url: '/overview',
-                templateUrl: 'partials/ctools/overview.html'
-            })
-            .state('ctools.software', {
-                url: '/software',
-                templateUrl: 'partials/ctools/software.html'
-            })
-            .state('ctools.tools', {
-                url: '/tools',
-                templateUrl: 'partials/ctools/tools.html'
-            })
-            .state('ctools.collaborate', {
-                url: '/collaborate',
-                templateUrl: 'partials/ctools/collaborate.html'
-            })
-            .state('ctools.faq', {
-                url: '/faq',
-                templateUrl: 'partials/ctools/faq.html'
-            })
-            .state('mcommons', {
-                url: '/mcommons',
-                templateUrl: 'partials/mcommons/mcommons.html'
-            })
-            .state('mcommons.overview', {
-                url: '/overview',
-                templateUrl: 'partials/mcommons/overview.html'
-            })
-            .state('mcommons.software', {
-                url: '/software',
-                templateUrl: 'partials/mcommons/software.html'
-            })
-            .state('mcommons.collaborate', {
-                url: '/collaborate',
-                templateUrl: 'partials/mcommons/collaborate.html'
-            })
-            .state('mcommons.faq', {
-                url: '/faq',
-                templateUrl: 'partials/mcommons/faq.html'
-            })
-            .state('people', {
-                url: '/people',
-                templateUrl: 'partials/people/people.html',
-                controller: 'PeopleController'
-            })
-            .state('people.faculty', {
-                url: '/faculty/:who',
-                templateUrl: 'partials/people/faculty_staff.html',
-                controller: 'FacultyController'
-            })
-            .state('people.eab', {
-                url: '/eab',
-                templateUrl: 'partials/people/eab.html'
-            })
-            .state('people.students', {
-                url: '/students',
-                templateUrl: 'partials/people/students_postdocs.html'
-            })
-            .state('publications', {
-                url: '/publications',
-                templateUrl: 'partials/publications/publications.html'
-            })
-            .state('publications.papers', {
-                url: '/papers',
-                controller: 'PapersController',
-                controllerAs: '$ctrl',
-                templateUrl: 'partials/publications/papers.html'
-            })
-            .state('publications.presentations', {
-                url: '/presentations',
-                controller: 'PresentationsController',
-                controllerAs: '$ctrl',
-                templateUrl: 'partials/publications/presentations.html'
-            })
-            .state('workshop', {
-                url: '/workshop',
-                templateUrl: 'partials/workshop/workshop.html'
-            })
-            .state('community', {
-                url: '/community',
-                templateUrl: 'partials/community/community.html',
-                controller: 'CommunityController',
-                controllerAs: 'community'
-            });
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+    $stateProvider
+        .state('home', {
+            url: '/home',
+            templateUrl: 'partials/home/home.html',
+            controller: 'HomeController'
+        })
+        .state('science', {
+            url: '/science',
+            templateUrl: 'partials/science/science.html'
+        })
+        .state('science.overview', {
+            url: '/overview',
+            templateUrl: 'partials/science/overview.html'
+        })
+        .state('science.precipitate', {
+            url: '/precipitate',
+            templateUrl: 'partials/science/precipitate.html'
+        })
+        .state('science.recrystallization', {
+            url: '/recrystallization',
+            templateUrl: 'partials/science/recrystallization.html'
+        })
+        .state('science.tensile', {
+            url: '/tensile',
+            templateUrl: 'partials/science/tensile.html'
+        })
+        .state('science.fatigue', {
+            url: '/fatigue',
+            templateUrl: 'partials/science/fatigue.html'
+        })
+        .state('science.collaborate', {
+            url: '/collaborate',
+            templateUrl: 'partials/science/collaborate.html'
+        })
+        .state('ctools', {
+            url: '/ctools',
+            templateUrl: 'partials/ctools/ctools.html'
+        })
+        .state('ctools.overview', {
+            url: '/overview',
+            templateUrl: 'partials/ctools/overview.html'
+        })
+        .state('ctools.software', {
+            url: '/software',
+            templateUrl: 'partials/ctools/software.html'
+        })
+        .state('ctools.tools', {
+            url: '/tools',
+            templateUrl: 'partials/ctools/tools.html'
+        })
+        .state('ctools.collaborate', {
+            url: '/collaborate',
+            templateUrl: 'partials/ctools/collaborate.html'
+        })
+        .state('ctools.faq', {
+            url: '/faq',
+            templateUrl: 'partials/ctools/faq.html'
+        })
+        .state('mcommons', {
+            url: '/mcommons',
+            templateUrl: 'partials/mcommons/mcommons.html'
+        })
+        .state('mcommons.overview', {
+            url: '/overview',
+            templateUrl: 'partials/mcommons/overview.html'
+        })
+        .state('mcommons.software', {
+            url: '/software',
+            templateUrl: 'partials/mcommons/software.html'
+        })
+        .state('mcommons.collaborate', {
+            url: '/collaborate',
+            templateUrl: 'partials/mcommons/collaborate.html'
+        })
+        .state('mcommons.faq', {
+            url: '/faq',
+            templateUrl: 'partials/mcommons/faq.html'
+        })
+        .state('people', {
+            url: '/people',
+            templateUrl: 'partials/people/people.html',
+            controller: 'PeopleController'
+        })
+        .state('people.faculty', {
+            url: '/faculty/:who',
+            templateUrl: 'partials/people/faculty_staff.html',
+            controller: 'FacultyController'
+        })
+        .state('people.eab', {
+            url: '/eab',
+            templateUrl: 'partials/people/eab.html'
+        })
+        .state('people.students', {
+            url: '/students',
+            templateUrl: 'partials/people/students_postdocs.html'
+        })
+        .state('publications', {
+            url: '/publications',
+            templateUrl: 'partials/publications/publications.html'
+        })
+        .state('publications.papers', {
+            url: '/papers',
+            controller: 'PapersController',
+            controllerAs: '$ctrl',
+            templateUrl: 'partials/publications/papers.html'
+        })
+        .state('publications.presentations', {
+            url: '/presentations',
+            controller: 'PresentationsController',
+            controllerAs: '$ctrl',
+            templateUrl: 'partials/publications/presentations.html'
+        })
+        .state('workshop', {
+            url: '/workshop',
+            templateUrl: 'partials/workshop/workshop.html'
+        })
+        .state('community', {
+            url: '/community',
+            templateUrl: 'partials/community/community.html',
+            controller: 'CommunityController',
+            controllerAs: 'community'
+        });
 
-        $urlRouterProvider.otherwise('/home');
-    }])
+    $urlRouterProvider.otherwise('/home');
+}])
 
-    .controller("HomeController", function($scope) {
+    .controller("HomeController", function ($scope) {
         $scope.date = new Date();
         $scope.info = "default";
-        $scope.viewCircle = function(what) {
+        $scope.viewCircle = function (what) {
             $scope.info = what;
         };
-        $scope.$on('home.reset', function() {
+        $scope.$on('home.reset', function () {
             $scope.info = "default";
         });
     })
-    .controller("NavController", function($scope, $state) {
-        $scope.isActive = function(state) {
+    .controller("NavController", function ($scope, $state) {
+        $scope.isActive = function (state) {
             return $state.includes(state);
         };
     })
 
-    .controller("PeopleController", function($scope) {
+    .controller("PeopleController", function ($scope) {
         $scope.faculty = [
             {
                 "title": "Professor ",
@@ -207,14 +207,14 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                 "image": "assets/img/people/rudraa.jpg",
                 "blurb": "Shiva Rudraraju is a research faculty in Mechanical Engineering and the lead-developer of the finite element based numerical codes under development in PRISMS. His research focuses on coupled multiphysics and multiscale phenomena driven by mechanics (deformation and failure) and transport. Specific topics of research include mechano-chemically driven solid-solid phase transformations, species transport and growth of biological tumors and fracture propagation in fiber reinforced composites. His work draws heavily from continuum mechanics, fracture mechanics, thermodynamics and variational methods."
             },
-	    {
+            {
                 "title": "Dr.",
                 "first_name": "Phani",
                 "last_name": "Motamarri",
                 "email": "phanim@umich.edu",
                 "research": "http://www-personal.umich.edu/~phanim/resume.pdf",
                 "advisor": "",
-		        "image": "assets/img/people/Phani_Motamarri.jpg",
+                "image": "assets/img/people/Phani_Motamarri.jpg",
                 "blurb": "Phani Motamarri is a research faculty in Mechanical Engineering and one of the principal developers of the DFT-FE code. His research focuses on developing mathematical techniques and high-performance computational algorithms for exa-scale density functional theory (DFT) calculations using finite-elements and apply these techniques for ab-initio modeling of defect properties in structural and functional materials. His research is strongly multidisciplinary, drawing ideas from applied mathematics, data science, quantum-mechanics, solid-mechanics, materials science and scientific computing. As a part of PRISMS, dislocation properties of Magnesium and its binary alloys will be studied using real space Kohn-Sham DFT framework (DFT-FE)."
             },
             {
@@ -236,6 +236,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                 "advisor": "",
                 "image": "assets/img/people/steve.jpg",
                 "blurb": "My research interests are in developing continuum simulation tools for material systems with complex geometries and then applying them to link microstructural features to macroscopic material properties. As a part of PRISMS I am investigating the formation and evolution of precipitates in magnesium alloys using phase-field simulations and the motion of dislocations past arrays of precipitates using dislocation dynamics simulations."
+            },
+            {
+                "title": "Dr.",
+                "first_name": "Mohammadreza",
+                "last_name": "Yaghoobi",
+                "email": "yaghoobi@umich.edu",
+                "research": "",
+                "advisor": "",
+                "image": "assets/img/people/reza_yaghoobi.jpg",
+                "blurb": "My primary research interest is in multiscale computational plasticity and damage mechanics of crystalline materials, composites, and ceramics with emphasis on the theoretical modeling, numerical simulation of material behavior, and experimental correlation. Research activities of particular interest includes modelling at different length scales including atomistic simulation, crystal plasticity finite element method, and local and nonlocal continuum plasticity. Central to my research is serving as a lead developer of PRISMS-Plasticity software, which is an open-source parallel 3-D crystal plasticity and continuum plasticity finite element code."
             },
             {
                 "title": "Professor ",
@@ -464,10 +474,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                 "advisor": "Krishna Garikipati",
                 "image": "assets/img/people/koki.jpg",
                 "blurb": "My research involves developing integration algorithms for the robust solution of stiff systems of equations that " +
-                "result from the coupling of mechanics and chemistry in problems of evolving microstructure. Specifically, " +
-                "these methods are unconditionally stable and second-order accurate in time, which enables the numerical " +
-                "solution to march more rapidly with respect to time than the conventional, conditionally stable, " +
-                "first-order accurate schemes.These methods are applied to those phenomena of twinning  in Mg that are controlled by the formation of strain-driven martensitic variants."
+                    "result from the coupling of mechanics and chemistry in problems of evolving microstructure. Specifically, " +
+                    "these methods are unconditionally stable and second-order accurate in time, which enables the numerical " +
+                    "solution to march more rapidly with respect to time than the conventional, conditionally stable, " +
+                    "first-order accurate schemes.These methods are applied to those phenomena of twinning  in Mg that are controlled by the formation of strain-driven martensitic variants."
             },
             {
                 "title": "",
@@ -528,7 +538,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             }
         ];
     })
-    .controller('FacultyController', function($scope, $location, $anchorScroll, $stateParams) {
+    .controller('FacultyController', function ($scope, $location, $anchorScroll, $stateParams) {
         console.log("$stateParams %O", $stateParams);
         if ($stateParams.who !== '') {
             console.log('going to anchor: ', $stateParams.who);
@@ -536,7 +546,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             $anchorScroll();
         }
     })
-    .controller("CommunityController", function($window) {
+    .controller("CommunityController", function ($window) {
         var ctrl = this;
         ctrl.name = "";
         ctrl.organization = "";
@@ -593,7 +603,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             ctrl.collaborate = "";
         }
     })
-    .controller("PapersController", function() {
+    .controller("PapersController", function () {
         var ctrl = this;
         ctrl.papers = [
             {
@@ -703,7 +713,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             }
         ];
     })
-    .controller('PresentationsController', function() {
+    .controller('PresentationsController', function () {
         var ctrl = this;
 
         ctrl.invitedPresentations = [
