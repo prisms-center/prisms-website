@@ -800,9 +800,64 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "(2017) 349-352"
             ),
             makePaper(
-                "E. Solomon, T. Chan, A Chen, B Uttal-Veroff, E. Marquis",
-                "Aging behavior of Mg alloys containing Nd and Y",
-                "Magnesium Technology.  (2017) 349-352"
+                "P. Acar, S. Srivastava, V. Sundararaghavan",
+                "Stochastic Design Optimization of Microstructures with Utilization of a Linear Solver",
+                "AIAA Journal, Vol. 55 (9) pp. 3161-3168 (2017)."
+            ),
+            makePaper(
+                "A. R. Natarajan, A. Van der Ven",
+                "First principles investigation of phase stability in the Mg-Sc binary alloy",
+                "Physical Review B, (2017)."
+            ),
+            makePaper(
+                "A. R. Natarajan, A. Van der Ven",
+                "First principles investigation of phase stability in the Mg-Sc binary alloy",
+                "Physical Review B, (2017)."
+            ),
+            makePaper(
+                "Z. Wang, J. Siegel, K. Garikipati",
+                "Intercalation driven porosity effects on the electro-chemo-thermo-mechanical response in continuum models for battery material electrodes",
+                "Journal of the Electrochemical Society, 164, A2199-A2212, 2017."
+            ),
+            makePaper(
+                "K. Sagiyama, S. Rudraraju, K. Garikipati",
+                "A numerical study of branching and stability of solutions to three-dimensional martensitic phase transformations using gradient-regularized, non-convex, finite strain elasticity",
+                "Journal of the Mechanics and Physics of Solids,(2017)."
+            ),
+            makePaper(
+                "ELS Solomon, EA Marquis",
+                "Deformation behavior of β’ and β”’ precipitates in Mg-RE alloys",
+                "Materials Letters (2017) 216(1) 67-69"
+            ),
+            makePaper(
+                "P-W Chu, E LeMire, EA Marquis",
+                "Microstructure of Localized Corrosion Front on Mg Alloys and the Relationship with Anodic Hydrogen Evolution",
+                "Corrosion Science (2017) 128 253-264"
+            ),
+            makePaper(
+                "Das, S., Gavini, V.",
+                "Electronic structure study of screw dislocation core energetics in Aluminum and core energetics informed forces in a dislocation aggregate",
+                "J. Mech. Phys. Solids, 104, 115-143 (2017)."
+            ),
+            makePaper(
+                "Shardul Panwar and Veera Sundararaghavan",
+                "Dislocation theory-based cohesive model for microstructually short fatigue crack growth",
+                "Materials Science and Engineering A, 708, pp 395-404 (2017)."
+            ),
+            makePaper(
+                "A. Natarajan, J. Thomas, B. Puchala, A Van der Ven",
+                "Symmetry-adapted order parameters and free energies for solids undergoing order-disorder phase transitions",
+                "Phys Rev B, 96 134204 (2017)"
+            ),
+            makePaper(
+                "S. Sun, A. Ramazani, V. Sundararaghavan",
+                "A hybrid multi-scale model of crystal plasticity for handling stress concentrations",
+                "Metals, 7(9), 345, 2017."
+            ),
+            makePaper(
+                "P. Acar, A. Ramazani, V. Sundararaghavan",
+                "Crystal Plasticity Modeling and Experimental Validation with an Orientation Distribution Function for Ti-7Al Alloy",
+                "Metals, 7(11), p.459, 2017."
             ),
 
             //2016
@@ -874,40 +929,40 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
 
             // 2015
-            {
-                title: 'Electronic structure study of an edge dislocation in aluminum and the role of macroscopic deformations on its energetics',
-                authors: 'M. Iyer, B. Radhakrishnan, V. Gavini',
-                details: 'J. Mech. Phys. Solids 76 (2015) 260-275.'
-            },
-            {
-                title: 'Chemistry and morphology of &#39; precipitates in an aged Mg-Nd-Y- Zr alloy',
-                authors: 'E. Sitzmann and E. A. Marquis',
-                details: '95(1) 7-13, Philosophical Magazine Letters, (2015).'
-            },
-            {
-                title: 'Real-space formulation of orbital-free density functional theory using finite-element discretization: The case for Al, Mg, and Al-Mg intermetallics',
-                authors: 'Sambit Das, Mrinal Iyer, Vikram Gavini',
-                details: 'Phys. Rev. B 92, 014104 (2015).'
-            },
+            makePaper(
+                "M. Iyer, B. Radhakrishnan, V. Gavini",
+                "Electronic structure study of an edge dislocation in aluminum and the role of macroscopic deformations on its energetics",
+                "J. Mech. Phys. Solids  76 (2015) 260-275."
+            ),
+            makePaper(
+                "E. Sitzmann and E. A. Marquis",
+                "Chemistry and morphology of B' precipitates in an aged Mg-Nd-Y-Zr alloy",
+                "95(1) 7-13, Philosophical Magazine Letters, (2015)."
+            ),
+            makePaper(
+                "Sambit Das, Mrinal Iyer, Vikram Gavini",
+                "Real-space formulation of orbital-free density functional theory using finite-element discretization: The case for Al, Mg, and Al-Mg intermetallics",
+                "Phys. Rev. B 92, 014104 (2015)."
+            ),
 
             // 2014
-            {
-                title: 'Three-dimensional iso-geometric solutions to general boundary value problems of Toupin’s gradient elasticity theory at finite strains',
-                authors: 'S. Rudraraju, A. Van der Ven and K. Garikipati',
-                details: 'Comp. Meth. App. Mech. Engrg. (CMAME) 278 (2014) 705-728.'
-            },
-            {
-                title: 'A subquadratic-scaling subspace projection method for large-scale Kohn-Sham DFT calculations using spectral finite-element discretization',
-                authors: 'P. Motamarri, V. Gavini',
-                details: 'Phys. Rev.B 90 115127 (2014).'
-            },
+            makePaper(
+                "S. Rudraraju, A. Van der Ven and K. Garikipati",
+                "Three-dimensional iso-geometric solutions to general boundary value problems of Toupin’s gradient elasticity theory at finite strains",
+                "Comp. Meth. App. Mech. Engrg. (CMAME) 278 (2014) 705-728."
+            ),
+            makePaper(
+                "P. Motamarri, V. Gavini",
+                "A subquadratic-scaling subspace projection method for large-scale Kohn-Sham DFT calculations using spectral finite-element discretization",
+                "Phys. Rev. B 90 115127 (2014)."
+            ),
 
             // 2013
-            {
-                title: 'Modeling crack propagation in polycrystalline alloys using a variational multiscale cohesive method',
-                authors: 'V. Sundararaghavan, S. Sun',
-                details: '2nd World Congress on Integrated Computational Materials Engineering (Edited by M. Li et. al.), Wiley, New York, p. 225-230, 2013.'
-            },
+            makePaper(
+                "V. Sundararaghavan, S. Sun",
+                "Modeling crack propagation in polycrystalline alloys using a variational multiscale cohesive method",
+                "2nd World Congress on Integrated Computational Materials Engineering (Edited by M. Li et. al.), Wiley, New York, p. 225-230, 2013."
+            ),
         ]
         ;
     })
