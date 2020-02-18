@@ -759,6 +759,51 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             ),
 
             // 2017
+            makePaper(
+                "P. Acar, V. Sundararaghavan",
+                "Uncertainty Quantification of Microstructural Properties due to Variability in Measured Pole Figures",
+                "Acta Materialia, v. 124, p. 100-108, 2017"
+            ),
+            makePaper(
+                "P. Acar, V. Sundararaghavan",
+                "Uncertainty Quantification of Microstructural Properties due to Experimental Variations",
+                "AIAA Journal, Vol. 55, No. 8 (2017), pp. 2824-2832"
+            ),
+            makePaper(
+                "E. Solomon, V. Araullo-Peters, J.E. Allison, E.A. Marquis",
+                "Early precipitate morphologies in a Mg-Nd-(Zr) Alloys.",
+                "Scripta Materialia 128;14-17 (2017)"
+            ),
+            makePaper(
+                "G. H. Teichert, N. S. H. Gunda, S. Rudraraju, A. R. Natarajan, B. Puchala, K. Garikipati, A. Van der Ven",
+                "A comparison of Redlich-Kister polynomial and cubic spline representations of the chemical potential in phase field computations",
+                "Comp. Mater. Sci. 128, (2017) 127-139."
+            ),
+            makePaper(
+                "C. Heinrich, V. Sundaraghavan",
+                "A method to predict fatigue crack initiation in metals using dislocation dynamics",
+                "Corrosion Reviews, 35 (4-5) pp 325-341(2017).",
+            ),
+            makePaper(
+                "A. R. Natarajan, A. Van der Ven",
+                "A unified description of ordering in HCP Mg-RE alloys",
+                "Acta materialia, 124, p620-632, (2017)."
+            ),
+            makePaper(
+                "S. DeWitt, E. Solomon, A. Natarajan, V. Araullo-Peters, S. Rudraraju, L. Aagesen, E. Marquis, A. van der Ven, K. Thornton, and J. Allison",
+                "Misfit-Driven  Precipitate Composition and Morphology in Mg-Nd Alloys",
+                "Acta Mat. (2017) 136, 378-389, 2017."
+            ),
+            makePaper(
+                "E. Solomon, T. Chan, A Chen, B Uttal-Veroff, E. Marquis",
+                "Aging behavior of Mg alloys containing Nd and Y” Magnesium Technology.",
+                "(2017) 349-352"
+            ),
+            makePaper(
+                "E. Solomon, T. Chan, A Chen, B Uttal-Veroff, E. Marquis",
+                "Aging behavior of Mg alloys containing Nd and Y",
+                "Magnesium Technology.  (2017) 349-352"
+            ),
 
             //2016
             {
@@ -826,16 +871,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 authors: 'A. Githens, S. Daly',
                 details: 'Submitted to Strain (2016)'
             },
-            {
-                title: 'Precipitate morphologies in a Mg-Nd Alloy',
-                authors: 'E. Solomon, V. Araullo-Peters, J.E. Allison, E.A. Marquis',
-                details: 'Submitted to Scripta Materialia (2016)'
-            },
-            {
-                title: 'A method to predict fatigue crack initiation in metals using dislocation dynamics',
-                authors: 'C. Heinrich, V. Sundaraghavan',
-                details: 'Submitted to Modelling and Simulation in Materials Science and Engineering, 2016'
-            },
+
 
             // 2015
             {
