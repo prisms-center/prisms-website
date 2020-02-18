@@ -605,37 +605,162 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     })
     .controller("PapersController", function () {
         var ctrl = this;
+
+        function makePaper(authors, title, details) {
+            return {
+                title: title,
+                authors: authors,
+                details: details
+            };
+        }
+
         ctrl.papers = [
-            {
-                title: 'Three-dimensional iso-geometric solutions to general boundary value problems of Toupin’s gradient elasticity theory at finite strains',
-                authors: 'S. Rudraraju, A. Van der Ven and K. Garikipati',
-                details: 'Comp. Meth. App. Mech. Engrg. (CMAME) 278 (2014) 705-728.'
-            },
-            {
-                title: 'A subquadratic-scaling subspace projection method for large-scale Kohn-Sham DFT calculations using spectral finite-element discretization',
-                authors: 'P. Motamarri, V. Gavini',
-                details: 'Phys. Rev.B 90 115127 (2014).'
-            },
-            {
-                title: 'Electronic structure study of an edge dislocation in aluminum and the role of macroscopic deformations on its energetics',
-                authors: 'M. Iyer, B. Radhakrishnan, V. Gavini',
-                details: 'J. Mech. Phys. Solids 76 (2015) 260-275.'
-            },
-            {
-                title: 'Modeling crack propagation in polycrystalline alloys using a variational multiscale cohesive method',
-                authors: 'V. Sundararaghavan, S. Sun',
-                details: '2nd World Congress on Integrated Computational Materials Engineering (Edited by M. Li et. al.), Wiley, New York, p. 225-230, 2013.'
-            },
-            {
-                title: 'Chemistry and morphology of &#39; precipitates in an aged Mg-Nd-Y- Zr alloy',
-                authors: 'E. Sitzmann and E. A. Marquis',
-                details: '95(1) 7-13, Philosophical Magazine Letters, (2015).'
-            },
-            {
-                title: 'Real-space formulation of orbital-free density functional theory using finite-element discretization: The case for Al, Mg, and Al-Mg intermetallics',
-                authors: 'Sambit Das, Mrinal Iyer, Vikram Gavini',
-                details: 'Phys. Rev. B 92, 014104 (2015).'
-            },
+            // 2019
+            makePaper("E. L.S. Solomon, A. R. Natarajan, A. Roy, V. Sundararaghavan, A. Van der Ven, E. A. Marquis",
+                "Stability and strain-driven evolution of β' precipitation in Mg-Y alloys",
+                "Acta Materialia, 166 (2019) 148-157. https://doi.org/10.1016/j.actamat.2018.12.026"),
+
+            makePaper(
+                "Aeriel D. Leonard-Murphy, Darren C. Pagan, Armand Beaudoin, Matthew P. Miller, John E. Allison",
+                "Quantification of Twinning-Detwinning Behavior During Low-Cycle Fatigue of Pure Magnesium Using High Energy X-Ray Diffraction",
+                "International Journal of Fatigue, 125 (2019) 314-323.  https://doi.org/10.1016/j.ijfatigue.2019.04.011"
+            ),
+            makePaper(
+                "Zhihua Huang, Chaoming Yang, Liang Qi, John E. Allison, Amit Misra",
+                "Dislocation pile-ups at β1 precipitate interfaces in Mg-rare earth (RE) alloys",
+                "Materials Science and Engineering A, 742 (2019) 278-286. https://doi.org/10.1016/j.msea.2018.10.104"
+            ),
+            makePaper(
+                "P. Acar, V. Sundararaghavan",
+                "Stochastic Design Optimization of Microstructural Features using Linear Programming for Robust Material Design",
+                "AIAA Journal,Vol. 57(1), 2019. DOI: 10.2514/1.J057377"
+            ),
+            makePaper(
+                "P. Acar, V. Sundararaghavan",
+                "Do Epistemic Uncertainties Allow for Replacing Microstructural Experiments with Reconstruction Algorithms?",
+                "AIAA Journal, 57(3), 1078-1091, 2019. DOI: 10.2514/1.J057488"
+            ),
+            makePaper(
+                "Mohammadreza Yaghoobi, Sriram Ganesan, Srihari Sundar, Aaditya Lakshmanan, Shiva Rudraraju, John E. Allison, Veera Sundararaghavan",
+                "PRISMS-Plasticity: An open-source crystal plasticity finite element software",
+                "Computational Materials Science, 169, 109078, 2019."
+            ),
+            makePaper(
+                "D. Greeley, M. Yaghoobi, D. Pagan, V. Sundararaghavan and J. Allison",
+                "Using Synchrotron radiation to improve understanding of deformation of polycrystalline metals by measuring, modeling and publishing 4D information",
+                "Metal Microstructures in 2D, 3D and 4D, 407h Riso International Symposium on Materials Science, Technical University of Denmark, 2019."
+            ),
+            makePaper(
+                "A. R. Natarajan and A. Van der Ven",
+                "Toward an Understanding of Deformation Mechanisms in Metalllic Litium and Sodium from First Principles",
+                "Chemistry of Materials, 31, 8222-8229, 2019"
+            ),
+            makePaper(
+                "Phani Motamarri, Sambit Das, Shiva Rudraraju, Krishnendu Ghosh, Denis Davydov, Vikram Gavini",
+                "DFT-FE – a massively parallel adaptiave finite-element code for large-scale density functional calculations",
+                "Computer Physics Communications., 2019"
+            ),
+            makePaper(
+                "Das, S., Motamarri, P., Gavini, V., Turcksin, B., Li, Y.W., Leback, B.",
+                "Fast, scalable & accurate finite-element based ab initio calculations using mixed precision computing: 40 PFLOPS simulation of a metallic dislocation system",
+                "The International Conference for High Performance Computing Networking, Storage,and Analysis, 2019 (ACM Gordon Bell Prize nomination)."
+            ),
+            makePaper(
+                "D. Wheeler, T. Keller, S. DeWitt, A.M. Jokisaari, D. Schwen, J.E. Guyer, L. Aagesen, O.G. Heinonen, M.R. Tonks, P.W. Voorhees, J.A. Warren",
+                "PFHub – The Phase Field Community Hub",
+                "Journal of Open Research Software, 2019"
+            ),
+            makePaper(
+                "S. DeWitt, S. Rudraraju, D. Montiel, W.B. Andrews, K. Thornton",
+                "PRISMS-PF: A General Framework for Phase-Field Modeling Employing a Matrix-Free Finite Element Method",
+                "in final review with npj Computational Materials (2019)"
+            ),
+            makePaper(
+                "A. Githens, S. Ganesan, Z. Chen, J. Allison, V. Sundararaghavan, S. Daly",
+                "Characterizing Microscale Deformation Mechanisms and Macroscopic Tensile Properties of a High Strength Magnesium Rare-Earth Alloy: A Combined Experimental and Crystal Plasticity Approach",
+                "in Acta Materialia, 2019"
+            ),
+            makePaper(
+                "A. Leonard-Murpy and J. E. Allison",
+                "The Influence of Grain Size and Alloying on Cyclic-Stress-Strain and Low Cycle Fatigue Behavior in Unalloyed Mg",
+                "in International Journal of Fatigue, 2019"
+            ),
+            makePaper(
+                "M. Yaghoobi, J.E. Allison, V. Sundararaghavan",
+                "Multiscale modeling of twinning and detwinning behavior of HCP polycrystals",
+                "International Journal of Plasticity, 2019"
+            ),
+
+            // 2018
+            makePaper(
+                "S. DeWitt and K. Thornton",
+                "Phase Field Modeling of Microstructural Evolution” Computational Materials System Design",
+                "D. Shin and J. Saal, Eds., Springer Nature, London, (2018)"
+            ),
+            makePaper(
+                "L.K. Aagesen, J. Miao, J. E. Allison, S. Aubry, A. Arsenlis",
+                "Prediction of Precipitation Strengthening in the Commercial Mg Alloy AZ91 Using Dislocation Dynamics",
+                "Metallurgical and Materials Trans.Vol 49 (5) pp. 1908-1915 (2018)."
+            ),
+            makePaper(
+                "Aeriel D. Murphy and John E. Allison",
+                "The Recrystallization Behavior of Unalloyed Mg and a Mg-Al Alloy",
+                "Metallurgical and Materials Transactions, Vol 49 (5) 1492-1508 (2018)"
+            ),
+            makePaper(
+                "Zhihua Huang, John E. Allison and Amit Misra",
+                "Interaction of Glide Dislocations with Extended Precipitates in Mg-Nd alloys",
+                "Scientific Reports, Article number: 3570 (2018)."
+            ),
+            makePaper(
+                "J. Luo, A. Ramazani, V. Sundararaghavan",
+                "Simulation of Micro-Scale Shear Bands Using Peridynamics with an Adaptive Dynamic Relaxation Method",
+                "International Journal of Solids and Structures, 130, pp.36-48, 2018."
+            ),
+            makePaper(
+                "S. Panwar, J. Adams, J. Allison, J. W. Jones, V. Sundararaghavan",
+                "A grain boundary interaction model for microstructurally short fatigue cracks",
+                "International Journal of Fatigue Volume 113, pp 401-406 (2018)."
+            ),
+            makePaper(
+                "P. Motamarri, V. Gavini",
+                "Configurational forces in electronic structure calculations using Kohn Sham density functional theory",
+                "Physical Review B (2018) 97, 165132 (2018)"
+            ),
+            makePaper(
+                "L. K. Aaegesen, J. F. Adams, J. E. Allison, B. Andrews, V. Araullo-Peters, T. Berman, Z. Chen, S. Daly, S. Das, S. DeWitt, S. Ganesan, K. Garikipati, V. Gavini, A. Githens, M. Hedstrom, Z. Huang, H.V. Jagadish, J.W. Jones, J. Luce, E.A. Marquis, A. Misra, D. Montiel, P. Motamarri, A. D. Murphy, A. R. Natarajan, S. Panwar, B. Puchala, L. Qi, S. Rudraraju, K. Sagiyama, E.L.S. Solomon, V. Sundararaghavan, G. Tarcea, G. H. Teichert, J. C. Thomas, K. Thornton, A. Van der Ven, Z. Wang, T. Weymouth, C. Yang.",
+                "PRISMS - An Integrated, Open Source Framework for Accelerating Predictive Structural Materials Science",
+                "JOM.(2018) October, p 1-17. https://doi.org/10.1007/s11837-018-3079-6"
+            ),
+            makePaper(
+                "J. Luo, V. Sundararaghavan",
+                "Stress point method for stabilizing zero energy modes in non- ordinary state based peridynamics",
+                "International Journal of Solids and Structures Volume 150, Pages 197-207, 2018. DOI: 10.1016/j.ijsolstr.2018.06.015"
+            ),
+            makePaper(
+                "A Van der Ven, JC Thomas, B Puchala, AR Natarajan",
+                "First-principles statistical mechanics of multicomponent crystals",
+                "Annual Review of Materials Research 48, 27-55 (2018)"
+            ),
+            makePaper(
+                "W. Lenthe, JC Stinville, M Echlin, Z Chen, S Daly, T Pollock",
+                "Advanced Detector Signal Acquisition and Electron Beam Scanning for High Resolution SEM Imaging",
+                "Ultramicroscopy, 195, 193-100, 2018."
+            ),
+            makePaper(
+                "Chen Z, Lenthe W., Stinville J.C., Echlin M., Pollock T., Daly S.",
+                "High-Resolution Deformation Mapping Across Large Fields of View Using Scanning Electron Microscopy and Digital Image Correlation.",
+                "Experimental Mechanics,58(9): 1407-1421, 2018."
+            ),
+            makePaper(
+                "Chen Z. and Daly S. Daly S.",
+                "Deformation Twin Identification in Magnesium through Clustering and Computer Vision.",
+                "Materials Science and Engineering A, 736: 61-75, 2018."
+            ),
+
+            // 2017
+
+            //2016
             {
                 title: 'On the precipitation sequence in dilute Mg-Nd alloys',
                 authors: 'A. Natarajan, E. Solomon, B. Puchala, E. Marquis, A. Van der Ven',
@@ -710,8 +835,45 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 title: 'A method to predict fatigue crack initiation in metals using dislocation dynamics',
                 authors: 'C. Heinrich, V. Sundaraghavan',
                 details: 'Submitted to Modelling and Simulation in Materials Science and Engineering, 2016'
-            }
-        ];
+            },
+
+            // 2015
+            {
+                title: 'Electronic structure study of an edge dislocation in aluminum and the role of macroscopic deformations on its energetics',
+                authors: 'M. Iyer, B. Radhakrishnan, V. Gavini',
+                details: 'J. Mech. Phys. Solids 76 (2015) 260-275.'
+            },
+            {
+                title: 'Chemistry and morphology of &#39; precipitates in an aged Mg-Nd-Y- Zr alloy',
+                authors: 'E. Sitzmann and E. A. Marquis',
+                details: '95(1) 7-13, Philosophical Magazine Letters, (2015).'
+            },
+            {
+                title: 'Real-space formulation of orbital-free density functional theory using finite-element discretization: The case for Al, Mg, and Al-Mg intermetallics',
+                authors: 'Sambit Das, Mrinal Iyer, Vikram Gavini',
+                details: 'Phys. Rev. B 92, 014104 (2015).'
+            },
+
+            // 2014
+            {
+                title: 'Three-dimensional iso-geometric solutions to general boundary value problems of Toupin’s gradient elasticity theory at finite strains',
+                authors: 'S. Rudraraju, A. Van der Ven and K. Garikipati',
+                details: 'Comp. Meth. App. Mech. Engrg. (CMAME) 278 (2014) 705-728.'
+            },
+            {
+                title: 'A subquadratic-scaling subspace projection method for large-scale Kohn-Sham DFT calculations using spectral finite-element discretization',
+                authors: 'P. Motamarri, V. Gavini',
+                details: 'Phys. Rev.B 90 115127 (2014).'
+            },
+
+            // 2013
+            {
+                title: 'Modeling crack propagation in polycrystalline alloys using a variational multiscale cohesive method',
+                authors: 'V. Sundararaghavan, S. Sun',
+                details: '2nd World Congress on Integrated Computational Materials Engineering (Edited by M. Li et. al.), Wiley, New York, p. 225-230, 2013.'
+            },
+        ]
+        ;
     })
     .controller('PresentationsController', function () {
         var ctrl = this;
