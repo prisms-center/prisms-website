@@ -147,16 +147,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
     .controller("PeopleController", function ($scope) {
         $scope.faculty = [
-            {
-                "title": "Professor ",
-                "first_name": "Krishna",
-                "last_name": "Garikipati",
-                "email": "krishna@umich.edu",
-                "research": "http://www-personal.umich.edu/~krishna/",
-                "blurb": "Broadly, my research interests are in developing mathematical and computational models of physical systems. With relevance to the PRISMS Center this consists of continuum scale models of coupled mechano-chemical phenomena in materials physics.",
-                "advisor": "",
-                "image": "assets/img/people/krishna2.jpg"
-            },
+            // {
+            //     "title": "Professor ",
+            //     "first_name": "Krishna",
+            //     "last_name": "Garikipati",
+            //     "email": "krishna@umich.edu",
+            //     "research": "http://www-personal.umich.edu/~krishna/",
+            //     "blurb": "Broadly, my research interests are in developing mathematical and computational models of physical systems. With relevance to the PRISMS Center this consists of continuum scale models of coupled mechano-chemical phenomena in materials physics.",
+            //     "advisor": "",
+            //     "image": "assets/img/people/krishna2.jpg"
+            // },
             {
                 "title": "Professor ",
                 "first_name": "Vikram",
@@ -197,16 +197,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/veera2.jpg",
                 "blurb": "Prof. Sundararaghavan develops multi-scale computational methods for polycrystalline alloys, fiber reinforced composites, metallic foams and ultra-high temperature ceramics to model the effect of microstructure on the overall deformation, fatigue, failure, thermal transport and oxidation response."
             },
-            {
-                "title": "Dr.",
-                "first_name": "Shiva",
-                "last_name": "Rudraraju",
-                "email": "rudraa@umich.edu",
-                "research": "http://www-personal.umich.edu/~rudraa/",
-                "advisor": "",
-                "image": "assets/img/people/rudraa.jpg",
-                "blurb": "Shiva Rudraraju is a research faculty in Mechanical Engineering and the lead-developer of the finite element based numerical codes under development in PRISMS. His research focuses on coupled multiphysics and multiscale phenomena driven by mechanics (deformation and failure) and transport. Specific topics of research include mechano-chemically driven solid-solid phase transformations, species transport and growth of biological tumors and fracture propagation in fiber reinforced composites. His work draws heavily from continuum mechanics, fracture mechanics, thermodynamics and variational methods."
-            },
+            // {
+            //     "title": "Dr.",
+            //     "first_name": "Shiva",
+            //     "last_name": "Rudraraju",
+            //     "email": "rudraa@umich.edu",
+            //     "research": "http://www-personal.umich.edu/~rudraa/",
+            //     "advisor": "",
+            //     "image": "assets/img/people/rudraa.jpg",
+            //     "blurb": "Shiva Rudraraju is a research faculty in Mechanical Engineering and the lead-developer of the finite element based numerical codes under development in PRISMS. His research focuses on coupled multiphysics and multiscale phenomena driven by mechanics (deformation and failure) and transport. Specific topics of research include mechano-chemically driven solid-solid phase transformations, species transport and growth of biological tumors and fracture propagation in fiber reinforced composites. His work draws heavily from continuum mechanics, fracture mechanics, thermodynamics and variational methods."
+            // },
             {
                 "title": "Dr.",
                 "first_name": "Phani",
@@ -227,16 +227,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/brian.jpg",
                 "blurb": "My research is focused on computational materials modeling of the thermodynamics and kinetics of solid-state atomistic processes through the development of new automated computational tools. In particular, I am developing Monte Carlo methods which I use for fundamental studies of phase transitions and precipitate formation in metal alloys."
             },
-            {
-                "title": "Dr.",
-                "first_name": "Stephen",
-                "last_name": "DeWitt",
-                "email": "stvdwtt@umich.edu",
-                "research": "",
-                "advisor": "",
-                "image": "assets/img/people/steve.jpg",
-                "blurb": "My research interests are in developing continuum simulation tools for material systems with complex geometries and then applying them to link microstructural features to macroscopic material properties. As a part of PRISMS I am investigating the formation and evolution of precipitates in magnesium alloys using phase-field simulations and the motion of dislocations past arrays of precipitates using dislocation dynamics simulations."
-            },
+            // {
+            //     "title": "Dr.",
+            //     "first_name": "Stephen",
+            //     "last_name": "DeWitt",
+            //     "email": "stvdwtt@umich.edu",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "assets/img/people/steve.jpg",
+            //     "blurb": "My research interests are in developing continuum simulation tools for material systems with complex geometries and then applying them to link microstructural features to macroscopic material properties. As a part of PRISMS I am investigating the formation and evolution of precipitates in magnesium alloys using phase-field simulations and the motion of dislocations past arrays of precipitates using dislocation dynamics simulations."
+            // },
             {
                 "title": "Dr.",
                 "first_name": "Mohammadreza",
@@ -247,16 +247,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/reza_yaghoobi.jpg",
                 "blurb": "My primary research interest is in multiscale computational plasticity and damage mechanics of crystalline materials, composites, and ceramics with emphasis on the theoretical modeling, numerical simulation of material behavior, and experimental correlation. Research activities of particular interest includes modelling at different length scales including atomistic simulation, crystal plasticity finite element method, and local and nonlocal continuum plasticity. Central to my research is serving as a lead developer of PRISMS-Plasticity software, which is an open-source parallel 3-D crystal plasticity and continuum plasticity finite element code."
             },
-            {
-                "title": "Professor ",
-                "first_name": "Wayne",
-                "last_name": "Jones",
-                "email": "jonesjwa@umich.edu",
-                "research": "http://www.mse.engin.umich.edu/people/faculty/jones",
-                "advisor": "",
-                "image": "assets/img/people/J. Wayne_Jones.jpg",
-                "blurb": "My research area is focused on the mechanical behavior of structural metal alloys and specifically on fatigue and creep. For the past three years my group has been involved in using ultrasonic fatigue to examine the very high cycle fatigue behavior of magnesium, aluminum, and titanium alloys and nickel-base superalloys."
-            },
+            // {
+            //     "title": "Professor ",
+            //     "first_name": "Wayne",
+            //     "last_name": "Jones",
+            //     "email": "jonesjwa@umich.edu",
+            //     "research": "http://www.mse.engin.umich.edu/people/faculty/jones",
+            //     "advisor": "",
+            //     "image": "assets/img/people/J. Wayne_Jones.jpg",
+            //     "blurb": "My research area is focused on the mechanical behavior of structural metal alloys and specifically on fatigue and creep. For the past three years my group has been involved in using ultrasonic fatigue to examine the very high cycle fatigue behavior of magnesium, aluminum, and titanium alloys and nickel-base superalloys."
+            // },
             {
                 "title": "Professor ",
                 "first_name": "Emmanuelle",
@@ -277,16 +277,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/Samantha_Daly.jpg",
                 "blurb": "My research lies at the intersection of experimental mechanics and materials science, with an emphasis on using novel methods of experimentation coupled closely with theoretical and computational modeling. My group's research focuses on the measurements of microstructural features of materials and the effect of microstructure on meso and macroscopic properties."
             },
-            {
-                "title": "Professor ",
-                "first_name": "Jagadish",
-                "last_name": "H.V.",
-                "email": "jag@umich.edu",
-                "research": "http://web.eecs.umich.edu/~jag/",
-                "advisor": "",
-                "image": "assets/img/people/Jag-web.jpg",
-                "blurb": "My current research is centered around how to make database systems more usable, particularly when the data involved comes from multiple heterogeneous sources, and has undergone many manipulations. A related concern is how to design effective, usable database systems."
-            },
+            // {
+            //     "title": "Professor ",
+            //     "first_name": "Jagadish",
+            //     "last_name": "H.V.",
+            //     "email": "jag@umich.edu",
+            //     "research": "http://web.eecs.umich.edu/~jag/",
+            //     "advisor": "",
+            //     "image": "assets/img/people/Jag-web.jpg",
+            //     "blurb": "My current research is centered around how to make database systems more usable, particularly when the data involved comes from multiple heterogeneous sources, and has undergone many manipulations. A related concern is how to design effective, usable database systems."
+            // },
 
             {
                 "title": "Professor ",
@@ -297,7 +297,37 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "",
                 "image": "assets/img/people/hedstrom_margaret_pp_1.jpg",
                 "blurb": "My research focuses on the reuse of information and the cyberinfrastructure necessary to enable easy exchange of data across disciplines and over time. I am the PI and Project Director for the Open Data IGERT (NSF 0903629) that engages PhD students and faculty at Michigan from Information Science, Computer Science, Materials Science, Chemical Engineering and Bioinformatics in a sustained investigation into the technologies, tools, standards, practices and cultural change."
-            }
+            },
+            {
+                title: "Dr. ",
+                first_name: "David",
+                last_name: "Montiel",
+                email: "dmontiel@umich.edu",
+                research: "",
+                advisor: "",
+                image: "assets/img/people/david_montiel.png",
+                blurb: "My research is focused on the development and application of phase-field and phase-field-crystal models to simulate the dynamics of nano- and microstructures during materials processing and operation. The goal of this work is to better understand the underlying mechanisms that give rise to different microstructures, and then apply this knowledge to design materials with targeted properties. Specific topics of my research include precipitate nucleation and growth, the study three-dimensional effects in two-dimensional materials, and the effect of microstructure on corrosion behavior.",
+            },
+            // {
+            //     title: "",
+            //     first_name: "",
+            //     last_name: "",
+            //     email: "",
+            //     research: "",
+            //     advisor: "",
+            //     image: "",
+            //     blurb: "",
+            // },
+            // {
+            //     title: "",
+            //     first_name: "",
+            //     last_name: "",
+            //     email: "",
+            //     research: "",
+            //     advisor: "",
+            //     image: "",
+            //     blurb: "",
+            // }
 
         ];
 
@@ -337,26 +367,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         $scope.students = [
             {
                 "title": "",
-                "first_name": "Ellen",
-                "last_name": "Sitzmann",
-                "email": "esitzmann@gmail.com",
-                "research": "",
-                "advisor": "Emanuelle Marquis",
-                "image": "assets/img/people/Ellen_Sitzmann.png",
-                "blurb": "My thesis work focuses on quantifying the effects of alloying elements, aging time, and temperature on the precipitation mechanisms and kinetics in Mg-Rare Earth alloys, using techniques such as transmission electron microscopy and atom probe tomography. Within the collaborative framework of PRISMS, my research will further our understanding of precipitation processes and contribute to a complete thermodynamic and kinetic description of Mg alloys."
-            },
-            {
-                "title": "",
-                "first_name": "Jacob",
-                "last_name": "Adams",
-                "email": "jfadams@umich.edu",
-                "research": "",
-                "advisor": "John Allison & Wayne Jones",
-                "image": "assets/img/people/jfadams.jpg",
-                "blurb": "I am studying the very high cycle fatigue behavior and crack propagation mechanisms in magnesium. In the PRISMS program, this work serves to identify critical mechanisms and phenomena necessary for the development of computational models dealing with fatigue crack growth, as well as validating results from computational models as they are developed. "
-            },
-            {
-                "title": "",
                 "first_name": "Sambit",
                 "last_name": "Das",
                 "email": "dsambit@umich.edu",
@@ -365,16 +375,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/SambitDas.jpg",
                 "blurb": "I am developing a computational framework for explicit large scale electronic structure calculations of crystalline materials using a real space implementation of the Orbital Free Density Functional Theory. My aim is to study the energetics and mobility of edge and screw dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al alloys. I am also the lead-developer of DFT-FE code for conducting large-scale Kohn-Sham DFT calculations."
             },
-            {
-                "title": "",
-                "first_name": "Sriram",
-                "last_name": "Ganesan",
-                "email": "sriramg@umich.edu",
-                "research": "",
-                "advisor": "Veera Sundararaghavan",
-                "image": "assets/img/people/Sriram.jpg",
-                "blurb": "I am involved in integrating Crystal Plasticity Finite Element Method (CPFEM) into the PRISMS framework. Crystal plasticity methods are used to simulate the response of aggregates of crystals to an applied stress. My current research is focused on developing improved constitutive models which can connect the physics of dislocations with the hardening rates used in CPFEM calculations. "
-            },
+
             //{
             //    "title": "Dr.",
             //    "first_name": "Jiashi",
@@ -385,16 +386,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //    "image": "assets/img/people/Jiashi.jpg",
             //    "blurb": "My research focuses on characterization of grain boundary precipitation and grain boundary precipitate-free zone in magnesium alloys. These quantitative characterization results will be used for computational modeling and simulation. "
             //},
-            {
-                "title": "Dr.",
-                "first_name": "John",
-                "last_name": "C Thomas",
-                "email": "johnct@umich.edu",
-                "research": "",
-                "advisor": "Anton Van der Ven",
-                "image": "assets/img/people/thomas.jpg",
-                "blurb": "My research utilizes predictive simulation to study and optimize finite-temperature properties of crystalline materials. I develop methods that leverage first-principles datasets to build atomistic and mesoscale models describing chemical, mechanical, and lattice-dynamical phenomena. My interests span new and yet-to-be-discovered materials for structural applications, thermoelectricity, optoelectronic devices, and energy storage."
-            },
+
             //{
             //    "title": "",
             //    "first_name": "Chia-Hui",
@@ -415,26 +407,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //    "image": "assets/img/people/iris.jpg",
             //    "blurb": "Huaying is a UX/UI designer. Her passion lies in creating appealing visuals and smooth user experiences across all touchpoints. She is working on the user experience and web interface design for the PRISMS website and the Materials Commons platform. "
             //},
-            {
-                "title": "",
-                "first_name": "Greg",
-                "last_name": "Teichert",
-                "email": "gregteichert@gmail.edu",
-                "research": "",
-                "advisor": "Krishna Garikipati",
-                "image": "assets/img/people/greg.jpg",
-                "blurb": "My work involves modeling continuum elastoplasticity using the finite element method. One standout feature of this project is the integration with crystal plasticity models. This allows the user to extract information from a micro scale crystal plasticity model (such as the hardening curve) and apply it in the macro scale using continuum plasticity."
-            },
-            {
-                "title": "",
-                "first_name": "Anirudh Raju",
-                "last_name": "Natarajan ",
-                "email": "ranirudh@umich.edu@umich.edu",
-                "research": "",
-                "advisor": "Anton Van der Ven",
-                "image": "assets/img/people/Anirudh.jpg",
-                "blurb": "My research involves understanding precipitation and kinetics in Magnesium alloys using a combination of first-principles methods and techniques from statistical mechanics. I am also involved in the development of computational tools that will help provide a link between the atomistic and continuum scale."
-            },
+
+
             {
                 "title": "",
                 "first_name": "Jason",
@@ -444,6 +418,166 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "Katsuyo Thornton",
                 "image": "assets/img/people/jason_luce.jpg",
                 "blurb": "My research within the PRISMS program focuses on the computational modeling of grain boundary energy and grain boundary dynamics in magnesium alloys. Specifically, I plan to apply the phase field crystal (PFC) model to calculate grain boundary energy as a function of grain misorientation for 2D hexagonal and 3D HCP structures. However, many aspects of the PFC model are still in development, and a large part of my research is centered on using the results of atomistic simulations (e.g., molecular dynamics) to parameterize the PFC model so that it describes physical systems more accurately. "
+            },
+
+            {
+                "title": "",
+                "first_name": "Aaditya",
+                "last_name": "Lakshmanan",
+                "email": "aadityal@umich.edu",
+                "research": "",
+                "advisor": "Veera Sundararaghavan ",
+                "image": "",
+                "blurb": "I work on multiple approaches to capture microstructural length-scale effects in crystal plasticity constitutive models. This includes simple phenomenological Hall-Petch type models whose constitutive parameters are obtained by fitting experimental measurements of the stress profile ahead of a blocked slip band with a theoretical continuum dislocation pileup model. Recent efforts involve developing dislocation-density based models tied to the continuum crystal plasticity framework which naturally depict size-effect and other intragranular microstructural features. The applications of such an approach to Magnesium alloys is of paramount importance in the Aerospace industry and their science is yet to be uncovered."
+            },
+
+            {
+                "title": "",
+                "first_name": "Mohsen Taheri",
+                "last_name": "Andani",
+                "email": "mtaheri@umich.edu",
+                "research": "",
+                "advisor": "Amit Misra",
+                "image": "assets/img/people/mohsen_taherai_andani.jpg",
+                "blurb": "I am studying the role of grain boundaries in yield strength of the Magnesium alloys. In the PRISMS program, this work serves to identify critical mechanisms and phenomena necessary for the development of computational models dealing with grain boundary strengthening, as well as validating results from computational models as they are developed."
+            },
+
+            // TODO
+            // {
+            //     "title": "",
+            //     "first_name": "Duncan",
+            //     "last_name": "Greeley",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+
+            // TODO
+            // {
+            //     "title": "",
+            //     "first_name": "Choaming",
+            //     "last_name": "Yang",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+
+            // TODO
+            // {
+            //     "title": "",
+            //     "first_name": "Srihari",
+            //     "last_name": "Sundar",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+        ];
+
+        $scope.post_docs = [
+            {
+                "title": "Dr.",
+                "first_name": "John",
+                "last_name": "C Thomas",
+                "email": "johnct@umich.edu",
+                "research": "",
+                "advisor": "Anton Van der Ven",
+                "image": "assets/img/people/thomas.jpg",
+                "blurb": "My research utilizes predictive simulation to study and optimize finite-temperature properties of crystalline materials. I develop methods that leverage first-principles datasets to build atomistic and mesoscale models describing chemical, mechanical, and lattice-dynamical phenomena. My interests span new and yet-to-be-discovered materials for structural applications, thermoelectricity, optoelectronic devices, and energy storage."
+            },
+            {
+                "title": "Dr.",
+                "first_name": "Anirudh Raju",
+                "last_name": "Natarajan ",
+                "email": "ranirudh@umich.edu@umich.edu",
+                "research": "",
+                "advisor": "Anton Van der Ven",
+                "image": "assets/img/people/Anirudh.jpg",
+                "blurb": "My research involves understanding precipitation and kinetics in Magnesium alloys using a combination of first-principles methods and techniques from statistical mechanics. I am also involved in the development of computational tools that will help provide a link between the atomistic and continuum scale."
+            },
+
+            // TODO
+            // {
+            //     "title": "Dr.",
+            //     "first_name": "John",
+            //     "last_name": "Goiri",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+
+            // TODO
+            // {
+            //     "title": "Dr.",
+            //     "first_name": "Zhe",
+            //     "last_name": "Chen",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+
+            // TODO
+            // {
+            //     "title": "Dr.",
+            //     "first_name": "Quianying",
+            //     "last_name": "Shi",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+        ];
+
+        $scope.former_students = [
+            {
+                "title": "",
+                "first_name": "Ellen",
+                "last_name": "Sitzmann",
+                "email": "esitzmann@gmail.com",
+                "research": "",
+                "advisor": "Emanuelle Marquis",
+                "image": "assets/img/people/Ellen_Sitzmann.png",
+                "blurb": "My thesis work focuses on quantifying the effects of alloying elements, aging time, and temperature on the precipitation mechanisms and kinetics in Mg-Rare Earth alloys, using techniques such as transmission electron microscopy and atom probe tomography. Within the collaborative framework of PRISMS, my research will further our understanding of precipitation processes and contribute to a complete thermodynamic and kinetic description of Mg alloys."
+            },
+            {
+                "title": "",
+                "first_name": "Jacob",
+                "last_name": "Adams",
+                "email": "jfadams@umich.edu",
+                "research": "",
+                "advisor": "John Allison & Wayne Jones",
+                "image": "assets/img/people/jfadams.jpg",
+                "blurb": "I am studying the very high cycle fatigue behavior and crack propagation mechanisms in magnesium. In the PRISMS program, this work serves to identify critical mechanisms and phenomena necessary for the development of computational models dealing with fatigue crack growth, as well as validating results from computational models as they are developed. "
+            },
+            {
+                "title": "",
+                "first_name": "Sriram",
+                "last_name": "Ganesan",
+                "email": "sriramg@umich.edu",
+                "research": "",
+                "advisor": "Veera Sundararaghavan",
+                "image": "assets/img/people/Sriram.jpg",
+                "blurb": "I am involved in integrating Crystal Plasticity Finite Element Method (CPFEM) into the PRISMS framework. Crystal plasticity methods are used to simulate the response of aggregates of crystals to an applied stress. My current research is focused on developing improved constitutive models which can connect the physics of dislocations with the hardening rates used in CPFEM calculations. "
+            },
+            {
+                "title": "",
+                "first_name": "Greg",
+                "last_name": "Teichert",
+                "email": "gregteichert@gmail.edu",
+                "research": "",
+                "advisor": "Krishna Garikipati",
+                "image": "assets/img/people/greg.jpg",
+                "blurb": "My work involves modeling continuum elastoplasticity using the finite element method. One standout feature of this project is the integration with crystal plasticity models. This allows the user to extract information from a micro scale crystal plasticity model (such as the hardening curve) and apply it in the macro scale using continuum plasticity."
             },
             {
                 "title": "",
@@ -488,7 +622,42 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "Veera Sundararaghavan",
                 "image": "assets/img/people/ShardulPanwar.jpg",
                 "blurb": "My research involves developing computational models based on crystal plasticity for predicting micro-scale fatigue crack propagation . The major part of my research focuses on new ways to make fatigue computation less expensive, by using theoretical models and experimental data for determining cohesive law parameters to be used in micro-structural fatigue simulations."
-            }
+            },
+            // TODO
+            // {
+            //     "title": "",
+            //     "first_name": "Ransom",
+            //     "last_name": "Stamps",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+
+            // TODO
+            // {
+            //     "title": "",
+            //     "first_name": "Beck",
+            //     "last_name": "Andrews",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
+
+            // TODO
+            // {
+            //     "title": "",
+            //     "first_name": "Zhihua",
+            //     "last_name": "Huang",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
         ];
 
         $scope.eab = [

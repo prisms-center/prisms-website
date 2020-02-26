@@ -1,7 +1,62 @@
 <div class="people-area">
-    <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="overview">Students &amp;
-        Post-Docs</h2>
+    <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="gs">Graduate Students</h2>
     <div ng-repeat="student in students | orderBy: 'last_name'">
+        <div class="people-container row">
+            <!--People Portrait-->
+            <div class="people-pic col-xs-3">
+                <div class="vertical-center">
+                    <img class="portrait" ng-src="{{student.image}}"
+                         alt="{{student.first_name}} {{student.last_name}}">
+                </div>
+            </div>
+
+            <!--People Description-->
+            <div class="people-description col-xs-9">
+                <div class="vertical-center">
+                    <h4 class="people-title">{{student.title}}{{student.first_name}} {{student.last_name}}</h4>
+
+                    <p>Email: <a class="main_link" href="mailto: {{student.email}}">{{student.email}}</a></p>
+                    <p ng-if="student.advisor">Advisor: {{student.advisor}}</p>
+                    <p ng-if="student.research">Research: <a class="main_link" href=""></a></p>
+
+                    <p>
+                        {{student.blurb}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="post_docs">Post-Docs</h2>
+    <div ng-repeat="student in post_docs | orderBy: 'last_name'">
+        <div class="people-container row">
+            <!--People Portrait-->
+            <div class="people-pic col-xs-3">
+                <div class="vertical-center">
+                    <img class="portrait" ng-src="{{student.image}}"
+                         alt="{{student.first_name}} {{student.last_name}}">
+                </div>
+            </div>
+
+            <!--People Description-->
+            <div class="people-description col-xs-9">
+                <div class="vertical-center">
+                    <h4 class="people-title">{{student.title}}{{student.first_name}} {{student.last_name}}</h4>
+
+                    <p>Email: <a class="main_link" href="mailto: {{student.email}}">{{student.email}}</a></p>
+                    <p ng-if="student.advisor">Advisor: {{student.advisor}}</p>
+                    <p ng-if="student.research">Research: <a class="main_link" href=""></a></p>
+
+                    <p>
+                        {{student.blurb}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="padding-top: 120px; margin-top: -70px;" class="tab-content-title" id="graduates">Graduates of PRISMS</h2>
+    <div ng-repeat="student in former_students | orderBy: 'last_name'">
         <div class="people-container row">
             <!--People Portrait-->
             <div class="people-pic col-xs-3">
