@@ -444,17 +444,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "blurb": "I am studying the role of grain boundaries in yield strength of the Magnesium alloys. In the PRISMS program, this work serves to identify critical mechanisms and phenomena necessary for the development of computational models dealing with grain boundary strengthening, as well as validating results from computational models as they are developed."
             },
 
-            // TODO
-            // {
-            //     "title": "",
-            //     "first_name": "Duncan",
-            //     "last_name": "Greeley",
-            //     "email": "",
-            //     "research": "",
-            //     "advisor": "",
-            //     "image": "",
-            //     "blurb": "",
-            // },
+            {
+                "title": "",
+                "first_name": "Duncan",
+                "last_name": "Greeley",
+                "email": "greeleyd@umich.edu",
+                "research": "",
+                "advisor": "John Allison",
+                "image": "assets/img/people/duncan_greeley.jpg",
+                "blurb": "Duncan is a graduate student in the Allison Research Group studying fatigue deformation and short crack growth in Magnesium-Rare-Earth alloys, using synchrotron High Energy X-Ray Diffraction Microscopy to characterize the crystallography of fatigue crack paths and in-situ cyclic micromechanical behavior.",
+            },
 
             // TODO
             // {
@@ -527,17 +526,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //     "blurb": "",
             // },
 
-            // TODO
-            // {
-            //     "title": "Dr.",
-            //     "first_name": "Quianying",
-            //     "last_name": "Shi",
-            //     "email": "",
-            //     "research": "",
-            //     "advisor": "",
-            //     "image": "",
-            //     "blurb": "",
-            // },
+            {
+                "title": "Dr.",
+                "first_name": "Quianying",
+                "last_name": "Shi",
+                "email": "shiqiany@umich.edu",
+                "research": "",
+                "advisor": "",
+                "image": "assets/img/people/qianying_shi.jpg",
+                "blurb": "My research focuses on microstructural characterization and property evaluation of metallic materials, especially precipitation strengthened lightweight alloys, for the development of integrated computational materials engineering approach to predict and optimize the alloy performance. I conduct quantitative nano-scaled microstructural analysis using advanced characterization tools such as transmission electron microscopy, high resolution scanning transmission electron microscopy and atomic probe tomography. Experimental results are coupled with CALPHAD simulation to achieve thermodynamic and kinetic modeling for microstructure evolution during different processing steps and furthermore to build the strength prediction model.",
+            },
         ];
 
         $scope.former_students = [

@@ -123,7 +123,7 @@
     <h4>PRISMS-PF: Phase Field Modeling Code</h4>
     <a href="http://www.mse.engin.umich.edu/people/faculty/thornton" target="_blank">K. Thornton</a>,
     <a href="http://www-personal.umich.edu/~rudraa/" target="_blank">S. Rudraraju,</a>
-    S. DeWitt
+    S. DeWitt, D. Montiel
     <p class="tab-content-details">
         Phase field models have been central to computational modeling of complex morphological
         evolution in multiphase systems. Here at the PRISMS Center, we are developing a massively
@@ -142,35 +142,37 @@
         with combinations of these equations. The parallel performance and scaling has been demonstrated
         on terascale problems with billions of degrees of freedom running on thousands of processors.
         Benchmarking versus an MPI-parallelized finite difference code has demonstrated over a 4x
-        improvement in simulation speed over standard finite difference approaches.
+        improvement in simulation speed over standard finite difference approaches. More details can be found
+        at <a href="http://prisms-center.github.io/phaseField/" target="_blank">PRISMS-PF Website</a>.
     </p>
     <img src="assets/img/ctools/PF_1.png" width="20%" height="20%"></img>
     <img src="assets/img/ctools/PF_2.png" width="20%" height="20%"></img>
     <br>
     <br>
     <h4>PRISMS-Plasticity: Continuum Platicity and Crystal Plasticity Codes</h4>
-    <a href="http://www-personal.umich.edu/~krishna/" target="_blank">K. Garikipati</a>,
+    M. Yaghoobi, S. Ganesan, S. Sundar, A. Lakshmanan,
+<!--    <a href="http://www-personal.umich.edu/~krishna/" target="_blank">K. Garikipati</a>,-->
     <a href="http://umich.edu/~veeras/" target="_blank">V. Sundararaghavan</a>,
-    <a href="http://www-personal.umich.edu/~rudraa/" target="_blank">S. Rudraraju</a>
+<!--    <a href="http://www-personal.umich.edu/~rudraa/" target="_blank">S. Rudraraju</a>-->
     <p class="tab-content-details">
-        The PRISMS-Plasticity code is a parallel numerical framework for modeling continuum
-        scale elasto-plastic material behavior important to the multiscale materials modeling
-        effort of PRISMS. PRISMS-Plasticity encompasses two sub-codes focused on modeling
-        elasto-plastic deformation at the macro-scale (Continuum Plasticity) and meso-scale
-        (Crystal-Plasticity). The two sub-codes are integrated under a common code base for
-        Elliptic Boundary Value problems and is build on top of the
-        <a href="https://www.dealii.org" target="_blank">deal.ii</a> open-source finite
-        element library.
-    </p>
-    <p class="tab-content-details">
-        Currently available models of crystal plasticity include FCC and BCC, and work is under
-        progress for supporting HCP crystals. Under continuum plasticity, we currently support
-        J2-flow theory with isotropic hardening, and include the following isotropic non-linear
+        The PRISMS-Plasticity code is an open source parallel continuum and 3-D crystal plasticity finite element (CPFE)
+        software package which is developed as a part of PRISMS integrated framework. In the case of CPFE part, both
+        rate-independent and rate-dependent crystal plasticity algorithms are implemented along with developing their
+        algorithmic tangent modulus. Additionally, two different sets of twin models are included: the conventional
+        predominant twinning reorientation (PTR) scheme and an advanced multiscale twinning-detwinning model. The
+        PRISMS-Plasticity software can be integrated with experimental characterization techniques such as electron
+        backscatter diffraction (EBSD) and synchrotron X-ray diffraction using available open source software packages
+        of DREAM.3D and Neper. PRISMS-Plasticity can also be integrated with the information repository of
+        Materials Commons. The parallel performance of the software is investigated which demonstrates that it scales
+        well for large problems running on hundreds of processors. Various examples of polycrystalline metals with
+        face-centered cubic (FCC), body-centered cubic (BCC), and hexagonal close-packed (HCP) crystals structures are
+        studied to show the capability of the software to efficiently solve crystal plasticity boundary value problems,
+        in addition to integration with preprocessing and postprocessing tools. 	Under continuum plasticity, we
+        currently support J2-flow theory with isotropic hardening, and include the following isotropic non-linear
         hyper-elastic models: Quad-Log, Neo-Hookean, St. Venant Kirchoff.
     </p>
-    <img src="assets/img/ctools/Plasticity_1.png" width="30%" height="30%">
-    <img src="assets/img/ctools/Plasticity_2.png" width="30%" height="30%">
-    <img src="assets/img/ctools/Plasticity_3.png" width="50%" height="50%">
+
+    <img src="assets/img/ctools/Prisms-Plasticity-Website.jpg" width="50%" height="50%">
     <br>
     <br>
     <h4>Integration Tools: IntegrationTools and IntegrationToolsWriter</h4>
