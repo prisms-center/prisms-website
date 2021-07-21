@@ -473,6 +473,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/duncan_greeley.jpg",
                 "blurb": "Duncan is a graduate student in the Allison Research Group studying fatigue deformation and short crack growth in Magnesium-Rare-Earth alloys, using synchrotron High Energy X-Ray Diffraction Microscopy to characterize the crystallography of fatigue crack paths and in-situ cyclic micromechanical behavior.",
             },
+             {
+                "title": "",
+                "first_name": "Sangwon",
+                "last_name": "Lee",
+                "email": "swrlee@umich.edu",
+                "research": "",
+                "advisor": "Ashley Bucsek",
+                "image": "assets/img/people/Sangwon_Lee.jpg",
+                "blurb": "My research is the in-situ multiscale investigation of recovery, recrystallization, and grain growth of magnesium alloys using 3D X-ray diffraction microscopy. I focus on identifying relationships between crystallographic, microstructural, and micromechanical properties and recrystallization kinetics during annealing using High Energy X-Ray Diffraction Microscopy and Dark Field X-Ray Diffraction Microscopy experiments.",
+            },
 
             // TODO
             // {
@@ -643,16 +653,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "blurb": "My research involves developing computational models based on crystal plasticity for predicting micro-scale fatigue crack propagation . The major part of my research focuses on new ways to make fatigue computation less expensive, by using theoretical models and experimental data for determining cohesive law parameters to be used in micro-structural fatigue simulations."
             },
 
-            {
-                "title": "",
-                "first_name": "",
-                "last_name": "",
-                "email": "",
-                "research": "",
-                "advisor": "",
-                "image": "",
-                "blurb": "",
-            },
             // TODO
             // {
             //     "title": "",
