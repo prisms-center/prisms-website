@@ -339,7 +339,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/Ashley_Bucsek.png",
                 "research": "",
             },
-             {
+            {
                 "title": "Dr.",
                 "first_name": "Liang",
                 "last_name": "Qi",
@@ -473,7 +473,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/duncan_greeley.jpg",
                 "blurb": "Duncan is a graduate student in the Allison Research Group studying fatigue deformation and short crack growth in Magnesium-Rare-Earth alloys, using synchrotron High Energy X-Ray Diffraction Microscopy to characterize the crystallography of fatigue crack paths and in-situ cyclic micromechanical behavior.",
             },
-             {
+            {
                 "title": "",
                 "first_name": "Sangwon",
                 "last_name": "Lee",
@@ -484,11 +484,22 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "blurb": "My research is the in-situ multiscale investigation of recovery, recrystallization, and grain growth of magnesium alloys using 3D X-ray diffraction microscopy. I focus on identifying relationships between crystallographic, microstructural, and micromechanical properties and recrystallization kinetics during annealing using High Energy X-Ray Diffraction Microscopy and Dark Field X-Ray Diffraction Microscopy experiments.",
             },
 
+            {
+                "title": "",
+                "first_name": "Yung Suk",
+                "last_name": "Yoo",
+                "email": "yooy@umich.edu",
+                "research": "",
+                "advisor": "John Allison",
+                "image": "assets/img/people/Yung_Suk_Yoo.jpg",
+                "blurb": "My current research employs a multiscale electron microscopy-based approach to study dislocation interaction with grain boundaries in Mg alloys under tension. Mesoscale characterization with SEM and EBSD provides a wealth of information about slip activity and stress/strain localization. These data are coupled with STEM and TEM characterization of dislocation structures in the slip bands and near grain boundaries to help PRISMS-Plasticity code account for microstructural effects on stress localization.",
+            },
+
             // TODO
             // {
             //     "title": "",
-            //     "first_name": "Choaming",
-            //     "last_name": "Yang",
+            //     "first_name": "",
+            //     "last_name": "",
             //     "email": "",
             //     "research": "",
             //     "advisor": "",
@@ -499,8 +510,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             // TODO
             // {
             //     "title": "",
-            //     "first_name": "Srihari",
-            //     "last_name": "Sundar",
+            //     "first_name": "",
+            //     "last_name": "",
             //     "email": "",
             //     "research": "",
             //     "advisor": "",
