@@ -257,26 +257,26 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //     "image": "assets/img/people/J. Wayne_Jones.jpg",
             //     "blurb": "My research area is focused on the mechanical behavior of structural metal alloys and specifically on fatigue and creep. For the past three years my group has been involved in using ultrasonic fatigue to examine the very high cycle fatigue behavior of magnesium, aluminum, and titanium alloys and nickel-base superalloys."
             // },
-            {
-                "title": "Professor ",
-                "first_name": "Emmanuelle",
-                "last_name": "Marquis",
-                "email": "emarq@umich.edu",
-                "research": "https://sites.google.com/a/umich.edu/marquisgroup/",
-                "advisor": "",
-                "image": "assets/img/people/Emmanuelle_Marquis.jpg",
-                "blurb": "My research focuses on understanding and quantifying the mechanisms controlling microstructural evolution in alloy systems (including light alloys), interfacial properties, oxidation behavior and irradiation effects in materials. To complement my experimental work, my lab forges close ties to groups in computational and theoretical materials science."
-            },
-            {
-                "title": "Professor ",
-                "first_name": "Samantha",
-                "last_name": "Daly",
-                "email": "samdaly@umich.edu",
-                "research": "http://dalylabs.engin.umich.edu",
-                "advisor": "",
-                "image": "assets/img/people/Samantha_Daly.jpg",
-                "blurb": "My research lies at the intersection of experimental mechanics and materials science, with an emphasis on using novel methods of experimentation coupled closely with theoretical and computational modeling. My group's research focuses on the measurements of microstructural features of materials and the effect of microstructure on meso and macroscopic properties."
-            },
+            // {
+            //     "title": "Professor ",
+            //     "first_name": "Emmanuelle",
+            //     "last_name": "Marquis",
+            //     "email": "emarq@umich.edu",
+            //     "research": "https://sites.google.com/a/umich.edu/marquisgroup/",
+            //     "advisor": "",
+            //     "image": "assets/img/people/Emmanuelle_Marquis.jpg",
+            //     "blurb": "My research focuses on understanding and quantifying the mechanisms controlling microstructural evolution in alloy systems (including light alloys), interfacial properties, oxidation behavior and irradiation effects in materials. To complement my experimental work, my lab forges close ties to groups in computational and theoretical materials science."
+            // },
+            // {
+            //     "title": "Professor ",
+            //     "first_name": "Samantha",
+            //     "last_name": "Daly",
+            //     "email": "samdaly@umich.edu",
+            //     "research": "http://dalylabs.engin.umich.edu",
+            //     "advisor": "",
+            //     "image": "assets/img/people/Samantha_Daly.jpg",
+            //     "blurb": "My research lies at the intersection of experimental mechanics and materials science, with an emphasis on using novel methods of experimentation coupled closely with theoretical and computational modeling. My group's research focuses on the measurements of microstructural features of materials and the effect of microstructure on meso and macroscopic properties."
+            // },
             // {
             //     "title": "Professor ",
             //     "first_name": "Jagadish",
@@ -288,16 +288,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //     "blurb": "My current research is centered around how to make database systems more usable, particularly when the data involved comes from multiple heterogeneous sources, and has undergone many manipulations. A related concern is how to design effective, usable database systems."
             // },
 
-            {
-                "title": "Professor ",
-                "first_name": "Margaret",
-                "last_name": "Hedstrom",
-                "email": "hedstrom@umich.edu",
-                "research": "http://www.si.umich.edu/people/margaret-hedstrom",
-                "advisor": "",
-                "image": "assets/img/people/hedstrom_margaret_pp_1.jpg",
-                "blurb": "My research focuses on the reuse of information and the cyberinfrastructure necessary to enable easy exchange of data across disciplines and over time. I am the PI and Project Director for the Open Data IGERT (NSF 0903629) that engages PhD students and faculty at Michigan from Information Science, Computer Science, Materials Science, Chemical Engineering and Bioinformatics in a sustained investigation into the technologies, tools, standards, practices and cultural change."
-            },
+            // {
+            //     "title": "Professor ",
+            //     "first_name": "Margaret",
+            //     "last_name": "Hedstrom",
+            //     "email": "hedstrom@umich.edu",
+            //     "research": "http://www.si.umich.edu/people/margaret-hedstrom",
+            //     "advisor": "",
+            //     "image": "assets/img/people/hedstrom_margaret_pp_1.jpg",
+            //     "blurb": "My research focuses on the reuse of information and the cyberinfrastructure necessary to enable easy exchange of data across disciplines and over time. I am the PI and Project Director for the Open Data IGERT (NSF 0903629) that engages PhD students and faculty at Michigan from Information Science, Computer Science, Materials Science, Chemical Engineering and Bioinformatics in a sustained investigation into the technologies, tools, standards, practices and cultural change."
+            // },
             {
                 title: "Dr. ",
                 first_name: "David",
@@ -329,7 +329,26 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //     blurb: "",
             // }
 
-
+            {
+                "title": "Dr.",
+                "first_name": "Ashely",
+                "last_name": "Bucsek",
+                "email": "abucsek@umich.edu",
+                "blurb": "My research interests include mechanical behavior of materials, micromechanical modeling, in situ/in operando 3D X-ray microscopy, energy conversion, among other topics.",
+                "advisor": "",
+                "image": "assets/img/people/Ashley_Bucsek.png",
+                "research": "",
+            },
+             {
+                "title": "Dr.",
+                "first_name": "Liang",
+                "last_name": "Qi",
+                "email": "qiliang@umich.edu",
+                "blurb": "My research fields are investigations of the mechanical and chemical properties of materials by applying theoretical and computational tools, including first-principles calculations, atomistic simulations, multiscale modeling, and machine learning. My current research focuses on the understanding of the intrinsic electronic and atomistic mechanisms for the mechanical deformation, phase transformation, and degradation of advanced alloys to enhance their mechanical performances and chemical stabilities.",
+                "advisor": "",
+                "image": "assets/img/people/Liang_Qi.png",
+                "research": "",
+            },
         ];
 
         $scope.staff = [
@@ -622,6 +641,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "Veera Sundararaghavan",
                 "image": "assets/img/people/ShardulPanwar.jpg",
                 "blurb": "My research involves developing computational models based on crystal plasticity for predicting micro-scale fatigue crack propagation . The major part of my research focuses on new ways to make fatigue computation less expensive, by using theoretical models and experimental data for determining cohesive law parameters to be used in micro-structural fatigue simulations."
+            },
+
+            {
+                "title": "",
+                "first_name": "",
+                "last_name": "",
+                "email": "",
+                "research": "",
+                "advisor": "",
+                "image": "",
+                "blurb": "",
             },
             // TODO
             // {
