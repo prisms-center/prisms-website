@@ -480,7 +480,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Yoo",
                 "email": "yooy@umich.edu",
                 "research": "",
-                "advisor": "John Allison",
+                "advisor": "Amit Misra",
                 "image": "assets/img/people/Yung_Suk_Yoo.jpg",
                 "blurb": "My current research employs a multiscale electron microscopy-based approach to study dislocation interaction with grain boundaries in Mg alloys under tension. Mesoscale characterization with SEM and EBSD provides a wealth of information about slip activity and stress/strain localization. These data are coupled with STEM and TEM characterization of dislocation structures in the slip bands and near grain boundaries to help PRISMS-Plasticity code account for microstructural effects on stress localization.",
             },
