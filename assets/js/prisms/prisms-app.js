@@ -334,7 +334,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "first_name": "Ashely",
                 "last_name": "Bucsek",
                 "email": "abucsek@umich.edu",
-                "blurb": "My research interests include mechanical behavior of materials, micromechanical modeling, in situ/in operando 3D X-ray microscopy, energy conversion, among other topics.",
+                "blurb": "My research focuses on developing and leveraging multimodal in-situ 3D X-ray microscopy techniques to study the relationships between microstructure, micromechanics, and macroscopic behavior during thermomechanical processing and loading. ",
                 "advisor": "",
                 "image": "assets/img/people/Ashley_Bucsek.png",
                 "research": "",
@@ -385,16 +385,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         ];
 
         $scope.students = [
-            {
-                "title": "",
-                "first_name": "Sambit",
-                "last_name": "Das",
-                "email": "dsambit@umich.edu",
-                "research": "",
-                "advisor": "Vikram Gavini",
-                "image": "assets/img/people/SambitDas.jpg",
-                "blurb": "I am developing a computational framework for explicit large scale electronic structure calculations of crystalline materials using a real space implementation of the Orbital Free Density Functional Theory. My aim is to study the energetics and mobility of edge and screw dislocations in Mg and Al. I also plan to study dislocation-solute interaction in Mg-Al alloys. I am also the lead-developer of DFT-FE code for conducting large-scale Kohn-Sham DFT calculations."
-            },
 
 
             //{
@@ -533,6 +523,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             },
             {
                 "title": "Dr.",
+                "first_name": "Sambit",
+                "last_name": "Das",
+                "email": "dsambit@umich.edu",
+                "research": "",
+                "advisor": "Vikram Gavini",
+                "image": "assets/img/people/SambitDas.jpg",
+                "blurb": "My research focuses on computational method development for large scale real-space density functional theory (DFT) calculations using finite-elements, and applying them to understand the connection between fundamental dislocation core properties and macroscopic mechanical properties in crystalline materials. My current research focuses on electronic-structure studies of dislocation core energetics and dislocation-solute interactions to enhance the ductility of dilute Mg alloys. I am also one of the principal developers of the open-source DFT-FE code for conducting accurate and large-scale Kohn-Sham DFT calculations.",
+            },
+            {
+                "title": "Dr.",
                 "first_name": "Anirudh Raju",
                 "last_name": "Natarajan ",
                 "email": "ranirudh@umich.edu@umich.edu",
@@ -568,7 +568,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
             {
                 "title": "Dr.",
-                "first_name": "Quianying",
+                "first_name": "Qianying",
                 "last_name": "Shi",
                 "email": "shiqiany@umich.edu",
                 "research": "",
