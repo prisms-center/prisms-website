@@ -426,8 +426,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Luce ",
                 "email": "jpluce@umich.edu",
                 "research": "",
-                "advisor": "Katsuyo Thornton",
-                "image": "assets/img/people/jason_luce.jpg",
+                "advisor": "Dr. Katsuyo Thornton",
+                "image": "assets/img/people/jason_luce.png",
                 "blurb": "My research within the PRISMS program focuses on the computational modeling of grain boundary energy and grain boundary dynamics in magnesium alloys. Specifically, I plan to apply the phase field crystal (PFC) model to calculate grain boundary energy as a function of grain misorientation for 2D hexagonal and 3D HCP structures. However, many aspects of the PFC model are still in development, and a large part of my research is centered on using the results of atomistic simulations (e.g., molecular dynamics) to parameterize the PFC model so that it describes physical systems more accurately. "
             },
 
@@ -437,7 +437,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Lakshmanan",
                 "email": "aadityal@umich.edu",
                 "research": "",
-                "advisor": "Veera Sundararaghavan ",
+                "advisor": "Dr. Veera Sundararaghavan ",
                 "image": "",
                 "blurb": "I work on multiple approaches to capture microstructural length-scale effects in crystal plasticity constitutive models. This includes simple phenomenological Hall-Petch type models whose constitutive parameters are obtained by fitting experimental measurements of the stress profile ahead of a blocked slip band with a theoretical continuum dislocation pileup model. Recent efforts involve developing dislocation-density based models tied to the continuum crystal plasticity framework which naturally depict size-effect and other intragranular microstructural features. The applications of such an approach to Magnesium alloys is of paramount importance in the Aerospace industry and their science is yet to be uncovered."
             },
@@ -448,7 +448,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Andani",
                 "email": "mtaheri@umich.edu",
                 "research": "",
-                "advisor": "Amit Misra",
+                "advisor": "Dr. Amit Misra",
                 "image": "assets/img/people/mohsen_taherai_andani.jpg",
                 "blurb": "I am studying the role of grain boundaries in yield strength of the Magnesium alloys. In the PRISMS program, this work serves to identify critical mechanisms and phenomena necessary for the development of computational models dealing with grain boundary strengthening, as well as validating results from computational models as they are developed."
             },
@@ -459,7 +459,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Greeley",
                 "email": "greeleyd@umich.edu",
                 "research": "",
-                "advisor": "John Allison",
+                "advisor": "Dr. John Allison",
                 "image": "assets/img/people/duncan_greeley.jpg",
                 "blurb": "Duncan is a graduate student in the Allison Research Group studying fatigue deformation and short crack growth in Magnesium-Rare-Earth alloys, using synchrotron High Energy X-Ray Diffraction Microscopy to characterize the crystallography of fatigue crack paths and in-situ cyclic micromechanical behavior.",
             },
@@ -469,35 +469,22 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Lee",
                 "email": "swrlee@umich.edu",
                 "research": "",
-                "advisor": "Ashley Bucsek",
+                "advisor": "Dr. Ashley Bucsek",
                 "image": "assets/img/people/Sangwon_Lee.jpg",
                 "blurb": "My research is the in-situ multiscale investigation of recovery, recrystallization, and grain growth of magnesium alloys using 3D X-ray diffraction microscopy. I focus on identifying relationships between crystallographic, microstructural, and micromechanical properties and recrystallization kinetics during annealing using High Energy X-Ray Diffraction Microscopy and Dark Field X-Ray Diffraction Microscopy experiments.",
             },
 
             {
                 "title": "",
-                "first_name": "Yung Suk",
-                "last_name": "Yoo",
-                "email": "yooy@umich.edu",
+                "first_name": " Vaidehi",
+                "last_name": "Menon",
+                "email": "menonv@umich.edu",
                 "research": "",
-                "advisor": "Amit Misra",
-                "image": "assets/img/people/Yung_Suk_Yoo.jpg",
-                "blurb": "My current research employs a multiscale electron microscopy-based approach to study dislocation interaction with grain boundaries in Mg alloys under tension. Mesoscale characterization with SEM and EBSD provides a wealth of information about slip activity and stress/strain localization. These data are coupled with STEM and TEM characterization of dislocation structures in the slip bands and near grain boundaries to help PRISMS-Plasticity code account for microstructural effects on stress localization.",
+                "advisor": "Dr. Liang Qi",
+                "image": "assets/img/people/Vaidehi_Menon.png",
+                "blurb": "I use molecular dynamics and density functional theory to study deformation mechanisms in Magnesium alloys. Specifically, I explore how solute elements and grain boundaries can synergistically improve the mechanical properties of Mg, in order to develop models that can assist in the design of advanced alloys.",
             },
 
-            // TODO
-            // {
-            //     "title": "",
-            //     "first_name": "",
-            //     "last_name": "",
-            //     "email": "",
-            //     "research": "",
-            //     "advisor": "",
-            //     "image": "",
-            //     "blurb": "",
-            // },
-
-            // TODO
             // {
             //     "title": "",
             //     "first_name": "",
@@ -513,11 +500,22 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         $scope.post_docs = [
             {
                 "title": "Dr.",
+                "first_name": "Yung Suk \"Jeremy\"",
+                "last_name": "Yoo",
+                "email": "yooy@umich.edu",
+                "research": "",
+                "advisor": "Dr. Amit Misra",
+                "image": "assets/img/people/Yung_Suk_Yoo.jpg",
+                "blurb": "My current research employs a multiscale electron microscopy-based approach to study dislocation interaction with grain boundaries in Mg alloys under tension. Mesoscale characterization with SEM and EBSD provides a wealth of information about slip activity and stress/strain localization. These data are coupled with STEM and TEM characterization of dislocation structures in the slip bands and near grain boundaries to help PRISMS-Plasticity code account for microstructural effects on stress localization.",
+            },
+
+            {
+                "title": "Dr.",
                 "first_name": "John",
                 "last_name": "C Thomas",
                 "email": "johnct@umich.edu",
                 "research": "",
-                "advisor": "Anton Van der Ven",
+                "advisor": "Dr. Anton Van der Ven",
                 "image": "assets/img/people/thomas.jpg",
                 "blurb": "My research utilizes predictive simulation to study and optimize finite-temperature properties of crystalline materials. I develop methods that leverage first-principles datasets to build atomistic and mesoscale models describing chemical, mechanical, and lattice-dynamical phenomena. My interests span new and yet-to-be-discovered materials for structural applications, thermoelectricity, optoelectronic devices, and energy storage."
             },
@@ -527,7 +525,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Das",
                 "email": "dsambit@umich.edu",
                 "research": "",
-                "advisor": "Vikram Gavini",
+                "advisor": "Dr. Vikram Gavini",
                 "image": "assets/img/people/SambitDas.jpg",
                 "blurb": "My research focuses on computational method development for large scale real-space density functional theory (DFT) calculations using finite-elements, and applying them to understand the connection between fundamental dislocation core properties and macroscopic mechanical properties in crystalline materials. My current research focuses on electronic-structure studies of dislocation core energetics and dislocation-solute interactions to enhance the ductility of dilute Mg alloys. I am also one of the principal developers of the open-source DFT-FE code for conducting accurate and large-scale Kohn-Sham DFT calculations.",
             },
@@ -537,7 +535,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Natarajan ",
                 "email": "ranirudh@umich.edu@umich.edu",
                 "research": "",
-                "advisor": "Anton Van der Ven",
+                "advisor": "Dr. Anton Van der Ven",
                 "image": "assets/img/people/Anirudh.jpg",
                 "blurb": "My research involves understanding precipitation and kinetics in Magnesium alloys using a combination of first-principles methods and techniques from statistical mechanics. I am also involved in the development of computational tools that will help provide a link between the atomistic and continuum scale."
             },
@@ -572,7 +570,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Shi",
                 "email": "shiqiany@umich.edu",
                 "research": "",
-                "advisor": "",
+                "advisor": "Dr. John Allison",
                 "image": "assets/img/people/qianying_shi.jpg",
                 "blurb": "My research focuses on microstructural characterization and property evaluation of metallic materials, especially precipitation strengthened lightweight alloys, for the development of integrated computational materials engineering approach to predict and optimize the alloy performance. I conduct quantitative nano-scaled microstructural analysis using advanced characterization tools such as transmission electron microscopy, high resolution scanning transmission electron microscopy and atomic probe tomography. Experimental results are coupled with CALPHAD simulation to achieve thermodynamic and kinetic modeling for microstructure evolution during different processing steps and furthermore to build the strength prediction model.",
             },
@@ -585,7 +583,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Sitzmann",
                 "email": "esitzmann@gmail.com",
                 "research": "",
-                "advisor": "Emanuelle Marquis",
+                "advisor": "Dr. Emanuelle Marquis",
                 "image": "assets/img/people/Ellen_Sitzmann.png",
                 "blurb": "My thesis work focuses on quantifying the effects of alloying elements, aging time, and temperature on the precipitation mechanisms and kinetics in Mg-Rare Earth alloys, using techniques such as transmission electron microscopy and atom probe tomography. Within the collaborative framework of PRISMS, my research will further our understanding of precipitation processes and contribute to a complete thermodynamic and kinetic description of Mg alloys."
             },
@@ -595,7 +593,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Adams",
                 "email": "jfadams@umich.edu",
                 "research": "",
-                "advisor": "John Allison & Wayne Jones",
+                "advisor": "Dr. John Allison & Dr. Wayne Jones",
                 "image": "assets/img/people/jfadams.jpg",
                 "blurb": "I am studying the very high cycle fatigue behavior and crack propagation mechanisms in magnesium. In the PRISMS program, this work serves to identify critical mechanisms and phenomena necessary for the development of computational models dealing with fatigue crack growth, as well as validating results from computational models as they are developed. "
             },
@@ -605,7 +603,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Ganesan",
                 "email": "sriramg@umich.edu",
                 "research": "",
-                "advisor": "Veera Sundararaghavan",
+                "advisor": "Dr. Veera Sundararaghavan",
                 "image": "assets/img/people/Sriram.jpg",
                 "blurb": "I am involved in integrating Crystal Plasticity Finite Element Method (CPFEM) into the PRISMS framework. Crystal plasticity methods are used to simulate the response of aggregates of crystals to an applied stress. My current research is focused on developing improved constitutive models which can connect the physics of dislocations with the hardening rates used in CPFEM calculations. "
             },
@@ -615,7 +613,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Teichert",
                 "email": "gregteichert@gmail.edu",
                 "research": "",
-                "advisor": "Krishna Garikipati",
+                "advisor": "Dr. Krishna Garikipati",
                 "image": "assets/img/people/greg.jpg",
                 "blurb": "My work involves modeling continuum elastoplasticity using the finite element method. One standout feature of this project is the integration with crystal plasticity models. This allows the user to extract information from a micro scale crystal plasticity model (such as the hardening curve) and apply it in the macro scale using continuum plasticity."
             },
@@ -625,7 +623,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Heinrich",
                 "email": "cheinric@umich.edu",
                 "research": "",
-                "advisor": "Veera Sundararaghavan",
+                "advisor": "Dr. Veera Sundararaghavan",
                 "image": "assets/img/people/christian.jpg",
                 "blurb": "My research is focused on understanding how magnesium fails in the low cycle fatigue regime using a micromechanical approach. Specifically I investigate the creation and evolution of persistent slip bands using dislocation dynamics. The slip bands serve as a point of strain localization and subsequent failure. Tracking the irreversible evolution of dislocations, their accumulation within the slip band and their energetic state will help to predict when fatigue cracks emerge. The evolution of stress, strain and energy will serve as input to crystal elasticity and plasticity models used to investigate the fatigue behavior further on longer time and length scales such as for polycrystals."
             },
@@ -635,7 +633,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Murphy",
                 "email": "aerielm@umich.edu",
                 "research": "",
-                "advisor": "John Allison",
+                "advisor": "Dr. John Allison",
                 "image": "assets/img/people/Aeriel.jpg",
                 "blurb": "I work on studying recrystallization and grain growth kinetics of Mg and Mg alloys. My work also focuses on understanding low-cycle fatigue behavior of these alloys as it relates to microstructure and alloying additions."
             },
@@ -645,7 +643,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Sagiyama",
                 "email": "sagiyama@umich.edu",
                 "research": "",
-                "advisor": "Krishna Garikipati",
+                "advisor": "Dr. Krishna Garikipati",
                 "image": "assets/img/people/koki.jpg",
                 "blurb": "My research involves developing integration algorithms for the robust solution of stiff systems of equations that " +
                     "result from the coupling of mechanics and chemistry in problems of evolving microstructure. Specifically, " +
@@ -659,7 +657,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "last_name": "Panwar",
                 "email": "sspanwar@umich.edu",
                 "research": "",
-                "advisor": "Veera Sundararaghavan",
+                "advisor": "Dr. Veera Sundararaghavan",
                 "image": "assets/img/people/ShardulPanwar.jpg",
                 "blurb": "My research involves developing computational models based on crystal plasticity for predicting micro-scale fatigue crack propagation . The major part of my research focuses on new ways to make fatigue computation less expensive, by using theoretical models and experimental data for determining cohesive law parameters to be used in micro-structural fatigue simulations."
             },
@@ -709,17 +707,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
             {
                 lastname: 'Foster',
-                display: 'Professor Ian Foster, University of Chicago & Argonne National Laboratory'
+                display: 'Dr. Ian Foster, University of Chicago & Argonne National Laboratory'
             },
 
             {
                 lastname: 'Gumbsch',
-                display: 'Professor Peter Gumbsch, Karlsruhe Inst of Tech/Franhaufer Institute'
+                display: 'Dr. Peter Gumbsch, Karlsruhe Inst of Tech/Franhaufer Institute'
             },
 
             {
                 lastname: 'Holm',
-                display: 'Professor Elizabeth Holm, Carnegie-Mellon University'
+                display: 'Dr. Elizabeth Holm, Carnegie-Mellon University'
             },
 
             {
@@ -739,7 +737,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
             {
                 lastname: 'Wells',
-                display: 'Professor Garth Wells, Cambridge University'
+                display: 'Dr. Garth Wells, Cambridge University'
             },
 
             {
