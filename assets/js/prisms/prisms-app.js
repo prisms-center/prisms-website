@@ -385,41 +385,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         ];
 
         $scope.students = [
-
-
-            //{
-            //    "title": "Dr.",
-            //    "first_name": "Jiashi",
-            //    "last_name": "Miao",
-            //    "email": "miaojias@umich.edu",
-            //    "research": "",
-            //    "advisor": "John Allison",
-            //    "image": "assets/img/people/Jiashi.jpg",
-            //    "blurb": "My research focuses on characterization of grain boundary precipitation and grain boundary precipitate-free zone in magnesium alloys. These quantitative characterization results will be used for computational modeling and simulation. "
-            //},
-
-            //{
-            //    "title": "",
-            //    "first_name": "Chia-Hui",
-            //    "last_name": "Hsieh",
-            //    "email": "chiahuih@umich.edu",
-            //    "research": "",
-            //    "advisor": "",
-            //    "image": "assets/img/people/chia.jpg",
-            //    "blurb": "Chia-Hui is a UX/UI designer who is experienced in designing useful, pleasant and engaging user interfaces. She's passionate about understanding users' needs and using design to solve problems and create better user experiences."
-            //},
-            //{
-            //    "title": "",
-            //    "first_name": "Huaying",
-            //    "last_name": "Song",
-            //    "email": "huaying@umich.edu",
-            //    "research": "",
-            //    "advisor": "",
-            //    "image": "assets/img/people/iris.jpg",
-            //    "blurb": "Huaying is a UX/UI designer. Her passion lies in creating appealing visuals and smooth user experiences across all touchpoints. She is working on the user experience and web interface design for the PRISMS website and the Materials Commons platform. "
-            //},
-
-
             {
                 "title": "",
                 "first_name": "Jason",
@@ -485,6 +450,28 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "blurb": "I use molecular dynamics and density functional theory to study deformation mechanisms in Magnesium alloys. Specifically, I explore how solute elements and grain boundaries can synergistically improve the mechanical properties of Mg, in order to develop models that can assist in the design of advanced alloys.",
             },
 
+            {
+                "title": "",
+                "first_name": "Vishal",
+                "last_name": "Subramanian",
+                "email": "vishalsu@umich.edu",
+                "research": "",
+                "advisor": "Dr. Vikram Gavini",
+                "image": "assets/img/people/vishal_subramanian.jpg",
+                "blurb": "I am a developer of DFT-FE, a massively parallel code. My research involves pursuing algorithmic advances and HPC concepts to accelerate real space Kohn Sham density functional theory calculations. My work currently involves implementing a fast, robust and scalable real space framework for exact exchange computations.",
+            },
+
+            {
+                "title": "",
+                "first_name": "Yanjun",
+                "last_name": "Lyu",
+                "email": "yanjunlv@umich.edu",
+                "research": "",
+                "advisor": "Dr. Katsuyo Thornton",
+                "image": "assets/img/people/yanjun_lyu.jpeg",
+                "blurb": "My research in the PRISMS program currently focuses on phase-field modeling of corrosion in magnesium alloys. Specifically, he combines the phase-field model and smoothed boundary methods to investigate the microgalvanic effects of second phases on the corrosion behavior of Mg alloys. This work serves to understand the effect of second phases on Mg alloy corrosion, which sheds a light on designing corrosion-resistant Mg alloys.",
+            },
+
             // {
             //     "title": "",
             //     "first_name": "",
@@ -540,29 +527,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "blurb": "My research involves understanding precipitation and kinetics in Magnesium alloys using a combination of first-principles methods and techniques from statistical mechanics. I am also involved in the development of computational tools that will help provide a link between the atomistic and continuum scale."
             },
 
-            // TODO
-            // {
-            //     "title": "Dr.",
-            //     "first_name": "John",
-            //     "last_name": "Goiri",
-            //     "email": "",
-            //     "research": "",
-            //     "advisor": "",
-            //     "image": "",
-            //     "blurb": "",
-            // },
-
-            // TODO
-            // {
-            //     "title": "Dr.",
-            //     "first_name": "Zhe",
-            //     "last_name": "Chen",
-            //     "email": "",
-            //     "research": "",
-            //     "advisor": "",
-            //     "image": "",
-            //     "blurb": "",
-            // },
 
             {
                 "title": "Dr.",
@@ -574,6 +538,18 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "image": "assets/img/people/qianying_shi.jpg",
                 "blurb": "My research focuses on microstructural characterization and property evaluation of metallic materials, especially precipitation strengthened lightweight alloys, for the development of integrated computational materials engineering approach to predict and optimize the alloy performance. I conduct quantitative nano-scaled microstructural analysis using advanced characterization tools such as transmission electron microscopy, high resolution scanning transmission electron microscopy and atomic probe tomography. Experimental results are coupled with CALPHAD simulation to achieve thermodynamic and kinetic modeling for microstructure evolution during different processing steps and furthermore to build the strength prediction model.",
             },
+
+            //
+            // {
+            //     "title": "",
+            //     "first_name": "",
+            //     "last_name": "",
+            //     "email": "",
+            //     "research": "",
+            //     "advisor": "",
+            //     "image": "",
+            //     "blurb": "",
+            // },
         ];
 
         $scope.former_students = [
