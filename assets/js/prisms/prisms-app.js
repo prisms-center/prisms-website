@@ -403,7 +403,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "email": "aadityal@umich.edu",
                 "research": "",
                 "advisor": "Dr. Veera Sundararaghavan ",
-                "image": "",
+                "image": "assets/img/people/aaditya_lakshmanan.png",
                 "blurb": "I work on multiple approaches to capture microstructural length-scale effects in crystal plasticity constitutive models. This includes simple phenomenological Hall-Petch type models whose constitutive parameters are obtained by fitting experimental measurements of the stress profile ahead of a blocked slip band with a theoretical continuum dislocation pileup model. Recent efforts involve developing dislocation-density based models tied to the continuum crystal plasticity framework which naturally depict size-effect and other intragranular microstructural features. The applications of such an approach to Magnesium alloys is of paramount importance in the Aerospace industry and their science is yet to be uncovered."
             },
 
