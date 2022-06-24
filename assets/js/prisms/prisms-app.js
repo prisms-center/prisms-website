@@ -727,17 +727,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
             {
                 "title": "Dr.",
-                "first_name": "Larry",
-                "last_name": "Aagesen",
-                "email": "",
-                "research": "",
-                "advisor": "",
-                "image": "",
-                "blurb": "",
-            },
-
-            {
-                "title": "Dr.",
                 "first_name": "Shiva",
                 "last_name": "Rudraraju",
                 "email": "rudraa@umich.edu",
