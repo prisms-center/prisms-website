@@ -11,7 +11,7 @@
     <!--Main Area-->
     <div class="main_area">
         <!-- circle flowchart-->
-        <div class="main_top row">
+        <div class="main_top row" style="margin-left: 15px">
             <div id="circles" class="col-xs-4">
                 <div ng-click="viewCircle('mc')" class="circle circle_mc transparent">
                     <div class="circle_text">
@@ -44,81 +44,83 @@
                     <p>
                         PRISMS Center training (virtual) will be the week after the workshop (August 15-19, 2022).
                     </p>
-                    <p><b>Please <a ui-sref="workshop">click here</a> for details, including registration information.</b></p>
-                </div>
-                <div>
-                    <h2><a ui-sref="ctools.software">PRISMS Codes</a></h2>
-                    <p>
-                        The PRISMS Computational Codes are available on Github. See the
-                        announcement <a ui-sref="ctools.software">here.</a>
-                    </p>
-                </div>
-                <div>
-                    <h2><a ui-sref="mcommons.overview">Materials Commons</a></h2>
-                    <p>
-                        The Materials Commons site, is a platform for organizing, collaborating, publishing
-                        and sharing research data. You can access it
-                        <a href="https://materialscommons.org/mcapp" target="_blank">here</a>.
-                    </p>
-                </div>
-
-                <div ng-hide="info !== 'default'">
-                    <h2>Integrated, Focused, Open</h2>
-
-                    <p>
-                        At the PRISMS Center integration drives everything we do. Our science is integrated with our
-                        computational codes and with the results from our experimentalists who identify new phenomena
-                        and fill in missing details. Our Materials Commons repository allows groups to collaborate and
-                        share data and provide it to the broader technical community. And our computational software is
-                        seamlessly integrating the latest multi-length scale scientific software into open source codes.
-                    </p>
-
-                </div>
-                <div ng-show="info == 'les'">
-                    <h2>Integrated, Collaborative Science</h2>
-
-                    <p>
-                        Developing computational codes that help to model the real world is hard. Our
-                        approach teams experimental researchers with computationalists to produce models
-                        and codes that address real world problems. Our teams of researchers have formed into different
-                        groups we call "Use Case" groups.  These use cases represent natural ways groups of researchers
-                        might use the PRISMS tools and protocols to solve important scientific and technological problems.
-                        The use cases help us to link experiments with the simulations, validate the
-                        models, and improve the codes.
-                    </p>
-                    <a ui-sref="science.overview" class="main_link">Learn More >></a>
-                </div>
-                <div ng-show="info == 'ct'">
-                    <h2>PRISMS Computational Tools</h2>
-
-                    <p ng-if="false">
-                        The PRISMS Computational Tools suite is an integrated set of codes for
-                        writing large scale models that pass data across the different length scales. Our
-                        tools are open source, integrated and extensible.
-
-                    </p>
-                    <p>
-                        The PRISMS Center software development is based on an integrated suite of multiscale/multiphysics
-                        computational codes developed by the various research groups affiliated with the center and are
-                        facilitated by the research staff and faculty in a highly collaborative environment.
-                    </p>
-                    <a ui-sref="ctools.overview" class="main_link">Learn More >></a>
-                </div>
-                <div ng-show="info == 'mc'">
-                    <h2>The Materials Commons</h2>
-
-                    <p>
-                        Materials Commons is a data repository and collaboration platform. It allows researchers
-                        to collaborate, tracks the history of your data (provenance tracking) and provides a
-                        powerful model for viewing your data. We use the Materials Commons to facilitate our
-                        research by storing our data and using it to track our research. We've put a lot of
-                        effort into making sure it integrates with other tool sets.
-                    </p>
-                    <a ui-sref="mcommons.overview" class="main_link">Learn More >></a>
+                    <p><b>Please <a ui-sref="workshop">click here</a> for details, including registration
+                        information.</b></p>
                 </div>
             </div>
+            <div>
+                <h2><a ui-sref="ctools.software">PRISMS Codes</a></h2>
+                <p>
+                    The PRISMS Computational Codes are available on Github. See the
+                    announcement <a ui-sref="ctools.software">here.</a>
+                </p>
+            </div>
+            <div>
+                <h2><a ui-sref="mcommons.overview">Materials Commons</a></h2>
+                <p>
+                    The Materials Commons site, is a platform for organizing, collaborating, publishing
+                    and sharing research data. You can access it
+                    <a href="https://materialscommons.org" target="_blank">here</a>.
+                </p>
+            </div>
+
+            <div ng-hide="info !== 'default'">
+                <h2>Integrated, Focused, Open</h2>
+
+                <p>
+                    At the PRISMS Center integration drives everything we do. Our science is integrated with our
+                    computational codes and with the results from our experimentalists who identify new phenomena
+                    and fill in missing details. Our Materials Commons repository allows groups to collaborate and
+                    share data and provide it to the broader technical community. And our computational software is
+                    seamlessly integrating the latest multi-length scale scientific software into open source codes.
+                </p>
+
+            </div>
+            <div ng-show="info == 'les'">
+                <h2>Integrated, Collaborative Science</h2>
+
+                <p>
+                    Developing computational codes that help to model the real world is hard. Our
+                    approach teams experimental researchers with computationalists to produce models
+                    and codes that address real world problems. Our teams of researchers have formed into different
+                    groups we call "Use Case" groups. These use cases represent natural ways groups of researchers
+                    might use the PRISMS tools and protocols to solve important scientific and technological problems.
+                    The use cases help us to link experiments with the simulations, validate the
+                    models, and improve the codes.
+                </p>
+                <a ui-sref="science.overview" class="main_link">Learn More >></a>
+            </div>
+            <div ng-show="info == 'ct'">
+                <h2>PRISMS Computational Tools</h2>
+
+                <p ng-if="false">
+                    The PRISMS Computational Tools suite is an integrated set of codes for
+                    writing large scale models that pass data across the different length scales. Our
+                    tools are open source, integrated and extensible.
+
+                </p>
+                <p>
+                    The PRISMS Center software development is based on an integrated suite of multiscale/multiphysics
+                    computational codes developed by the various research groups affiliated with the center and are
+                    facilitated by the research staff and faculty in a highly collaborative environment.
+                </p>
+                <a ui-sref="ctools.overview" class="main_link">Learn More >></a>
+            </div>
+            <div ng-show="info == 'mc'">
+                <h2>The Materials Commons</h2>
+
+                <p>
+                    Materials Commons is a data repository and collaboration platform. It allows researchers
+                    to collaborate, tracks the history of your data (provenance tracking) and provides a
+                    powerful model for viewing your data. We use the Materials Commons to facilitate our
+                    research by storing our data and using it to track our research. We've put a lot of
+                    effort into making sure it integrates with other tool sets.
+                </p>
+                <a ui-sref="mcommons.overview" class="main_link">Learn More >></a>
+            </div>
         </div>
-        <div ng-if="info === 'default'" class="main-top row tab-content-details">
+        <!--    </div>-->
+        <div ng-if="info === 'default'" class="main-top row tab-content-details" style="margin-left: 15px">
             <div style="padding-right: 96px">
                 <p>
                     The PRISMS Center has three primary thrusts that work together to support each other. They are:
@@ -138,11 +140,11 @@
         </div>
         <!--End of Main Top-->
 
-        <div class="main_middle row">
+        <div class="main_middle row" style="margin-left:15px">
             <!-- Overview -->
             <div class="overview col-xs-12">
                 <div class="">
-                    <h2 class="tab-content-title" id="overview">About PRISMS</h2>
+                    <h2 class="tab-content-title" id="overview">About PRISMS Center</h2>
                     <div class="row">
                         <div class="col-xs-9 tab-content-details">
                             PRISMS is short for PRedictive Integrated Structural Materials Science. Combining the
@@ -153,7 +155,8 @@
                             for structural metals. Our ambitious vision is that the PRISMS tools and protocols will
                             become a
                             community-developed, extensible scientific core for accelerating the development of new
-                            materials as envisioned by the <a class="main_link" href="http://www.whitehouse.gov/mgi" target="_blank">Materials Genome Initiative</a> (MGI). The
+                            materials as envisioned by the <a class="main_link" href="http://www.mgi.gov"
+                                                              target="_blank">Materials Genome Initiative</a> (MGI). The
                             MGI is President Barack Obama’s plan to double the speed with which American
                             scientists and engineers discover, develop, and manufacture new materials.
                         </div>
@@ -168,13 +171,15 @@
                         Our Center is formally known as the Department of Energy (DOE) Software Innovation Center for
                         Integrated Multi-Scale Modeling of Structural Metals. The PRISMS Center is one of several such
                         centers that DOE-Basic Energy Science (BES) supports as part of the
-                        <a class="main_link" href="http://www.whitehouse.gov/mgi" target="_blank">Materials Genome Initiative</a>
+                        <a class="main_link" href="http://www.mgi.gov" target="_blank">Materials Genome
+                            Initiative</a>
                         to encourage and support development of open-source computational tools and repositories
-                        and facilitate large-scale community involvement. It is funded as part of the DOE-BES Predictive
-                        Theory and Modeling program with a five year $11M grant. The PRISMS Center has leveraged this
-                        with over $1.5M of University of Michigan internal cost-shared resources provided by UM Office
-                        of Research, UM College of Engineering and the five departments and eleven faculty involved in
-                        the center. This work is supported by the U.S. Department of Energy, Office of Basic Energy Sciences, Division of Materials Sciences and Engineering under Award #DE-SC0008637.
+                        and facilitate large-scale community involvement. It is funded as part of the DOE-BES
+                        Predictive Theory and Modeling program and Mechanical Behavior and Radiation Effects
+                        Core Program. The PRISMS Center has leveraged this with substantial University of Michigan
+                        internal cost-shared resources provided by UM College of Engineer and the three departments
+                        and engineering faculty involved in the center. This work is supported by the U.S. Department of Energy, Office of Basic Energy
+                        Sciences, Division of Materials Sciences and Engineering under Award #DE-SC0008637.
                     </p>
 
                     <br><br>
@@ -182,33 +187,32 @@
             </div>
             <!--End of Overview-->
         </div>
-        <!--End of Main Middle-->
     </div>
+    <!--End of Main Middle-->
 </div>
+<!--</div>-->
 <script type="text/JavaScript">
- $(document).ready(function () {
-     $('.circle').click(function () {
-         //$('#indicator').hide();
-         $(this).siblings().css('opacity', 0.7)
-                    .removeClass('cover');
-         $(this).css('opacity', 1)
-                    .addClass('cover');
-         $('#circles_description').css('padding-top', '1em')
-                    .css('padding-bottom', '1em');
+    $(document).ready(function () {
+        $('.circle').click(function () {
+            //$('#indicator').hide();
+            $(this).siblings().css('opacity', 0.7)
+                .removeClass('cover');
+            $(this).css('opacity', 1)
+                .addClass('cover');
+            $('#circles_description').css('padding-top', '1em')
+                .css('padding-bottom', '1em');
 
-         if ($(this).attr('id') == 'circle_sci') {
-             $('#circle_description_sci').siblings().hide();
-             $('#circle_description_sci').fadeIn("slow");
-         }
-         else if ($(this).attr('id') == 'circle_mc') {
-             $('#circle_description_mc').siblings().hide();
-             $('#circle_description_mc').fadeIn("slow");
-         }
-         else if ($(this).attr('id') == 'circle_code') {
-             $('#circle_description_code').siblings().hide();
-             $('#circle_description_code').fadeIn("slow");
-         }
+            if ($(this).attr('id') == 'circle_sci') {
+                $('#circle_description_sci').siblings().hide();
+                $('#circle_description_sci').fadeIn("slow");
+            } else if ($(this).attr('id') == 'circle_mc') {
+                $('#circle_description_mc').siblings().hide();
+                $('#circle_description_mc').fadeIn("slow");
+            } else if ($(this).attr('id') == 'circle_code') {
+                $('#circle_description_code').siblings().hide();
+                $('#circle_description_code').fadeIn("slow");
+            }
 
-     });
- });
+        });
+    });
 </script>
