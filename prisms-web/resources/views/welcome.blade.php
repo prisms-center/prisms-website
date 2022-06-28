@@ -22,7 +22,7 @@
                         <div class="hidden space-x-8 md:flex md:ml-10">
                             <a href="#" class="text-base font-medium text-white hover:text-gray-300">Science</a>
 
-                            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Software</a>
+                            <a href="/software" class="text-base font-medium text-white hover:text-gray-300">Software</a>
 
                             <a href="#" class="text-base font-medium text-white hover:text-gray-300">Materials Commons</a>
 
