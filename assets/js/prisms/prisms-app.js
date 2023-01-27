@@ -732,7 +732,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "email": "rudraa@umich.edu",
                 "research": "http://www-personal.umich.edu/~rudraa/",
                 "advisor": "",
-                "image": "assets/img/people/rudraa.jpg" ,
+                "image": "assets/img/people/rudraa.jpg",
                 "blurb": "My current research involves analytical and computational modeling of coupled multiscale* phenomena in material physics and biology, spanning mechanics, transport, thermodynamics and phase transitions. Specifically, I am investigating chemo-mechanical coupling of phase transformations involved in battery materials."
             },
 
@@ -743,7 +743,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "email": "laagesen@umich.edu",
                 "research": "",
                 "advisor": "",
-                "image": "assets/img/people/LarryAagesen.jpg" ,
+                "image": "assets/img/people/LarryAagesen.jpg",
                 "blurb": "My research interests are in the use of theoretical and computational techniques to study the evolution of microstructures and nanostructures during phase transformations, coarsening, and crystal growth, and how evolution by these processes affects material properties. Within the PRISMS Center, I am applying the phase-field method to investigate the formation of precipitates in magnesium alloys, and how interfacial energy, elastic misfit energy, and growth kinetics interact to affect microstructure."
             },
 
@@ -898,357 +898,643 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     .controller('PapersController', function () {
         var ctrl = this;
 
-        function makePaper(authors, title, details) {
+        function makePaper(authors, title, details, year) {
             return {
                 title: title,
                 authors: authors,
-                details: details
+                details: details,
+                year: year,
             };
         }
 
         ctrl.papers = [
-            // 2019
-            makePaper('E. L.S. Solomon, A. R. Natarajan, A. Roy, V. Sundararaghavan, A. Van der Ven, E. A. Marquis',
-                'Stability and strain-driven evolution of β\' precipitation in Mg-Y alloys',
-                'Acta Materialia, 166 (2019) 148-157. https://doi.org/10.1016/j.actamat.2018.12.026'),
+            // 2022
+            makePaper(
+                "Lakshmanan, A., Yaghoobi, M., Stopka, K.S. and Sundararaghavan, V.",
+                "Crystal plasticity finite element modeling of grain size and morphology effects on yield strength and extreme value fatigue response",
+                "Journal of Materials Research and Technology, 19, (2022) pp.3337-3354",
+                2022
+            ),
+            makePaper(
+                "M. Andani, A. Lakshmanan, V. Sundararaghavan, J. Allison, A. Misra",
+                "Estimation of micro-Hall-Petch coefficients for prismatic slip in Mg-4Al as a function of grain boundary parameters",
+                "Acta Materialia, 226, 2022, 117613",
+                2022
+            ),
+            makePaper(
+                "K. Stopka, M. Yaghoobi, J. Allison and D. McDowell",
+                "Simulated effects of sample size and grain neighborhood on the modeling of extreme value fatigue response",
+                "Acta Materialia, 224, 2022, 117524",
+                2022
+            ),
+            makePaper(
+                "",
+                "",
+                "",
+                2022
+            ),
+            makePaper(
+                "J. Yoo, M. Andani, A. Misra",
+                "Correlating dislocation structures to basal and prismatic slip bands near grain boundaries in tensile-tested Mg–4Al using a multiscale electron microscopy approach",
+                "Materials Science and Engineering, A 840 (2022) 142993",
+                2022
+            ),
+            makePaper(
+                "Z. Chen, C. Torbet and J. Allison",
+                "In-situ Characterization of Deformation Twinning in Magnesium during Cyclic Loading via Electron Backscatter Diffraction",
+                "JOM (2022) pp 2577-2591",
+                2022
+            ),
+            makePaper(
+                "Reza Roumina, Sangwon Lee, Tracy D. Berman, Katherine S. Shanks, John E. Allison, Ashley Bucsek",
+                "The dynamics of recrystallized grains during static recrystallization in Mg-Zn-Ca sheet alloy using in-situ far field high-energy diffraction microscopy",
+                "Acta Materialia 234 (2022) 118039",
+                2022
+            ),
+            makePaper(
+                "Sambit Das, Phani Motamarrri, Vishal Subramanian, David Rogers, Vikram Gavini",
+                "DFT-FE 1.0: A massively parallel hybrid CPU-GPU density functional theory code using finite-element discretization",
+                "Computer Physics Communications, 280 (2022) 108473",
+                2022
+            ),
+            makePaper(
+                "Zhenjie Yao, David Montiel and John Allison",
+                "Investigating the Effects of Dendrite Evolution on Microsegregation in Al-Cu Alloys by Coupling Experiments, Micro-Modeling, and Phase Field Simulations",
+                "Metallurgical and Materials Transactions A, V 53A (2022) 3342-3356",
+                2022
+            ),
+            makePaper(
+                "M Higgins, J Kang, G Huang, D Montiel, N Lu, H Liu, Y Shen, P Staublin, J Park, J Almer, P Kenesei, P Sanders, R Suter, K Thornton, and A Shahani",
+                "Anomalous strain-energy-driven macroscale translation of grains during non-isothermal annealing",
+                "Physical Review Materials, 5 (2021) L070401",
+                2022
+            ),
+            makePaper(
+                "Mohammadreza Yaghoobi, Zhe Chen, Aeriel D. Murphy-Leonard, Veera Sundararaghavan, Samantha Daly, John E. Allison",
+                "Deformation twinning and detwinning in extruded Mg-4Al: in-situ experiment and crystal plasticity simulation",
+                "International Journal of Plasticity, 155 (2022) 103345",
+                2022
+            ),
+            makePaper(
+                "Mohammadreza Yaghoobi, John Allison, Veera Sundararaghavan",
+                "PRISMS-Plasticity TM: An open-source rapid texture evolution analysis pipeline",
+                "IMMI, (2022) 1-18",
+                2022
+            ),
+            makePaper(
+                "Yong-Jie Hu, Vaidehi Menon, Liang Qi",
+                "Formation of I1 stacking fault by deformation defect evolution from grain boundaries in Mg",
+                "Journal of Magnesium and Alloys, in press (2022)",
+                2022
+            ),
+            makePaper(
+                "K. Stopka, M. Yaghoobi, J. Allison, D. McDowell",
+                "Microstructure-Sensitive Modeling of Surface Roughness and Notch Effects on Extreme Value Fatigue",
+                "International Journal of Fatigue 166 (2022) 10725",
+                2022
+            ),
+            makePaper(
+                "Q. Shi, A. Natarajan, A. Van der Ven, J. Allison",
+                "Segregation of Ca to precipitates in a Mg-rare earth alloy",
+                "Materials Research Letters, in press (2022)",
+                2022
+            ),
+            makePaper(
+                "Z. Chen, M. Yaghoobi, V. Sundararaghavan, J. Allison and S. Daly",
+                "The Effects of Microstructure on Deformation Twinning in Mg WE43",
+                "MSEA, in press (2022)",
+                2022
+            ),
+            makePaper(
+                "K. Bhattacharya, V. Gavini, M. Ortiz, M. Ponga, P. Suryanaryana",
+                "Accurate approximations of density functional theory for large systems with applications to defects in crystalline solids",
+                "Density Functional Theory, Editors: E. Cancés and G. Friesecke, in press (2022)",
+                2022
+            ),
+            makePaper(
+                "W. Li, H. Sharma, P. Kenesei, S. Ravi, H. Sehitoglu, A. Bucsek",
+                "Resolving intragranular stress fields in plastically deformed titanium using scanning far-field high-energy diffraction microscopy",
+                "submitted to JMR (invited article for the Early Career Scholars in Materials Science special issue) (2022)",
+                2022
+            ),
+            makePaper(
+                "Liu, J., Carlson, J., Pasek, J., Puchala, B., Rao, A., and Jagadish, H. V.",
+                "Promoting and Enabling Reproducible Data Science Through a Reproducibility Challenge",
+                "Harvard Data Science Review, 4(3) (2022)",
+                2022
+            ),
+            makePaper(
+                "V. Goel, Y. Lyu, S.DeWitt, D. Montiel, K. Thornton",
+                "Simulating Microgalvanic Corrosion in Alloys Using the PRISMS Phase-Field Framework",
+                "MRS Communications, in press, 2022",
+                2022
+            ),
+            makePaper(
+                "B. Puchala, A. Van der Ven etal",
+                "CASM: A software  package for first-principles based study of multicomponent crystalline solids",
+                "Computational Materials Science, in press (2022)",
+                2022
+            ),
+
+            // 2021
+            makePaper(
+                "Liang Tem and Wenbo Yu",
+                "Effects of cluster expansion on the locatoins of phase transition boundary as a first step to quantify uncertainty in first principes statistical mechanics framework",
+                "Computational Materials Science, 186, 110050, 2021",
+                2021
+            ),
+            makePaper(
+                "Ryan Sperry, Songyang Han, Zhe Chen, Sam Daly, Martin Crimp, David Fullwood",
+                "Comparison of EBSD, DIC, AFM and ECCI for active slip system identification in deformed Ti-7Al",
+                "Characterization 173 (2021) 110941",
+                2021
+            ),
+            makePaper(
+                "Zhihua Huang, Chaoming Yang, John E. Allison, Liang Qi, Amit Misra",
+                "Dislocation cross-slip in precipitation hardened Mg-Nd alloys",
+                "Journal of Alloys and Compounds 859 (2021) 157858",
+                2021
+            ),
+            makePaper(
+                "M Yaghoobi, K. Stopka, A. Lakshmanan, V. Sundararaghavan, J. Allison, D. McDowell",
+                "PRISMS-Fatigue computational framework for fatigue analysis in polycrystalline metals and alloys",
+                "npj Computational Materials (2021) 38",
+                2021
+            ),
+            makePaper(
+                "M. Yaghoobi, Z. Chen, V. Sundararaghavan, S. Daly, J. Allison",
+                "Crystal plasticity finite element modeling of extension twinning in WE43 Mg alloys: calibration and validation",
+                "IMMI, 10 (3) (2021) p 488-507",
+                2021
+            ),
+            makePaper(
+                "J. C. Thomas, A. R. Natarajan, A. Van der Ven",
+                "Comparing crystal structures with symmetry and geometry",
+                "NPJ Computational Materials, (2021) 7:164",
+                2021
+            ),
+            makePaper(
+                "K. Stopka, M. Yaghoobi, J. Allison and D. McDowell",
+                "Effects of boundary conditions on microstructure-sensitive fatigue analysis",
+                "IMMI, (2021) p 1-20",
+                2021
+            ),
+            makePaper(
+                "W. Wu, D. Montiel, J. Guyer, P. Voorhees, J. Warren, D. Wheeler, L. Gransay, T. Pusztai, O. Heinonen",
+                "Phase field benchmark problems for nucleation",
+                "Computational Materials Science, 193 (2021) 110371",
+                2021
+            ),
+
+            // 2020
+            makePaper(
+                'M. Yaghoobi, J.E. Allison, V. Sundararaghavan',
+                'Multiscale modeling of twinning and detwinning behavior of HCP polycrystals',
+                'International Journal of Plasticity, 2019',
+                2020
+            ),
 
             makePaper(
-                'Aeriel D. Leonard-Murphy, Darren C. Pagan, Armand Beaudoin, Matthew P. Miller, John E. Allison',
-                'Quantification of Twinning-Detwinning Behavior During Low-Cycle Fatigue of Pure Magnesium Using High Energy X-Ray Diffraction',
-                'International Journal of Fatigue, 125 (2019) 314-323.  https://doi.org/10.1016/j.ijfatigue.2019.04.011'
-            ),
-            makePaper(
-                'Zhihua Huang, Chaoming Yang, Liang Qi, John E. Allison, Amit Misra',
-                'Dislocation pile-ups at β1 precipitate interfaces in Mg-rare earth (RE) alloys',
-                'Materials Science and Engineering A, 742 (2019) 278-286. https://doi.org/10.1016/j.msea.2018.10.104'
-            ),
-            makePaper(
-                'P. Acar, V. Sundararaghavan',
-                'Stochastic Design Optimization of Microstructural Features using Linear Programming for Robust Material Design',
-                'AIAA Journal,Vol. 57(1), 2019. DOI: 10.2514/1.J057377'
-            ),
-            makePaper(
-                'P. Acar, V. Sundararaghavan',
-                'Do Epistemic Uncertainties Allow for Replacing Microstructural Experiments with Reconstruction Algorithms?',
-                'AIAA Journal, 57(3), 1078-1091, 2019. DOI: 10.2514/1.J057488'
-            ),
-            makePaper(
-                'Mohammadreza Yaghoobi, Sriram Ganesan, Srihari Sundar, Aaditya Lakshmanan, Shiva Rudraraju, John E. Allison, Veera Sundararaghavan',
-                'PRISMS-Plasticity: An open-source crystal plasticity finite element software',
-                'Computational Materials Science, 169, 109078, 2019.'
-            ),
-            makePaper(
-                'D. Greeley, M. Yaghoobi, D. Pagan, V. Sundararaghavan and J. Allison',
-                'Using Synchrotron radiation to improve understanding of deformation of polycrystalline metals by measuring, modeling and publishing 4D information',
-                'Metal Microstructures in 2D, 3D and 4D, 407h Riso International Symposium on Materials Science, Technical University of Denmark, 2019.'
-            ),
-            makePaper(
-                'A. R. Natarajan and A. Van der Ven',
-                'Toward an Understanding of Deformation Mechanisms in Metalllic Litium and Sodium from First Principles',
-                'Chemistry of Materials, 31, 8222-8229, 2019'
+                'A. Githens, S. Ganesan, Z. Chen, J. Allison, V. Sundararaghavan, S. Daly',
+                'Characterizing Microscale Deformation Mechanisms and Macroscopic Tensile Properties of a High Strength Magnesium Rare-Earth Alloy: A Combined Experimental and Crystal Plasticity Approach',
+                'Acta Materialia, 186, 77-94, 2020',
+                2020
             ),
             makePaper(
                 'Phani Motamarri, Sambit Das, Shiva Rudraraju, Krishnendu Ghosh, Denis Davydov, Vikram Gavini',
-                'DFT-FE – a massively parallel adaptiave finite-element code for large-scale density functional calculations',
-                'Computer Physics Communications., 2019'
+                'DFT-FE – a massively parallel adaptive finite-element code for large-scale density functional calculations',
+                'Computer Physics Communications, 246, 106853, 2020',
+                2020
             ),
             makePaper(
-                'Das, S., Motamarri, P., Gavini, V., Turcksin, B., Li, Y.W., Leback, B.',
-                'Fast, scalable & accurate finite-element based ab initio calculations using mixed precision computing: 40 PFLOPS simulation of a metallic dislocation system',
-                'The International Conference for High Performance Computing Networking, Storage,and Analysis, 2019 (ACM Gordon Bell Prize nomination).'
+                "Q. Shi, B. Willians, J. Allison",
+                "Microstructure Evolution and Precipitation Strengthening in Ca-Containing Mg-Rare Earth Alloys",
+                "Magnesium Technology, TMS 175-180, 2020",
+                2020
             ),
             makePaper(
-                'D. Wheeler, T. Keller, S. DeWitt, A.M. Jokisaari, D. Schwen, J.E. Guyer, L. Aagesen, O.G. Heinonen, M.R. Tonks, P.W. Voorhees, J.A. Warren',
-                'PFHub – The Phase Field Community Hub',
-                'Journal of Open Research Software, 2019'
+                "Moshen Taheri Andani, Aaditya Lakshmanan, Mohammadreza Karmooz-Raveri, Veera Sundararaghavan, John Allison, Amit Misra",
+                "A quantitative study of stress fields ahead of a slip band blocked by a grain boundary in unalloyed magnesium",
+                "Scientific Reports (Nature Research), 10:3084, 2020",
+                2020
             ),
             makePaper(
                 'S. DeWitt, S. Rudraraju, D. Montiel, W.B. Andrews, K. Thornton',
                 'PRISMS-PF: A General Framework for Phase-Field Modeling Employing a Matrix-Free Finite Element Method',
-                'in final review with npj Computational Materials (2019)'
+                'npj Computational Materials (Nature), 6:29, 2020',
+                2020
             ),
             makePaper(
-                'A. Githens, S. Ganesan, Z. Chen, J. Allison, V. Sundararaghavan, S. Daly',
-                'Characterizing Microscale Deformation Mechanisms and Macroscopic Tensile Properties of a High Strength Magnesium Rare-Earth Alloy: A Combined Experimental and Crystal Plasticity Approach',
-                'in Acta Materialia, 2019'
+                "Chaoming Yang, Mingfei Zhang, Liang Qi",
+                "Grain boundary structure search by using an evolutionary algorithm with effective mutation methods",
+                "Computational Materials Science 184 (2020) 109812",
+                2020
             ),
             makePaper(
-                'A. Leonard-Murpy and J. E. Allison',
-                'The Influence of Grain Size and Alloying on Cyclic-Stress-Strain and Low Cycle Fatigue Behavior in Unalloyed Mg',
-                'in International Journal of Fatigue, 2019'
+                "Moshen Taheri Andani, Aaditya Lakshmanan, Mohammadreza Karmooz-Raveri, Veera Sundararaghavan, John Allison, Amit Misra",
+                "Quantitative study of the effect of grain boundary parameters on hte slip system level Hall-Petch slope for basal slip system in Mg-4Al",
+                "Acta Materialia, 200, 148-161, 2020",
+                2020
             ),
             makePaper(
-                'M. Yaghoobi, J.E. Allison, V. Sundararaghavan',
-                'Multiscale modeling of twinning and detwinning behavior of HCP polycrystals',
-                'International Journal of Plasticity, 2019'
+                "Z Chen and S Daly",
+                "Automatic Identification of Deformation Twin Systems in Mg WE43 from SEM DIC",
+                "Material Characterization, 169, 110628, 2020",
+                2020
+            ),
+
+            // 2019
+
+            makePaper(
+                'Aeriel D. Leonard-Murphy, Darren C. Pagan, Armand Beaudoin, Matthew P. Miller, John E. Allison',
+                'Quantification of Twinning-Detwinning Behavior During Low-Cycle Fatigue of Pure Magnesium Using High Energy X-Ray Diffraction',
+                'International Journal of Fatigue, 125 (2019) 314-323.  https://doi.org/10.1016/j.ijfatigue.2019.04.011',
+                2019
+            ),
+            makePaper(
+                'Zhihua Huang, Chaoming Yang, Liang Qi, John E. Allison, Amit Misra',
+                'Dislocation pile-ups at β1 precipitate interfaces in Mg-rare earth (RE) alloys',
+                'Materials Science and Engineering A, 742 (2019) 278-286. https://doi.org/10.1016/j.msea.2018.10.104',
+                2019
+            ),
+            makePaper(
+                'P. Acar, V. Sundararaghavan',
+                'Stochastic Design Optimization of Microstructural Features using Linear Programming for Robust Material Design',
+                'AIAA Journal,Vol. 57(1), 2019. DOI: 10.2514/1.J057377',
+                2019
+            ),
+            makePaper(
+                'P. Acar, V. Sundararaghavan',
+                'Do Epistemic Uncertainties Allow for Replacing Microstructural Experiments with Reconstruction Algorithms?',
+                'AIAA Journal, 57(3), 1078-1091, 2019. DOI: 10.2514/1.J057488',
+                2019
+            ),
+            makePaper(
+                'Mohammadreza Yaghoobi, Sriram Ganesan, Srihari Sundar, Aaditya Lakshmanan, Shiva Rudraraju, John E. Allison, Veera Sundararaghavan',
+                'PRISMS-Plasticity: An open-source crystal plasticity finite element software',
+                'Computational Materials Science, 169, 109078, 2019.',
+                2019
+            ),
+            makePaper(
+                'D. Greeley, M. Yaghoobi, D. Pagan, V. Sundararaghavan and J. Allison',
+                'Using Synchrotron radiation to improve understanding of deformation of polycrystalline metals by measuring, modeling and publishing 4D information',
+                'Metal Microstructures in 2D, 3D and 4D, 407h Riso International Symposium on Materials Science, Technical University of Denmark, 2019.',
+                2019
+            ),
+            makePaper(
+                'A. R. Natarajan and A. Van der Ven',
+                'Toward an Understanding of Deformation Mechanisms in Metalllic Litium and Sodium from First Principles',
+                'Chemistry of Materials, 31, 8222-8229, 2019',
+                2019
+            ),
+
+            makePaper('E.L.S. Solomon, A. R. Natarajan, A. Roy, V. Sundararaghavan, A. Van der Ven, E. A. Marquis',
+                'Stability and strain-driven evolution of β\' precipitation in Mg-Y alloys',
+                'Acta Materialia, 166 (2019) 148-157. https://doi.org/10.1016/j.actamat.2018.12.026',
+                2019
+            ),
+
+            makePaper(
+                'Das, S., Motamarri, P., Gavini, V., Turcksin, B., Li, Y.W., Leback, B.',
+                'Fast, scalable & accurate finite-element based ab initio calculations using mixed precision computing: 40 PFLOPS simulation of a metallic dislocation system',
+                'The International Conference for High Performance Computing Networking, Storage,and Analysis, 2019 (ACM Gordon Bell Prize nomination).',
+                2019
+            ),
+            makePaper(
+                'D. Wheeler, T. Keller, S. DeWitt, A.M. Jokisaari, D. Schwen, J.E. Guyer, L. Aagesen, O.G. Heinonen, M.R. Tonks, P.W. Voorhees, J.A. Warren',
+                'PFHub – The Phase Field Community Hub',
+                'Journal of Open Research Software, 2019',
+                2019
+            ),
+            makePaper(
+                "A. Leondard-Murphy, D. Pagan, A. Beaudoin, M Miller and J.E. Allison",
+                "Quantification of cyclic twinning-detwinning behavior during low cycle fatigue of pure Mg using high energy X-Ray Diffraction",
+                "International Journal of Fatigue, 125, 314-323, 2019",
+                2019
             ),
 
             // 2018
             makePaper(
                 'S. DeWitt and K. Thornton',
                 'Phase Field Modeling of Microstructural Evolution” Computational Materials System Design',
-                'D. Shin and J. Saal, Eds., Springer Nature, London, (2018)'
+                'D. Shin and J. Saal, Eds., Springer Nature, London, (2018)',
+                2018
             ),
             makePaper(
                 'L.K. Aagesen, J. Miao, J. E. Allison, S. Aubry, A. Arsenlis',
                 'Prediction of Precipitation Strengthening in the Commercial Mg Alloy AZ91 Using Dislocation Dynamics',
-                'Metallurgical and Materials Trans.Vol 49 (5) pp. 1908-1915 (2018).'
+                'Metallurgical and Materials Trans.Vol 49 (5) pp. 1908-1915 (2018).',
+                2018
             ),
             makePaper(
                 'Aeriel D. Murphy and John E. Allison',
                 'The Recrystallization Behavior of Unalloyed Mg and a Mg-Al Alloy',
-                'Metallurgical and Materials Transactions, Vol 49 (5) 1492-1508 (2018)'
+                'Metallurgical and Materials Transactions, Vol 49 (5) 1492-1508 (2018)',
+                2018
             ),
             makePaper(
                 'Zhihua Huang, John E. Allison and Amit Misra',
                 'Interaction of Glide Dislocations with Extended Precipitates in Mg-Nd alloys',
-                'Scientific Reports, Article number: 3570 (2018).'
+                'Scientific Reports, Article number: 3570 (2018).',
+                2018
             ),
             makePaper(
                 'J. Luo, A. Ramazani, V. Sundararaghavan',
                 'Simulation of Micro-Scale Shear Bands Using Peridynamics with an Adaptive Dynamic Relaxation Method',
-                'International Journal of Solids and Structures, 130, pp.36-48, 2018.'
+                'International Journal of Solids and Structures, 130, pp.36-48, 2018.',
+                2018
             ),
             makePaper(
                 'S. Panwar, J. Adams, J. Allison, J. W. Jones, V. Sundararaghavan',
                 'A grain boundary interaction model for microstructurally short fatigue cracks',
-                'International Journal of Fatigue Volume 113, pp 401-406 (2018).'
+                'International Journal of Fatigue Volume 113, pp 401-406 (2018).',
+                2018
             ),
             makePaper(
                 'P. Motamarri, V. Gavini',
                 'Configurational forces in electronic structure calculations using Kohn Sham density functional theory',
-                'Physical Review B (2018) 97, 165132 (2018)'
+                'Physical Review B (2018) 97, 165132 (2018)',
+                2018
             ),
             makePaper(
                 'L. K. Aaegesen, J. F. Adams, J. E. Allison, B. Andrews, V. Araullo-Peters, T. Berman, Z. Chen, S. Daly, S. Das, S. DeWitt, S. Ganesan, K. Garikipati, V. Gavini, A. Githens, M. Hedstrom, Z. Huang, H.V. Jagadish, J.W. Jones, J. Luce, E.A. Marquis, A. Misra, D. Montiel, P. Motamarri, A. D. Murphy, A. R. Natarajan, S. Panwar, B. Puchala, L. Qi, S. Rudraraju, K. Sagiyama, E.L.S. Solomon, V. Sundararaghavan, G. Tarcea, G. H. Teichert, J. C. Thomas, K. Thornton, A. Van der Ven, Z. Wang, T. Weymouth, C. Yang.',
                 'PRISMS - An Integrated, Open Source Framework for Accelerating Predictive Structural Materials Science',
-                'JOM.(2018) October, p 1-17. https://doi.org/10.1007/s11837-018-3079-6'
+                'JOM.(2018) October, p 1-17. https://doi.org/10.1007/s11837-018-3079-6',
+                2018
             ),
             makePaper(
                 'J. Luo, V. Sundararaghavan',
                 'Stress point method for stabilizing zero energy modes in non- ordinary state based peridynamics',
-                'International Journal of Solids and Structures Volume 150, Pages 197-207, 2018. DOI: 10.1016/j.ijsolstr.2018.06.015'
+                'International Journal of Solids and Structures Volume 150, Pages 197-207, 2018. DOI: 10.1016/j.ijsolstr.2018.06.015',
+                2018
             ),
             makePaper(
                 'A Van der Ven, JC Thomas, B Puchala, AR Natarajan',
                 'First-principles statistical mechanics of multicomponent crystals',
-                'Annual Review of Materials Research 48, 27-55 (2018)'
+                'Annual Review of Materials Research 48, 27-55 (2018)',
+                2018
             ),
             makePaper(
                 'W. Lenthe, JC Stinville, M Echlin, Z Chen, S Daly, T Pollock',
                 'Advanced Detector Signal Acquisition and Electron Beam Scanning for High Resolution SEM Imaging',
-                'Ultramicroscopy, 195, 193-100, 2018.'
+                'Ultramicroscopy, 195, 193-100, 2018.',
+                2018
             ),
             makePaper(
                 'Chen Z, Lenthe W., Stinville J.C., Echlin M., Pollock T., Daly S.',
                 'High-Resolution Deformation Mapping Across Large Fields of View Using Scanning Electron Microscopy and Digital Image Correlation.',
-                'Experimental Mechanics,58(9): 1407-1421, 2018.'
+                'Experimental Mechanics,58(9): 1407-1421, 2018.',
+                2018
             ),
             makePaper(
                 'Chen Z. and Daly S. Daly S.',
                 'Deformation Twin Identification in Magnesium through Clustering and Computer Vision.',
-                'Materials Science and Engineering A, 736: 61-75, 2018.'
+                'Materials Science and Engineering A, 736: 61-75, 2018.',
+                2018
             ),
 
             // 2017
             makePaper(
                 'P. Acar, V. Sundararaghavan',
                 'Uncertainty Quantification of Microstructural Properties due to Variability in Measured Pole Figures',
-                'Acta Materialia, v. 124, p. 100-108, 2017'
+                'Acta Materialia, v. 124, p. 100-108, 2017',
+                2017
             ),
             makePaper(
                 'P. Acar, V. Sundararaghavan',
                 'Uncertainty Quantification of Microstructural Properties due to Experimental Variations',
-                'AIAA Journal, Vol. 55, No. 8 (2017), pp. 2824-2832'
+                'AIAA Journal, Vol. 55, No. 8 (2017), pp. 2824-2832',
+                2017
             ),
             makePaper(
                 'E. Solomon, V. Araullo-Peters, J.E. Allison, E.A. Marquis',
                 'Early precipitate morphologies in a Mg-Nd-(Zr) Alloys.',
-                'Scripta Materialia 128;14-17 (2017)'
+                'Scripta Materialia 128;14-17 (2017)',
+                2017
             ),
             makePaper(
                 'G. H. Teichert, N. S. H. Gunda, S. Rudraraju, A. R. Natarajan, B. Puchala, K. Garikipati, A. Van der Ven',
                 'A comparison of Redlich-Kister polynomial and cubic spline representations of the chemical potential in phase field computations',
-                'Comp. Mater. Sci. 128, (2017) 127-139.'
+                'Comp. Mater. Sci. 128, (2017) 127-139.',
+                2017
             ),
             makePaper(
                 'C. Heinrich, V. Sundaraghavan',
                 'A method to predict fatigue crack initiation in metals using dislocation dynamics',
                 'Corrosion Reviews, 35 (4-5) pp 325-341(2017).',
+                2017
             ),
             makePaper(
                 'A. R. Natarajan, A. Van der Ven',
                 'A unified description of ordering in HCP Mg-RE alloys',
-                'Acta materialia, 124, p620-632, (2017).'
+                'Acta materialia, 124, p620-632, (2017).',
+                2017
             ),
             makePaper(
                 'S. DeWitt, E. Solomon, A. Natarajan, V. Araullo-Peters, S. Rudraraju, L. Aagesen, E. Marquis, A. van der Ven, K. Thornton, and J. Allison',
-                'Misfit-Driven  Precipitate Composition and Morphology in Mg-Nd Alloys',
-                'Acta Mat. (2017) 136, 378-389, 2017.'
+                'Misfit-Driven B\'\'\' Precipitate Composition and Morphology in Mg-Nd Alloys',
+                'Acta Mat. (2017) 136, 378-389, 2017.',
+                2017
             ),
             makePaper(
                 'E. Solomon, T. Chan, A Chen, B Uttal-Veroff, E. Marquis',
                 'Aging behavior of Mg alloys containing Nd and Y” Magnesium Technology.',
-                '(2017) 349-352'
+                '(2017) 349-352',
+                2017
             ),
             makePaper(
                 'P. Acar, S. Srivastava, V. Sundararaghavan',
                 'Stochastic Design Optimization of Microstructures with Utilization of a Linear Solver',
-                'AIAA Journal, Vol. 55 (9) pp. 3161-3168 (2017).'
+                'AIAA Journal, Vol. 55 (9) pp. 3161-3168 (2017).',
+                2017
             ),
             makePaper(
                 'A. R. Natarajan, A. Van der Ven',
                 'First principles investigation of phase stability in the Mg-Sc binary alloy',
-                'Physical Review B, (2017).'
+                'Physical Review B, (2017).',
+                2017
             ),
             makePaper(
-                'A. R. Natarajan, A. Van der Ven',
-                'First principles investigation of phase stability in the Mg-Sc binary alloy',
-                'Physical Review B, (2017).'
+                'J.C. Thomas, A. Van der Ven',
+                'The exploration of nonlinear elasticity and its efficient parameterization for crystalline materials',
+                'Journal of the Mechanics and Physics of Solids (2017)',
+                2017
             ),
             makePaper(
                 'Z. Wang, J. Siegel, K. Garikipati',
                 'Intercalation driven porosity effects on the electro-chemo-thermo-mechanical response in continuum models for battery material electrodes',
-                'Journal of the Electrochemical Society, 164, A2199-A2212, 2017.'
+                'Journal of the Electrochemical Society, 164, A2199-A2212, 2017.',
+                2017
             ),
             makePaper(
                 'K. Sagiyama, S. Rudraraju, K. Garikipati',
                 'A numerical study of branching and stability of solutions to three-dimensional martensitic phase transformations using gradient-regularized, non-convex, finite strain elasticity',
-                'Journal of the Mechanics and Physics of Solids,(2017).'
+                'Journal of the Mechanics and Physics of Solids,(2017).',
+                2017
             ),
             makePaper(
-                'ELS Solomon, EA Marquis',
+                'ELS Solomon, EA Marquis',
                 'Deformation behavior of β’ and β”’ precipitates in Mg-RE alloys',
-                'Materials Letters (2017) 216(1) 67-69'
+                'Materials Letters (2017) 216(1) 67-69',
+                2017
             ),
             makePaper(
                 'P-W Chu, E LeMire, EA Marquis',
                 'Microstructure of Localized Corrosion Front on Mg Alloys and the Relationship with Anodic Hydrogen Evolution',
-                'Corrosion Science (2017) 128 253-264'
+                'Corrosion Science (2017) 128 253-264',
+                2017
             ),
             makePaper(
                 'Das, S., Gavini, V.',
                 'Electronic structure study of screw dislocation core energetics in Aluminum and core energetics informed forces in a dislocation aggregate',
-                'J. Mech. Phys. Solids, 104, 115-143 (2017).'
+                'J. Mech. Phys. Solids, 104, 115-143 (2017).',
+                2017
             ),
             makePaper(
                 'Shardul Panwar and Veera Sundararaghavan',
                 'Dislocation theory-based cohesive model for microstructually short fatigue crack growth',
-                'Materials Science and Engineering A, 708, pp 395-404 (2017).'
+                'Materials Science and Engineering A, 708, pp 395-404 (2017).',
+                2017
             ),
             makePaper(
                 'A. Natarajan, J. Thomas, B. Puchala, A Van der Ven',
                 'Symmetry-adapted order parameters and free energies for solids undergoing order-disorder phase transitions',
-                'Phys Rev B, 96 134204 (2017)'
+                'Phys Rev B, 96 134204 (2017)',
+                2017
             ),
             makePaper(
                 'S. Sun, A. Ramazani, V. Sundararaghavan',
                 'A hybrid multi-scale model of crystal plasticity for handling stress concentrations',
-                'Metals, 7(9), 345, 2017.'
+                'Metals, 7(9), 345, 2017.',
+                2017
             ),
             makePaper(
                 'P. Acar, A. Ramazani, V. Sundararaghavan',
                 'Crystal Plasticity Modeling and Experimental Validation with an Orientation Distribution Function for Ti-7Al Alloy',
-                'Metals, 7(11), p.459, 2017.'
+                'Metals, 7(11), p.459, 2017.',
+                2017
             ),
 
             //2016
             makePaper(
                 'A. Natarajan, E. Solomon, B. Puchala, E. Marquis, A. Van der Ven',
                 'On the precipitation sequence in dilute Mg-Nd alloys',
-                'Acta Mat, 108, 367-379 (2016).'
+                'Acta Mat, 108, 367-379 (2016).',
+                2016
             ),
             makePaper(
                 'E. Solomon, E.A. Marquis',
                 'The structure of ß” and ß’ in an Aged Mg‐Nd Alloy',
-                'Magnesium Technology. 151-154 (2016)'
+                'Magnesium Technology. 151-154 (2016)',
+                2016
             ),
             makePaper(
                 'S. Sun and V. Sundararaghavan',
                 'Modeling crack propagation in polycrystalline microstructure using variational multi-scale method',
-                'Mathematical Problems in Engineering Volume 2016, Article ID 4715696, 14 pages, (2016).'
+                'Mathematical Problems in Engineering Volume 2016, Article ID 4715696, 14 pages, (2016).',
+                2016
             ),
             makePaper(
                 'S. Rudraraju, A. Van der Ven, K. Garikipati',
                 'Mechano-chemical spinodal decomposition: A phenomenological theory of phase transformations in multi-component, crystalline solids',
-                'Nature Computational Materials, 2, 16012 (2016). doi:10.1038/npjcompumats.2016.12'
+                'Nature Computational Materials, 2, 16012 (2016). doi:10.1038/npjcompumats.2016.12',
+                2016
             ),
             makePaper(
                 'B. Puchala, G. Tarcea, E. A. Marquis, M. Hedstrom, H. V. Jagadish and J. E. Allison',
                 'The Materials Commons: A collaboration platform and information repository for the global materials community',
-                'JOM, 68, 2035-44,  2016.'
+                'JOM, 68, 2035-44,  2016.',
+                2016
             ),
             makePaper(
                 'Z. Wang, S. Rudraraju, K. Garikipati',
                 'A three dimensional field formulation, and isogeometric solutions to point and line defects using Toupin’s theory of gradient elasticity at finite strains',
-                'Journal of the Mechanics and Physics of Solids, 94, 336-361 (2016). doi:10.1016/j.jmps.2016.03.028'
+                'Journal of the Mechanics and Physics of Solids, 94, 336-361 (2016). doi:10.1016/j.jmps.2016.03.028',
+                2016
             ),
             makePaper(
                 'P. Acar, V. Sundararaghavan',
                 'A linear solution scheme for microstructure design with process constraints',
-                'AIAA Journal, 54(12), pp. 4022-4031 (2016).'
+                'AIAA Journal, 54(12), pp. 4022-4031 (2016).',
+                2016
             ),
             makePaper(
                 'J. Adams, J. Allison, J. W. Jones',
                 'The effects of heat treatment on very high cycle fatigue behavior in hot-rolled WE43 magnesium',
-                'International Journal of Fatigue, 93 (2) 372-386, 2016.'
+                'International Journal of Fatigue, 93 (2) 372-386, 2016.',
+                2016
             ),
             makePaper(
                 'K. Sagiyama, S. Rudraraju, K. Garikipati',
                 'Unconditionally stable, second-order accurate schemes for solid state phase transformations driven by mechano-chemical spinodal decomposition',
-                'Computer Methods in Applied Mechanics and Engineering, 311, 556-575 (2016). doi: 10.1016/j.cma.2016.09.003'
+                'Computer Methods in Applied Mechanics and Engineering, 311, 556-575 (2016). doi: 10.1016/j.cma.2016.09.003',
+                2016
             ),
             makePaper(
                 'S. Panwar, S. Sun, V. Sundararaghavan',
                 'Modeling fatigue failure using variational multiscale method',
-                'Engineering Fracture Mechanics, 162, p. 290-308, 2016'
+                'Engineering Fracture Mechanics, 162, p. 290-308, 2016',
+                2016
             ),
             makePaper(
                 'T. Jiang, A. Roy, S. Rudraraju, A. Van der Ven, K. Garikipati, M. Falk',
                 'A multi-physics study of lithium ion battery electrode Li1+xT2O4',
-                'Journal of Chemical Physics C, 120, 27871-27881 (2016). doi:10.1021/acs.jpcc.6b09775'
+                'Journal of Chemical Physics C, 120, 27871-27881 (2016). doi:10.1021/acs.jpcc.6b09775',
+                2016
             ),
             makePaper(
                 'G. Teichert, S. Rudraraju, K. Garikipati',
                 'A variational treatment of interface motion and microstructural change as problems of evolving configurations',
-                'Journal of the Mechanics and Physics of Solids, 99, 338-356 (2016). doi:10.1016/j.jmps.2016.11.008'
+                'Journal of the Mechanics and Physics of Solids, 99, 338-356 (2016). doi:10.1016/j.jmps.2016.11.008',
+                2016
             ),
-            makePaper(),
+            makePaper(
+                'A. Githens, S. Daly',
+                'Patterning Corrosion-Susceptible Metallic Alloys for Digital Image Correlation in a Scanning Electron Microscope',
+                'Strain. 2017; 53, e12215 (2016) DOI 10.1111/str12215 (#5 downloaded in 2018)',
+                2016
+            ),
 
             // 2015
             makePaper(
                 'M. Iyer, B. Radhakrishnan, V. Gavini',
                 'Electronic structure study of an edge dislocation in aluminum and the role of macroscopic deformations on its energetics',
-                'J. Mech. Phys. Solids  76 (2015) 260-275.'
+                'J. Mech. Phys. Solids  76 (2015) 260-275.',
+                2015
             ),
             makePaper(
                 'E. Sitzmann and E. A. Marquis',
                 'Chemistry and morphology of B\' precipitates in an aged Mg-Nd-Y-Zr alloy',
-                '95(1) 7-13, Philosophical Magazine Letters, (2015).'
+                '95(1) 7-13, Philosophical Magazine Letters, (2015).',
+                2015
             ),
             makePaper(
                 'Sambit Das, Mrinal Iyer, Vikram Gavini',
                 'Real-space formulation of orbital-free density functional theory using finite-element discretization: The case for Al, Mg, and Al-Mg intermetallics',
-                'Phys. Rev. B 92, 014104 (2015).'
+                'Phys. Rev. B 92, 014104 (2015).',
+                2015
             ),
 
             // 2014
             makePaper(
                 'S. Rudraraju, A. Van der Ven and K. Garikipati',
                 'Three-dimensional iso-geometric solutions to general boundary value problems of Toupin’s gradient elasticity theory at finite strains',
-                'Comp. Meth. App. Mech. Engrg. (CMAME) 278 (2014) 705-728.'
+                'Comp. Meth. App. Mech. Engrg. (CMAME) 278 (2014) 705-728.',
+                2014
             ),
             makePaper(
                 'P. Motamarri, V. Gavini',
                 'A subquadratic-scaling subspace projection method for large-scale Kohn-Sham DFT calculations using spectral finite-element discretization',
-                'Phys. Rev. B 90 115127 (2014).'
+                'Phys. Rev. B 90 115127 (2014).',
+                2014
             ),
 
             // 2013
             makePaper(
                 'V. Sundararaghavan, S. Sun',
                 'Modeling crack propagation in polycrystalline alloys using a variational multiscale cohesive method',
-                '2nd World Congress on Integrated Computational Materials Engineering (Edited by M. Li et. al.), Wiley, New York, p. 225-230, 2013.'
+                '2nd World Congress on Integrated Computational Materials Engineering (Edited by M. Li et. al.), Wiley, New York, p. 225-230, 2013.',
+                2013
             ),
         ]
         ;
