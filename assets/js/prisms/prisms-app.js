@@ -928,12 +928,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 2022
             ),
             makePaper(
-                "",
-                "",
-                "",
-                2022
-            ),
-            makePaper(
                 "J. Yoo, M. Andani, A. Misra",
                 "Correlating dislocation structures to basal and prismatic slip bands near grain boundaries in tensile-tested Mg–4Al using a multiscale electron microscopy approach",
                 "Materials Science and Engineering, A 840 (2022) 142993",
