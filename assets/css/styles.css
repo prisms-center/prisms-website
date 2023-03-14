@@ -154,6 +154,18 @@ a:focus {
   margin-left: 42%;
 
 }
+
+.c-desc {
+  padding-top: 5px;
+  padding-left: 10em;
+  padding-right: 6em;
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  position: relative;
+}
+
 .transparent {
   /* IE 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
