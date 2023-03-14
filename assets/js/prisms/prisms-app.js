@@ -218,27 +218,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //     "blurb": "Shiva Rudraraju is a research faculty in Mechanical Engineering and the lead-developer of the finite element based numerical codes under development in PRISMS. His research focuses on coupled multiphysics and multiscale phenomena driven by mechanics (deformation and failure) and transport. Specific topics of research include mechano-chemically driven solid-solid phase transformations, species transport and growth of biological tumors and fracture propagation in fiber reinforced composites. His work draws heavily from continuum mechanics, fracture mechanics, thermodynamics and variational methods."
             // },
 
-            {
-                "title": "Dr.",
-                "first_name": "Brian",
-                "last_name": "Puchala",
-                "email": " bpuchala@umich.edu",
-                "research": "",
-                "advisor": "",
-                "image": "assets/img/people/brian.jpg",
-                "blurb": "My research is focused on computational materials modeling of the thermodynamics and kinetics of solid-state atomistic processes through the development of new automated computational tools. In particular, I am developing Monte Carlo methods which I use for fundamental studies of phase transitions and precipitate formation in metal alloys."
-            },
 
-            {
-                "title": "Dr.",
-                "first_name": "Mohammadreza",
-                "last_name": "Yaghoobi",
-                "email": "yaghoobi@umich.edu",
-                "research": "",
-                "advisor": "",
-                "image": "assets/img/people/reza_yaghoobi.jpg",
-                "blurb": "My primary research interest is in multiscale computational plasticity and damage mechanics of crystalline materials, composites, and ceramics with emphasis on the theoretical modeling, numerical simulation of material behavior, and experimental correlation. Research activities of particular interest includes modelling at different length scales including atomistic simulation, crystal plasticity finite element method, and local and nonlocal continuum plasticity. Central to my research is serving as a lead developer of PRISMS-Plasticity software, which is an open-source parallel 3-D crystal plasticity and continuum plasticity finite element code."
-            },
             // {
             //     "title": "Professor ",
             //     "first_name": "Wayne",
@@ -290,16 +270,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //     "image": "assets/img/people/hedstrom_margaret_pp_1.jpg",
             //     "blurb": "My research focuses on the reuse of information and the cyberinfrastructure necessary to enable easy exchange of data across disciplines and over time. I am the PI and Project Director for the Open Data IGERT (NSF 0903629) that engages PhD students and faculty at Michigan from Information Science, Computer Science, Materials Science, Chemical Engineering and Bioinformatics in a sustained investigation into the technologies, tools, standards, practices and cultural change."
             // },
-            {
-                title: "Dr. ",
-                first_name: "David",
-                last_name: "Montiel",
-                email: "dmontiel@umich.edu",
-                research: "",
-                advisor: "",
-                image: "assets/img/people/david_montiel.png",
-                blurb: "My research is focused on the development and application of phase-field and phase-field-crystal models to simulate the dynamics of nano- and microstructures during materials processing and operation. The goal of this work is to better understand the underlying mechanisms that give rise to different microstructures, and then apply this knowledge to design materials with targeted properties. Specific topics of my research include precipitate nucleation and growth, the study three-dimensional effects in two-dimensional materials, and the effect of microstructure on corrosion behavior.",
-            },
+
             // {
             //     title: "",
             //     first_name: "",
@@ -344,6 +315,28 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         ];
 
         $scope.staff = [
+            {
+                title: "Dr. ",
+                first_name: "David",
+                last_name: "Montiel",
+                email: "dmontiel@umich.edu",
+                research: "",
+                advisor: "",
+                image: "assets/img/people/david_montiel.png",
+                blurb: "My research is focused on the development and application of phase-field and phase-field-crystal models to simulate the dynamics of nano- and microstructures during materials processing and operation. The goal of this work is to better understand the underlying mechanisms that give rise to different microstructures, and then apply this knowledge to design materials with targeted properties. Specific topics of my research include precipitate nucleation and growth, the study three-dimensional effects in two-dimensional materials, and the effect of microstructure on corrosion behavior.",
+            },
+
+            {
+                "title": "Dr.",
+                "first_name": "Brian",
+                "last_name": "Puchala",
+                "email": " bpuchala@umich.edu",
+                "research": "",
+                "advisor": "",
+                "image": "assets/img/people/brian.jpg",
+                "blurb": "My research is focused on computational materials modeling of the thermodynamics and kinetics of solid-state atomistic processes through the development of new automated computational tools. In particular, I am developing Monte Carlo methods which I use for fundamental studies of phase transitions and precipitate formation in metal alloys."
+            },
+
             {
                 'title': '  -  Senior Developer',
                 'first_name': 'Glenn',
@@ -672,6 +665,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         $scope.former_members = [
             {
                 "title": "Dr.",
+                "first_name": "Mohammadreza",
+                "last_name": "Yaghoobi",
+                "email": "yaghoobi@umich.edu",
+                "research": "",
+                "advisor": "",
+                "image": "assets/img/people/reza_yaghoobi.jpg",
+                "blurb": "My primary research interest is in multiscale computational plasticity and damage mechanics of crystalline materials, composites, and ceramics with emphasis on the theoretical modeling, numerical simulation of material behavior, and experimental correlation. Research activities of particular interest includes modelling at different length scales including atomistic simulation, crystal plasticity finite element method, and local and nonlocal continuum plasticity. Central to my research is serving as a lead developer of PRISMS-Plasticity software, which is an open-source parallel 3-D crystal plasticity and continuum plasticity finite element code."
+            },
+
+            {
+                "title": "Dr.",
                 "first_name": "Stephen",
                 "last_name": "DeWitt",
                 "email": "stvdwtt@umich.edu",
@@ -794,15 +798,15 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //     display: 'Dr. Ian Foster, University of Chicago & Argonne National Laboratory'
             // },
 
-            {
-                lastname: 'Gumbsch',
-                display: 'Dr. Peter Gumbsch, Karlsruhe Inst of Tech/Franhaufer Institute'
-            },
+            // {
+            //     lastname: 'Gumbsch',
+            //     display: 'Dr. Peter Gumbsch, Karlsruhe Inst of Tech/Franhaufer Institute'
+            // },
 
-            {
-                lastname: 'Holm',
-                display: 'Dr. Elizabeth Holm, Carnegie-Mellon University'
-            },
+            // {
+            //     lastname: 'Holm',
+            //     display: 'Dr. Elizabeth Holm, Carnegie-Mellon University'
+            // },
 
             // {
             //     lastname: 'Salinger',
@@ -819,15 +823,20 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 display: 'Dr. Carlos Tome’, Los Alamos National Laboratory'
             },
 
+            {
+                lastname: 'Llorca',
+                display: 'Dr. Javier Llorca, IMDEA, Madrid Spain'
+            }
+
             // {
             //     lastname: 'Wells',
             //     display: 'Dr. Garth Wells, Cambridge University'
             // },
 
-            {
-                lastname: 'Zimmerman',
-                display: 'Dr. Jonathan Zimmerman, Sandia National Laboratories – Livermore, CA'
-            }
+            // {
+            //     lastname: 'Zimmerman',
+            //     display: 'Dr. Jonathan Zimmerman, Sandia National Laboratories – Livermore, CA'
+            // }
         ];
     })
     .controller('FacultyController', function ($scope, $location, $anchorScroll, $stateParams) {
