@@ -338,6 +338,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             },
 
             {
+                title: "Dr. ",
+                first_name: "Chaitali",
+                last_name: "Patil",
+                email: "chaitalp@umich.edu",
+                research: "",
+                advisor: "",
+                image: "assets/img/people/Chaitali_Patil.jpeg",
+                blurb: "",
+            },
+
+            {
                 "title": "Dr.",
                 "first_name": "Brian",
                 "last_name": "Puchala",
@@ -349,7 +360,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             },
 
             {
-                'title': '  -  Senior Developer',
+                'title': 'Senior Developer',
                 'first_name': 'Glenn',
                 'last_name': 'Tarcea',
                 'email': 'gtarcea@umich.edu',
@@ -368,16 +379,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             //    "blurb": "Sravya received her Masters Degree in Bioinformatics. Her experience includes developing novel tools to track work flow, experimental stages and results. Currently her work is focused on design and development of web-based work flow management software for Materials Commons.",
             //    "image": "assets/img/people/sravya_tamma.jpg"
             //},
-            {
-                'title': '  - Administrative Assistant',
-                'first_name': 'Ellen',
-                'last_name': 'Kampf',
-                'email': 'ekampf@umich.edu',
-                'research': '',
-                'advisor': '',
-                'blurb': '',
-                'image': 'assets/img/people/ellen_kampf.png'
-            }
+            // {
+            //     'title': 'Administrative Assistant',
+            //     'first_name': 'Ellen',
+            //     'last_name': 'Kampf',
+            //     'email': 'ekampf@umich.edu',
+            //     'research': '',
+            //     'advisor': '',
+            //     'blurb': '',
+            //     'image': 'assets/img/people/ellen_kampf.png'
+            // }
         ];
 
         $scope.students = [
