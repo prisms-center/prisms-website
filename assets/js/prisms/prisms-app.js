@@ -157,6 +157,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "advisor": "",
                 "image": "assets/img/people/amit.jpg"
             },
+
+            {
+                "title": "Professor ",
+                "first_name": "Elizabeth",
+                "last_name": "Holm",
+                "email": "eaholm@umich.edu",
+                "research": "https://mse.engin.umich.edu/people/eaholm",
+                "blurb": "My research areas include the theory and modeling of microstructural evolution in complex polycrystals, the physical and mechanical response of microstructures, mechanical properties of carbon nanotube networks, atomic-scale properties of internal interfaces, machine vision for automated microstructural classification, and machine learning to predict rare events.",
+                "advisor": "",
+                "image": "assets/img/people/liz_holm3.png"
+            },
             // {
             //     "title": "Professor ",
             //     "first_name": "Krishna",
