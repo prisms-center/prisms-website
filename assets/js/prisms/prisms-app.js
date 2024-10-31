@@ -57,6 +57,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             url: '/collaborate',
             templateUrl: 'partials/ctools/collaborate.html'
         })
+        .state('ctools.stats', {
+            url: '/stats',
+            templateUrl: 'partials/ctools/stats.html'
+        })
         .state('ctools.faq', {
             url: '/faq',
             templateUrl: 'partials/ctools/faq.html'
