@@ -1,8 +1,14 @@
 <div class="publications-area">
     <h2 id="publications" style="padding-top: 120px; margin-top: -70px;">Publications</h2>
     <br>
+    <a class="btn btn-primary"
+       target="_blank"
+       href="https://scholar.google.com/citations?hl=en&user=1ONDFhoAAAAJ">
+        View Center Citations On Google Scholar
+    </a>
+    <br>
 
-<!--    <h3>2022 ({{($ctrl.papers | filter:{year: 2022}).length}})</h3>-->
+    <!--    <h3>2022 ({{($ctrl.papers | filter:{year: 2022}).length}})</h3>-->
     <h3>2022</h3>
     <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2022}" style="margin-bottom:40px">
         <p class="publication-title">{{paper.title}}</p>
