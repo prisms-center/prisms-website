@@ -943,6 +943,155 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         }
 
         ctrl.papers = [
+            // 2024
+            makePaper(
+                "D.A. Greeley, J.F. Adams, P. Kneissi, J.W. Jones, A.D. Spear, J.E. Allison",
+                "Use of Multi-Modal HEDM for characterization of fatigue crack paths in Mg WE43",
+                "Fatigue and Fracture of Engineering Materials and Structures, 47 (2024) 1150-1171",
+                2024
+            ),
+
+            makePaper(
+                "A. Tallman and Y. Yaghoobi",
+                "PRISMS-Indentation: Multi-scale Elasto-Plastic Virtual Indentation Module",
+                "Integrating Materials and Manufacturing Innovation (2024) (2024) 1-18",
+                2024
+            ),
+
+            makePaper(
+                "A. Roy, S. Ganesen, P. Acar, R. Arroyave, V. Sundararaghavan",
+                "Combining crystal plasticity and phase field model for predicting texture evolution and the influence of nuclei clustering on recrystallization path kinetics in Ti-alloys",
+                "Acta Materialia, 266 (2024) 119645",
+                2024
+            ),
+
+            makePaper(
+                "S. Das and V. Gavini",
+                "Accelerating self-consistent field iterations in Kohn-Sham density functional theory using a low-rank approximation of the dielectric matrix",
+                "Physical Review B, 107 (12) (2024) 125133",
+                2024
+            ),
+
+            makePaper(
+                "V. Menon, S. Das, V. Gavini, L. Qi",
+                "Atomistic simulations and machine learning of solute grain boundary segregation in Mg alloys at finite temperatures",
+                "Acta Materialia, 264 (2024) 119515",
+                2024
+            ),
+
+            makePaper(
+                "D. Ober and A. Van der Ven",
+                "Thermodynamically informed priors for uncertainty propagation in first-principles statistical mechanics",
+                "Physical Review Materials, 8 (2024). 103803",
+                2024
+            ),
+
+            makePaper(
+                "E. Song, M. Andani, A. Misra",
+                "Quantification of grain boundary effects on the geometrically necessary dislocation density evolution and strain hardening of polycrystalline Mg-4Al using in situ tensile testing in scanning electron microscope and HR-EBSD",
+                "Journal of Magnesium and Alloys, 12 (2024) 1815-1829",
+                2024
+            ),
+
+            makePaper(
+                "Y. Zhang, M. Yaghoobi, Y. Zhang, D. Rubio-Ejchel, P. Kenesei, J. Park, A. Rollett, J. Gordon",
+                "In situ measurement of three-dimensional intergranular stress localizations and grain yielding under elastoplastic axial-torsional loading",
+                "Journal of Materials Research and Technology, 30 (2024) 8792-8804",
+                2024
+            ),
+
+            makePaper(
+                "D. Greeley, J. Adams, P. Kenesei, A. Spear, J. Allison",
+                "Quantitative analysis of three‐dimensional fatigue crack path selection in Mg alloy WE43 using high‐energy X‐ray diffraction microscopy",
+                "Fatigue and Fracture of Engineering Materials and Structures 4 (2024) 1150-1171",
+                2024
+            ),
+
+            makePaper(
+                "S. Lee, T. Berman, C. Yildirim, C. Detlefs, J. Allison, A. Bucsek",
+                "Multiscale in-situ characterization of static recrystallization using dark-field X-ray microscopy and high-resolution X-ray diffraction",
+                "Scientific Reports, 14 (1) (2024) 6241",
+                2024
+            ),
+
+            makePaper(
+                "S. Behara, J. Thomas, B. Puchala, A. Van der Ven",
+                "Chemomechanics in alloy phase stability",
+                "Physical Review Materials, 8 (3) (2024) 033801",
+                2024
+            ),
+
+            makePaper(
+                "E. Song, M. Andani, A. Misra",
+                "Investigation of grain size and geometrically necessary dislocation density dependence of flow stress in Mg-4Al by using nanoindentation",
+                "Acta Materialia, 265(2024) 119633",
+                2024
+            ),
+
+            // 2023
+            makePaper(
+                "K. Bhattacharya, V. Gavini, M. Ortiz, M. Ponga, P. Suryanaryana",
+                "Accurate approximations of density functional theory for large systems with applications to defects in crystalline solids",
+                "Density Functional Theory, Editors: E. Cancés and G. Friesecke, Springer, (2023) 525-578",
+                2023
+            ),
+
+            makePaper(
+                "B. Puchala, A. Van der Ven etal",
+                "CASM: A software  package for first-principles based study of multicomponent crystalline solids",
+                "Computational Materials Science, 217 (2023) 111897",
+                2023
+            ),
+
+            makePaper(
+                "S. Das, B. Kanungo, V. Subramanian, G. Panigrahi, P. Motamarri, D. Rogers, P. Zimmerman, V. Gavini",
+                "Large-scale materials modeling at quantum accuracy: Ab initio simulations of quasicrystals and interacting extended defects in metallic alloys",
+                "The International Conference for High Performance Computing Networking, Storage and Analysis, SC'23, November 12-17, Denver, CO, ACM, 2023 (Note: Gordon Bell Prize winning paper)",
+                2023
+            ),
+
+            makePaper(
+                "B. Phung, D. Greeley, M. Yaghoobi, J. Adams, J. Allison, A. Spear",
+                "Predicting microstructurally sensitive fatigue-crack path in WE43 magnesium using high-fidelity numerical modeling and three-dimensional experimental characterization",
+                "Fatigue and Fracture of Engineering Materials and Structures, 47, 3 (2023) 862-883",
+                2023
+            ),
+
+            makePaper(
+                "Mohammadreza Yaghoobi, Krzysztof S Stopka, David L McDowell, Lori Graham-Brady, Kirubel Teferra",
+                "Effect of sample size on the maximum value distribution of fatigue driving forces in metals and alloys",
+                "International Journal of Fatigue, 176 (2023) 107853",
+                2023
+            ),
+
+            makePaper(
+                "K. Stopka, M. Yaghoobi, J. Allison, D. McDowell",
+                "Microstructure-Sensitive Modeling of Surface Roughness and Notch Effects on Extreme Value Fatigue",
+                "International Journal of Fatigue, 166 (2023) 10725",
+                2023
+            ),
+
+            makePaper(
+                "A. Lakshmanan, M. Andani, M. Yaghoobi, J. Allison, A. Misra, V. Sundararaghavan",
+                "A combined experimental and crystal plasticity study of grain size effects in magnesium alloys",
+                "Journal of Magnesium Alloys 11 (12) (2023) 4445-44",
+                2023
+            ),
+
+            makePaper(
+                "J. Kim, Y. Kimura, B. Puchala, T. Yamazaki, U. Becker, W. Sun",
+                "Dissolution enables dolomite crystal growth near ambient conditions",
+                "Science, 382 (2023) 915-920",
+                2023
+            ),
+
+            makePaper(
+                "Viswath Goel, David Montiel, Katsuyo Thornton",
+                "Understanding the Effect of Electrochemical Properties and Microstructure on the Microgalvanic Corrosion of Mg Alloys via Phase-Field Simulations",
+                "Journal of the Electrochemical Society, 170 (2023) 101502",
+                2023
+            ),
+
             // 2022
             makePaper(
                 "Lakshmanan, A., Yaghoobi, M., Stopka, K.S. and Sundararaghavan, V.",
@@ -1034,12 +1183,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "MSEA, in press (2022)",
                 2022
             ),
-            makePaper(
-                "K. Bhattacharya, V. Gavini, M. Ortiz, M. Ponga, P. Suryanaryana",
-                "Accurate approximations of density functional theory for large systems with applications to defects in crystalline solids",
-                "Density Functional Theory, Editors: E. Cancés and G. Friesecke, in press (2022)",
-                2022
-            ),
+
             makePaper(
                 "W. Li, H. Sharma, P. Kenesei, S. Ravi, H. Sehitoglu, A. Bucsek",
                 "Resolving intragranular stress fields in plastically deformed titanium using scanning far-field high-energy diffraction microscopy",
@@ -1056,12 +1200,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 "V. Goel, Y. Lyu, S.DeWitt, D. Montiel, K. Thornton",
                 "Simulating Microgalvanic Corrosion in Alloys Using the PRISMS Phase-Field Framework",
                 "MRS Communications, in press, 2022",
-                2022
-            ),
-            makePaper(
-                "B. Puchala, A. Van der Ven etal",
-                "CASM: A software  package for first-principles based study of multicomponent crystalline solids",
-                "Computational Materials Science, in press (2022)",
                 2022
             ),
 

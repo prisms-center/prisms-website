@@ -8,7 +8,21 @@
     </a>
     <br>
 
-    <!--    <h3>2022 ({{($ctrl.papers | filter:{year: 2022}).length}})</h3>-->
+    <!-- Papers -->
+    <h3>2024</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2024}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2023</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2023}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
     <h3>2022</h3>
     <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2022}" style="margin-bottom:40px">
         <p class="publication-title">{{paper.title}}</p>
