@@ -1,4 +1,4 @@
-@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap';
 
 /* Theme tweaks: subtle darker page bg + crisper white cards + brand primary */
 
@@ -6,6 +6,58 @@
 :root {
     --bs-primary: #2b6bb1;
     --bs-primary-rgb: 43, 107, 177;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Navbar link styling on primary background */
+.navbar.bg-primary {
+    /* Ensure all navbar text defaults to white tones */
+    --bs-navbar-color: rgba(255, 255, 255, 0.9);
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+}
+
+.navbar.bg-primary .navbar-brand,
+.navbar.bg-primary .nav-link {
+    color: #fff !important;
+}
+
+.navbar.bg-primary .nav-link {
+    font-weight: 600;
+    letter-spacing: .02em;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    transition: color .2s ease, text-shadow .2s ease, text-decoration-color .2s ease;
+}
+
+.navbar.bg-primary .nav-link:hover,
+.navbar.bg-primary .nav-link:focus {
+    color: #fff !important;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+/* Optional: subtle active indicator */
+.navbar.bg-primary .nav-link.active,
+.navbar.bg-primary .show > .nav-link {
+    color: #fff !important;
+    position: relative;
+}
+
+.navbar.bg-primary .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: .5rem;
+    right: .5rem;
+    bottom: .35rem;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1px;
 }
 
 /* Subtle blue-tinted page background */
@@ -19,6 +71,11 @@ body {
     background-color: transparent;
     box-shadow: none;
 }
+
+.nav_wrap { background: #fff; border-bottom: 1px solid #e5e5e5; }
+.footer { background: #222; color: #fff; padding: 2rem 0; margin-top: 3rem; }
+.footer .footer_img img { max-height: 48px; margin-right: 1rem; }
+.main_container .main_pic { background: url('/assets/img/prisms-logo.png') center/contain no-repeat; height: 200px; }
 
 /* Make cards pop against the darker page */
 .card {
