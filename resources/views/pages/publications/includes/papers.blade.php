@@ -1,0 +1,98 @@
+<div class="publications-area">
+    <h2 id="publications" style="padding-top: 120px; margin-top: -70px;">Publications</h2>
+    <br>
+    <a class="btn btn-primary"
+       target="_blank"
+       href="https://scholar.google.com/citations?hl=en&user=1ONDFhoAAAAJ">
+        View Center Citations On Google Scholar
+    </a>
+    <br>
+
+    <!-- Papers -->
+    <h3>2024</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2024}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2023</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2023}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2022</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2022}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2021</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2021}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2020</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2020}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2019</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2019}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2018</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2018}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2017</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2017}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2016</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2016}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2015</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2015}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2014</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2014}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <h3>2013</h3>
+    <div class="publication-list" ng-repeat="paper in $ctrl.papers | filter:{year: 2013}" style="margin-bottom:40px">
+        <p class="publication-title">{{paper.title}}</p>
+        <span>{{paper.authors}},</span>
+        <span class="publication-details">{{paper.details}}</span>
+    </div>
+
+    <br>
+    <br>
+</div>

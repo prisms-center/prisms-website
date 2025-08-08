@@ -8,11 +8,7 @@ Route::view('/', 'pages.home')->name('home');
 Route::view('/science', 'pages.science.index')->name('science');
 Route::view('/tools', 'pages.codes.index')->name('tools');
 Route::view('/repository', 'pages.repository.index')->name('repository');
-Route::view('/people', 'pages.section', [
-    'title' => 'People',
-    'heading' => 'People',
-    'description' => 'Learn about the PRISMS team.'
-])->name('people');
+Route::view('/people', 'pages.people.index')->name('people');
 Route::view('/publications', 'pages.section', [
     'title' => 'Publications',
     'heading' => 'Publications',

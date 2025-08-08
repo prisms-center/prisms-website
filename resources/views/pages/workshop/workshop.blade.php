@@ -1,0 +1,62 @@
+<!-- Begin page content -->
+<!-- Tab -->
+<div class="container subpage">
+    <div class="dropshadow">
+        <!-- Begin page content -->
+        <div class="contact-area font-16">
+            <h2>Annual PRISMS Workshop 2025, August 4th-8th</h2>
+            <p>
+                The PRISMS Center Annual Workshop returns this year as an in person event. We hope you will join us
+                for interesting talks, research, and updates about the center. This year the workshop will be held
+                on August 4th-8th. August 4th-6th will be training. The symposium will be August 7th-8th.
+            </p>
+
+            <div>
+                <h3>Registration</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        Register for the workshop <a href="https://forms.gle/NppvcJBKgPzxoFAT9"
+                                                     target="_blank">here</a>.
+                    </li>
+                    <!--                    <li>-->
+                    <!--                        Sign up for specific training courses <a href="https://forms.gle/CF6NtJ1aq4MJYeku8"-->
+                    <!--                                                                            target="_blank">here</a>.-->
+                    <!--                    </li>-->
+                </ul>
+            </div>
+
+            <div>
+                <h3>The program is now available</h3>
+                <ul class="list-unstyled">
+                    <li class="font-16">
+                        PRISMS Center Workshop/Symposia -
+                        <a
+                                href="assets/workshop/PRISMS_Workshop_Program_2025.pdf">2025 Program Schedule</a>.
+                    </li>
+                    <li>
+                        PRISMS Software Training -
+                        <a
+                                href="assets/workshop/PRISMS_Workshop_Training_2025.pdf">Training Schedule</a>.
+                    </li>
+                    <li>
+                        Download VM for PRISMS Training <a
+                            href="https://www.dropbox.com/scl/fi/ee78dybczt4mpfstowbv2/PRISMS_Tools_v6.ova?rlkey=a9cj3cpl1u4ebzd54iscmwvod&dl=0">here</a>.
+                    </li>
+                    <li>Download Installation Instructions for PRISMS Training VM <a
+                            href="assets/workshop/Virtual_Machine_Installation.pdf">here</a>.
+                    </li>
+                </ul>
+
+                <p><b>We have a special rate at the following hotel (must register by July 31st). Please register
+                    <a href="https://www.hilton.com/en/attend-my-event/2025prismsworkshopaugust2025/">here.</a></b>
+                <ul class="list-unstyled">
+                    <li>Hotel Block: Double Tree by Hilton</li>
+                    <li>Address: 3600 Plymouth Rd, Ann Arbor, MI 48109</li>
+                    <li>Phone: (734) 769-9800</li>
+                    <li>Shuttle Service tentatively planned</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

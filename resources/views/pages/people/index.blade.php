@@ -45,17 +45,27 @@
                 <i class="fas fa-flask"></i>
             </div>
             <div>
-                <h1 class="h3 mb-1 text-primary fw-bold">Integrated Collaborative Science</h1>
-                <p class="mb-0 text-muted">The PRISMS Center develops tools to predict the behavior of metals, using
-                    magnesium alloys as a test case due to their potential for lightweight, fuel-efficient applications
-                    and their unique scientific challenges. Research is organized into four interconnected
-                    areas—precipitate evolution, recrystallization and grain growth, tensile behavior, and fatigue
-                    behavior—so that insights from one area inform the others. While the framework can apply to any
-                    metal, magnesium is the focus for demonstrating its capabilities.</p>
+                <h1 class="h3 mb-1 text-primary fw-bold">Collaborative Research Excellence
+                </h1>
+                <p class="mb-0 text-muted">
+                    The PRISMS Center brings together a distinguished team of researchers with extensive computational
+                    and experimental expertise in materials science, forming a vibrant collaborative ecosystem that
+                    drives innovation at the intersection of theory, simulation, and experimentation. Our center is
+                    powered by accomplished faculty members and research scientists who lead groundbreaking
+                    investigations, supported by a dynamic community of current and former PhD students and postdoctoral
+                    researchers who contribute fresh perspectives and cutting-edge technical skills. This
+                    multi-generational research environment fosters knowledge transfer, mentorship, and collaborative
+                    problem-solving, enabling us to tackle complex materials science challenges through integrated
+                    approaches that seamlessly combine advanced computational modeling with sophisticated experimental
+                    characterization. Our team's diverse expertise spans quantum mechanics to continuum mechanics, from
+                    atomistic simulations to macroscale testing, creating a unique interdisciplinary platform where
+                    theoretical insights, computational predictions, and experimental validation work synergistically to
+                    accelerate materials discovery and development for next-generation structural applications.
+                </p>
             </div>
         </div>
     </div>
 
-    <livewire:prisms.navs.science/>
+    <livewire:prisms.pages.people/>
 
 </x-layouts.prisms>

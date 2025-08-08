@@ -1,0 +1,19 @@
+<div class="publications-area">
+    <h2 id="presentations" style="padding-top: 120px; margin-top: -70px;">Invited Presentations</h2>
+    <br>
+
+    <div class="publication-list" ng-repeat="p in $ctrl.invitedPresentations" style="margin-bottom:40px">
+        <p class="publication-title">{{p.title}}</p>
+        <span>{{p.authors}},</span>
+        <span class="publication-details">{{p.details}}</span>
+    </div>
+
+    <h2 id="presentations" style="padding-top: 20px; padding-bottom: 15px">Other Presentations</h2>
+    <div class="publication-list" ng-repeat="p in $ctrl.contributedPresentations" style="margin-bottom:40px">
+        <p class="publication-title">{{p.title}}</p>
+        <span>{{p.authors}},</span>
+        <span class="publication-details">{{p.details}}</span>
+    </div>
+    <br>
+    <br>
+</div>

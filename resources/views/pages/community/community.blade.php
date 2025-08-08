@@ -1,0 +1,100 @@
+<!-- Begin page content -->
+<!-- Tab -->
+<div class="container subpage">
+    <div class="dropshadow">
+        <!-- Begin page content -->
+
+        <div class="contact-area">
+            <h2>Annual PRISMS Workshop 2023</h2>
+            <p>The Annual PRISMS Center Workshop will be held August 21-25, 2023. Training will be August 21-23. The symposium
+                will be on August 24-25. This is an in person event. To learn more please
+                go to our <a ui-sref="workshop">workshop</a> page.</p>
+            <h3 class="text-uppercase"></h3>
+            <h2>Join the PRISMS Community</h2>
+            <p class="tab-content-details">
+                Building a collaborative PRISMS Community is an important element of the PRISMS Center.
+                We hope that you will join us. We hold an Annual PRISMS workshop to ensure
+                awareness by the broader community, establish collaborations and train users of the
+                PRISMS Integrated Computational Software and The Materials Commons. If you are interested
+                in any of these aspects of the PRISMS Center please register here:
+            </p>
+            <form class="form-horizontal"
+                  name="CommunityForm">
+                <fieldset>
+                    <!-- Text input-->
+                    <div class="control-group">
+                        <label class="control-label" for="Name...">Name</label>
+                        <div class="controls">
+                            <input id="Name..." name="Name..." placeholder="Name..." style="width:80%" type="text"
+                                   ng-model="community.name">
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="control-group">
+                        <label class="control-label" for="textinput">Organization</label>
+                        <div class="controls">
+                            <input id="textinput" name="textinput" placeholder="Organization..." style="width:80%"
+                                   type="text" ng-model="community.organization">
+                        </div>
+                    </div>
+
+                    <!-- Multiple Checkboxes -->
+                    <div class="control-group">
+                        <label class="control-label" for="checkboxes">I am interested in</label>
+                        <div class="controls">
+                            <label class="checkbox" for="checkboxes-0">
+                                <input name="checkboxes" id="checkboxes-0" value="being informed of upcoming workshops"
+                                       type="checkbox"
+                                       ng-model="community.workshops">
+                                Upcoming Workshops
+                            </label>
+                            <label class="checkbox" for="checkboxes-1">
+                                <input name="checkboxes" id="checkboxes-1"
+                                       value="being informed of releases of PRISMS software" type="checkbox"
+                                       ng-model="community.computational">
+                                PRISMS Computational Software
+                            </label>
+                            <label class="checkbox" for="checkboxes-2">
+                                <input name="checkboxes" id="checkboxes-2"
+                                       value="being informed of releases of Materials Commons" type="checkbox"
+                                       ng-model="community.materialscommons">
+                                Materials Commons
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="control-group">
+                        <label class="control-label" for="textarea">I have the following expertise</label>
+                        <div class="controls">
+                            <textarea id="textarea" name="textarea" style="width: 80%" rows="6"
+                                      ng-model="community.expertise"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="control-group">
+                        <label class="control-label" for="textarea">I would like to collaborate on:</label>
+                        <div class="controls">
+                            <textarea id="textarea" name="textarea" style="width: 80%" rows="6"
+                                      ng-model="community.collaborate"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="button1id"></label>
+                        <div class="controls">
+                            <button id="button1id" name="button1id" class="btn btn-success"
+                                    ng-click="community.submit()">Submit
+                            </button>
+                            <button id="button2id" name="button2id" class="btn btn-danger"
+                                    ng-click="community.cancel()">Cancel
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
