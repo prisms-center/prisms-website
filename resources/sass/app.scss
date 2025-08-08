@@ -1,0 +1,45 @@
+@import '~bootstrap/scss/bootstrap';
+
+/* Theme tweaks: subtle darker page bg + crisper white cards + brand primary */
+
+/* Use your blue as the Bootstrap primary */
+:root {
+    --bs-primary: #2b6bb1;
+    --bs-primary-rgb: 43, 107, 177;
+}
+
+/* Subtle blue-tinted page background */
+body {
+    background: linear-gradient(135deg, #f3f7fc 0%, #e9eff7 100%);
+    background-attachment: fixed;
+}
+
+/* Let the page background show through (cards stay white) */
+.main_area {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Make cards pop against the darker page */
+.card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+}
+
+.card.shadow-sm,
+.card.border-0.shadow-sm {
+    box-shadow:
+        0 10px 24px rgba(43, 107, 177, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Optional: a gentle lift on hover for interactivity */
+.main_area .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.main_area .card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 14px 32px rgba(43, 107, 177, 0.10),
+        0 6px 16px rgba(0, 0, 0, 0.08);
+}
