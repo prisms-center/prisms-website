@@ -64,13 +64,6 @@
                     <div class="card shadow-sm mb-3">
                         <div class="card-body p-4">
                             @include('pages.science.includes.precipitate')
-{{--                            <div class="d-flex align-items-center mb-2">--}}
-{{--                                <div class="icon-circle bg-success bg-opacity-10 me-3"><i--}}
-{{--                                        class="fas fa-cloud-rain text-success"></i></div>--}}
-{{--                                <h2 class="h5 mb-0 text-success">Precipitation</h2>--}}
-{{--                            </div>--}}
-{{--                            <p class="mb-0 text-muted">Details on precipitation mechanisms, modeling approaches, and--}}
-{{--                                experimental validation will be added here.</p>--}}
                         </div>
                     </div>
                 </div>
@@ -83,13 +76,6 @@
                     <div class="card shadow-sm mb-3">
                         <div class="card-body p-4">
                             @include('pages.science.includes.recrystallization')
-{{--                            <div class="d-flex align-items-center mb-2">--}}
-{{--                                <div class="icon-circle bg-warning bg-opacity-10 me-3"><i--}}
-{{--                                        class="fas fa-gem text-warning"></i></div>--}}
-{{--                                <h2 class="h5 mb-0 text-warning">Recrystallization</h2>--}}
-{{--                            </div>--}}
-{{--                            <p class="mb-0 text-muted">Planned content: nucleation and growth, microstructural--}}
-{{--                                evolution, and multiscale simulation results.</p>--}}
                         </div>
                     </div>
                 </div>
@@ -102,13 +88,6 @@
                     <div class="card shadow-sm mb-3">
                         <div class="card-body p-4">
                             @include('pages.science.includes.tensile')
-{{--                            <div class="d-flex align-items-center mb-2">--}}
-{{--                                <div class="icon-circle bg-danger bg-opacity-10 me-3"><i--}}
-{{--                                        class="fas fa-arrows-left-right text-danger"></i></div>--}}
-{{--                                <h2 class="h5 mb-0 text-danger">Tensile Behavior</h2>--}}
-{{--                            </div>--}}
-{{--                            <p class="mb-0 text-muted">Planned content: stress-strain response, constitutive models, and--}}
-{{--                                validation experiments.</p>--}}
                         </div>
                     </div>
                 </div>
@@ -121,13 +100,6 @@
                     <div class="card shadow-sm mb-3">
                         <div class="card-body p-4">
                             @include('pages.science.includes.fatigue')
-{{--                            <div class="d-flex align-items-center mb-2">--}}
-{{--                                <div class="icon-circle bg-secondary bg-opacity-10 me-3"><i--}}
-{{--                                        class="fas fa-heart-pulse text-secondary"></i></div>--}}
-{{--                                <h2 class="h5 mb-0 text-secondary">Fatigue</h2>--}}
-{{--                            </div>--}}
-{{--                            <p class="mb-0 text-muted">Planned content: fatigue life prediction, crack initiation and--}}
-{{--                                growth, and uncertainty quantification.</p>--}}
                         </div>
                     </div>
                 </div>
