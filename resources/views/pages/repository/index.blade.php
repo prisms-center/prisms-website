@@ -39,23 +39,23 @@
         }
     </style>
 
-    <div class="science-hero p-4 mb-4 shadow-sm">
-        <div class="d-flex align-items-center">
-            <div class="icon-circle bg-primary text-white me-3">
-                <i class="fas fa-flask"></i>
-            </div>
-            <div>
-                <h1 class="h3 mb-1 text-primary fw-bold">Integrated Collaborative Science</h1>
-                <p class="mb-0 text-muted">The PRISMS Center develops tools to predict the behavior of metals, using
-                    magnesium alloys as a test case due to their potential for lightweight, fuel-efficient applications
-                    and their unique scientific challenges. Research is organized into four interconnected
-                    areas—precipitate evolution, recrystallization and grain growth, tensile behavior, and fatigue
-                    behavior—so that insights from one area inform the others. While the framework can apply to any
-                    metal, magnesium is the focus for demonstrating its capabilities.</p>
-            </div>
-        </div>
-    </div>
+{{--    <div class="science-hero p-4 mb-4 shadow-sm">--}}
+{{--        <div class="d-flex align-items-center">--}}
+{{--            <div class="icon-circle bg-primary text-white me-3">--}}
+{{--                <i class="fas fa-flask"></i>--}}
+{{--            </div>--}}
+{{--            <div>--}}
+{{--                <h1 class="h3 mb-1 text-primary fw-bold">Integrated Collaborative Science</h1>--}}
+{{--                <p class="mb-0 text-muted">The PRISMS Center develops tools to predict the behavior of metals, using--}}
+{{--                    magnesium alloys as a test case due to their potential for lightweight, fuel-efficient applications--}}
+{{--                    and their unique scientific challenges. Research is organized into four interconnected--}}
+{{--                    areas—precipitate evolution, recrystallization and grain growth, tensile behavior, and fatigue--}}
+{{--                    behavior—so that insights from one area inform the others. While the framework can apply to any--}}
+{{--                    metal, magnesium is the focus for demonstrating its capabilities.</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
-    <livewire:prisms.navs.science/>
+    <livewire:prisms.pages.materials-commons/>
 
 </x-layouts.prisms>

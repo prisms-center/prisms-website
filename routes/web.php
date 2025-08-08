@@ -7,11 +7,7 @@ use Livewire\Volt\Volt;
 Route::view('/', 'pages.home')->name('home');
 Route::view('/science', 'pages.science.index')->name('science');
 Route::view('/tools', 'pages.codes.index')->name('tools');
-Route::view('/repository', 'pages.section', [
-    'title' => 'Repository',
-    'heading' => 'Materials Commons Repository',
-    'description' => 'Learn about the Materials Commons data repository.'
-])->name('repository');
+Route::view('/repository', 'pages.repository.index')->name('repository');
 Route::view('/people', 'pages.section', [
     'title' => 'People',
     'heading' => 'People',
