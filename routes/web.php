@@ -5,11 +5,7 @@ use Livewire\Volt\Volt;
 
 // PRISMS public site routes
 Route::view('/', 'pages.home')->name('home');
-Route::view('/science', 'pages.section', [
-    'title' => 'Science',
-    'heading' => 'Science',
-    'description' => 'Overview of PRISMS science areas.'
-])->name('science');
+Route::view('/science', 'pages.science.index')->name('science');
 Route::view('/tools', 'pages.section', [
     'title' => 'Tools',
     'heading' => 'PRISMS Computational Tools',
