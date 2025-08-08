@@ -10,14 +10,11 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+{{--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">--}}
 
-    <style>
-        .nav_wrap { background: #fff; border-bottom: 1px solid #e5e5e5; }
-        .footer { background: #222; color: #fff; padding: 2rem 0; margin-top: 3rem; }
-        .footer .footer_img img { max-height: 48px; margin-right: 1rem; }
-        .main_container .main_pic { background: url('/assets/img/prisms-logo.png') center/contain no-repeat; height: 200px; }
-    </style>
+    {{-- Vite assets (compiled Sass + JS) --}}
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
 </head>
 <body>
     <x-prisms.navbar />

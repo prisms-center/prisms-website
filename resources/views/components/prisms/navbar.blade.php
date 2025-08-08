@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top nav_wrap">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top nav_wrap">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
             <img src="/assets/img/prisms-logo.png" alt="PRISMS" style="height:40px">

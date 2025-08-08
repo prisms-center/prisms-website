@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer bg-primary">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-4 d-flex align-items-center mb-3 mb-md-0">

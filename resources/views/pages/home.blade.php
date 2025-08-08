@@ -75,7 +75,7 @@
             <!-- Main Content Area -->
             <div class="col-12 col-lg-8">
                 <!-- Featured Workshop Section -->
-                <div class="card border-0 shadow-sm mb-4 bg-gradient" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                <div class="card border-0 shadow-sm mb-4 bg-gradient" style="backgroundx: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
                             <div class="bg-primary rounded-circle p-2 me-3">
