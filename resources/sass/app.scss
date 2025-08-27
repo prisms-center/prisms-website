@@ -2,15 +2,157 @@
 
 /* Theme tweaks: subtle darker page bg + crisper white cards + brand primary */
 
-/* Use your blue as the Bootstrap primary */
+/* Blue-themed color scheme */
 :root {
+    /* Primary - Keep your existing navbar blue */
     --bs-primary: #2b6bb1;
     --bs-primary-rgb: 43, 107, 177;
+
+    /* Secondary - A muted blue-gray */
+    --bs-secondary: #546e7a;
+    --bs-secondary-rgb: 84, 110, 122;
+
+    /* Success - Blue-tinted green */
+    --bs-success: #0d7e56;
+    --bs-success-rgb: 13, 126, 86;
+
+    /* Info - Lighter, more vibrant blue */
+    --bs-info: #1e88e5;
+    --bs-info-rgb: 30, 136, 229;
+
+    /* Warning - Warm orange that complements blue */
+    --bs-warning: #f57c00;
+    --bs-warning-rgb: 245, 124, 0;
+
+    /* Danger - Muted red */
+    --bs-danger: #d32f2f;
+    --bs-danger-rgb: 211, 47, 47;
+
+    /* Light - Soft blue-tinted white */
+    --bs-light: #f8fafb;
+    --bs-light-rgb: 248, 250, 251;
+
+    /* Dark - Deep blue-black */
+    --bs-dark: #1a237e;
+    --bs-dark-rgb: 26, 35, 126;
 }
 
-.bg-primary {
-    background-color: var(--bs-primary) !important;
+/* Override Bootstrap color classes */
+.bg-primary { background-color: var(--bs-primary) !important; }
+.bg-secondary { background-color: var(--bs-secondary) !important; }
+.bg-success { background-color: var(--bs-success) !important; }
+.bg-info { background-color: var(--bs-info) !important; }
+.bg-warning { background-color: var(--bs-warning) !important; }
+.bg-danger { background-color: var(--bs-danger) !important; }
+.bg-light { background-color: var(--bs-light) !important; }
+.bg-dark { background-color: var(--bs-dark) !important; }
+
+/* Text color classes */
+.text-primary { color: var(--bs-primary) !important; }
+.text-secondary { color: var(--bs-secondary) !important; }
+.text-success { color: var(--bs-success) !important; }
+.text-info { color: var(--bs-info) !important; }
+.text-warning { color: var(--bs-warning) !important; }
+.text-danger { color: var(--bs-danger) !important; }
+
+/* Button variants */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
 }
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #1f5a96;
+    border-color: #1f5a96;
+}
+
+.btn-success {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #0a6b47;
+    border-color: #0a6b47;
+}
+
+.btn-info {
+    background-color: var(--bs-info);
+    border-color: var(--bs-info);
+    color: #fff;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #1976d2;
+    border-color: #1976d2;
+}
+
+.btn-warning {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+    color: #fff;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    background-color: #ef6c00;
+    border-color: #ef6c00;
+}
+
+/* Outline button variants */
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-success {
+    color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+
+.btn-outline-info {
+    color: var(--bs-info);
+    border-color: var(--bs-info);
+}
+
+.btn-outline-info:hover,
+.btn-outline-info:focus {
+    background-color: var(--bs-info);
+    border-color: var(--bs-info);
+}
+
+.btn-outline-warning {
+    color: var(--bs-warning);
+    border-color: var(--bs-warning);
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+}
+
+/* Badge variants */
+.badge.bg-primary { background-color: var(--bs-primary) !important; }
+.badge.bg-success { background-color: var(--bs-success) !important; }
+.badge.bg-info { background-color: var(--bs-info) !important; }
+.badge.bg-warning { background-color: var(--bs-warning) !important; }
+.badge.bg-secondary { background-color: var(--bs-secondary) !important; }
 
 /* Navbar link styling on primary background */
 .navbar.bg-primary {
@@ -62,7 +204,7 @@
 
 /* Subtle blue-tinted page background */
 body {
-    background: linear-gradient(135deg, #f3f7fc 0%, #e9eff7 100%);
+    background: linear-gradient(135deg, var(--bs-light) 0%, #e3f2fd 100%);
     background-attachment: fixed;
 }
 
@@ -72,10 +214,27 @@ body {
     box-shadow: none;
 }
 
-.nav_wrap { background: #fff; border-bottom: 1px solid #e5e5e5; }
-.footer { background: #222; color: #fff; padding: 2rem 0; margin-top: 3rem; }
-.footer .footer_img img { max-height: 48px; margin-right: 1rem; }
-.main_container .main_pic { background: url('/assets/img/prisms-logo.png') center/contain no-repeat; height: 200px; }
+.nav_wrap {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer {
+    background: var(--bs-dark);
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer .footer_img img {
+    max-height: 48px;
+    margin-right: 1rem;
+}
+
+.main_container .main_pic {
+    background: url('/assets/img/prisms-logo.png') center/contain no-repeat;
+    height: 200px;
+}
 
 /* Make cards pop against the darker page */
 .card {
@@ -94,9 +253,26 @@ body {
 .main_area .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .main_area .card:hover {
     transform: translateY(-2px);
     box-shadow:
         0 14px 32px rgba(43, 107, 177, 0.10),
         0 6px 16px rgba(0, 0, 0, 0.08);
 }
+
+/* Additional blue theme enhancements */
+.link-primary {
+    color: var(--bs-primary) !important;
+}
+
+.link-primary:hover,
+.link-primary:focus {
+    color: #1f5a96 !important;
+}
+
+/* Border utilities with theme colors */
+.border-primary { border-color: var(--bs-primary) !important; }
+.border-success { border-color: var(--bs-success) !important; }
+.border-info { border-color: var(--bs-info) !important; }
+.border-warning { border-color: var(--bs-warning) !important; }
